@@ -24,6 +24,15 @@ export function setOnRenderInstruction(callback) {
 }
 
 export function connect() {
+  // Reconnect (Fallback C) calls this again on the same page load, after
+  // sessionManager.js's own capture retry - close any still-open prior
+  // socket first so a reconnect never leaves two live connections open
+  // (found via Phase 16's end-to-end trace, not caught in isolation since
+  // Phase 15 only exercised this path once per test).
+  if (socket) {
+    socket.onclose = null;
+    socket.close();
+  }
   sequenceNumber = 0;
   socket = new WebSocket(`ws://${window.location.host}/ws`);
 
@@ -74,7 +83,7 @@ export function sendControlMessage(obj) {
 }
 
 // Exposed for Phase 15's sessionManager.js to call without a full page reload.
+// connect() itself now closes any prior socket, so this is just an alias.
 export function reconnect() {
-  if (socket) socket.close();
   return connect();
 }

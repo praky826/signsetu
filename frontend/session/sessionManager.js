@@ -6,7 +6,7 @@
 
 import { getAnalyser } from "../capture/streamValidation.js";
 import { startCapture } from "../capture/tabCapture.js";
-import { sendControlMessage, reconnect as reconnectSocket } from "../network/wsClient.js";
+import { sendControlMessage } from "../network/wsClient.js";
 import { Status, setStatus } from "../status/statusIndicator.js";
 
 // Frontend-only tunables (no frontend config module exists, per the
@@ -149,10 +149,16 @@ export function attachStreamEndListener(stream, onReconnectRequested) {
 // buffers" rather than a full reset, so no separate genuinely-new-stream
 // detection is attempted here (a MediaStream object reference can't reliably
 // distinguish "same tab reselected" from "different tab selected" anyway).
+//
+// Does not itself reconnect the WebSocket: onNewStream is main.js's
+// validateStream(...) -> handleValidStream chain, which already calls
+// wsClient's connect() once real audio is confirmed (Phase 16 fix - this
+// function used to also connect here first, opening a second, immediately-
+// orphaned socket on every reconnect since neither connect call closed the
+// other's before this file's own onNewStream() also connected).
 export function reconnect(onNewStream) {
-  startCapture(async (stream) => {
+  startCapture((stream) => {
     attachStreamEndListener(stream, onNewStream);
-    await reconnectSocket();
     onNewStream(stream);
   });
 }

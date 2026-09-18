@@ -19,6 +19,7 @@ function hideMessage() {
 }
 
 let sharedAnalyser = null;
+let sharedAudioContext = null;
 
 // Exposed for Phase 15's sessionManager.js to later use sustained-signal
 // discontinuity as an indirect seek/pause signal, per Step 18.
@@ -38,7 +39,14 @@ function hasSignal(analyser, buffer) {
 // detected. Sampling continues indefinitely afterward (Phase 15's future use)
 // rather than stopping once validated.
 function sampleSignal(stream, onValid) {
+  // Reconnect (Fallback C) calls validateStream() again on a new stream -
+  // close the previous validation AudioContext first so reconnecting doesn't
+  // leak one live AudioContext per reconnect (Phase 16 end-to-end trace).
+  if (sharedAudioContext) {
+    sharedAudioContext.close();
+  }
   const audioContext = new AudioContext();
+  sharedAudioContext = audioContext;
   const source = audioContext.createMediaStreamSource(stream);
   const analyser = audioContext.createAnalyser();
   source.connect(analyser);

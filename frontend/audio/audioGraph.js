@@ -31,6 +31,12 @@ function flush() {
 // Kept alive for the life of the capture session; tear down only on stream
 // loss (Fallback C, Phase 15) or explicit stop via stopAudioGraph().
 export async function startAudioGraph(stream) {
+  // Reconnect (Fallback C) re-runs the whole validate -> connect -> audio
+  // graph chain on a new stream - tear down the previous graph first so
+  // reconnecting doesn't leak one live AudioContext/worklet per reconnect
+  // and doesn't keep flushing audio from the old, now-invalid track
+  // (Phase 16 end-to-end trace).
+  stopAudioGraph();
   audioContext = new AudioContext({ sampleRate: SAMPLE_RATE });
   if (audioContext.sampleRate !== SAMPLE_RATE) {
     console.warn(
