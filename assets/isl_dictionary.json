@@ -1,0 +1,1042 @@
+{
+  "hello": {
+    "gloss": "HELLO",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "hi": {
+    "gloss": "HI",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "thank": {
+    "gloss": "THANK",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "thanks": {
+    "gloss": "THANKS",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "you": {
+    "gloss": "YOU",
+    "hamnosys": "hamindex hampalmd hamchest"
+  },
+  "i": {
+    "gloss": "I/ME",
+    "hamnosys": "hamindex hamchest"
+  },
+  "me": {
+    "gloss": "ME",
+    "hamnosys": "hamindex hamchest"
+  },
+  "my": {
+    "gloss": "MY",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "mine": {
+    "gloss": "MINE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "your": {
+    "gloss": "YOUR",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "yours": {
+    "gloss": "YOURS",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "he": {
+    "gloss": "HE",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "she": {
+    "gloss": "SHE",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "they": {
+    "gloss": "THEY",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "we": {
+    "gloss": "WE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "us": {
+    "gloss": "US",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "yes": {
+    "gloss": "YES",
+    "hamnosys": "hamfist hammovedown"
+  },
+  "no": {
+    "gloss": "NO",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "not": {
+    "gloss": "NOT",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "please": {
+    "gloss": "PLEASE",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "sorry": {
+    "gloss": "SORRY",
+    "hamnosys": "hamfist hamchest"
+  },
+  "excuse": {
+    "gloss": "EXCUSE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "good": {
+    "gloss": "GOOD",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "bad": {
+    "gloss": "BAD",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "great": {
+    "gloss": "GREAT",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "best": {
+    "gloss": "BEST",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "name": {
+    "gloss": "NAME",
+    "hamnosys": "hamfinger2 hampalmd hamchest"
+  },
+  "what": {
+    "gloss": "WHAT",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "where": {
+    "gloss": "WHERE",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "when": {
+    "gloss": "WHEN",
+    "hamnosys": "hamindex hamchest"
+  },
+  "who": {
+    "gloss": "WHO",
+    "hamnosys": "hamindex hamchin"
+  },
+  "why": {
+    "gloss": "WHY",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "how": {
+    "gloss": "HOW",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "which": {
+    "gloss": "WHICH",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "help": {
+    "gloss": "HELP",
+    "hamnosys": "hamfist hampalmu hamchest"
+  },
+  "love": {
+    "gloss": "LOVE",
+    "hamnosys": "hamfist hamchest"
+  },
+  "like": {
+    "gloss": "LIKE",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "want": {
+    "gloss": "WANT",
+    "hamnosys": "hamcee hampalmu hamchest"
+  },
+  "need": {
+    "gloss": "NEED",
+    "hamnosys": "hamindex hammovedown"
+  },
+  "friend": {
+    "gloss": "FRIEND",
+    "hamnosys": "hamindex hamchest"
+  },
+  "family": {
+    "gloss": "FAMILY",
+    "hamnosys": "hamcee hamchest"
+  },
+  "mother": {
+    "gloss": "MOTHER",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "father": {
+    "gloss": "FATHER",
+    "hamnosys": "hamflathand hamhead"
+  },
+  "sister": {
+    "gloss": "SISTER",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "brother": {
+    "gloss": "BROTHER",
+    "hamnosys": "hamflathand hamhead"
+  },
+  "child": {
+    "gloss": "CHILD",
+    "hamnosys": "hamflathand hamstomach"
+  },
+  "children": {
+    "gloss": "CHILDREN",
+    "hamnosys": "hamflathand hamstomach"
+  },
+  "boy": {
+    "gloss": "BOY",
+    "hamnosys": "hamflathand hamhead"
+  },
+  "girl": {
+    "gloss": "GIRL",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "man": {
+    "gloss": "MAN",
+    "hamnosys": "hamflathand hamhead"
+  },
+  "woman": {
+    "gloss": "WOMAN",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "people": {
+    "gloss": "PEOPLE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "person": {
+    "gloss": "PERSON",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "eat": {
+    "gloss": "EAT",
+    "hamnosys": "hampinch hamchin"
+  },
+  "food": {
+    "gloss": "FOOD",
+    "hamnosys": "hampinch hamchin"
+  },
+  "drink": {
+    "gloss": "DRINK",
+    "hamnosys": "hamcee hamchin"
+  },
+  "water": {
+    "gloss": "WATER",
+    "hamnosys": "hamfinger2 hamchin"
+  },
+  "tea": {
+    "gloss": "TEA",
+    "hamnosys": "hamcee hamchin"
+  },
+  "coffee": {
+    "gloss": "COFFEE",
+    "hamnosys": "hamcee hamchin"
+  },
+  "milk": {
+    "gloss": "MILK",
+    "hamnosys": "hamcee hamchin"
+  },
+  "bread": {
+    "gloss": "BREAD",
+    "hamnosys": "hampinch hamchin"
+  },
+  "rice": {
+    "gloss": "RICE",
+    "hamnosys": "hampinch hamchin"
+  },
+  "fruit": {
+    "gloss": "FRUIT",
+    "hamnosys": "hampinch hamchin"
+  },
+  "vegetable": {
+    "gloss": "VEGETABLE",
+    "hamnosys": "hampinch hamchin"
+  },
+  "go": {
+    "gloss": "GO",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "come": {
+    "gloss": "COME",
+    "hamnosys": "hamindex hammoveback"
+  },
+  "stop": {
+    "gloss": "STOP",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "start": {
+    "gloss": "START",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "wait": {
+    "gloss": "WAIT",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "look": {
+    "gloss": "LOOK",
+    "hamnosys": "hamfinger2 hampalmd hamchin"
+  },
+  "see": {
+    "gloss": "SEE",
+    "hamnosys": "hamfinger2 hampalmd hamchin"
+  },
+  "hear": {
+    "gloss": "HEAR",
+    "hamnosys": "hamindex hamchin"
+  },
+  "listen": {
+    "gloss": "LISTEN",
+    "hamnosys": "hamindex hamchin"
+  },
+  "speak": {
+    "gloss": "SPEAK",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "talk": {
+    "gloss": "TALK",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "say": {
+    "gloss": "SAY",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "tell": {
+    "gloss": "TELL",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "ask": {
+    "gloss": "ASK",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "answer": {
+    "gloss": "ANSWER",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "welcome": {
+    "gloss": "WELCOME",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "goodbye": {
+    "gloss": "GOODBYE",
+    "hamnosys": "hamflathand hampalmd hammoveforward"
+  },
+  "bye": {
+    "gloss": "BYE",
+    "hamnosys": "hamflathand hampalmd hammoveforward"
+  },
+  "morning": {
+    "gloss": "MORNING",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "afternoon": {
+    "gloss": "AFTERNOON",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "evening": {
+    "gloss": "EVENING",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "night": {
+    "gloss": "NIGHT",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "day": {
+    "gloss": "DAY",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "today": {
+    "gloss": "TODAY",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "tomorrow": {
+    "gloss": "TOMORROW",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "yesterday": {
+    "gloss": "YESTERDAY",
+    "hamnosys": "hamflathand hammoveback"
+  },
+  "week": {
+    "gloss": "WEEK",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "month": {
+    "gloss": "MONTH",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "year": {
+    "gloss": "YEAR",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "time": {
+    "gloss": "TIME",
+    "hamnosys": "hamindex hamchest"
+  },
+  "now": {
+    "gloss": "NOW",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "later": {
+    "gloss": "LATER",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "before": {
+    "gloss": "BEFORE",
+    "hamnosys": "hamflathand hammoveback"
+  },
+  "after": {
+    "gloss": "AFTER",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "school": {
+    "gloss": "SCHOOL",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "home": {
+    "gloss": "HOME",
+    "hamnosys": "hampinch hamchin"
+  },
+  "house": {
+    "gloss": "HOUSE",
+    "hamnosys": "hampinch hamchest"
+  },
+  "work": {
+    "gloss": "WORK",
+    "hamnosys": "hamfist hamchest"
+  },
+  "office": {
+    "gloss": "OFFICE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "hospital": {
+    "gloss": "HOSPITAL",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "market": {
+    "gloss": "MARKET",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "shop": {
+    "gloss": "SHOP",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "store": {
+    "gloss": "STORE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "place": {
+    "gloss": "PLACE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "here": {
+    "gloss": "HERE",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "there": {
+    "gloss": "THERE",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "near": {
+    "gloss": "NEAR",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "far": {
+    "gloss": "FAR",
+    "hamnosys": "hamindex hammoveforward"
+  },
+  "big": {
+    "gloss": "BIG",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "small": {
+    "gloss": "SMALL",
+    "hamnosys": "hampinch hamchest"
+  },
+  "large": {
+    "gloss": "LARGE",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "little": {
+    "gloss": "LITTLE",
+    "hamnosys": "hampinch hamchest"
+  },
+  "many": {
+    "gloss": "MANY",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "few": {
+    "gloss": "FEW",
+    "hamnosys": "hampinch hamchest"
+  },
+  "more": {
+    "gloss": "MORE",
+    "hamnosys": "hamflathand hammoveup"
+  },
+  "less": {
+    "gloss": "LESS",
+    "hamnosys": "hamflathand hammovedown"
+  },
+  "all": {
+    "gloss": "ALL",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "some": {
+    "gloss": "SOME",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "none": {
+    "gloss": "NONE",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "happy": {
+    "gloss": "HAPPY",
+    "hamnosys": "hamflathand hampalmu hamchest hammoveup"
+  },
+  "sad": {
+    "gloss": "SAD",
+    "hamnosys": "hamflathand hampalmd hamchin hammovedown"
+  },
+  "angry": {
+    "gloss": "ANGRY",
+    "hamnosys": "hamfist hamchest"
+  },
+  "fear": {
+    "gloss": "FEAR",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "surprise": {
+    "gloss": "SURPRISE",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "tired": {
+    "gloss": "TIRED",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "sick": {
+    "gloss": "SICK",
+    "hamnosys": "hamflathand hamstomach"
+  },
+  "pain": {
+    "gloss": "PAIN",
+    "hamnosys": "hamfist hamchest"
+  },
+  "hurt": {
+    "gloss": "HURT",
+    "hamnosys": "hamfist hamchest"
+  },
+  "fine": {
+    "gloss": "FINE",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "okay": {
+    "gloss": "OKAY",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "ok": {
+    "gloss": "OK",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "beautiful": {
+    "gloss": "BEAUTIFUL",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "ugly": {
+    "gloss": "UGLY",
+    "hamnosys": "hamflathand hampalmd hamchin"
+  },
+  "hot": {
+    "gloss": "HOT",
+    "hamnosys": "hamflathand hampalmd hamchin"
+  },
+  "cold": {
+    "gloss": "COLD",
+    "hamnosys": "hamfist hamchest"
+  },
+  "warm": {
+    "gloss": "WARM",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "cool": {
+    "gloss": "COOL",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "clean": {
+    "gloss": "CLEAN",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "dirty": {
+    "gloss": "DIRTY",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "new": {
+    "gloss": "NEW",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "old": {
+    "gloss": "OLD",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "young": {
+    "gloss": "YOUNG",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "easy": {
+    "gloss": "EASY",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "hard": {
+    "gloss": "HARD",
+    "hamnosys": "hamfist hamchest"
+  },
+  "difficult": {
+    "gloss": "DIFFICULT",
+    "hamnosys": "hamfist hamchest"
+  },
+  "right": {
+    "gloss": "RIGHT",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "wrong": {
+    "gloss": "WRONG",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "correct": {
+    "gloss": "CORRECT",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "true": {
+    "gloss": "TRUE",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "false": {
+    "gloss": "FALSE",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "know": {
+    "gloss": "KNOW",
+    "hamnosys": "hamflathand hamhead"
+  },
+  "understand": {
+    "gloss": "UNDERSTAND",
+    "hamnosys": "hamflathand hamhead"
+  },
+  "learn": {
+    "gloss": "LEARN",
+    "hamnosys": "hamflathand hamhead"
+  },
+  "teach": {
+    "gloss": "TEACH",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "read": {
+    "gloss": "READ",
+    "hamnosys": "hamfinger2 hampalmd hamchest"
+  },
+  "write": {
+    "gloss": "WRITE",
+    "hamnosys": "hampinch hamchest"
+  },
+  "book": {
+    "gloss": "BOOK",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "paper": {
+    "gloss": "PAPER",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "pen": {
+    "gloss": "PEN",
+    "hamnosys": "hampinch hamchest"
+  },
+  "pencil": {
+    "gloss": "PENCIL",
+    "hamnosys": "hampinch hamchest"
+  },
+  "give": {
+    "gloss": "GIVE",
+    "hamnosys": "hamflathand hampalmu hammoveforward"
+  },
+  "take": {
+    "gloss": "TAKE",
+    "hamnosys": "hamcee hammoveback"
+  },
+  "get": {
+    "gloss": "GET",
+    "hamnosys": "hamcee hammoveback"
+  },
+  "have": {
+    "gloss": "HAVE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "make": {
+    "gloss": "MAKE",
+    "hamnosys": "hamfist hamchest"
+  },
+  "do": {
+    "gloss": "DO",
+    "hamnosys": "hamfist hamchest"
+  },
+  "use": {
+    "gloss": "USE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "buy": {
+    "gloss": "BUY",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "sell": {
+    "gloss": "SELL",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "pay": {
+    "gloss": "PAY",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "money": {
+    "gloss": "MONEY",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "expensive": {
+    "gloss": "EXPENSIVE",
+    "hamnosys": "hamflathand hammoveup"
+  },
+  "cheap": {
+    "gloss": "CHEAP",
+    "hamnosys": "hamflathand hammovedown"
+  },
+  "free": {
+    "gloss": "FREE",
+    "hamnosys": "hamflathand hampalmu hammoveforward"
+  },
+  "open": {
+    "gloss": "OPEN",
+    "hamnosys": "hamflathand hampalmu hammoveforward"
+  },
+  "close": {
+    "gloss": "CLOSE",
+    "hamnosys": "hamflathand hampalmd hammoveback"
+  },
+  "shut": {
+    "gloss": "SHUT",
+    "hamnosys": "hamflathand hampalmd hammoveback"
+  },
+  "door": {
+    "gloss": "DOOR",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "window": {
+    "gloss": "WINDOW",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "table": {
+    "gloss": "TABLE",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "chair": {
+    "gloss": "CHAIR",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "bed": {
+    "gloss": "BED",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "room": {
+    "gloss": "ROOM",
+    "hamnosys": "hamflathand hampalmd hamchest"
+  },
+  "sit": {
+    "gloss": "SIT",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "stand": {
+    "gloss": "STAND",
+    "hamnosys": "hamflathand hammoveup"
+  },
+  "walk": {
+    "gloss": "WALK",
+    "hamnosys": "hamfinger2 hammoveforward"
+  },
+  "run": {
+    "gloss": "RUN",
+    "hamnosys": "hamfinger2 hammoveforward"
+  },
+  "jump": {
+    "gloss": "JUMP",
+    "hamnosys": "hamflathand hammoveup"
+  },
+  "sleep": {
+    "gloss": "SLEEP",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "wake": {
+    "gloss": "WAKE",
+    "hamnosys": "hamflathand hammoveup"
+  },
+  "play": {
+    "gloss": "PLAY",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "game": {
+    "gloss": "GAME",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "sport": {
+    "gloss": "SPORT",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "music": {
+    "gloss": "MUSIC",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "dance": {
+    "gloss": "DANCE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "sing": {
+    "gloss": "SING",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "watch": {
+    "gloss": "WATCH",
+    "hamnosys": "hamfinger2 hampalmd hamchin"
+  },
+  "television": {
+    "gloss": "TELEVISION",
+    "hamnosys": "hamflathand hampalmd hamchin"
+  },
+  "tv": {
+    "gloss": "TV",
+    "hamnosys": "hamflathand hampalmd hamchin"
+  },
+  "phone": {
+    "gloss": "PHONE",
+    "hamnosys": "hamcee hamchin"
+  },
+  "call": {
+    "gloss": "CALL",
+    "hamnosys": "hamcee hamchin"
+  },
+  "computer": {
+    "gloss": "COMPUTER",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "internet": {
+    "gloss": "INTERNET",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "email": {
+    "gloss": "EMAIL",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "message": {
+    "gloss": "MESSAGE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "picture": {
+    "gloss": "PICTURE",
+    "hamnosys": "hamflathand hampalmd hamchin"
+  },
+  "photo": {
+    "gloss": "PHOTO",
+    "hamnosys": "hamflathand hampalmd hamchin"
+  },
+  "camera": {
+    "gloss": "CAMERA",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "car": {
+    "gloss": "CAR",
+    "hamnosys": "hamfist hamchest"
+  },
+  "bus": {
+    "gloss": "BUS",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "train": {
+    "gloss": "TRAIN",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "airplane": {
+    "gloss": "AIRPLANE",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "plane": {
+    "gloss": "PLANE",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "travel": {
+    "gloss": "TRAVEL",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "trip": {
+    "gloss": "TRIP",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "visit": {
+    "gloss": "VISIT",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "country": {
+    "gloss": "COUNTRY",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "city": {
+    "gloss": "CITY",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "village": {
+    "gloss": "VILLAGE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "world": {
+    "gloss": "WORLD",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "sun": {
+    "gloss": "SUN",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "moon": {
+    "gloss": "MOON",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "star": {
+    "gloss": "STAR",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "sky": {
+    "gloss": "SKY",
+    "hamnosys": "hamflathand hampalmu hammoveup"
+  },
+  "rain": {
+    "gloss": "RAIN",
+    "hamnosys": "hamflathand hampalmd hammovedown"
+  },
+  "weather": {
+    "gloss": "WEATHER",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "one": {
+    "gloss": "ONE",
+    "hamnosys": "hamindex hampalmu hammoveup"
+  },
+  "two": {
+    "gloss": "TWO",
+    "hamnosys": "hamfinger2 hampalmu hammoveup"
+  },
+  "three": {
+    "gloss": "THREE",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "four": {
+    "gloss": "FOUR",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "five": {
+    "gloss": "FIVE",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "six": {
+    "gloss": "SIX",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "seven": {
+    "gloss": "SEVEN",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "eight": {
+    "gloss": "EIGHT",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "nine": {
+    "gloss": "NINE",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "ten": {
+    "gloss": "TEN",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "hundred": {
+    "gloss": "HUNDRED",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "thousand": {
+    "gloss": "THOUSAND",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "first": {
+    "gloss": "FIRST",
+    "hamnosys": "hamindex hampalmu hammoveup"
+  },
+  "second": {
+    "gloss": "SECOND",
+    "hamnosys": "hamfinger2 hampalmu hammoveup"
+  },
+  "last": {
+    "gloss": "LAST",
+    "hamnosys": "hamflathand hampalmu hamchest"
+  },
+  "next": {
+    "gloss": "NEXT",
+    "hamnosys": "hamflathand hammoveforward"
+  },
+  "color": {
+    "gloss": "COLOR",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "colour": {
+    "gloss": "COLOUR",
+    "hamnosys": "hamflathand hamchin"
+  },
+  "red": {
+    "gloss": "RED",
+    "hamnosys": "hamindex hamchin"
+  },
+  "blue": {
+    "gloss": "BLUE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "green": {
+    "gloss": "GREEN",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "yellow": {
+    "gloss": "YELLOW",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "black": {
+    "gloss": "BLACK",
+    "hamnosys": "hamflathand hampalmd hamchin"
+  },
+  "white": {
+    "gloss": "WHITE",
+    "hamnosys": "hamflathand hampalmu hamchin"
+  },
+  "orange": {
+    "gloss": "ORANGE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "purple": {
+    "gloss": "PURPLE",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "pink": {
+    "gloss": "PINK",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "brown": {
+    "gloss": "BROWN",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "gray": {
+    "gloss": "GRAY",
+    "hamnosys": "hamflathand hamchest"
+  },
+  "grey": {
+    "gloss": "GREY",
+    "hamnosys": "hamflathand hamchest"
+  }
+}

@@ -40,9 +40,9 @@
 
 **Technical requirements:** Single HTML page, vanilla JS or minimal framework, Three.js (for avatar canvas, initialized but empty/idle at this point), CSS for fixed-position output window.
 
-**What happens in detail:** The Three.js scene, camera, and renderer are initialized and the avatar GLB (human.glb) is loaded and posed in a neutral rest position, but no animation loop is actively consuming pose data yet — this front-loads the (potentially slow) GLB parse/load time to app-start rather than to the first sign, keeping later latency low.
+**What happens in detail:** The reused avatar.js module's initAvatarScene(container) call (confirmed API, Phase 2\) builds the Three.js scene, camera, renderer, lights, and controls itself and loads the avatar GLB (human.glb) into it, resolving with {model, scene, camera, renderer}; our own main.js does not construct a separate scene. Immediately after that resolves, a single SignEngine instance is constructed (new SignEngine({model})) and kept for the whole session, since Step 16B has no per-word "play sign" call to make otherwise. Constructing SignEngine automatically triggers its own built-in self-test animation about 1.5 seconds later (a brief arm/hand movement, resetting after 3 more seconds) — this is expected behavior from the reused file, not a bug, and cannot be suppressed without modifying the file.
 
-**Implementation approach:** Load and pose the avatar immediately on page load regardless of which render mode is later selected, so mode-switching later is instant rather than triggering a fresh model load.
+**Implementation approach:** Load and pose the avatar immediately on page load regardless of which render mode is later selected, so mode-switching later is instant rather than triggering a fresh model load. Because avatar.js and SignEngine.js use bare ES module specifiers ("three", "three/examples/jsm/..."), index.html needs a native \<script type="importmap"\> resolving these to a CDN ESM build, with main.js loaded as \<script type="module"\> — this satisfies the no-bundler requirement since import maps are native browser behavior, not a build step.
 
 ---
 
@@ -306,11 +306,11 @@
 
 **Output:** Avatar performs the corresponding hand/arm animation in the Three.js canvas.
 
-**Technical requirements:** Three.js, the copied hamnosysMap.js, autoBoneMapper.js, SignEngine.js modules from speech-to-isl, loaded human.glb.
+**Technical requirements:** Three.js, the copied hamnosysMap.js and SignEngine.js modules from speech-to-isl (autoBoneMapper.js is copied per the reuse policy but not functionally called — SignEngine.js maps its own bones internally), loaded human.glb, the single SignEngine instance constructed once in Step 2\.
 
-**What happens in detail:** hamnosysMap.js parses the HamNoSys token string symbol-by-symbol, producing an ordered list of target bone-rotation poses. autoBoneMapper.js's pre-built bone-name translation table (resolved once at avatar load time) converts these abstract pose targets into rotations for this specific rig's actual bone names. SignEngine.js then interpolates the avatar's current pose toward each target pose over successive animation frames, briefly returning to a neutral rest pose between words to avoid jarring instant transitions, then advances the queue once the pose sequence completes.
+**What happens in detail (CONFIRMED against the actual fetched code, Phase 2 — supersedes the original hypothesis below):** hamnosysMap.js does not parse the HamNoSys string into pose data — it exports HAMNOSYS\_ACTIONS, a map from each HamNoSys token directly to a function that calls a method (hand/palm/armTo/resetAll) on a SignEngine instance. Our avatarRenderer.js splits the resolved HamNoSys string on whitespace and calls HAMNOSYS\_ACTIONS\[token\](signEngineInstance) for each token in order, against the one SignEngine instance created in Step 2\. SignEngine.js has no playSign() function and no completion event, callback, or promise of any kind — its animations run continuously via an internal requestAnimationFrame loop with no notification when they finish. Our own queue-advance logic therefore waits a fixed timeout, AVATAR\_SIGN\_HOLD\_MS (a frontend-only constant defined at the top of avatarRenderer.js — see docs/implementation.md section 3 exception — sized to the rotate() interpolation speed SignEngine uses), rather than listening for a signal that doesn't exist, then explicitly calls signEngine.resetAll() to return to a neutral pose before advancing. Note also that SignEngine.js's pose methods only ever animate right-side bones — every avatar sign produced this way is one-handed, regardless of what a HamNoSys string might imply.
 
-**Implementation approach:** Reuse these modules with minimal modification — the main integration work is just calling their existing public functions (e.g. SignEngine.playSign(hamnosysTargets)) from your own queue-advance logic rather than their original isl\_nlp.py\-driven caller.
+**Implementation approach:** Reuse these modules unmodified — the integration work is calling hamnosysMap.js's HAMNOSYS\_ACTIONS functions against the shared SignEngine instance from your own queue-advance logic, with a fixed-timeout completion in place of the originally assumed event/callback mechanism.
 
 ---
 
@@ -683,8 +683,8 @@ No npm/webpack/bundler needed — Three.js via CDN keeps this a zero-build-step 
 
 **No traditional database required.** All lookups are static, pre-built, in-memory structures loaded once at startup:
 
-* isl\_dictionary.json (gloss → HamNoSys) — flat JSON file, loaded into a Python dict  
-* CISLR gloss → video-path index — built once from dataset.csv, also loaded into a Python dict
+* isl\_dictionary.json (keyed by English word, each entry {gloss, hamnosys} — CONFIRMED shape, Phase 2, not a flat gloss→HamNoSys file as first assumed) — loaded and re-indexed by gloss into a Python dict  
+* CISLR gloss → video-path index — built once from prototype.csv (not dataset.csv — decision recorded in docs/implementation.md, since prototype.csv is the Hugging Face-provided one-clip-per-gloss subset), also loaded into a Python dict
 
 **Models**
 
@@ -737,5 +737,5 @@ That's the only external frontend library — everything else (audio capture, We
 * isl\_dictionary.json — copied from speech-to-isl repo  
 * hamnosysMap.js, autoBoneMapper.js, SignEngine.js, avatar.js — copied from speech-to-isl repo  
 * Pre-downloaded, **locally cached** CISLR video clips for your chosen demo vocabulary (not streamed live from Hugging Face during the demo)  
-* Pre-built CISLR gloss → local-file-path index (JSON, generated once from dataset.csv)
+* Pre-built CISLR gloss → local-file-path index (generated once from prototype.csv, not dataset.csv — see docs/implementation.md)
 

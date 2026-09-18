@@ -27,9 +27,9 @@ Speech2ISL/
 
 **1\. backend/isl\_dictionary.json**
 
-**What it is \[confirmed\]:** A flat JSON database of 250+ ISL signs, each entry mapping an English gloss word to its HamNoSys notation string.
+**What it is \[CONFIRMED by reading the fetched file, Phase 2\]:** NOT a flat {gloss: hamnosys} map. Actual shape: a JSON object keyed by lowercase English word, each value an object {gloss: "UPPERCASE\_GLOSS", hamnosys: "hamtoken hamtoken ..."}. 260 entries, 260 unique gloss values (multiple English-word keys can share one gloss, e.g. "hello" and "hi" both map to gloss HELLO).
 
-**Where used in our pipeline:** Step 13 (Lookup) of our main spec — one of the two parallel dictionaries checked per gloss word.
+**Where used in our pipeline:** Step 13 (Lookup) of our main spec — one of the two parallel dictionaries checked per gloss word. dictionary\_loader.py must iterate .values() and index by each entry's gloss field (uppercased), not by the JSON's own top-level keys.
 
 **How it's integrated:** Copied wholesale, unmodified, into our backend. Loaded once into memory at Step 1 (startup), then validated per Fallback F (parsing every entry once to exclude malformed ones) before being used as our in-memory avatar-vocabulary lookup table for the rest of the session.
 
@@ -37,43 +37,43 @@ Speech2ISL/
 
 **2\. frontend/hamnosysMap.js**
 
-**What it is \[inferred from filename \+ feature list, verify on read\]:** Per the README's "3D Avatar Animation: Realistic ISL signs using HamNoSys notation" feature, this file almost certainly contains the parsing logic that turns a HamNoSys token string (e.g. "hamflathand hampalmd hamchest") into a set of target bone-rotation values — essentially a lookup/mapping table from HamNoSys symbols to pose data.
+**What it is \[CONFIRMED by reading the fetched file, Phase 2\]:** Exports a single named object, HAMNOSYS\_ACTIONS, mapping each HamNoSys token string (e.g. "hamflathand", "hampalmd", "hamchest") to a function of shape (engine) \=\> void. It is not a parser that produces bone-rotation pose data — each token's function directly calls one of engine.hand(), engine.palm(), engine.armTo(), or engine.resetAll() on a passed-in SignEngine instance. 21 tokens total (7 hand shapes, 5 palm orientations, 4 body locations, 4 movement aliases, 1 reset).
 
-**Where used in our pipeline:** Step 16B (Avatar Renderer) — this is the module that converts a dictionary entry's HamNoSys string into an actual pose the avatar can perform.
+**Where used in our pipeline:** Step 16B (Avatar Renderer) — our own avatarRenderer.js splits a dictionary entry's HamNoSys string on whitespace and calls HAMNOSYS\_ACTIONS\[token\](signEngineInstance) for each token in order.
 
-**How it's integrated:** Copied unmodified. Our backend/frontend calls its exported parsing function with a HamNoSys string (retrieved from isl\_dictionary.json via our own lookup layer in Step 13-14) instead of however the original app's main.js/isl\_nlp.py pipeline called it. We're replacing what *feeds* this file, not the file itself.
+**How it's integrated:** Copied unmodified. Our own avatarRenderer.js drives it directly with the resolved HamNoSys string from Step 13-14, instead of however the original app's main.js/isl\_nlp.py pipeline called it.
 
-**Instruction to AI agent:** Fetch frontend/hamnosysMap.js directly if network access allows. Read the file fully first and confirm its actual exported function names/signatures before wiring our Step 14 output into it — **do not assume** the function name/shape described above is exact; adjust our integration code to match what's actually exported. If network access is unavailable, ask the developer to paste this file's contents in, then proceed with the same read-and-confirm step.
+**Instruction to AI agent:** Fetched and read in full (Phase 2). Do not reintroduce the earlier "string parser producing pose targets" assumption anywhere downstream — the confirmed token-to-function shape above is what integration code must target.
 
 **3\. frontend/autoBoneMapper.js**
 
-**What it is \[confirmed from feature list: "Auto Bone Mapping: Works with any Mixamo/ReadyPlayerMe avatar"\]:** Detects the actual bone names present on whatever GLB rig is loaded and builds a translation table from the engine's abstract pose targets to that specific model's real bone names — this is what lets the same HamNoSys-derived poses work across different avatar exports without hand-authored rig mapping per model.
+**What it is \[CONFIRMED by reading the fetched file, Phase 2\]:** Exports a single named function, autoMapBones(model), returning a plain object {canonicalBoneName: THREE.Bone}. Standalone and pure. CONFIRMED NOT used internally by SignEngine.js — SignEngine.js performs its own independent bone mapping in its own constructor and never accepts an externally-built bone table as input.
 
-**Where used in our pipeline:** Runs once at avatar load time (our Step 2, when human.glb is loaded into the Three.js scene), producing the bone-name table that Step 16B's animation relies on for every subsequent word.
+**Where used in our pipeline:** Not functionally required to drive Step 16B, since SignEngine.js does not consume this file's output. Still copied per the standing "never omit a reused file" instruction, but our integration code does not need to call it to make avatar animation work.
 
-**How it's integrated:** Copied unmodified, called once during our app's startup/idle sequence (Step 2\) rather than repeatedly — no per-word re-mapping needed, since the rig doesn't change mid-session.
+**How it's integrated:** Copied unmodified. Not called from our own application logic, since it provides no input SignEngine.js needs.
 
-**Instruction to AI agent:** Fetch frontend/autoBoneMapper.js directly if possible. Confirm what function it exports and what triggers it (likely called once after the GLB model finishes loading — verify against actual code, not assumption). If network access is unavailable, ask the developer to paste this file's contents in before proceeding.
+**Instruction to AI agent:** Fetched and read in full (Phase 2). Do not wire this file's output into SignEngine.js's constructor or into avatarRenderer.js — SignEngine.js ignores it.
 
 **4\. frontend/SignEngine.js**
 
-**What it is \[confirmed: "3D animation engine" per file tree comment; "Smooth Animations: Bio-mechanically accurate hand and arm movements" per features\]:** The core Three.js animation loop — takes a sequence of target poses (from hamnosysMap.js, resolved through autoBoneMapper.js's bone table) and interpolates the avatar's current pose toward each target over time, producing continuous rather than jump-cut motion.
+**What it is \[CONFIRMED by reading the fetched file, Phase 2\]:** Exports a class, SignEngine, constructed as new SignEngine({ model }). The constructor performs its OWN internal bone mapping (a private \_universalBoneMapper method) — it does not need or accept autoBoneMapper.js's output. There is NO playSign() function and NO HamNoSys-consuming method of any kind. Public methods are low-level: rotate(boneName, x, y, z, speed), reset(boneName), resetAll(), armTo(location) (chest/chin/head/stomach/forward), palm(orientation) (down/up/left/right/forward), hand(shape) (flat/fist/index/vee/pinch/cee/thumbup). CONFIRMED: there is no completion event, callback, or promise anywhere in this file — animation runs continuously via an internal requestAnimationFrame loop with no notification when an individual rotate() finishes. CONFIRMED: it does not automatically return to a neutral rest pose between signs — resetAll() must be called explicitly. CONFIRMED: all pose methods (armTo/palm/hand) operate only on Right\* bones — there is no left-hand equivalent, so every sign this engine plays is one-handed regardless of what a HamNoSys string implies. The constructor also runs an automatic self-test animation (tilt, raise arm, bend forearm, fist) starting 1.5 seconds after construction and resetting 3 seconds after that — this fires once, automatically, the moment a SignEngine instance is created, and is not something our integration code triggers or can suppress without modifying the file.
 
-**Where used in our pipeline:** Step 16B (Avatar Renderer) — this is the actual thing that plays a sign once we've resolved a word to a HamNoSys entry.
+**Where used in our pipeline:** Step 16B (Avatar Renderer) — instantiated once, right after avatar.js's model resolves (Step 2/Phase 10), and reused for the whole session. Our avatarRenderer.js drives it per word by calling hamnosysMap.js's HAMNOSYS\_ACTIONS functions against this one instance, since there is no per-word "play this sign" call to make on SignEngine itself.
 
-**How it's integrated:** Copied unmodified. Our own render queue (Step 15\) calls this engine's public "play this sign" function per word, and listens for its own completion signal (likely an event or callback — **verify exact mechanism on read**) to know when to advance our queue to the next word, exactly as described in our Step 16B spec.
+**How it's integrated:** Copied unmodified. Since there is no completion signal, our own render queue (Step 15\) advances after a fixed timeout (AVATAR\_SIGN\_HOLD\_MS, a frontend-only constant defined at the top of avatarRenderer.js — see docs/implementation.md section 3 exception — sized to the rotate() interpolation speed used) rather than listening for an event, and explicitly calls resetAll() before signaling completion to return to neutral between words.
 
-**Instruction to AI agent:** Fetch frontend/SignEngine.js directly if possible. This is the most important file to read carefully in full before integrating — identify (a) its public API/exported functions, (b) how it signals "this sign's animation is complete" so our queue-advance logic (Step 15\) can hook into it correctly, and (c) whether it already handles returning to a neutral rest pose between signs (per our Fallback/Step 16B spec) or whether we need to add that ourselves. If network access is unavailable, ask the developer to paste this file's full contents in — do not guess at its API and write integration code against assumptions.
+**Instruction to AI agent:** Fetched and read in full (Phase 2). Do not build avatarRenderer.js around a playSign() call or a completion event — neither exists. Do not assume two-handed output is possible.
 
 **5\. frontend/avatar.js**
 
-**What it is \[confirmed: "Avatar loader"\]:** Loads human.glb into the Three.js scene and likely poses it in a neutral rest state initially.
+**What it is \[CONFIRMED by reading the fetched file, Phase 2\]:** Exports a single named function, initAvatarScene(container), returning a Promise resolving to {model, scene, camera, renderer}. CONFIRMED this function builds and OWNS the entire Three.js scene, camera, renderer, lights, and OrbitControls itself, and already starts its own render loop internally — it is not a bare "load a model into an existing scene" helper. CONFIRMED it hardcodes the GLB fetch path as "/models/human.glb" (root-relative, cannot be changed without modifying the file). CONFIRMED this file and SignEngine.js both use bare ES module specifiers ("three", "three/examples/jsm/loaders/GLTFLoader.js", "three/examples/jsm/controls/OrbitControls.js"), which requires a native browser import map (not a bundler) in index.html to resolve.
 
-**Where used in our pipeline:** Step 2 (frontend load / idle state) — this is what actually gets the avatar visible on screen before any signing starts.
+**Where used in our pipeline:** Step 2 (frontend load / idle state) — our own main.js calls initAvatarScene() once and uses its returned scene/camera/renderer as the app's only Three.js state, rather than constructing separate ones.
 
-**How it's integrated:** Copied unmodified, called once at app startup.
+**How it's integrated:** Copied unmodified, called once at app startup. Our backend's static file mounting (Phase 9\) must additionally serve frontend/vendor/models/ at the /models route so this file's hardcoded path resolves without modifying the file.
 
-**Instruction to AI agent:** Fetch frontend/avatar.js and frontend/models/human.glb directly if possible (note: the .glb is a binary asset, not source code — confirm your fetch method handles binary files correctly, or ask the developer to download it manually if unsure). If network access is unavailable for either file, ask the developer to download and place both at the equivalent paths in our project.
+**Instruction to AI agent:** Fetched and read in full (Phase 2), including frontend/models/human.glb (valid glTF binary, 6.6MB). Do not have main.js create its own scene/camera/renderer before calling this function.
 
 **6\. backend/isl\_nlp.py**
 
@@ -101,25 +101,25 @@ Speech2ISL/
 
 **Where used in our pipeline: NOT reused.** Our frontend has a different UI (mode toggle, fixed-position output window, status indicator, capture button flow) that doesn't match this repo's own demo UI.
 
-**How it's integrated:** Not copied. We write our own index.html/main.js/style.css from scratch, per our own Step 2-18 spec, and only *call into* the reused modules (avatar.js, SignEngine.js, hamnosysMap.js, autoBoneMapper.js) from within our own application logic.
+**How it's integrated:** Not copied. We write our own index.html/main.js/style.css from scratch, per our own Step 2-18 spec, and only *call into* the reused modules we actually invoke (avatar.js, SignEngine.js, hamnosysMap.js) from within our own application logic. autoBoneMapper.js is copied into frontend/vendor/ per the reuse policy but is CONFIRMED (Phase 2) not to be called anywhere — SignEngine.js maps its own bones internally.
 
-**Instruction to AI agent:** Do not copy these three files. Build our frontend shell fresh according to the main specification document already produced, importing/calling only the five files marked "copied unmodified" above (isl\_dictionary.json, hamnosysMap.js, autoBoneMapper.js, SignEngine.js, avatar.js, plus the human.glb asset).
+**Instruction to AI agent:** Do not copy these three files. Build our frontend shell fresh according to the main specification document already produced, importing/calling only avatar.js, SignEngine.js, and hamnosysMap.js from the reused set (plus isl\_dictionary.json backend-side and the human.glb asset) — autoBoneMapper.js and human.glb are still copied into the project per the "never omit a reused file" rule, but autoBoneMapper.js is not called from anywhere.
 
 **Summary table**
 
 | File | Copy it? | Used in our Step(s) |
 | ----- | ----- | ----- |
-| isl\_dictionary.json | ✅ Yes, unmodified | 13, 1 (startup load), Fallback F |
-| hamnosysMap.js | ✅ Yes, unmodified | 16B |
-| autoBoneMapper.js | ✅ Yes, unmodified | 2 (startup), feeds 16B |
-| SignEngine.js | ✅ Yes, unmodified | 16B, 15 (queue-advance hook) |
-| avatar.js | ✅ Yes, unmodified | 2 (startup) |
-| models/human.glb | ✅ Yes, binary asset | 2 (startup) |
+| isl\_dictionary.json | ✅ Yes, unmodified — fetched, verified Phase 2 | 13, 1 (startup load), Fallback F |
+| hamnosysMap.js | ✅ Yes, unmodified — fetched, verified Phase 2 | 16B |
+| autoBoneMapper.js | ✅ Yes, unmodified — fetched, verified Phase 2 | copied only; not functionally called (SignEngine.js maps its own bones) |
+| SignEngine.js | ✅ Yes, unmodified — fetched, verified Phase 2 | 16B (instantiated once, Step 2/Phase 10); no completion event — queue advances on fixed timeout |
+| avatar.js | ✅ Yes, unmodified — fetched, verified Phase 2 | 2 (startup) — owns the Three.js scene/camera/renderer itself |
+| models/human.glb | ✅ Yes, binary asset — fetched, verified Phase 2 | 2 (startup) |
 | isl\_nlp.py | ❌ No — role replaced by Ollama \+ our own lookup | — |
 | app.py | ❌ No — role replaced by our FastAPI backend | — |
 | main.js, index.html, style.css | ❌ No — we build our own UI shell | — |
 
 **Standing instruction to the AI IDE agent (place at top of its task list)**
 
-For every file marked "✅ Yes" above: first attempt to fetch it directly from https://github.com/jayakarthik07/speech-to-isl at its listed path (via git clone or a raw-file fetch, whichever tooling is available). Immediately after fetching, **open and read the file fully** before writing any integration code against it — the descriptions in this spec are working hypotheses based on the repo's README, not confirmed source, and the actual exported function names, parameters, and completion-signaling mechanism (especially in SignEngine.js) must be verified against the real code, not assumed. If network/internet access is not available in this environment, stop and explicitly ask the developer to manually download the specific file from the repo URL above and paste its contents into the project at the path indicated, then resume once provided — do not fabricate or guess at this file's contents under any circumstance.
+Completed in Phase 2: every file marked "✅ Yes" above was fetched directly from https://github.com/jayakarthik07/speech-to-isl (main branch) and opened and read in full before any integration code was written against it. The confirmed exported function names, parameters, and completion-signaling mechanisms are recorded per-file above and in docs/implementation.md section 5 — later phases must build against those confirmed facts, not the original hypotheses this document started with. No phase after Phase 2 may reintroduce an assumption already superseded here (in particular: SignEngine.js has no playSign() and no completion event; avatar.js owns its own Three.js scene; autoBoneMapper.js is not consumed by SignEngine.js; isl\_dictionary.json is keyed by English word, not by gloss).
 

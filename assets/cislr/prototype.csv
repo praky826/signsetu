@@ -1,0 +1,4766 @@
+uid,gloss,duration,category
+--7-rCNOiK0_1,branch,6.0,flora and fauna
+-02y2VaVBmw,divorce petition,11.0,legal
+-03Dju3yPHE,air conditioner,5.0,machine
+-0Oo1kPonYQ,stapoo,6.0,sport
+-0XujLX2_9I_2,application,6.0,action
+-0gxfDidW6U,purple flowered plants,11.0,flora and fauna
+-1AseGWh7vU,school uniform,4.0,wearable
+-1aXmLMzHUI_1,squeeze,7.0,action
+-2_NUxX4PVA_2,electrical energy,9.0,physics
+-2iGhOnza38_1,raid,7.0,event
+-37kn1vV9gc_1,defend,5.0,action
+-3db5Hhn4mI_1,win,5.0,comparator
+-4MbWP5T-cU,thank you,3.0,gesture
+-5QTvDlGTcs_1,preliminary,7.0,attribute
+-5lgXJQG0EM_1,doctor,7.0,profession
+-5p4hn8J87A_2,hour,7.0,time
+-65ryXubYjo,testify,14.0,action
+-7IkPH6iIQA,uncle,3.0,relation
+-8CjLUfRlbw_1,pig,7.0,flora and fauna
+-A1P5WbuNo8,ladder,6.0,transport
+-AvE2V_2a-c_1,cup,6.0,utility item
+-C18cQCkCcw,pencil,4.0,utility item
+-DDBcacIfeA_1,cosmetics,7.0,substance
+-DHtnmdlaGk,agra,5.0,geography
+-DsyH0Vd_7E,halter top,11.0,wearable
+-E1n5hTjako_1,compact disc,8.0,computer
+-EGNTwA_sEE_1,land acquisition,9.0,legal
+-Em79Yvwac4_1,think,7.0,action
+-F7HjAaemJU,sexual reproduction,13.0,biology
+-HOXFEzH00I_1,circus,6.0,entertainment
+-H_VzAnfyKk,coconut,4.0,foods and drinks
+-I0sjwzg0tY_2,amplitude,15.0,physics
+-IInvCVJXas,mushroom production,7.0,process
+-IKgn_mGZrw_2,immiscibility,8.0,attribute
+-It9bwqowig,twitter,4.0,internet
+-JYukZxN6wQ_1,ugly,7.0,quality
+-JcpfOHc0nE,blood pressure,6.0,medical
+-Jr9EZz7Epo_1,eclipse,7.0,event
+-Lnou_Pop1o,reservation,13.0,group
+-MS1EdYqs48,gujarat,5.0,geography
+-MjxNEvHUFw,rollerpaint,8.0,instrument
+-N-gNuk_5PQ_1,unencumbered,8.0,banking
+-NAB02gnpgo,polo shrit,6.0,wearable
+-NCwiz-skM0_1,lame,7.0,biology
+-NIz596Y27Q,severally,7.0,quantity
+-NQKa7Pmhx4,nine,4.0,math
+-NXGOOSb2sk,increase,5.0,comparator
+-NpA8OS_Oj0_1,tennis,6.0,sport
+-Oq_e89164c_1,deer,7.0,flora and fauna
+-PFwmd8NQgI_1,fixed rate,7.0,banking
+-PGXFLhDfS0_1,teacher,6.0,profession
+-QF3_AuexYY,yolk,8.0,foods and drinks
+-R02rqkyxHc_1,can,6.0,attribute
+-RTVD5tM__A_1,hot,6.0,sensation
+-SVSp2VtfRw_1,tired,7.0,sensation
+-Sbg5dqo9cQ_1,undertaking,10.0,legal
+-Tfg5XTzi0c_1,complaint,7.0,process
+-UjDGBnJuQE,basic,5.0,quality
+-V3IfRctpxQ_1,kilometer,7.0,metric
+-VvuJx-TroA_1,day after,6.0,time
+-W13ICFg13E,calendar year,12.0,time
+-WuiIyEI6JU_1,prospectus,7.0,utility item
+-XHIq_olkt0,ripe,5.0,quality
+-ZJNHmctH-g_2,neutral,10.0,physics
+-_axtLgdFao_1,diaeases,8.0,medical
+-_ecaCc5kEM_1,par - above,8.0,comparator
+-_ozohdfbV0,arrest,3.0,legal
+-ayQ9-eEVPk,rafter,15.0,construction
+-bUi5WuO58M_1,negligence,9.0,attribute
+-cw3ySwZG-0_1,trouble,7.0,stage
+-erR2LqPMDo_1,insects,7.0,flora and fauna
+-i21y0g32n8,family tree,14.0,group
+-i5XH3VNyZc_1,cobbler,7.0,profession
+-j9UB4-TMdw,blouse,6.0,wearable
+-js9xT4ze2M_1,difference,8.0,comparator
+-kAnMQUsNqY,cancel,5.0,action
+-kNkN1zSAfc,sometimes,4.0,abstract
+-mGXVBz8pfs_1,criticize,6.0,action
+-nITY8LhYgc,iron,5.0,metal and minerals
+-ntsKq84BZI_2,statlonary wave,10.0,physics
+-oJL0D3n2e0,best,3.0,quality
+-oLpcbfuNIc_2,speclfic heat,8.0,physics
+-oy6L89CeWU_1,cry,7.0,behavior
+-p-Uj-p_Gso,see you tomorrow,4.0,greeting
+-pH80nLq8FY,table tennis,5.0,sport
+-pOaEEbLhEY_1,invent,6.0,process
+-pc9BOR8QtA,panaji,4.0,geography
+-qAGBp1JAh4_1,ruler,6.0,utility item
+-qEvxlqG6xs_1,taxable,9.0,legal
+-qhN2FaYkUc,anonymous,4.0,abstract
+-qzWfnV26kw_1,with,6.0,abstract
+-rahbCV2Pp4,understand,4.0,action
+-rwYVwVdHns_1,trust deed,8.0,banking
+-s7h4Re7Atk_1,residence,9.0,construction
+-syzD8b7Uog,fork,5.0,utility item
+-tXNpnzr08M,hack saw blade,7.0,instrument
+-vcgtHff_po,motivate,4.0,action
+-wpVNpcGvFk,yellow flowered plants,11.0,attribute
+-x6DzWY7lmk,united nations,5.0,organisation
+-x6oHEcUExQ,subtract,4.0,math
+-xNmG6y1-9E,air vistara,6.0,transport
+-y-dWznF2js_1,rough,7.0,sensation
+0-pxIcGvk3w,brown,7.0,attribute
+01THMylW6Mw,lok janshakti party,4.0,politics
+01UZKDp47Ao_1,boil,6.0,action
+039-5dIML0I_2,depth,9.0,attribute
+03N4I9dc3RQ_1,spendthrift,7.0,action
+03UqtTd9opc,pani puri,5.0,foods and drinks
+04qLwQo-2MM,what is your name,4.0,abstract
+06C4S0EBhBg_1,average,9.0,math
+06FBQEEqthQ_1,seizure,10.0,medical
+06lnhzFJMgo,idle talk,4.0,process
+07jCt4FqQxY,method,5.0,math
+08z_-ESgSP0,bucket,5.0,utility item
+09G-3IZyKrI_1,judge,6.0,authority
+09qovLrSjow_1,whale,8.0,flora and fauna
+0AH93vop9YA_1,frock,8.0,wearable
+0AUmueBrflo,notesheet,5.0,utility item
+0AW9acHJhNI,bharatiya janata party,3.0,politics
+0BC8wWXW_wc,driver,5.0,profession
+0BOyMqB1KUQ_1,accommodation,11.0,construction
+0C-nMsdpftw,designer,11.0,profession
+0CUyYc1R3OA,colombia,4.0,geography
+0CvaaVM5mNs,leaders,14.0,authority
+0DYb-qL1t0A,tomorrow,3.0,time
+0DYcaZmhlkY,weather,7.0,weather
+0E2yd3OjjsU,movie,4.0,entertainment
+0EQEGldp9YA_1,footpath,7.0,construction
+0ETSwMTLaac_2,attractive force,9.0,physics
+0F7sYNf4uxU,put,4.0,action
+0FHckg-WrEo,diving,5.0,sport
+0F_szwrQs1g_2,artificial,8.0,abstract
+0G7Xo4NN4fk,polisher,14.0,profession
+0GYeM3IGjn8_1,school bus,6.0,transport
+0HNvZZloffc_1,light,6.0,quantity
+0IF3Nx6idPQ_1,zonal,9.0,geography
+0IQ02IKMzUk_1,torch,7.0,electronic and electrical
+0IhvPwnhGOg,national capital region,5.0,geography
+0JIsxA88oss_2,grey,9.0,colour
+0Kcn-1OPd84,reverse,3.0,abstract
+0KeSJQiRAgo_1,coolie,6.0,profession
+0LXJqXx8dVU,sari,4.0,wearable
+0N47JPzl2Ow_1,adjustment,11.0,metric
+0NMbSbEZ7G8_1,disappear,5.0,action
+0NPpa4rNMoI_1,input,8.0,process
+0NUyw07V03g,promotion,4.0,organisation
+0O7xxbvMct0,institution,7.0,organisation
+0OMlCdUKFSg,backdoor,4.0,miscellaneous object
+0OxY1muGJhc,godet,14.0,wearable
+0PKQWh0-C8o,slip,4.0,action
+0PQM_cS1Jyg_1,funny,7.0,sensation
+0PwKF0pTwpg,receipt,6.0,banking
+0QITb6bNnHc,hearing,4.0,sound
+0Qk8-_ZEmHM_2,precaution,7.0,abstract
+0R6qq874H4c,propeller pump,15.0,instrument
+0REGTy6eqSc,team,4.0,group
+0RIpHMSqV4c,bank of maharashtra,4.0,banking
+0RiCicL3Zg8_1,interest,9.0,banking
+0RlsG9iQ6rk_1,window dressing,8.0,banking
+0TGJCFJv2iU,mahavir jayanti,4.0,event
+0ThvAhpHsDM,squirrel,4.0,flora and fauna
+0UyMbBSxbM4,minority,4.0,group
+0VSRJo2xZfI,breeds of poultry,11.0,flora and fauna
+0VvmrIYSsR0_1,marth,6.0,human
+0Xhmme0IrvU,mature,13.0,behavior
+0YIk1iTjDVY_1,monday,6.0,time
+0ZMXZUybS9M_1,until,6.0,time
+0_3gIUNTp8U,translate,4.0,action
+0_aBnLgwYuk,backdate,4.0,time
+0_dU4pT_Ch4,conference,5.0,group
+0cLdo9cL7y4,full stomach,5.0,sensation
+0dz5Em9gsjk,sacrifice,4.0,action
+0eCFVHc06YA_1,bell,5.0,miscellaneous object
+0eNooDbmED4,oviparous,13.0,biology
+0egx6MUyz0w,exporting graphics,15.0,computer
+0fKqgIRvg-8,jharkhand,5.0,geography
+0fO9xNyE9eU_1,obedience,7.0,behavior
+0fdRLmUIlZE_2,indigo,10.0,colour
+0ggPraT35p0,ranveer singh,4.0,human
+0hEQ8ufcIQU,amritsar,4.0,geography
+0hZluINun1Y,paraguay,3.0,geography
+0hhs7A5uf3E,vision,4.0,abstract
+0hkuayZghpM_1,circle,11.0,math
+0ijcVXYEvY8_2,tldal energy,9.0,physics
+0klM2u7dV9M,aam aadmi party,4.0,politics
+0kr-oJWV_wI_2,circular motion,11.0,physics
+0lrX7s_3ScY,bowled out,4.0,sport
+0ly7tC51g_o_1,sundry debtors,9.0,group
+0msmxYxchSc,meditate,7.0,action
+0nJrw8f2FLs_1,scold,6.0,action
+0nVI2GBhbUQ_1,particulars,10.0,attribute
+0n_FeKAXjUI,manage,4.0,action
+0oJ_jMGRJCE,roof garden,8.0,construction
+0oWHR36xnT8_1,this,5.0,relation
+0qDR-9wAiXk,diesel,6.0,transport
+0rN_yoKLCRw_1,vault,10.0,banking
+0sE5EMDNsDo,sorry,3.0,greeting
+0t5NaJwemgI_1,mother,9.0,relation
+0tUzIPQ31n8_1,drop,6.0,action
+0uvuluJqqAM,listen,3.0,action
+0vbtRdb9zTI_2,telephone,7.0,electronic and electrical
+0vx6xWIEP_0_1,night,6.0,time
+0wB165T8JuA,dirndl  skirt,13.0,wearable
+0wY8TKOu5z0_1,audiologist,7.0,profession
+0xVWH6F3Fz0,lose,4.0,sport
+0xrgLBuhXG0,milter hat,8.0,wearable
+0xxg0V8sb3w_1,audit,10.0,banking
+0ykPPmSC3Wk,box pleats,6.0,wearable
+0zTZkTkBAoU,world federation of the deaf youth section,4.0,organisation
+0zqOg8HwQiM,ball bearing,13.0,machine
+1-Zz07NcsKM,eleven,4.0,math
+1-wpwyfm1Mg_1,angry,7.0,emotion
+11derBixy2I_1,day,5.0,time
+12zIYqZt4m8_1,person,9.0,human
+14AboByr9GE_1,kind,8.0,behavior
+14yNmnzY7X0_1,legal,8.0,legal
+16P4ngMXeLM,4g,3.0,internet
+17ar03dZ7bQ_1,security,9.0,legal
+17sdVu62Og4,cut  line,12.0,instrument
+181pBJw-eWg,july,4.0,time
+18NS94mBGS4,grow,5.0,time
+18Os6IiQRes_2,metre,8.0,metric
+18Wi03A6brU,national,4.0,geography
+18bO_HQbsF4_1,hurt,5.0,sensation
+18f9RKQp4zw,resign,4.0,action
+18hKLmAVIMg_1,june,6.0,time
+1AId61ylQL0,v neck,9.0,wearable
+1B-XlHxT32g_1,parents,10.0,relation
+1B3HK-qQTHI_1,share,7.0,action
+1B_wGNSS-uY,pink,6.0,abstract
+1CVlY8md0JI_1,hire charges,10.0,banking
+1EoEG8Pvc8Q,wifi,4.0,internet
+1F-Blrvtuos_2,south pole,12.0,geography
+1FXtTMWGzMY_1,matchbox,7.0,miscellaneous object
+1FirQ_71-j0,ellipse tool,10.0,instrument
+1FnNbApsiHg,poultry science,12.0,flora and fauna
+1G3VZ_HWTWI,expertise,4.0,quality
+1GJkBoBf-S0_1,stand,7.0,action
+1HI4TKdLMOw,sign,3.0,gesture
+1IQ2ygYhtG0_1,pure,7.0,attribute
+1IZPvJn7an0,discuss,5.0,process
+1Ih8aIET1t8,air deccan,5.0,transport
+1L1W-NyiguQ_1,mouth,8.0,biology
+1MKJ9LGRot8_1,race,6.0,event
+1MPaj2JcH1c,kotak mahindra bank,5.0,banking
+1Mh8DMTca88,tap,5.0,utility item
+1N2-vwG1gMs_1,elbow,7.0,biology
+1NNgGxZWunM_2,semi solid,8.0,math
+1NcamL3P63A,safe,4.0,attribute
+1O3tCXovrw8,humid,5.0,weather
+1O9PueJaMDw_1,dhothi,7.0,wearable
+1OGWcDShnx4_1,lorry,6.0,transport
+1OPTSnDAImg,private,5.0,attribute
+1OZTqBF7fFg,deposit slip,8.0,banking
+1PVMa5B3rMs,soup,5.0,foods and drinks
+1QOS_slPJS4,device setting,9.0,electronic and electrical
+1R3n6vTHqzs_1,it,6.0,language
+1Rdm3h9voMQ_1,nepal,6.0,geography
+1RxiKpQqaJM,online banking,5.0,banking
+1SPhtgudjI4_1,year of harvest,8.0,time
+1STccvjvCKQ,selfish,3.0,behavior
+1SWHwkSeN5M,assume,6.0,action
+1SkZMNfDITQ,hard drive,5.0,electronic and electrical
+1T-rlcPbebo,hygiene,5.0,attribute
+1TZXeenr980_1,hope,7.0,action
+1TiirpYN_W8,line,6.0,math
+1ULJICYKp4E,grammar,5.0,language
+1VHhWnMU21Y,ninth,6.0,math
+1VMQKUMCDqc,yoke,9.0,wearable
+1VYE8MAF6yY_1,hanuman,6.0,religious
+1XEZmymH4e4,pisciculture,13.0,biology
+1XGaQTl0iQs_1,draftsmen,7.0,profession
+1XLi2MXWjGc_1,today,6.0,time
+1Xr-mIMAgvY,ground water,11.0,substance
+1Zy29R7mOcM,suffer,5.0,action
+1_PI2OxnryQ_1,gas stove,7.0,instrument
+1aZYCh3HDZY,before,4.0,spatial position
+1d0uOp_sG00,kidney cancer renal cell,4.0,biology
+1d6PKNBVh04,sample,5.0,abstract
+1dsbO78Qh5I,ready,4.0,abstract
+1dzqHHOtvXI,vietnam,3.0,geography
+1eodwdZ3isc,deadline,3.0,time
+1f6OchgCQrE,me,5.0,human
+1gZ9QlblgGs_1,syndication,10.0,commerce
+1h164VbpnFo_1,pay,7.0,banking
+1hBXvK7TuNo_1,prime minister,7.0,authority
+1hghU7py9HI_1,corruption,7.0,legal
+1hobNL7ofvg_2,resonance,11.0,sound
+1hzdxU-RztQ_1,mountain,9.0,geography
+1iCtgbRsFnE,popcorn,5.0,foods and drinks
+1iZij0vXGiQ_1,client,15.0,human
+1iqG_Rkp7f0,volkswagen,4.0,organisation
+1js4OwpNYrc,attitude,4.0,behavior
+1kJrmgJ0EMs,all india foundation of deaf women,4.0,organisation
+1kRjJqOY1q0_1,double entry,11.0,banking
+1kasuHeFIuw,language,3.0,language
+1lGwbhBsuu4,backache,8.0,medical
+1leH92mkoBI_1,snakes,6.0,flora and fauna
+1mWlliCFyxM,escape,4.0,action
+1nnXT-QVPpI_1,wrestling,6.0,sport
+1ocgYJL04To_1,skirt,7.0,wearable
+1p0Yw8NfadM_1,balance,8.0,banking
+1qV27cyAjEY,insect,7.0,flora and fauna
+1rPm_3Csg8M_1,stock closing,9.0,banking
+1rjhkQSKHSI,gold,4.0,metal and minerals
+1s1-9Ve6LN8_1,thief,6.0,profession
+1s1kck3BMLM,gulab jamun,5.0,foods and drinks
+1sZ4BSOC8nc,grandmother,5.0,relation
+1tA9YYn3oys,e office portal,9.0,internet
+1tIRnOnG1LI_1,tuberculosis,9.0,medical
+1tRmBdfaCwQ,reward,4.0,miscellaneous object
+1tst7-aazJo,warn,3.0,action
+1tyx9hWefCk,similar,5.0,comparator
+1uQyCwx-fEE_1,announce,6.0,action
+1uiUwkOZyis,milk bottle,5.0,utility item
+1vIbJ1xeH6c_1,berth,8.0,transport
+1vPiHLNlbBw,engineer,5.0,profession
+1vj0PwGPGss,death certificate,3.0,readable
+1vjgq4r7OQs,lacing,11.0,process
+1vpIZUFKZpQ,lunch,3.0,foods and drinks
+1wTikbR4vsE,scared,4.0,emotion
+1wVR6wsoIfw_2,complete,8.0,process
+1w_bYsmoFKA,email,4.0,internet
+1wmnjSPpUHs,calculator,5.0,math
+1x9a9JTehm8,dissent,5.0,action
+1xOrQM7AP9g,vector graphics,8.0,computer
+1xTATM3v8k4,umbrella,3.0,utility item
+1yVn9e5zDKU,isl,5.0,language
+1yd6Uo25Ge0_1,hate,7.0,emotion
+1yd8COXSRrg_2,simultaneous,10.0,time
+1z5RuDOokzk,guilt,5.0,emotion
+1zOTclxTpZ0_1,drive,6.0,transport
+2-0sLH5bX0k,oriya,6.0,language
+2-6FnMinc3U,knife,5.0,utility item
+2-VcJVXUBKw_1,leave compensatory,10.0,profession
+2-YiNRKp7xI,legged robots,13.0,electronic and electrical
+2-oX2aeeV9M,welding hand screen,6.0,miscellaneous object
+203WGsHFjhI,divorce,6.0,legal
+20ZBNdEFT6c_1,police,6.0,profession
+21Y0f3QHoKo,rupee,5.0,banking
+23L4Zan3GuY,shaving razor,4.0,utility item
+23kjqyecBwE,fine,4.0,emotion
+25Ju8FP3zV8,parliament,5.0,legal
+267RgFdcIM8_2,mho,9.0,metric
+26vEFQYbzvc,krishna,5.0,religious
+27q3W_M38Ts_1,flood,9.0,event
+299nspHeeag_2,colllsion,8.0,physics
+2AGfP7x3obk_1,sit,7.0,action
+2BI51rfBot0_1,decrease,9.0,comparator
+2CbOSGxS80s,video relay service,4.0,electronic and electrical
+2Cf1btUy1NI,nephew,5.0,relation
+2CjHiFW898s,jasminum sambac,9.0,flora and fauna
+2CrAogKMFeo_1,balcony,9.0,construction
+2DspG3QZfrU,taste,14.0,sensation
+2GL0HkOQVmA,shy,4.0,behavior
+2GS4eJRYIi8,get up,4.0,process
+2GYl9B7mF4A_2,straight,8.0,spatial position
+2HZkAQx4QXg_1,laboratary,8.0,education
+2Hp-Yy2Qwn0_1,suspend,11.0,legal
+2KrNWzeY_dU,paytm payments bank,6.0,banking
+2LLe-kRAu0o,inauguration,4.0,event
+2L_H8HYM5hE,accounts,4.0,banking
+2MlaLGpWk74,keying,14.0,action
+2NNiSDCb0ek_1,deaf,7.0,medical
+2OZj2Tt8dAA_1,sugar,6.0,foods and drinks
+2Os6w6jmxIg,scissors,4.0,utility item
+2PcBSQ4A8XM,parrot,5.0,flora and fauna
+2QrMULTorPY,meghalaya,4.0,geography
+2R_HbT1AO0c,flush door,5.0,construction
+2SBugE72qbg_1,nose,8.0,biology
+2U643_QFXA8_2,engine,9.0,machine
+2UL2iPLFUTE,rank,5.0,organisation
+2VUCXrEllWo_1,ghee,6.0,foods and drinks
+2VssiV_sEIo,burden,15.0,emotion
+2WBsjTVGFDw_1,thursday,6.0,time
+2WzVp7AncT4_2,coherent,7.0,physics
+2XXjH0ZsdTg_1,heavy,7.0,attribute
+2XbRuRKOfRE,kuwait,4.0,geography
+2ZARB_EzwH4_1,term of office,11.0,legal
+2ZMZ0wFUmdI_1,toothbrush,7.0,utility item
+2bDOqi4YXtI,paragraph,4.0,language
+2bxNtdmwWmo_1,salary,8.0,banking
+2c8it0IZnyw_1,miss,5.0,emotion
+2cCGTlNYZCQ,manipur,4.0,geography
+2cNWWG800gc_1,memo,7.0,legal
+2cW9Z4UPvgA_1,bill,7.0,banking
+2dd7JFwQPh0,permanent,4.0,attribute
+2e5SUxTjVvI,delhi,4.0,geography
+2gAXTX3_db8_1,servant,7.0,profession
+2iB4Rwtng94,albania,4.0,geography
+2iWRUv6eMls,twenty,4.0,quantity
+2ieSeOjAJZE,dustbin,5.0,utility item
+2kHyMlPqHpg_1,majority,9.0,quantity
+2kg98yjEHcE,summon,11.0,legal
+2kiOvqNPlEE,soldier,5.0,profession
+2lPUKkvlZvE,mean,4.0,behavior
+2lX7iTDBWP8_1,april,6.0,time
+2mKv8y9bYI0,powerlines,10.0,electronic and electrical
+2mZBDcRjP-Q_1,weaver,6.0,profession
+2nQwUc_jbRY_1,stars,7.0,astronomical
+2oHjc0njDdo,election,5.0,event
+2oYEEIt4HFs,each,4.0,quantity
+2p00fwBvXEs_1,state,5.0,geography
+2pjUxRe91qU_1,teeth,7.0,biology
+2praG1zS_-c_1,breathe,8.0,action
+2qRR4hQZAdA_1,change,4.0,action
+2qV_PsuKKvE_1,peteti,8.0,event
+2tX3eQTM1Lc_2,colour filter,12.0,colour
+2tawxaYAZcA,panama,3.0,geography
+2tp3AspW6TA,karnataka,4.0,geography
+2u2aH81FDWM,preposition,7.0,language
+2uRtqd5Mxmc,riverine,15.0,geography
+2vdw_PjA8FE,role,4.0,action
+2vfL9h_KiJE_1,peon,7.0,profession
+2w6c7g7ZPKo_1,labourer,9.0,profession
+2wA4J_9FFIc_1,foot,7.0,biology
+2yARXoO8Nrg_2,amount,8.0,metric
+2yDcFJQ3t8Y,zebra crossing,6.0,transport
+2yJXBFhvqk0_1,shop,6.0,action
+2yqiuXXxZ3Y_1,cheque postdated,12.0,banking
+2zv3MpREUNA,private secretaryps,14.0,profession
+3-JaJnYcae8_1,durga,6.0,religious
+30OIyeGhcQM,swallow,7.0,biology
+31IAr_rm054_1,face,7.0,biology
+31l98A8z-h4,sikhism,4.0,religious
+32OshNWYUgE_1,evening,7.0,time
+32SWjSJrL0s_1,spot exchange,8.0,banking
+33mc9fTI8tE_1,goods,10.0,utility item
+33nznChivz8_1,hang,6.0,action
+34UjBeye-E0_1,advertisement,7.0,internet
+36-jdo8Gt4o,sun,3.0,astronomical
+37KfHOkm_mM_1,lnaugurate,7.0,process
+37bLyyxKZKs,punish,4.0,action
+37i_Xt_w0Rs,capable,6.0,attribute
+37z5dnLqYms,ovi viviparous,15.0,biology
+380a54uCumQ,bike suspension,9.0,machine
+39tZrKjvdQM,hard,5.0,quality
+3Azhh428me8,october,5.0,time
+3BJDzOlCGcc_1,down,5.0,spatial position
+3DOyNnKRg0c_1,tribal,8.0,group
+3DSsRKPkiGI,nappy,6.0,utility item
+3DVy0Znsfj0_1,title,12.0,attribute
+3ETJPlFTcwk_1,spilt,7.0,action
+3EU1DcenjJw,tripura,5.0,geography
+3Eq8FeSFJpY,scan,5.0,action
+3FY7bYQBJ8M,alcohol,4.0,foods and drinks
+3FhNDV9UDzc,ruthless,5.0,behavior
+3FlXNEmG6h0,lemon,5.0,foods and drinks
+3GbJlbAKUy8_2,erect,6.0,attribute
+3GlZqV3RSp0,jump,6.0,process
+3HMUM-9pQj0,archery,4.0,sport
+3I1fwIgGXv8,name,3.0,language
+3I2-zG4Ymb4,force,4.0,physics
+3IHHaKspcfA,pole vault,5.0,miscellaneous object
+3KS9SiHwRVI,africa,4.0,geography
+3L80qKk4daI_2,printed circuit board,11.0,electronic and electrical
+3MeFx_eYZK0_1,under subscribed,7.0,banking
+3MoTC6iB3xQ,organization,4.0,organisation
+3MxE482U2Ns,pull someone's leg,3.0,action
+3NIFg2ExoMs,scratch,5.0,action
+3NPxIy6OXzg_1,drawer,8.0,construction
+3NUcsb2W1OQ_1,tusks,6.0,biology
+3OHkLPutuYM,legalese,15.0,legal
+3RKj4XQRxkc_2,metal,9.0,metal and minerals
+3Rn7sqmjgWo_2,osmosis,7.0,physics
+3S1RLtVj7PE,sweater,4.0,wearable
+3SBcHgw6wRM,minor,8.0,behavior
+3SIXJfwYlFw,anniversary,9.0,event
+3SRihi99gjc_1,home,8.0,geography
+3SRqBpgSrqI_1,week,6.0,time
+3SS49K8MK1w,belt loops,7.0,wearable
+3T5RJ1_NFrM_1,milk,6.0,foods and drinks
+3TNpBwr-Cxo_2,transformation of energy,9.0,physics
+3TSVb2e1zJw_1,saturday,6.0,time
+3UYC9939yQw_1,improve,5.0,time
+3VP2rlxefJI,magnetic ink character recognition,15.0,computer
+3VSNwJnUmdA,adobe acrobat reader,9.0,computer
+3WEkK4AaiV4,kidney beans,6.0,foods and drinks
+3X2TOqyDgv8,peas,4.0,foods and drinks
+3X7DZIiH2ZQ,uzbekistan,4.0,geography
+3XCX0YETmuk_1,sunday,6.0,time
+3Y7KPnUv9kA,animals,4.0,flora and fauna
+3aJtWIMsFx8,cpi,4.0,education
+3bAW9KtLSXk,gardener,5.0,profession
+3cluYDK8u08_1,acting,11.0,action
+3cp85oNRRj8_1,tongs,6.0,instrument
+3dJCO6ExmY0,real estate agent,6.0,profession
+3e4K5QbywVc,ports tab,5.0,electronic and electrical
+3fG2P5D8Jm0_1,open,6.0,action
+3fKtgE9aQso,yesterday,3.0,time
+3g-VyVR_iyU,nervous,4.0,emotion
+3gymi4f7hps_1,lay off,8.0,banking
+3h4uBHZ4J2Q_1,december,6.0,time
+3hIkQEZ923Q_1,joumal entry,10.0,readable
+3hTK036o_F4_1,group,9.0,group
+3ir8Rnwx8TY,potato,4.0,foods and drinks
+3jg1TpRzkGs,ear,5.0,biology
+3kNaobravCU,office,3.0,organisation
+3kbyPG13anw_1,tell,7.0,action
+3lMNHGXNQ3Q,uganda,4.0,geography
+3muHDD0neyo,warm,3.0,weather
+3n8cKQOSZfM,semicircle,4.0,math
+3ncXcBiwveA,magician,4.0,profession
+3pZp4IFQCuA,parts,3.0,math
+3ppf7DdzKvA,search,4.0,action
+3pqDm0UKO14,first coat,10.0,wearable
+3qKiJRMOzsc,watermelon,4.0,foods and drinks
+3sX8OzIgyIc_2,capacity,11.0,quantity
+3snObAxKXOQ,dress,3.0,wearable
+3tFefLfXIn4_1,september,6.0,time
+3uHfsQnqReY_1,bathroom,11.0,construction
+3uW2Y--Yd9U,sand paper,14.0,utility item
+3uyNF9yZCCw_1,sand,9.0,geography
+3v5Id7dDttk,buddha purnima,6.0,religious
+3vAxsFOJdVo,germany,4.0,geography
+3vXJ605MFbU,maybe,3.0,language
+3wKsYea6rfs_1,wood,7.0,miscellaneous object
+3wgPDtFtXWE_1,waive,5.0,action
+3xKJDf869EY,value,3.0,attribute
+3y-nQO6e5iQ,go air,5.0,organisation
+3y4vcRJBNs0,restart,6.0,action
+3yRZjuvtEd0_1,arm,8.0,biology
+3ymIgijDrC0,owl,5.0,flora and fauna
+3zXseLcBn4A_1,entertainment,5.0,entertainment
+3zbf5Y2id1U_2,universe,12.0,astronomical
+4--6iRQ6-7A,amazon,5.0,organisation
+4-LrYNRVVZk_1,delete,8.0,action
+4-d6EGJjZNk,travel,4.0,action
+40AA6WkT-Ys_2,centrifugal,14.0,physics
+413unEDKRXQ,dwarf,6.0,attribute
+41OGaqeAUMg,glass block,9.0,substance
+42CmhRt0ANs_2,electric charge,9.0,physics
+42cPzLjkVEs_1,statement of account,9.0,banking
+44mCQaeKBVw,last month,5.0,time
+44ueVmAA5W4,acceptance letter,6.0,education
+46-lhzhJf78,praise,4.0,action
+461WaV7kRxw_1,sky,6.0,abstract
+46EMlBxuYAU,tailor,5.0,profession
+46eCCVvkyIc,jawaharlal nehru,4.0,human
+46tD7Du6BNs,measuring tape,5.0,instrument
+48ODiLP2VgA,summary,5.0,education
+49bdeG9jPdM,nematode control,15.0,biology
+49c0qMhaE20,hydraulic sprayer,10.0,utility item
+4AMULo6htKw,disconnect,7.0,action
+4ANEdd5HfAs,withdraw money from bank,6.0,banking
+4BBTQpBwAXw_1,rectification,8.0,chemistry
+4BNqHj-lQaE,list,5.0,readable
+4C5snSNt79Q_1,hours,6.0,time
+4CrR5m-eSIs,ring spanner,11.0,instrument
+4EihrPe_PfY,recent,5.0,time
+4FQuX9bwT2I,flower for medical importance,10.0,flora and fauna
+4FldxWjLykY,arunachal pradesh,4.0,geography
+4GH0wBiRfX4_1,security continuing,10.0,legal
+4HMKoVmJQ0E_1,key,7.0,utility item
+4I-jm9Ng7YU_1,minimum,9.0,comparator
+4ILXbXTUUp4,periods,3.0,biology
+4IR40ptGTIU_1,rat,6.0,flora and fauna
+4Irn82ukR2M_1,post card,8.0,readable
+4J5r3KmJCPU_1,follow,8.0,action
+4JLkY7vGCHM_1,typist,6.0,profession
+4JPQ0EUdcbg,repair,4.0,action
+4K-4FU5l7cY_1,time,6.0,time
+4KOdh-2oe8Y,cop,6.0,profession
+4KjtR4PwJVM_1,differential rate of interest,11.0,banking
+4KttVgLezuY_1,mysore,7.0,geography
+4LM1k8KifiY,situation,4.0,time
+4LndvMQ2dO0,weightlifting,3.0,sport
+4MB7jUMQvac,autumn,10.0,time
+4MDuw5Pj-94_1,balance closing,10.0,banking
+4NzoLuGTigs,electric bus,13.0,transport
+4OMY6uJx-O4_1,fresh,8.0,quality
+4Os2Hh06GPc_1,earth,8.0,geography
+4P7EFM3C4MM,smog,15.0,chemistry
+4QdYqEbZu8Q,recently,5.0,time
+4QkxfvOC3go_1,how much,6.0,quantity
+4Qm7AgT_VKg_1,income tax,8.0,banking
+4RBAWNsG8Hk_1,geometry,8.0,math
+4RNnYGS3E34_1,feather,7.0,flora and fauna
+4RTN56hfFTM_2,nuclear reactor,13.0,physics
+4Ruem9NXrqw_1,std,9.0,medical
+4SRWa0Z5c8Q,hollow blocks,10.0,construction
+4TLvls1tSgA_1,company,10.0,organisation
+4TXbOxz60R4,online,6.0,internet
+4TubhVVN1ds_1,father-in-law,11.0,relation
+4TymgqvinvY,socks,3.0,wearable
+4UMMRCc0Iak,addendum,7.0,readable
+4UvD29cSe1U_1,duration,10.0,time
+4WDhqg6s8lw_1,take,5.0,action
+4WuV_HD-hZ0_1,vegetarian,6.0,foods and drinks
+4XFgnsejElI,photocopy,5.0,miscellaneous object
+4XYSXKlhpE0_1,suspend payment,12.0,banking
+4ZGhwybcIc0,separate,4.0,action
+4ZJOFmnUXOI_1,acknowledgement,13.0,action
+4ZhRcyVJKu4_1,way,6.0,process
+4accXsYqRnA,what,3.0,abstract
+4aqQ1oxaHVU_1,measure,6.0,math
+4bEmX9n5WqQ,aunt,6.0,relation
+4bUNNgy6hOg_1,air,7.0,substance
+4bjLAMYZciw,strange,5.0,behavior
+4ee_deI0hZA_1,olympics,5.0,sport
+4epyVRUXIWA,computer,4.0,computer
+4f7OqHEUjDs,elevation,15.0,geography
+4fPciu-8Bmw_1,sing,6.0,action
+4g99hQUlSd4_1,climb down,6.0,action
+4gyV6cLT2o4_1,form,9.0,readable
+4gzoWw7xiig,date of retirement,13.0,time
+4hI14OUpXoc,reaper bainder,15.0,instrument
+4i5RCrOMoZk_1,kerala,6.0,geography
+4iLJjksh3C8,smoke,4.0,chemistry
+4imVoSmU5vc,mauritius,4.0,geography
+4iyCzQFjHV4,construction,5.0,construction
+4jSr_zyFag0_2,radiation,10.0,physics
+4joUJiIztMI_1,bad,8.0,quality
+4lQ5qbaS0Gg_1,cupboard,8.0,utility item
+4m7m4ClAPJA,unfair dismissal,12.0,action
+4mBsmsNlAco,classification of fungus,9.0,action
+4mzBkoNvj34,queue,3.0,group
+4nHooc3YAYI_1,india,8.0,geography
+4oJ4RzPUxyQ_1,city,5.0,geography
+4oV0XT2-nKE_2,solld fueis,9.0,substance
+4onhprzwUMw,everyday,4.0,time
+4pCZtQ36l1k,informal,5.0,attribute
+4qH-OH2VhXk,appliances control,13.0,electronic and electrical
+4rK-NM-p-Fw_2,pump,8.0,machine
+4rworePKeMo,wavy hair,5.0,attribute
+4tKpSwmWzRc,ten thousand,6.0,math
+4uvlneM9L7I,blue flowered plants,11.0,flora and fauna
+4w17tl-wULc_1,resignation,7.0,action
+4w6FgMm-XfU_1,remember,7.0,action
+4wFoBAr9SJk,mating method of poultry,14.0,biology
+4xXU89_oMx0,sub directory,10.0,computer
+4xoxfnCknFc,advantages of drainage,12.0,construction
+4xykTArwSSg,air india,6.0,transport
+4yEYl3wJ-2g_1,mandatory,7.0,legal
+4yJrFqyUKuA,asystole,5.0,medical
+4yr92W_JhD0_2,microwave,8.0,electronic and electrical
+4zUppDrDP-Q_1,officer,7.0,profession
+5-DDBSyDDqM_1,bedsheet,9.0,utility item
+5-Twa3eHlf4,slap,3.0,action
+5-YpUXKTx2Q_1,grandson,11.0,relation
+5-vEsZ3vXPs,like social media,4.0,internet
+5-z6W_-oGLA,htc mobile,6.0,organisation
+50A9vnIaQNE,biscuit,3.0,foods and drinks
+50Age2AKB6g,infection,15.0,biology
+50ifEC4lOTQ,funeral pyre,5.0,construction
+50jD8JNDy1s,already,3.0,time
+50rdgc3m1wM_1,lotus,6.0,flora and fauna
+51zM9pARAnY_1,blood,8.0,biology
+52KfVYsiiXw,shooting,3.0,action
+52PLBwiKgNs_1,irrevocable,11.0,attribute
+52a1sCV-74w_1,do,6.0,action
+53Srb_Pjvt0_1,pyjama,7.0,wearable
+53i9PPrlt6o_1,narrow,7.0,quality
+54Y12afDi_M_2,potentiometer,10.0,instrument
+55QkR-ok9Wg_2,alternate current,8.0,physics
+56068bo3XzU_2,acceleration,7.0,physics
+562GxmYvvsg_1,guwahati,5.0,geography
+56AJoGhwvLI_1,retail,10.0,quantity
+56SnemyXYDM_1,monetary,7.0,banking
+575bTm_lAtE,hsbc bank,5.0,organisation
+57wK5eB74gw,consultant,6.0,profession
+58CE934Cxk0_1,ride,8.0,attribute
+59fqI8xBVzw_1,allow,6.0,action
+59i-nVlaygI,triangle,3.0,math
+5AqV_omHThc_1,rate,5.0,banking
+5B0lLJXGREY_1,calcutta,6.0,geography
+5BpSu2_wXqs_1,smooth,8.0,quality
+5BwB9bxmvGY_1,account day,8.0,banking
+5C7Uj6oTrCI_2,coordinate,8.0,action
+5DK7JulpR9g_1,duster,6.0,utility item
+5DjHf74Wzyk,late,4.0,time
+5FInx5vD418,musician,7.0,profession
+5FSC6Og1RBQ_2,water,8.0,substance
+5G6-x1aI0yI_1,nominate,6.0,action
+5GWUar402WQ,paytm,5.0,banking
+5GbIspbaNZA_2,rubber,9.0,utility item
+5HcRMHu5vNM,rotating tool,12.0,instrument
+5ISUVe2dXX8_1,agriculture,10.0,profession
+5J8efbi3d6A,bobbinet,8.0,wearable
+5Jr5AHU6DQI_1,throat,7.0,biology
+5JrVqdElpw4,cabbage,5.0,foods and drinks
+5MpBZLk82m8_1,litre,6.0,metric
+5MtZYbYZhIo,astronaut,7.0,profession
+5NZ2WDtePsU_1,goat,6.0,flora and fauna
+5NwQvEmIQdY,manner,4.0,emotion
+5NyBQ0If_iA,environment,4.0,biology
+5PLTkywHZ50,red flowered plants,11.0,flora and fauna
+5QEBvIx9U0w,gun,3.0,machine
+5QIrV6DdCG0,co accused,14.0,legal
+5QOHsTpMPlM_1,fire,8.0,substance
+5QnbWBcMSSA_2,independent,10.0,attribute
+5Qu6asXdlFs,interview,6.0,process
+5RD0XpWkclQ,kilometre,9.0,metric
+5SkNxNsxu_E_1,date,5.0,time
+5T4-x5twTKo_2,distribute,7.0,action
+5TJpvP7Ksbk,indoor gardening,11.0,profession
+5TWOGQz75xc,paan,5.0,foods and drinks
+5ToU3NVFX_Q,weekly,11.0,time
+5U9kzmEMhoA,soil physics,15.0,physics
+5Vs-9iTD6nA,ingadulicis,13.0,flora and fauna
+5WFDWbMDynQ,vodka,4.0,foods and drinks
+5WjkSj17yjE_1,wait,6.0,action
+5YO6JToom0U,public,4.0,attribute
+5YiMdn9qyYw,seam ripper,11.0,instrument
+5Yw2lTDlGnY_1,wednesday,5.0,time
+5ZQ26qxo_qY_1,fall,5.0,action
+5Z_Rm0W-HgE,indian sign language research and training centre,5.0,organisation
+5_XwDbt8TGc,grass,4.0,flora and fauna
+5anbkZmuIaQ,age,4.0,stage
+5at6UD4G24k_1,valid,7.0,legal
+5b-82ujbB1g,glass cutter,14.0,instrument
+5buFHMBPDy4,wound,4.0,medical
+5bwdijeaEjE_1,fear,7.0,emotion
+5c0M_nkTsmg,knock,3.0,gesture
+5cNi4x3S8RA,reporter,4.0,profession
+5cQsAM_VpBw,beam,7.0,construction
+5dKLdjBujo4_1,scope,9.0,abstract
+5dPJr4Pent8,peacock,4.0,flora and fauna
+5dvE8jj59zQ_1,account charges,13.0,banking
+5fAIyKZuqjs_1,puja,6.0,religious
+5gyfQ4lGoao_1,page,6.0,utility item
+5j6Yr6SF5fE_1,wolf,5.0,flora and fauna
+5jDsH5VpFBo,play,4.0,action
+5johRx7KP7k,stone masonry,7.0,construction
+5js6qwxEL3Y,on the basis of major causal agents,15.0,biology
+5kpV_69sODk_1,lightning,6.0,weather
+5lUAbnLn8YU_2,thermal energy,8.0,physics
+5luUUDnqHL0,guava,4.0,foods and drinks
+5mMQLQbzvuU_1,national anthem,8.0,sound
+5n-rJGblvPA,abscond,4.0,action
+5nM7nJBkrvA_2,stearn engine,9.0,transport
+5naqubp3l2I_1,games,6.0,sport
+5nlcoXAOqFQ,return,4.0,action
+5oIuAvPIeUc_1,christian,6.0,religious
+5oJk09B7YN4_2,upward,7.0,spatial position
+5oxAsvVFIqs,banner,4.0,miscellaneous object
+5p0_OOFy_NY,indonesia,4.0,geography
+5p6D25oVSyI_1,knowledge working,11.0,abstract
+5pRxQFocP7I,yak,5.0,flora and fauna
+5pVbyAyMows_2,power,8.0,attribute
+5pXM8FVyL7Y_2,chain reaction,10.0,chemistry
+5rAIznB2Sg0,range,5.0,math
+5reXwGDh438,seventy,4.0,math
+5sfiu9fyEt8,lady,3.0,human
+5smQtXAYAKM,thrice,5.0,comparator
+5uBzL7htLvA_1,oath,6.0,legal
+5udtEzoi0Lo,niger,3.0,geography
+5ul1ArPWA-U_1,lic,10.0,banking
+5uzypvZIzOI,jaipur,5.0,geography
+5vSILe--brU_2,mile,8.0,metric
+5vj022EoOLA,outdo,4.0,action
+5vyTHPBq4Sg_1,badminton,6.0,sport
+5xLVmxL3p0k,muslim,4.0,religious
+5xmJG9zQ9jw,alive,4.0,stage
+5xpCpxYgLGg,accompany,4.0,group
+5y3eMNykOsA,apartment,4.0,construction
+5y87G_irytQ,unite,4.0,action
+5yEAIUigL8o_2,cohesive,8.0,physics
+5ye1yjh3Z20,make a long story short,4.0,process
+5yfuRyFh-qs_1,embroidery,7.0,wearable
+5zBLuemgyH8,individual,5.0,quantity
+5zGzPqCNdn0_1,surat,6.0,geography
+6-puAJsTDRQ,england,5.0,geography
+60gcpXhOpxg,pen,4.0,utility item
+614YmkupYl0_1,lie,6.0,action
+622-g3xXvgw_1,mug,7.0,utility item
+63LBwsyLl5s,tall,4.0,attribute
+63NSXGtnLNQ,science,4.0,education
+63ziYT2F6ps,jasmine,5.0,flora and fauna
+64Cdgzetaxs,capital,5.0,legal
+64cEWCYIWDo,cereal disease,10.0,medical
+655X55UP2HM_1,vote,8.0,action
+65N0VvcXr_Y,parricide,10.0,legal
+65whLEBzOCw,e-book,4.0,readable
+66XVsuuo9BA,researcher,6.0,human
+67RFKb9R-Rs,potential,10.0,attribute
+67rzuuIBt2A,architect,14.0,profession
+690vMI8P9Zc_1,management,7.0,profession
+696laBQvzaA_2,volcano,7.0,geography
+6AZvFIaf6UU_1,restore,7.0,action
+6BHgvzr83E8,toothpick,4.0,utility item
+6BxN42ZQweM,newsreader,8.0,computer
+6CF-GjN1qCs,noun,4.0,language
+6Dzj5-OjQzU,rock drill machine,8.0,machine
+6E8c6WGZH_8_1,hollow,6.0,spatial position
+6EeXmMuxrQc_1,silk,9.0,wearable
+6GToY6IT_Pg_1,confident,7.0,emotion
+6J46Gkv1CzI,column,14.0,construction
+6JEcTQfX4yI_1,belief,7.0,abstract
+6Jc3GEN51ks,visa,4.0,legal
+6KSKyvfyJGs,full,4.0,sensation
+6M1rP2r672o_1,aeroplane,7.0,transport
+6MxUXd3IEfM_1,pond,9.0,geography
+6N1X5V0C5d8,doe,10.0,flora and fauna
+6NiPfrusu8E_1,unregistered,7.0,legal
+6OIXmWk9mhY_1,groundnut,6.0,foods and drinks
+6P3Z2nkQD3c,gutka,3.0,foods and drinks
+6QAnPWF0rLk_2,infrasonic,8.0,physics
+6RB0s_hkY_o_1,repurchase,6.0,action
+6SG2o63BKdM_1,stock in hand,8.0,banking
+6SgubmEkZQM_1,wash,6.0,action
+6T7sRjrH2hU,same,4.0,comparator
+6UUmcqXYDLA_1,brinjal,6.0,foods and drinks
+6UkQusxL7SI_1,know,7.0,action
+6X8mSzwuKWw_1,drink,6.0,action
+6Xyl6CNQ_f4,one crore,5.0,math
+6YLxdNCHGpg,determined,12.0,emotion
+6YdDaQpd7-E_1,bangalore,5.0,geography
+6ZWrFKv-PrI,noon,4.0,time
+6ZaYY0vo6pk_1,train,6.0,transport
+6adOKxf2hJY_2,vibration,6.0,physics
+6ao-N2yvDYc_1,letter,7.0,readable
+6aqON2kGdHA_1,swim,7.0,action
+6bb5IDbiyzw,rehabilitation,3.0,process
+6bhBP3kbyds,war,5.0,abstract
+6buysVt7T14,bertha,9.0,wearable
+6c8Zy5HvpQQ,fog,5.0,weather
+6d6qF1tF1yk,bushes,8.0,flora and fauna
+6e0T9ObBi14_1,overcharge,6.0,banking
+6eCbHVCJ9N0,lead,4.0,authority
+6f0v-e468AI,community,5.0,group
+6f5kXjfqcU0_1,avoid,5.0,action
+6iHv9-pIldQ,sailor pants,10.0,wearable
+6ij6_5cxcfk,trip,5.0,event
+6ivNgy-ppH8_1,year financial,7.0,banking
+6jQ0I8KDlHg_2,slower,7.0,comparator
+6kVsL2YCP7I,grapes,4.0,foods and drinks
+6l6GxuCUthA_2,conductor,12.0,physics
+6l8NQiTrf_M_1,chat,8.0,action
+6lJS7YqGLVU,service,3.0,action
+6m-jzzkuyGM,politics,4.0,politics
+6mdmCIxWWfo_1,pf,6.0,banking
+6nKQbhX9QHo,strong,5.0,quality
+6nV_USsOh4w_2,mathematical,8.0,math
+6oic47Y6lcc_1,si,9.0,metric
+6pGyXMLfphA_1,lucky,7.0,quality
+6q-qrk-VdXw_1,valley,8.0,geography
+6r8MMPO3o9w_1,deposit,10.0,banking
+6rot7kh6uZ8_1,warehouse,10.0,construction
+6s4UdZ5D58o,january,3.0,time
+6sMzCN4STPU_1,loose leaf binder,11.0,utility item
+6sQeR9LXn-U_2,yellow,9.0,attribute
+6t3agerx9rQ_2,oscillation,11.0,physics
+6tAfiAYopfo_1,share holder,9.0,banking
+6u077PZEv0Y_1,bottle,6.0,utility item
+6uCWIe3S0tI,backup,4.0,abstract
+6vWqgLivxJg_2,rest,8.0,action
+6wOOntcIJjE,rum,4.0,foods and drinks
+6wXGUZtHp5w,twenty one,5.0,quantity
+6xUFRFEzi4Y_2,compass,15.0,instrument
+6y6ylBP0yc8,cheque,6.0,banking
+7-b8CgRyOtY_1,profession,7.0,profession
+70EhU8eg6hQ,ammeter,11.0,physics
+70hVqYWQIpc_1,waves,8.0,physics
+70wTMPGmS-U,secret,4.0,attribute
+71ZZmuGbkO8_1,unbalance,9.0,banking
+71zRPKBG0Sw,sloped roof,5.0,construction
+748qVYC4N1s,chennai,4.0,geography
+74CMVSgSmuQ_1,registrar,7.0,profession
+76BfFrybs0c,back date,15.0,time
+779eNGeW_Fo,draft,4.0,legal
+77A4jL_zT1I,view,5.0,action
+77Mi-wPnSZQ,typographical error,15.0,action
+780_wVKvhts_1,sunflower,7.0,flora and fauna
+78YXhG9tLvk_1,orange,9.0,abstract
+78hb7LPYmDU,divide,4.0,action
+7AvSjQ7GV3c_1,sphere,10.0,abstract
+7BK0J1hZ7_Q,vacation,4.0,event
+7BS16GXaOrY_2,pole,14.0,astronomical
+7ChtWi4wz8E_1,friday,6.0,time
+7D-_Ilut5Ns,union bank of india,5.0,organisation
+7EAhIFjcLPw_1,post dated,9.0,time
+7EWF3Rsjn6Y,salt,5.0,foods and drinks
+7Ef8k8x0ESQ_1,bud,6.0,flora and fauna
+7EmJ9RQmT_w_1,bury,8.0,action
+7F5-fio5ipg,beading needles,14.0,utility item
+7FcFS0hXehs,hundred,4.0,math
+7Fi1Cawh4YY_2,radio,7.0,electronic and electrical
+7FmS5KzjtL0_1,account closed,12.0,banking
+7FspuW_vgNc,cowl  sleeve,12.0,wearable
+7HFTUAIevO8,percentage,5.0,math
+7HfVuSW5Alw_1,guilty,7.0,emotion
+7Hpx20l91V8,stationary work,14.0,physics
+7I3kECWTA4w,coat,3.0,wearable
+7JXTpPBaS8I,owner,4.0,human
+7KWNMKoNe8g,bicycle shorts,13.0,wearable
+7LIiVsJI6W8_1,over head projector,8.0,instrument
+7LIrmOTBAok_1,finish,5.0,action
+7LMLwdCweAs,agave fillifera,14.0,flora and fauna
+7LWzbtBSOi0_2,machines,8.0,machine
+7LXVtTEP_IU_1,sea,8.0,geography
+7Le7IfihZ0g,shock,3.0,behavior
+7MBisqj8VbE,sheep,5.0,flora and fauna
+7MItzb6gz2c_1,deputation,10.0,authority
+7O43NW_PICc,dog,4.0,flora and fauna
+7OMdIhQ7zzM_1,loan,7.0,banking
+7OSI0FK-ka8_1,enemy,8.0,relation
+7P34KxZ_KLE_1,territorial,11.0,banking
+7P9YL1tEnVs,bright,4.0,attribute
+7PKlEo-ZLME,example,4.0,abstract
+7R_b_tfp5lM,tuesday,3.0,time
+7RjhIe4sKm0,washerman,7.0,profession
+7Rl3OaaGNkY,necklace,5.0,utility item
+7SZTGACgaMk_1,vada,6.0,foods and drinks
+7TAkooD4Lyc,might,3.0,language
+7VB_sLH5j4Q_1,there,6.0,geography
+7ViTNBqzX6o_2,frictional force,10.0,physics
+7Vn056hXh9U_1,red,10.0,abstract
+7Vn_Dto8Vq4_1,famous,7.0,attribute
+7W6zp8la1G4,energy meter,9.0,physics
+7ZQ4WwqhthM,nap fabrick,9.0,utility item
+7_VrNljOvzI_1,real,7.0,attribute
+7aIfkOrtlBM_1,video cassette recorder,9.0,electronic and electrical
+7al_t9swbtA,snail,4.0,flora and fauna
+7bb5Lg8QKIs_1,hair,8.0,biology
+7bqtiz4KRnE,why,3.0,abstract
+7c7A8VNHDg0,burundi,3.0,geography
+7ehztIhH_uA_2,gas,10.0,physics
+7fO_vanzHOw_1,priest,6.0,profession
+7fdPaEyfc9Y_1,your,7.0,relation
+7gX_v77CcuU_1,press,6.0,action
+7ghzTv4t-MU_1,papaya,7.0,foods and drinks
+7gjYUfW4BEs_1,semi urban,10.0,attribute
+7h45o7GDrlo,juhu beach,4.0,geography
+7hICMJlI2hQ_2,resistor,11.0,physics
+7hQwjcb-qlU,natural numbers,9.0,math
+7iPa6A1bwuE,asymmetrical design,8.0,attribute
+7kHYT1bESao,external parasite,11.0,biology
+7kqD46WoJWQ_1,brave,6.0,emotion
+7n50MsM5c7A,bugle,5.0,sound
+7nOhCp26zqo,netherlands,3.0,geography
+7nTC398KiPM,therapist,11.0,profession
+7ob8md8RHzg_1,hop,6.0,action
+7poFsrrVPVk,commerce,5.0,commerce
+7qLPwuH3tVw,they,4.0,relation
+7r-E5BNnbZU,shocked,3.0,behavior
+7rmoeayLR8Y_1,steel,8.0,metal and minerals
+7rvnsRkA5WU_2,area,10.0,geography
+7s75Cr5aSJI,shutdown,5.0,process
+7sR29KFzUog,touch,6.0,sensation
+7spvXhsm6k0,proof,4.0,miscellaneous object
+7swvJrXBA3I_1,family,9.0,group
+7tUKe_6Lxpk,baton,11.0,instrument
+7u54vvW1UKQ,rajdhani train,3.0,transport
+7usxzuFAysI_1,year,5.0,time
+7vVeFsNN7uA,mason,5.0,profession
+7veKecqLRlM_1,stove,8.0,utility item
+7w2Aev6pww0,rule,4.0,authority
+7xLp4cKj5eo_2,spherical mirror,9.0,physics
+7xT3gRg4lpk_1,wealth,9.0,abstract
+7zYJmIUn870_1,earn,9.0,profession
+8-KFF8qu6IY_1,vadodara,6.0,geography
+8-ifVHALpCw_1,endorsement,9.0,banking
+816BojVf1nk,tata mobile,5.0,electronic and electrical
+81n3FI_Di84_1,interrogation,10.0,legal
+82w5E_szSfs_2,cylinder,12.0,math
+83gKsBHpPOM,aspiration,4.0,abstract
+83vmd1I6Q4U,carcinoid tumor,8.0,medical
+83zhg0Uf5jE,ceiling,13.0,construction
+84G6by8Z7Ak,surface water,14.0,geography
+870f18p-XdE,save,4.0,action
+88Uj27nX_f4_1,bad debts,8.0,banking
+88cVTMvw2fw,garden,4.0,construction
+890291gO6Io_1,debt doubtful,10.0,banking
+8A3qKZoz1ik,degree,5.0,education
+8AKc3tUUqso,sweet,4.0,attribute
+8CfsiPsHoQs_1,hearing aid,8.0,sound
+8CsqDF-3gGA,suppress,4.0,action
+8D3_VYGa8Zk_1,terrace,9.0,construction
+8DJVQADbpd0_1,cook,5.0,foods and drinks
+8Dx2cvy46lU,yardstick,8.0,utility item
+8EF9j5VqHzw,calendar,4.0,time
+8FkwA1OENww_1,cold,5.0,sensation
+8FuV0BKlSrc_1,punctual,7.0,attribute
+8HEymPeiThc,network,9.0,internet
+8I__oqg4_eE,total,4.0,quantity
+8JwPiK_tqTA,jet airways,6.0,transport
+8K2LbLuX1_s_2,noise,9.0,sound
+8KHW8o8XZb0_1,drama,6.0,action
+8NUflCsxZS0_1,frank,6.0,behavior
+8O-mQYCFWoA,pakistan,4.0,geography
+8ODE1njkZv0,committee,4.0,group
+8OS9z5a2VfI_1,depreciation,9.0,comparator
+8PEVM1nTgqg_1,respect,7.0,gesture
+8TKDYaZqEFA,puppet,8.0,miscellaneous object
+8Tsv4klWWuY,mechanic,6.0,profession
+8UMcB8ZkgTk_1,payee,8.0,banking
+8VeV3_Y6Olw_1,fax,8.0,electronic and electrical
+8W0rN_UGUDM,positive,4.0,abstract
+8WAJ_vejYOo,vegetables,4.0,foods and drinks
+8WNV-TgaJTs_1,revenue,9.0,banking
+8WOkDhrU_Rg,sleeve band,10.0,utility item
+8Z_T-zrBEr8,royal enfield,5.0,organisation
+8Zq6uAa16MQ_1,daughter,10.0,relation
+8_1PBGMAj9w_1,giraffe,6.0,flora and fauna
+8aKZBVKWE5g_2,orbit,13.0,astronomical
+8arkJfd_jyQ,writer,3.0,human
+8bC_BlQw_eQ_1,earthquake,7.0,event
+8biyNZmIKsk,limit,4.0,metric
+8c6jcLTId-8_1,hire purchase,10.0,banking
+8cHmxgUpFyM_2,inelastic,8.0,substance
+8cz9vIAyOPE,period time,5.0,time
+8eae5jZQ1zo,clever,5.0,behavior
+8edWFVV1lo4,projector,4.0,instrument
+8fqQ2nm3B4Q,stare,6.0,action
+8fuKz0wYhWw_1,uncertainity,8.0,time
+8gOeGenGvfg_1,card,5.0,utility item
+8gULClzsbQE,video card,13.0,electronic and electrical
+8gg1c5ZzWQc_1,toilet,6.0,construction
+8gs46_Woylk_1,monkey,6.0,flora and fauna
+8hLvImVhOJM_1,fingers,7.0,human
+8hPNnF65IMg,good afternoon,4.0,greeting
+8iMs1y81En0_1,temperature,7.0,weather
+8j0lxGLcgRo_2,property,9.0,banking
+8jmBwGIKPmg_1,lfc,9.0,banking
+8lbfynog1yQ_1,annual report,14.0,banking
+8m3p1BEhCUw,virus,5.0,medical
+8mXwd_VuW1k_1,our,5.0,relation
+8m_WUuSGZHg,pencil leg,12.0,wearable
+8m_cHzTpmeY_1,satisfactory,6.0,attribute
+8mb_jgrFdeE_1,crayons,11.0,utility item
+8pXV8kLacAI_2,interval,10.0,time
+8pfW3gmsue8,away,4.0,spatial position
+8r5QmLFv9Jc,bath tub,5.0,utility item
+8rbvjjFfIPQ_2,gamma ray,10.0,physics
+8snFGrMOv8c_2,reversible,7.0,attribute
+8tC5fhomuPw,row house,14.0,construction
+8tF644BWKNo_1,ganapathi,6.0,religious
+8tgBgXrOn6Y_1,rice,5.0,foods and drinks
+8ucWkX-wRrk,pilot,5.0,profession
+8vtQX3cugYc_1,proceeding,8.0,legal
+8w-jGg00BJ4_1,necessary,6.0,comparator
+8wI11m_OvYo,business,5.0,banking
+8wgrPnyzpMw,where,3.0,abstract
+8xNtPv0InYE,mild steel rod,8.0,instrument
+8yWcdPX31pM_1,village,6.0,geography
+8z04XWMENWY,secretary,4.0,profession
+8z32TzNwU7U_1,proud,6.0,attribute
+8zNQTYikGX0_1,him,7.0,language
+8zVGtdn_NLc,cropping tool,8.0,instrument
+8zg5kbu8ZMA_1,pant,6.0,wearable
+91WkA3SEDpM,noise pollution,6.0,sound
+922S3GXI7eI,meet,4.0,group
+92HuQ3Vr13Q_1,curved,6.0,math
+933fIHNLS9s,nurse,6.0,profession
+945eoq95GKM,rhinoceros,5.0,flora and fauna
+94KSlCCbBf0_1,dollar,6.0,commerce
+94r3k7n7oTs,prove,4.0,action
+94yey9jGdsE_1,dish,7.0,utility item
+977nahhu-Zk,socket,5.0,electronic and electrical
+97UeCMhqWxw,top,4.0,comparator
+98QpyN3f8ZU,jackfrui,6.0,foods and drinks
+98UHa9YGWMg_1,confirmed member,10.0,human
+99N6O7wQL6o,online editing,12.0,internet
+9A6I1vyyc4s,summer,5.0,weather
+9AR3EYXYTNk_1,valuable consideration,8.0,abstract
+9B91YNQuBTg_1,purchase,6.0,action
+9BJ5ZQixW34,die,4.0,stage
+9BMHwqCSjag,georgia,4.0,geography
+9BvwAQ7c9-c,cd,4.0,computer
+9D6zt9-uP88_1,flexible,6.0,attribute
+9E_Rr4c5UUc_1,island,9.0,geography
+9FCa_zHS4-k,recognize,5.0,action
+9GJUdPIquG4,newly married,12.0,geography
+9Gb8falrx1Q,adoptive parent,12.0,relation
+9Gl6dhM-XAY,law,4.0,legal
+9GqUoFtKfNE,title bar,15.0,attribute
+9HSEWDsdxgI_1,chair,6.0,utility item
+9HpOx_E5Q9Q_1,cough,6.0,medical
+9IFKjY7Uuw0_1,museum,6.0,geography
+9Iq8DWRoeJA_2,gram,8.0,metric
+9JgVee1UGmI,on the basis of propagation,15.0,physics
+9KMPc_T4bU8,guess,5.0,foods and drinks
+9KZbTecPlh0_1,singapore,7.0,geography
+9LDQGtFRVhI,christmas,4.0,event
+9LMQNfNdfRQ,high court,11.0,legal
+9LWMsCmHhaQ,piece,7.0,miscellaneous object
+9LjYLI7ma7Y_1,retire,8.0,action
+9MUevtG3yYc_2,optical fiber cable,11.0,electronic and electrical
+9NyNlhJnyng,tortoise,5.0,flora and fauna
+9OWi_u40bd4_1,paws,6.0,flora and fauna
+9QPvSQjo2oQ_1,cash book,10.0,banking
+9QYn422W2pU_1,tax profession,10.0,legal
+9R8mO744RdM,cell,9.0,abstract
+9TAdXqb-qcs_2,year under report,9.0,banking
+9TcOdm_p8dc,during,6.0,time
+9TzR_2DZEKk,muffler,9.0,wearable
+9VYxltnFK9k,hemophilia,11.0,biology
+9VvSEg2LUHw_1,rent,6.0,legal
+9ZFVsuD_DOA_1,month,6.0,time
+9ZaH5h9D4yI,auger,7.0,instrument
+9_PxbDV7BcU_1,camel,6.0,flora and fauna
+9bDbETVM0r4,offline editing,9.0,action
+9bU0eltCrYQ,world association of sign language interpreters,4.0,organisation
+9bwbusx_8ik_1,square,13.0,math
+9cFEgJEFFB8_1,horns,7.0,biology
+9cRQJXVdE3I_1,instigate,7.0,action
+9c_bONRs12w,geography,3.0,geography
+9gARyCGe8sY_1,cow,7.0,flora and fauna
+9h1DKNgyPZM,cuffs,11.0,instrument
+9hfrwKx2js8_1,concentrate,8.0,sensation
+9hyc0l2c7I4,complainant and complaint,10.0,legal
+9in2Hz7k60U_1,house,8.0,construction
+9j49KqnHN3s,blindness and low vision,6.0,medical
+9jIu7tBsX70,herps virus,5.0,flora and fauna
+9jYJjEHnKTw,bank of baroda,5.0,banking
+9lETXfWFER8_1,shoulder,8.0,biology
+9l_mPRyG3Lw_2,wave length,12.0,physics
+9odwds_amPo_1,medicine,7.0,substance
+9oigD1xSV-g_1,warning,6.0,legal
+9oo3hDRFIhM_1,brain,9.0,biology
+9pEAebpmkS0,carpet,6.0,utility item
+9pRb9SzUagk,curing,13.0,medical
+9qIeBRYxhjI_1,partnership deed,10.0,relation
+9qhBPFXW-b0,cross belt drive,13.0,machine
+9qlCI50wdzY_1,unlucky,7.0,attribute
+9r4aaMyWBvo_1,teller,10.0,human
+9r5BkbHQKg4,sailboat,5.0,transport
+9rOnDWXhyaU,should,3.0,language
+9sK2PFaxoHw,upset,4.0,behavior
+9tcU1uGTnFo,composition of milk,6.0,foods and drinks
+9tph00_pAf4,winner,4.0,human
+9uNB69GAxtk_1,plumber,6.0,profession
+9vvemJ0nr-E,without,5.0,abstract
+9wsyF_yvjfQ,nematology,13.0,biology
+9xgeOH9Jl9U,wake,4.0,action
+9yuJzZDgPRw_1,birth,9.0,stage
+9zh_TIspgro_1,seconds,6.0,time
+A-DmE3OOAfU,electricity,4.0,physics
+A-OYsPfNlNA_2,horizontal,7.0,spatial position
+A-XKL0nXLoA_2,explain,8.0,action
+A0JzS62h92w_1,butterfly,6.0,flora and fauna
+A0fQyTZj4Mk_2,electromagnetic wave,12.0,physics
+A131AL5rAPU_2,reflection,8.0,physics
+A2flwWtlgdQ,politician,4.0,profession
+A2t3ucbTnzg_1,debit advice,11.0,banking
+A3E7kL78NRs_1,shiva,6.0,religious
+A3QOVwivz4Q_1,foreign,7.0,geography
+A3v05__5wIs,types of farm planning,13.0,flora and fauna
+A3vRjp3UwrE_1,legal claim,9.0,legal
+A4RELg59BW8,butter,6.0,foods and drinks
+A4WC9h-V7gg_2,cone,12.0,miscellaneous object
+A4s4g4tpDwQ_2,electrode,10.0,chemistry
+A6OkMmLkj50_1,tear sheet,9.0,action
+A6f3QRzvHV0,next year,4.0,time
+A7Z8eaNDLGg,director,6.0,authority
+AApcKicSfHU,haji ali dargah,6.0,religious
+ABHbs7wII44,security guard,4.0,profession
+ABSyPhV0SCw,thread gauge,14.0,instrument
+ACJG5VeKrvQ,dust,6.0,miscellaneous object
+ADOlYPfw_T8,funds,6.0,banking
+ADgKP4UpMkg,raster graphics,15.0,computer
+ADtWeEnpLfY,wind,6.0,weather
+AEfFAtmkt6o,that,5.0,relation
+AEjUapb4Iwc,assam,5.0,geography
+AF8n5CAR0m0_1,hole,6.0,spatial position
+AFV4rZ8HFUI_2,electronics,10.0,electronic and electrical
+AGSQnRV3FY8_1,full moon day,9.0,event
+AHrIksqU13s,earth rammer,9.0,machine
+AJ0UWA48X-g,abdicate,15.0,action
+AJ0hvy4jJXY_1,duck,7.0,flora and fauna
+AJyoUbv1lzs,bilingual,4.0,language
+AKpYk0-0v8s_1,drawing,10.0,action
+ALdikJXEJtc,club,4.0,organisation
+ALw4b7WFOR4_1,waste,6.0,abstract
+AMSxEvyhESk,professor,5.0,profession
+ANfL9O6wy4Y,two days after,3.0,time
+ANgOOb951fE_1,words and figures,8.0,language
+ANxPvptCW6w_1,punjabi,7.0,language
+AO9vAsL-gXg,masonry bit,14.0,instrument
+AQ_ba6r2-YM,carpenter,4.0,profession
+ARS_u1Op3gw,types of water garden,11.0,flora and fauna
+ARSm5la19W4_1,maharastra,7.0,geography
+AUnzt1FRoRk,qualification,4.0,abstract
+AUqBZl760Lg_1,principal,7.0,authority
+AV6KYwLsbfY,infanticide,13.0,action
+AVjyszuck8E,freeze,3.0,process
+AWMcypBB9WY_1,ring,6.0,miscellaneous object
+AX7RoHSCLPk_1,jesus,5.0,religious
+AXzNbOMMZ6Y,bodice,7.0,wearable
+AY5ZDfd57vc,pen drive,5.0,electronic and electrical
+AYTEzWH7BYY,assistant professor,5.0,profession
+AZ71WPBDNuM,format,15.0,attribute
+AZBsekRB7zY_1,track,8.0,construction
+A_ghucv_daw,panic,5.0,emotion
+Aa8BKFLPRYs_1,bite,7.0,action
+AaHFB_q7AO0,headache,4.0,biology
+AaHmdX-mi5s,costa rica,4.0,geography
+Aahly6_Ya3w_1,in front of,6.0,spatial position
+AbYawF3ki0k_1,discover,8.0,process
+AcAbORUCKbM,lines and pins,15.0,utility item
+AclEDgleQ6M,variable,10.0,math
+AdV7Zn6p0yg_1,snake,6.0,flora and fauna
+Adn8_szuH5A,select,4.0,action
+AectM0u3HLI_1,ahemedabad,6.0,geography
+Aeq2jo3tSdA,topic,4.0,attribute
+AfzXlh8OgnI,promote,5.0,action
+AgAIB4T8Z04,tiles cutter,15.0,instrument
+AgB-ICcX7Fg,egypt,3.0,geography
+Ah8zB8BQYek,take a bath,5.0,action
+AhDjpH0xZAU,nineteen,4.0,math
+Ai8GHDxnOzE_2,clinical thermometer,10.0,medical
+AjWZkexuKVI_2,action,8.0,action
+AkDOjtOtGGA_1,holi,6.0,event
+AkY2zmS18v0,kidney disease,6.0,biology
+AmbZ5vym81g_1,blow,6.0,action
+AnzLnEIXCI4_1,lake,10.0,geography
+Ap36VoRZatU,neck band,6.0,utility item
+ApkQwiV28bY,cajanus inducus,11.0,foods and drinks
+Aq_A-TmNfwk,delegation,13.0,organisation
+ArXzUJR5Vic,salyx tetra sperma,13.0,biology
+ArcfZOVJyc4,carrom,3.0,sport
+ArrUPiaqzHA,license,5.0,legal
+AuCxXmjvztU,drug abuse and addiction,9.0,stage
+AuTgOkqjmKs,pick axe,4.0,instrument
+Aup_XGd3EqQ,roofing tiles,6.0,utility item
+AwsLVn18lwo_2,least count,8.0,metric
+AygZ8ATgf_c,vaishno devi,6.0,religious
+AzOpSq_iZCo_1,complain,6.0,process
+AzVqMQPhOWI_1,we,5.0,group
+B0JKoyG_q0g,eyebrow,5.0,biology
+B0eoeNCs3RI_1,add,7.0,math
+B0wM7GT2PKU_2,formula,8.0,math
+B2eH7OwcKQ0,relay race,5.0,event
+B34E37rWGWA_1,term technical,10.0,banking
+B34fwmoOvvI_1,false,6.0,abstract
+B3ViGdozfp4,kidnap,4.0,group
+B4Anc1i1S1E,software developer,11.0,profession
+B4_sWGyQgrA,maths,3.0,math
+B5Qtp_-1gmo_1,liquor,6.0,substance
+B6UQh9WuYAY,once,4.0,math
+B6XbxlOZXm4_1,discharge,9.0,action
+B6dVHrpiFws,onion,4.0,foods and drinks
+B71wV1k7n4M,pain,4.0,sensation
+B9gcbXjMQwg_1,small coin depot,11.0,construction
+BAuCEJ4uKgE,together,4.0,group
+BCVSsSZSqm4,australia,5.0,geography
+BD-PPGZahtU_1,loose,6.0,quality
+BD6ADUnsyio_1,clock,8.0,utility item
+BDSIilJRj-4,passbook printing machine,6.0,banking
+BEBfzPkE3EY,tree,5.0,flora and fauna
+BEEOC2ZXhsg,not,4.0,abstract
+BFYTOi2N1w8,big,3.0,attribute
+BGIG-XfX4BI,niece,4.0,relation
+BGfcBh4woVU_1,fight,5.0,action
+BI1IkyUrBT0,possible,4.0,attribute
+BI57SSk_cGU,cartoon,4.0,entertainment
+BIO33uNK_pY_1,bus stand,6.0,construction
+BJ_XRbrwsk0_1,bear,6.0,flora and fauna
+BJgvTIe5avM,shaving trimmer,6.0,utility item
+BLazXqvPnKk,in,4.0,spatial position
+BMKm42g0s08_2,mechanics,9.0,physics
+BMsUiLpUFQQ_1,repairer,7.0,human
+BMzjPIvzVfU,answer,3.0,action
+BN8N3UwtL00,exclude,5.0,action
+BNnUgdUKtf0,nagaland,4.0,geography
+BPC5XCxTQDE_1,cremate,12.0,action
+BPWGQ-KcisU_1,library,8.0,readable
+BPXMuyXJai8_2,energy,11.0,physics
+BQU7PK2GEw8,afghanistan,4.0,geography
+BSJyINZgfWY,ball cricket,5.0,sport
+BS_TcCb8q0s_1,bengali,6.0,language
+BSztT4FmVvg,button down,5.0,action
+BT9rDLe3e_8,shears,7.0,instrument
+BTWoG55D4ns_2,fluid pressure,10.0,physics
+BU67b7LtyE0,gujarati,3.0,geography
+BUOXpYbLzTI_1,wide,6.0,attribute
+BUt4lIrC0E8_1,slow,7.0,attribute
+BUv48pwD90o,exam,6.0,education
+BVtBleg0HgA,message video,5.0,internet
+BVyAGCPGC9I,bacteria,5.0,biology
+BWKieNmLY2c,beer,4.0,foods and drinks
+BWWtThOnwkE,interest on savings account,7.0,banking
+BX15HPM6TzE,interpret,4.0,action
+BXw0xmFB8pQ_1,she,6.0,abstract
+BYY1nIP7J-E,kali mata,5.0,religious
+BYnUpQfk3Ts,five,5.0,math
+BaDaIkw-dmQ,appearance,12.0,attribute
+BauK2i6mmK4,younger sister,4.0,relation
+Bc_Km33uz74,level,4.0,abstract
+BdQCN4niLds,cooker,5.0,foods and drinks
+BdxydPFxfAA,storm,6.0,weather
+Bf2FG9YBics_1,mogra,7.0,flora and fauna
+Bh9e-exemes_1,class room,7.0,education
+BiqToLUGbec_2,spiral,12.0,abstract
+Bir6ea5EZ1c,association of sign language interpreters,4.0,organisation
+BkPmz2DBMEo,underground symptoms,12.0,medical
+Bl_SheTtSt0,body,4.0,biology
+BmNYiO_-qFU_1,mat,8.0,utility item
+BnIXdnAD2EA_2,bimetallic,8.0,metal and minerals
+BnRQjGF_dIc_1,those,5.0,relation
+BnTXPFA6gHA_1,small pox,6.0,medical
+Bo35LBOce64,wine,3.0,foods and drinks
+BoTn3ZPqyjk_1,switch,6.0,electronic and electrical
+BpDvz3q-6pU_1,learn,6.0,action
+Bpg2wRBxGPI_1,terms of service,11.0,legal
+BpheOwGP6ZE_2,east,8.0,spatial position
+BqgTzj7IeZ0,bhubaneswar,4.0,geography
+Bqq4Ir8T9Og_1,ratio,7.0,math
+Br0rMI_5PzA_2,film,9.0,instrument
+Brqv7-rpdTQ,teach,3.0,action
+BtseOFOQ9j8,carnivorus fishes,12.0,flora and fauna
+Bw8_jmAk28w_1,soft,7.0,quality
+BxxS_OuUUv4_1,vault safe deposit,8.0,banking
+BzQFZNqQVsc_1,flag,7.0,miscellaneous object
+BzgPNh4W3GI_1,pillow,9.0,utility item
+C-rIgD-yIvg,busy,6.0,behavior
+C0UywICFPWw_1,wedding,7.0,event
+C15CAFPqP9g_1,cockroach,7.0,flora and fauna
+C201-UUFUDg,nationalist congress party,5.0,politics
+C2FMG7QWfCo,avalanche,7.0,event
+C34PxLKD8OM_1,toes,9.0,biology
+C4B6Nezrmxw_2,original,9.0,attribute
+C5DI23vAhYo_1,lion,6.0,flora and fauna
+C5lKWeivlFY,youth association of the deaf india,3.0,organisation
+C6NYbD05HIo,bank branch name,6.0,banking
+C7tQarNFXJo_1,voluntarily,6.0,behavior
+C9ZLmgNDV_Y,salman khan,4.0,human
+CAKl640s6UE,reason,3.0,abstract
+CBXCId8jHAA,teaser bull,14.0,medical
+CBdApLFUzYs_1,far,6.0,spatial position
+CBgYsD9T-uI_1,watch,8.0,action
+CCLHQe8fETs_2,projectile motion,10.0,physics
+CD7q4E7thng,true,4.0,abstract
+CDd6olbtjWE,local,5.0,spatial position
+CEiO3djH-zg_2,superposltion,9.0,physics
+CEsvPmZQ7c4_1,slim,7.0,attribute
+CGNDUJWk96I_2,positive error,9.0,math
+CGWUtV3bpgc_1,kanpur,6.0,geography
+CH_cyrmtUd0_1,mixer,6.0,machine
+CHt94rpZVOI,vodafone,5.0,organisation
+CKCqZpXdLU4_1,bridge,6.0,construction
+CKRWnL9qBDo_1,hide,5.0,spatial position
+CKkHv_YeHWU,corn,5.0,foods and drinks
+CLjivq1wW6E,bile duct cancer,15.0,medical
+CLxxQFQiTic,zip,4.0,utility item
+CNIlm20ulSs_1,expensive,7.0,attribute
+CNL5igD7Z9U_1,twins,9.0,biology
+CNfxuVjZuh4_1,inch,6.0,metric
+CNnZQINfB8E,college,6.0,education
+CO-YipjVoj4_1,certificate,6.0,readable
+COAl-bQOrFU_2,refractive index,10.0,physics
+CPPp4bkc2M0,classification of hedges,11.0,action
+CPitVthnjH4,love marriage,15.0,relation
+CPzNAqruek8,post office,4.0,construction
+CR2NKbXEI-A,rail road switch,7.0,transport
+CTZLTOTcRtg_2,velocity,7.0,physics
+CU60FAVcxnc_1,solicitor,9.0,profession
+CUNH7UOyYGI_1,spider,6.0,flora and fauna
+CXEDTo1PXCg,no,4.0,abstract
+CXLZ3svHfGc,lace edge binding,9.0,process
+CXOPG4pJxDI_1,hear,8.0,sound
+CX_0sOJ8AiI_1,bus,6.0,transport
+CXzmFPBwjzs_2,north pole,11.0,geography
+CYE_fagx7yo_2,liquid fuels,11.0,substance
+C_H7DeMnOQ8,abuttal,8.0,legal
+C_HK0uWAt8I,november,5.0,time
+C_VE9wu76So,potty,4.0,biology
+C_VIItfSFdU,ewe,10.0,flora and fauna
+C_pnntfY2qw,l square,7.0,instrument
+CbscRBBGtT8,tractor,4.0,transport
+Cc7VwcMMTqk,gas tractor,8.0,transport
+CcsJ-D4YAMI_1,morning,7.0,time
+Cd0f7fvtGTg,absent,5.0,abstract
+Cdb8BFpFWqo,division,3.0,action
+CeGVf78K8jg,anorak,8.0,wearable
+CfFtNMRV6Y8_1,cap,6.0,wearable
+CfNlpbflIQU,court hall,9.0,legal
+CfRFZ0IFp3Y_2,thermometer,9.0,miscellaneous object
+CgJ5_Y60Uu0_2,piston,9.0,miscellaneous object
+CggX-rNVSxc_1,omit,6.0,action
+Cgk-fX-KFhw,livelihood,5.0,abstract
+Cgs1MibMXJ0,eat,4.0,action
+Ci-i1-FzGTU,superfast express,6.0,transport
+CjL55F1EpNk,contractual,6.0,legal
+ClLC-JSUEq4,coloured follage shrubs,10.0,flora and fauna
+ClxK5dEsoZk_1,abeyance,8.0,banking
+CmAtK2kV6GY,pray,4.0,action
+Cn1Q6q6XtMI,skiing,3.0,sport
+CoA255C3aAU_2,inverse,9.0,math
+CoKtBDPhPbg,self-reflect,5.0,attribute
+CoMoRzQiKm8_1,coin,9.0,banking
+Codai31kUpE_1,give,6.0,action
+CowXY9IdbxA_2,uniform,8.0,quantity
+CpYIKn7qaIY,left,4.0,spatial position
+CpbiUt_BR3U,process,4.0,event
+CqOegR2Dg14,dwarf ornamental hedges,14.0,flora and fauna
+CqbFltbrM-s_1,lock,8.0,machine
+CqilPDcjxRc,fly,4.0,flora and fauna
+Cqtgx6BSkRk,umpire,5.0,human
+CrKUKDtOtSw,foundation,10.0,construction
+CsVqdOkFe4Y_1,pick,6.0,action
+CtWGmhj6scQ_1,vehicles,7.0,transport
+Ctij9uzbRTU,younger,4.0,comparator
+Ctsn9y9OSCk,stationery,6.0,utility item
+CuOhMZjaUS8_2,magnet,9.0,physics
+CujxTrMxQEw_1,declaration,12.0,action
+CvB9G9rAoNY,stuck,5.0,stage
+CveKv8LNSOI_1,insult,6.0,action
+CvkYlSWEfL4_2,simple  microscope,8.0,instrument
+CvppYfpiXyM,wood plane,10.0,miscellaneous object
+CwdQO_zlNyE,side mirror,6.0,utility item
+CyV5-k-6JFk,mizoram,5.0,geography
+CyY-qOh0k4U_1,account closing,14.0,banking
+Cyn1WPoqLHM_1,town,6.0,geography
+D-6BxGJ0ru8_1,wish,7.0,abstract
+D-DoLPV-QRg_1,unlawful,7.0,legal
+D12hlBiVjck,opposite,4.0,comparator
+D19X5MhzZcE,english,3.0,language
+D2Ayu0l7M78,tonic,4.0,substance
+D2r4zIgoqkg,andhra pradesh,4.0,geography
+D2w1j6MXK-s_2,hydrautic lift,12.0,machine
+D3-jY-B3kFo,unix,7.0,computer
+D38jZfxOtFs_1,europe,8.0,geography
+D3MeXacclFw,breathalyzer test,12.0,medical
+D3USBJo5zLA_1,introduce,6.0,action
+D4mWoGRHBYc_1,disapproval,9.0,gesture
+D5jXj8nf-Sg_1,spoil,7.0,action
+D5ynpqL8HC4_1,multiply,7.0,math
+D6MP5temHtg_1,chocolate,6.0,foods and drinks
+D6jjiguTEmI_1,account profit and loss,15.0,banking
+D7hi8QdSnq8,middle,4.0,comparator
+D9ihUabRKIQ_2,green,8.0,colour
+D9jI_HByl1Q,united arab emirates,4.0,geography
+DAhaM4E1wSM,candle,6.0,utility item
+DBMZ92qq6fY_1,bible,6.0,readable
+DCH3d-S6BlI,endure,4.0,action
+DCRybq5sYAA_1,winding up,7.0,action
+DCjd5dJLuF4,zebra,5.0,flora and fauna
+DD9K1ojKj_k,taj hotel,7.0,construction
+DF_pD6nnqRk,monocotyledonae,11.0,flora and fauna
+DG2hfDpWdMQ_1,good,7.0,quality
+DHr0LlZd0cs_2,attraction,8.0,physics
+DJzxcG2JLTA,experiment,6.0,process
+DKuMCtyj8ik_2,infinity,8.0,math
+DMDAXFRPJBs_1,rose,7.0,flora and fauna
+DM_xL10khbo_1,skin,9.0,biology
+DMaN0jUw3pU,pickle,7.0,foods and drinks
+DMxZHUZ7u88_1,seat,6.0,utility item
+DNF5QY7x2Lc_1,hardworking,8.0,behavior
+DNP9-5px_mA,hook worm disease,9.0,biology
+DNVOzTx47ew,gas lighter,5.0,utility item
+DNk0c1RwBJ0_1,solve,7.0,action
+DOHpEalcflo,podium,8.0,miscellaneous object
+DPFh6Vtj8nY,indian sign language interpreters association,3.0,organisation
+DPQ-TcGykDw_1,baby,9.0,stage
+DPb0Ariw5Ic,event,5.0,event
+DQZ8UEoRnUs_1,fool,6.0,behavior
+DQg2gfZHQ_0,subdivision,5.0,authority
+DQstNLzwuNg,concealment of identity,14.0,legal
+DRvjyDqrHq4_1,floor,8.0,construction
+DSL5R_AGIiU,computing,13.0,computer
+DSpymhe73eM_1,seed,7.0,foods and drinks
+DSr0qd_JY8w,india gate,6.0,construction
+DTOsm_OuWLM,kindhearted,6.0,attribute
+DTWS5Oy3kcY,maharashtra,4.0,geography
+DU-O8ssmBHg_2,diagonal,10.0,math
+DU-odPNLPio_1,attachment of property,13.0,banking
+DV2QK-flhpc,absolve,12.0,legal
+DVe5knz8gh8,triple,4.0,quantity
+DXj1A4BNsQg,traffic,5.0,abstract
+DY9ZAVPwT8o,stumps,5.0,sport
+DZ55uUFJfTA_2,lunar eclipse,12.0,astronomical
+DZ6eHdrXGC8,green hand,9.0,behavior
+DbQXU9hA1AA_1,mix,6.0,process
+DbWWsUmMXUA_1,banana,7.0,foods and drinks
+DbfHSSkk3Ss,nail cutter,5.0,utility item
+Dbz-hAaPPvg,chain surveying,9.0,metric
+DcEY17TDRIw_1,aluminium,8.0,metal and minerals
+DcJKQkC-JjY_1,transport,7.0,transport
+DcRRjyNfFJs_1,destroy,6.0,action
+DdEgmEhWnRA,parkinsonia aculeata,15.0,biology
+Dg95uOLJogg_1,copper,9.0,metal and minerals
+DgF0m14DBG0,to retailers,12.0,process
+Dhg5hNpQxQU,tube well,11.0,construction
+DhydZXrTFJ4_2,pentode,11.0,electronic and electrical
+DjEe79bR1M4,sunset,5.0,event
+DkjjHEZzsHE_1,husband,9.0,relation
+DlLsAg0WL68_1,careful,7.0,attribute
+Dom49pxvY-M_2,translation of motion,10.0,physics
+DpoUiyIlk2k,forget,4.0,action
+DqnTDIwMoFc,system of feeding poultry,13.0,organisation
+Dr99eNeltzU,3g,3.0,internet
+Ds0rhfDqBrM_1,profit,6.0,banking
+DsIehsrzx7o,pizza,4.0,foods and drinks
+DtVx1FUTYaA_2,sink,9.0,process
+DtZFOZG8tTQ,stair tread,8.0,construction
+DtdeOvkYLo4_1,egg,6.0,foods and drinks
+Dteba6UR1uY,plastering,11.0,action
+Dvpc0R8CfI0,quantity,4.0,quantity
+DwUajipOhHY,motor,6.0,electronic and electrical
+DwrOgyG1P7E_2,carburetor,7.0,machine
+DxotcbkEnMY,general secretary,4.0,profession
+Dy9J-D3RVDw_1,coimbatore,5.0,geography
+DyoiyeHahko_1,small farmer,10.0,profession
+Dz2avlvSTYQ_1,read,6.0,action
+DzL4k1Vy3gc,sandwich,4.0,foods and drinks
+DzyfpdJYBwg,profile levelling,14.0,physics
+E1g2vckJJek_1,wheat,5.0,foods and drinks
+E2-FY4q-Kbg,debate,5.0,action
+E2FirzckC_U_1,weak,7.0,quality
+E2GOvDBZhdI_1,resume,8.0,action
+E2SKFVvnt0s,veteran,13.0,human
+E3CEiwzCU94_1,conciliation,11.0,process
+E3IAqXfMjWA,lassi,5.0,foods and drinks
+E4A1ApJjUkE_1,main,9.0,quality
+E4Kp5d5orgA_1,land improvement reform,10.0,legal
+E4_sAfIiflQ,demand draft,6.0,banking
+E4hL5jUFwCk,gloves,4.0,wearable
+E5mWb7nGYmQ,vishnu,5.0,religious
+E5teJWyr2rA,coach,6.0,sport
+E6-Q2xXxUmc,varieties of mushroom,10.0,foods and drinks
+E6XeodyBzYs_1,deed of sale,12.0,event
+E6yxMBZEYhs,notify,3.0,action
+E7ASHBd0kDs,canada,4.0,geography
+E7okhzFRINQ_1,plate,7.0,utility item
+E7upPuPpLIY_1,poor,7.0,abstract
+E8uf2VM3KCo,get,4.0,action
+E91cfQBn8_4_1,help,7.0,process
+E93MkvU8Hs8,balcony garden,7.0,construction
+E99L8qeeuVk_1,bench,6.0,utility item
+EBdRrVvw25g_2,liquid,10.0,physics
+EDW7RoRvZOg_2,minute,8.0,time
+EDX7B93iM9k_1,hip,7.0,biology
+ED_25-_F0MI,bookshelf,6.0,utility item
+EDxRoZlrq5A_1,measles,7.0,biology
+EE_BDdMNWTI_1,sector,10.0,math
+EEn5WhsNLfA,minister,4.0,authority
+EF3PXbHGGUM_1,yearly,8.0,time
+EFBQAgXgXEk_1,sheet charge,9.0,legal
+EFPl9sfDRkM,prefer,5.0,action
+EGt1EA-YBNw,conclude,6.0,process
+EHWONrQWsVE,baldness,8.0,attribute
+EI3Z7yP6_JQ,my,3.0,language
+EIS2HUEopZM_1,sweets,5.0,foods and drinks
+EI_dA2lZLds_1,reasonable notice,7.0,legal
+EJ0UG10b714,wise,4.0,attribute
+EJF-HPyHiYE,post,4.0,action
+EJo7NBj1Qx4,serial killer,10.0,human
+EK6tORg211g_1,devil,5.0,religious
+EKWgFRGdMwU,antartica,5.0,geography
+EKZWNoQFQuw,palm tree,6.0,flora and fauna
+EKp6wIukZRc,kilogram,8.0,metric
+EL4UAMc2Kmc_2,circuit,10.0,physics
+ELCvZrWheyk,initiative,8.0,behavior
+ENY1YTTzKao_1,pepper,6.0,foods and drinks
+EQ1yzB0YoPY,delegate west bengal,3.0,authority
+EQMR3agty8g_1,bearer,10.0,banking
+EQwPLL2v2bU,neck,4.0,biology
+ERX99VRsSPA_1,walk,8.0,action
+EVLxRwi3cNY_2,technoiogy,9.0,abstract
+EVNgPUE-tys_1,milkman,6.0,profession
+EVs45zQ6mTQ,on the basis of use of pond,15.0,biology
+EW6ZzbkYD9g_1,penal interest,8.0,banking
+EWDMPkRnEHI,radish,4.0,foods and drinks
+EWPzum2d02w_1,curtain,9.0,utility item
+EWUNJsze6aE,housefly,6.0,flora and fauna
+EXEEDnScQ8g_1,shares redeemable,9.0,banking
+EXJmDDFi-5g,door,4.0,construction
+EXSLF0azSNs_2,number system,12.0,math
+EXdh8IAeyUk_2,rotational motion,12.0,physics
+EXoZ4SeF5as_1,then,7.0,time
+EYWI_5mkrbc_1,free,7.0,behavior
+EYcuu4ETc4Y,herpes,7.0,biology
+EYhsfoO3_ME_1,shirt,7.0,wearable
+EZ9S6g3CBzM,sweep,9.0,action
+EZpZvb2wicY,okay,4.0,gesture
+EZtR1UdIiBE,peru,4.0,geography
+E_bwQ8SGo8w,foundation organization,7.0,organisation
+Eakl221Gpsg,floppy disk,12.0,computer
+EcCzQVbFiwE,support,5.0,action
+EdGYkgo-nX0_1,authorised signature,10.0,authority
+EekMLY_SxPo_1,in advance,9.0,time
+EfIcGuRmc84,footage,11.0,computer
+EgYYB3nHbyU_1,sum,8.0,math
+EgeA95Yf9IQ,soil,6.0,geography
+EgeuAsy-wmc_1,leak,7.0,process
+EgnE1hPwGRs,manjira,6.0,sound
+EhE2_Jd7F-o_2,weekly return,6.0,banking
+EhErcUPHNgg_1,questions,5.0,abstract
+Ehm9mwSc-JU_2,direction,11.0,geography
+EkK_DEi9vog,mobile,4.0,electronic and electrical
+EkaFWDZrh2E,spur,5.0,action
+EkfwGwI4c6E,fast growing temporary hedges,12.0,flora and fauna
+Ekmr93MXzCE,portugal,3.0,geography
+EktuCHkw7Ss,shoot,4.0,action
+ElXP4DjT3H8_1,friend,10.0,relation
+En8MHpUgipg_1,recurring,6.0,abstract
+EnH0HaNPtsc_1,horse cart,7.0,transport
+EnILR2WEkzc,shoulder pads,13.0,utility item
+EnNw43_8YjY_1,argue,6.0,behavior
+EnyO2ToSA20_1,bat,6.0,sport
+EopinjD2-4I_1,knowledge,6.0,abstract
+Eoz8FUQDCKY_2,repulsive force,11.0,physics
+Ep_W1M6FWe0_1,active,7.0,behavior
+EpxAKEtJbdI,itself,3.0,language
+EqGyUaKwRjg,virat kohli,4.0,human
+EsvQpLP_28E,steel rack,10.0,utility item
+EuU5L4V0jsA,flower for recreation,10.0,flora and fauna
+EvZvymz1nRo,karate,3.0,sport
+Evw-przGUxo_2,s.i unit,10.0,metric
+EvwF_HCmPxY,lg mobile,5.0,organisation
+EwbZoVWQ6II,religion,5.0,religious
+EwcX2aXTmUQ,tulip sleeve,9.0,wearable
+ExEPNAW_Zk4,swimming,5.0,process
+Ey1sb2Mq-00_1,belt,6.0,wearable
+EyHkbtQEH4w_2,west,8.0,spatial position
+EzA7vpG_mnw,kitchen,6.0,foods and drinks
+F-NlKJvZ17E_1,cover,6.0,action
+F-aZRY9C6HY_2,osclllatory motion,12.0,physics
+F-nZwpViPqM,perform,6.0,action
+F0Yx7_4Ox0c,shine,4.0,attribute
+F1AvK4jxMuA,nearly,5.0,attribute
+F2SfSlbRkj0,sympathy,6.0,emotion
+F2oFyH9CkpI,psychology,4.0,biology
+F2qZXlYNo38_1,white collar job,9.0,profession
+F3qQXP8EtRs,basic pay,9.0,banking
+F6sn_h1Xea0,nice to meet you,4.0,greeting
+F7s5GtLbtGE,tinda,5.0,flora and fauna
+F9JOa0fXPI4,few,4.0,quantity
+F9qYkNV06NE,fir,10.0,legal
+F9v9eNr0daA_1,vendor,6.0,profession
+F9xcw575Q-A,zoo,6.0,geography
+FAOHczmX7Kc,rolls royce,5.0,organisation
+FCMh8YKvD-8_1,like,7.0,comparator
+FCNV_86edvI_1,alone,6.0,emotion
+FDV5iLDQiFs_1,bolt,6.0,instrument
+FDpm4DIIUqI,cut,3.0,action
+FEGl-ICREeE_1,newspaper,7.0,readable
+FEi50jcTxxI_1,stop,5.0,stage
+FFAd29BYBxs,self,3.0,relation
+FGFEkUDv0Xs,policy,5.0,legal
+FHJGiOwpmJ8_1,surname,10.0,group
+FIUecHseRiA,light fixture,7.0,electronic and electrical
+FIYZhJAQ3Qo,passbook bank,5.0,banking
+FIj5kYw23Og,sikkim,4.0,religious
+FKzGaTqUqGY_1,prosecution,6.0,legal
+FMNrbQN6pX0_1,boxing,5.0,sport
+FNM7gqdOCzQ_1,russia,7.0,geography
+FNwSw0aI6yk,success,4.0,stage
+FOXxYHFHzto_2,material,7.0,substance
+FPuKLNX3uKI,star,5.0,astronomical
+FWGaBkksG7c,submerged weeds,15.0,flora and fauna
+FX4qWqaO0aE_2,bolling point,10.0,chemistry
+FXkWue_0HsY_1,push,6.0,action
+FYxrZhkb5Zc_2,bread board,10.0,electronic and electrical
+FZ5a1t1hKpw_1,ticket checker,8.0,profession
+FZFeKGTeQ5k_1,owe,5.0,action
+FZrTVPMOSTk_1,august,6.0,time
+F_Bi2czPDcc,greedy,4.0,behavior
+F_es2B9Sgo0,things,4.0,miscellaneous object
+F_ssKRakSBs,goal,4.0,abstract
+F_zWSg0n04A_2,uitraviolet ray,10.0,physics
+FeI5iTWw_6w_2,refraction,9.0,physics
+Fep0HNXm84k_1,grandfather,11.0,relation
+Fgkks8MEUi8_1,wool,9.0,utility item
+FhgAT_pNTIE,meat,5.0,foods and drinks
+FhsR37rUlRo_1,easter,8.0,religious
+FiEj2MNIRAs_1,fill,5.0,action
+Fjx9s0fJjEA_1,want,6.0,abstract
+FkCaUqcqwpA,drug,3.0,substance
+FkJ_uBF9n88_2,water pollution,8.0,geography
+FlB4FQhBm5M,silver,4.0,metal and minerals
+FlZ8Xekr-JA,work,3.0,action
+FlaNoLJsw-s,remove,4.0,action
+Fls8pLxuhZs,confirm,5.0,process
+FmR82ugp5Ug_1,shimla,6.0,geography
+FnSIbbCAQ3s,sculptor,11.0,profession
+FnTehW6ik-Y_2,altitude,8.0,geography
+FogwGS1HzIQ,fat test of milk,12.0,process
+Fq1Pqke8_pE,floppy drive,13.0,computer
+FqtbCwFHFrw_1,fraud,5.0,banking
+FrcAMp9yi1k_1,urgent,7.0,time
+Fty9TY6f37g_1,sweat,8.0,biology
+Fu6JYe2kAkg_1,pass,9.0,abstract
+FuP3ROsNQoU,grommets,12.0,machine
+FuoBm8C2wRg_2,interruption,8.0,action
+Fw0sNnw7Jd8,bigamy,12.0,relation
+FxpR_7U84nQ,ally,14.0,group
+G-5rBFFWEIk_1,herself,6.0,language
+G-MJMctXHkY,peter pan collar,9.0,wearable
+G-zchviTHUI_1,cricket,5.0,sport
+G1M2g_Bp2iM,roughages,15.0,foods and drinks
+G1v0EK67zuc_1,hot to feel,7.0,sensation
+G2Lhs-1HRys,uncomfortable,5.0,behavior
+G3noibPzJ1w_1,fish,6.0,foods and drinks
+G4VFlxK9srU,kinds of germination,13.0,biology
+G6aKn9zvQ8g,cheque drop box,8.0,banking
+G9ClKgFVe4U,mumbai,4.0,geography
+GA00BzF9EpE_2,photographic plate,8.0,instrument
+GBvOlmOfz7s,photoperiodism,14.0,biology
+GDbeg02GKjA_2,latitude,14.0,geography
+GE77ptzmP6g,duffle,9.0,wearable
+GES06kpvMl4_1,account current,8.0,banking
+GGK97cywvBc,bag,4.0,utility item
+GGV55DgjlHM,nokia mobile,6.0,electronic and electrical
+GH5LgcALHiM,tooth,4.0,biology
+GHDSqpqhyUo,budget,5.0,banking
+GHEnNurHKWk_1,leave medical,9.0,profession
+GHp2q1IoF6I,seventeen,4.0,math
+GK1Zc8T40Yo,pan,8.0,utility item
+GKyaVPkBIvU,stapler,4.0,utility item
+GLLwgmHVTGM_1,over,6.0,spatial position
+GM5YzHlNbtQ_1,cloth,8.0,wearable
+GMAuU7yQo1k_1,cucumber,7.0,foods and drinks
+GN8ge3CZFWE_2,molecuiar motion,14.0,physics
+GN8sm5YR2kg,subway,6.0,construction
+GNOV9MdthUU_1,tomato,7.0,foods and drinks
+GNULrNz8c64,scraping,6.0,action
+GOwke9T4QOU,verb,4.0,language
+GOxL9etVT9c_1,under developed,7.0,quality
+GPDJy25-tN8_2,audio frequency,10.0,sound
+GPntxbUpP8E,full frame,15.0,attribute
+GRvD6_yvvdc_2,prism,9.0,instrument
+GSMQDwI83aI,hair clip,4.0,utility item
+GTNV1gmJDSk,climb,5.0,action
+GUA7UJE53Qc,concrete,6.0,construction
+GWPzuYBtXA4_1,unauthorised,8.0,legal
+GWQ3h3xY7os,pressure cooker,4.0,utility item
+GWXw1ra-nu0_1,leave extraordinary,8.0,profession
+GXhOBQRBsb4,instagram,3.0,internet
+GZSpfYjY3lM,pause,5.0,time
+GZTuJ6NMvbw,piano,8.0,instrument
+GZagTSm_qhM,shade,7.0,utility item
+GeeCVBhDSKs,own,4.0,relation
+Gf4_V9dRgZk_1,diabeletes,8.0,medical
+Gfmu5xPqDlI_1,versus,8.0,comparator
+GgsIWmqqgoU,janitor,6.0,profession
+Gh-mMyOy1UY,on,4.0,spatial position
+GhK-KsZ6mlo,bull,5.0,flora and fauna
+GhYMzZZMMJw_1,hand,7.0,biology
+GiOVSFEP2UQ,call,5.0,action
+GjOTwnRW2RM,foolish,6.0,behavior
+GjY2iudi9lM,association,4.0,organisation
+GjqR1Zt5Yjw,pune,4.0,geography
+GktQpaPsNAk_2,main scale,9.0,instrument
+GlsK0Ejjyhg,blackboard duster,8.0,education
+Gm2HCSz7Jqg_1,father,9.0,relation
+GoDqsUZU5yk_1,woman,10.0,human
+GoO-VsRxG18,losses due to exessive water,10.0,biology
+GogzZTi_jfM_1,reform,12.0,action
+GppkFygxOyQ_1,dislike,6.0,comparator
+GsXkUJU2csA,methods of drainage,9.0,instrument
+Gsl-Lhf3-PQ_1,year book,7.0,readable
+Gt1EHmS3kN0,kerning,12.0,attribute
+GtNAGLonyLA_2,nucleus,11.0,physics
+GtaZHYq-u_M_1,dig,5.0,action
+GvXNaIt8FiA_1,idd,8.0,event
+GvfT7dP2zhk_2,sunlight,10.0,physics
+Gvg-342aMWE_1,finance,7.0,banking
+Gw8cGxVbFZY_1,head,7.0,biology
+GxT75TdGS5E_1,strong room,8.0,quality
+Gy0xJk_gGZ8_1,operation,6.0,medical
+GybjWmdp4jM,suzuki car,5.0,transport
+GyhrF2L7s74,vocation,5.0,profession
+GzUACVmJWyc,misunderstand,4.0,emotion
+H-QyPKHdBpo_1,examination,7.0,education
+H0G_jCcuCWU,which,4.0,abstract
+H1BtHoJ_5gs_1,reply,6.0,action
+H1Zt1GDnh-8,startle,6.0,behavior
+H2RHQ43Nly4_1,fat,6.0,attribute
+H4L55c2xeMI_1,plough,6.0,instrument
+H4ymr2I-3P4_1,level rate,11.0,banking
+H5vUC_UZZfQ_1,cancer,8.0,medical
+H6hAtqg32n8_2,speed,7.0,physics
+H6zu3PFDwnc_1,mumps,6.0,biology
+HB3JdzM5I8g_1,disolution,10.0,banking
+HBz_sjo1RHM,decide,7.0,action
+HCLav_Tthvk,tamil,4.0,language
+HCpfu2Ud4GE,supreme court,12.0,construction
+HDx7Jb5t5L0,swine farming,11.0,process
+HE1mqIDP_Ik,punjab national bank,5.0,organisation
+HE7cOw_O6cA,century,11.0,time
+HIZYnYZpipc,split,4.0,action
+HJLgJ0K4-pk,reduce,5.0,action
+HJVvCxf2J4Y,west indies,4.0,geography
+HLCUp2wfqLg_1,joumal,13.0,readable
+HLHBZen5qdE,font weight,7.0,attribute
+HLJXFFx-auI,stressed,4.0,behavior
+HLngaK2mDAo,bosnia-herzegovina,4.0,geography
+HMR5t5IGwCQ,epistaxis,10.0,medical
+HMd3blEQ8g4,namibia,3.0,geography
+HNF-z7j8p0A,repeat,4.0,action
+HN_Fa-Ow650_1,sc,9.0,group
+HPhGTpO7cvc_1,bowl,5.0,utility item
+HSEV-Y2g3A8,come,3.0,process
+HSL4JTtYSXk_2,size,8.0,quantity
+HSVMcyMhWvI_2,heat engine,10.0,machine
+HSxlr1h3TyM,pamphlet,6.0,utility item
+HTLUdvrsUTU,to consumers,7.0,process
+HT_22dYhzpI_1,shoe,7.0,wearable
+HToUF5z-YGw_1,urdu,7.0,language
+HUax1aYesBo,nothing,4.0,abstract
+HV7L78k5KeE,seventh,6.0,math
+HWCGrOC9jmo_2,revolution,12.0,event
+HWsnuUvNGuM_1,immediate,8.0,time
+HYVbXUFLsno_1,milli litre,6.0,metric
+HZDbJEL4RA4_1,parental,10.0,relation
+HZJbA05pxEg_1,ooty,6.0,geography
+HZKmJZ3VpIg,style,3.0,attribute
+HZkFyzvt5LA,power hacksaw,10.0,instrument
+HaYoTqtme1k_1,designing,6.0,action
+HbU2GkRlLb0,ball pein hammer,15.0,utility item
+HbZjNSy4OHE_1,waterfall,7.0,geography
+Hcp9WsOvexQ,jack plane,4.0,instrument
+HdtJulX0Koo_2,direct current,10.0,physics
+Hg3An9HPABQ,milter stripes,9.0,wearable
+Hgv4G60B5Fc_2,development,9.0,action
+Hh69480i03w,transgender,5.0,group
+Hh7uTyKr5ck_1,office hours,8.0,time
+Hi65fS8-pjc,html,15.0,internet
+His11C0YFps,picture,4.0,miscellaneous object
+Hj28Cttz1Rs,recurring deposit,4.0,banking
+Hj4QeQhtsdQ,tubelight,8.0,electronic and electrical
+HjBMp6eChiY,allergy,7.0,medical
+HjQ5ftX3H1c,theirs,4.0,relation
+Hk0qqXk8-nU,wales,3.0,geography
+HkPXGBLKhKM,mouth organ,5.0,biology
+HlY4I1V3Wn8,railway hedges,15.0,transport
+HnVaM3dWOO4_1,chandigarh,5.0,geography
+HnmeVz4t4Xk,supervisor,6.0,action
+Homd_Xpbpac_1,initial,8.0,time
+Hoyh1m0u62U,ball point needle,9.0,utility item
+HpwU9tXDfpM,inheritance,13.0,relation
+HqCWS-Gh9zY,shank button,13.0,wearable
+HqsZI1n6pGU,handkerchief,4.0,utility item
+HrYfUg6i8DY_2,distance,8.0,metric
+HsgYLaLxP5o_1,knit,7.0,process
+Ht6fXw6roFc,four cricket,4.0,sport
+HtG9j-D3n8c,varanasi,4.0,geography
+HuPD22JS5QA,diet,6.0,foods and drinks
+Hv3CUeYzFGk,one and a half hours,4.0,time
+HvwdD5t8Llo_2,pressure,8.0,physics
+HwgChfSHtlI,a lot,4.0,quantity
+HyYH_y65nQs_1,not negotiable,8.0,attribute
+HymdtSakcww,label,4.0,action
+Hz77BEDzZ-E_1,cutout,7.0,sound
+I1i5r5rd7vI_1,camera,7.0,electronic and electrical
+I1pC7URd7qM_1,tease,6.0,behavior
+I2q6piLBbPo_1,priority,7.0,attribute
+I2xOiEMrgM0_2,chemical energy,8.0,chemistry
+I3_S8sTuQT0,deputy director,5.0,authority
+I4ZsuU5C6aw,right now,4.0,time
+I4pibKfr0jU,buffalo,5.0,flora and fauna
+I5A2blkb1T8_1,cycle,6.0,transport
+I5GA0QFoDos_1,copy,7.0,action
+I5Nw8MVpZt8,mirror,5.0,physics
+I6kZM0sKraQ,score,7.0,metric
+I77KHj-yyWQ,debit card,4.0,banking
+I8TH3Ef1yls_1,allah,6.0,religious
+IA-RnnxesfI,button hole,8.0,wearable
+IATnhKazi7g,technology,4.0,abstract
+IAqSm0HcDDI_2,electron,12.0,physics
+IB4I1T_sQxo,ifsc,5.0,readable
+ICWffEGAP5Q,drug overdose,8.0,stage
+IER9rPq_O8o_1,source,7.0,stage
+IGNLe81lZ-M,seamline pocket,10.0,wearable
+IGsDuTIs2ZU,quickly,4.0,time
+IGuFuS-aMpo,sharp,6.0,attribute
+IH3kcXKQgt4,barricade,5.0,miscellaneous object
+IIeXWQPIlqA_2,spectrometer,12.0,instrument
+IIkkBf5KDmg,fast track court,14.0,legal
+IItJ7hdAf_g,company secretary,6.0,profession
+IL9zmsdJg5g,cervical cancer,10.0,medical
+ILXJO86NsG8,reliance mobile,6.0,electronic and electrical
+ILinyrxnsEs,sixty,5.0,quantity
+ILv9XMPLqoo,very wealthy person,5.0,human
+IMlXe5o44pc_1,address,8.0,geography
+IMzhNeb2ziQ_1,juice,6.0,foods and drinks
+INYvz3YRvT4,wedding reception,13.0,event
+IO-b4Lt249Y,suspect,5.0,legal
+IO0nQfhpxh8,education,5.0,education
+IOcKAmXpVUA,gionee,6.0,organisation
+IOp7Ml6b4sk,right,3.0,spatial position
+IOz0Yx8IpHU_1,across,6.0,spatial position
+IP9M9Q_sJlU_1,six monthly,8.0,time
+IPRNWTt4NDY_1,objection,6.0,action
+IQS9ORLYumE_1,additional,8.0,quantity
+IQdo3niLRus_1,bug,6.0,flora and fauna
+IRUYQfpLjhY,tornado,5.0,weather
+IRpEcHFlSk0_1,stay,7.0,action
+ITV9-ymtK_M_1,exchange,5.0,action
+ITtZaBbXqyE_1,farm,7.0,construction
+IUj1aN_hzQ8_1,birthday,7.0,event
+IUxURsL66jY,huge,4.0,math
+IVY4EYIVHMI,food,4.0,foods and drinks
+IWBVW-QyFEw,fox,6.0,flora and fauna
+IWCiPFCUzI0,janmashtami,5.0,event
+IWWZql-w610,leave,7.0,profession
+IWxnrliK3Mk_1,bath,6.0,action
+IZ5P9dAvZ5A_1,default,12.0,stage
+Ic7hCwzP2PI_1,irregular,10.0,attribute
+IctKxBrrjJI,interpreter,4.0,profession
+IdTIbvWgePA,muharram,5.0,event
+Idb2wQQ85ho,brahma,5.0,religious
+Idc4ADhTayI,leaf,4.0,flora and fauna
+Idq3nOcunPw,deepika padukone,4.0,human
+IdrYzD-b0MU_1,march,7.0,time
+IeGTCdw-lFQ_1,account commission,9.0,banking
+IghFboP-goM,slovakia,4.0,geography
+IhaMUrrY6yw_2,physics,14.0,physics
+IhoXleQ5yy8_1,point,8.0,math
+Ii2bgYmdoQo,vegetable preservation,15.0,process
+IiAx8ef2Rwo,hidden file,6.0,utility item
+IihwJw1jkfA_1,allotment,11.0,banking
+IijA65GKXKc,surgeon,5.0,profession
+IioAwnwu91s,mali,3.0,geography
+Iiz4Zy_pAGA_2,voltmeter,10.0,instrument
+IjJkyhtkX58,numpad,12.0,computer
+IkEVVymlfjk,non access,14.0,abstract
+IkmV2lTGHL8_1,under review,6.0,process
+IommKlI9JqQ_1,feel,6.0,sensation
+IphLasWnRHk_1,bank,5.0,banking
+Iplh792WyLM,flower for beautification,8.0,flora and fauna
+Ipvw2kyzr_w_1,final accounts,10.0,banking
+IqAQQves3xE,essel world,5.0,entertainment
+IqVx7zjG9s0_1,hill,9.0,geography
+IsvFw88fne8,shillong,4.0,geography
+ItV99Fhz1X8_1,merger,8.0,organisation
+ItvaPW9FnxE,algeria,4.0,geography
+Iu1aKegaeek,funeral,9.0,event
+Iub1Yb-tOAI,video,3.0,computer
+IvHyCTGWTOc,biased,8.0,attribute
+IvWnYjnrMZg_1,himachal pradesh,7.0,geography
+IwjaiMCqRSk,cinema,4.0,entertainment
+IxDZyvc3cRM,president,4.0,authority
+IylKyQ_81Zo,licence,15.0,legal
+IzIT4zP2sTU,parameter,8.0,computer
+J06ynDbTJDY,mtnl,5.0,organisation
+J0D4SC4WJQQ_1,institute,7.0,organisation
+J0Jx4BIuGn0,television,4.0,electronic and electrical
+J0OaU0o7cL8,pond on the basis of situation,14.0,geography
+J3BJa0TWc8U_1,incompetence,7.0,attribute
+J79s05Z0NZ8,whatever,3.0,abstract
+J7Bq-xjpcvs_1,leader,7.0,authority
+J81k9pkL1tg,tvs bike,5.0,transport
+J9ZYf-S-gNI,wall garden,15.0,construction
+J9rhbSDTm4w_1,black,8.0,quality
+JAoQ3a0DIXQ,spanner,9.0,instrument
+JAvrviPNIOI_1,illiterate,7.0,education
+JBO4vOeqQxs_1,parent,10.0,relation
+JC80hJOObmg,mango,4.0,foods and drinks
+JDFAUSbxIhk_2,compare,8.0,process
+JDvfWq3CAAU_1,kangaroo,6.0,flora and fauna
+JE_6hkeERgY,donkey,5.0,flora and fauna
+JFVB97UDh6o,category,4.0,abstract
+JG9WnZMN5ZA_1,account suit filed,12.0,banking
+JGmPOUUxRzE,stairs,4.0,construction
+JHK7flaSzzM,applause,4.0,action
+JHh44ooGaY4,school bag,4.0,utility item
+JHyzbf0wbL0,youtube,5.0,internet
+JIm7aysFevs_1,order,7.0,action
+JKKejwob7W8_1,eye,6.0,biology
+JLwyU0Pd35Y,tolerate,5.0,behavior
+JMafDHZmr8s_1,recruitment,6.0,action
+JN0xDQF2NWs,tunic,10.0,wearable
+JO6xA9yQgUA,track ball,13.0,action
+JPGOxP4NRRw_1,stitch,7.0,process
+JPvEO-Q1N08,personal,4.0,relation
+JQ0W7D0nvlY,starve,7.0,action
+JRE6SRmb_yI_2,clockwise,11.0,spatial position
+JSEGoqKaQM0,job,5.0,profession
+JUMBB2W1Q94,glue,4.0,substance
+JVplYs4HTtE,piping,12.0,wearable
+JW9yPJ2REK0_1,difficult,5.0,attribute
+JWG3G2AfAO4_1,cement,6.0,construction
+JWbMe5M36V8,aquatic plants of various colour,13.0,flora and fauna
+JWsKWK1W9q4_1,regret,7.0,emotion
+JXtbhw70wpY_1,credit,10.0,banking
+JYvB-eiJP-I,catch,4.0,action
+JZRAOigBYnM,personality,12.0,attribute
+JZtlpCJqR-M_1,delegate,10.0,authority
+J_iH6uAoAJM,orissa,4.0,geography
+Jarh1WMa868_1,happy,7.0,emotion
+Jaw_nTMEwzY_1,gossip,6.0,action
+JbG_KfmEYm4_1,script,9.0,readable
+JckFhrO4KD0_1,ramzan,9.0,event
+Jd-pxhXGefA_1,stop gap,6.0,quantity
+Jd3to2MXy6s,medal,5.0,utility item
+Je-ZDJTfVsw_1,promise,7.0,action
+JeJLv2tM3nY_1,breakfast,6.0,foods and drinks
+Jedn1-9fyXw,bridegroom,9.0,human
+Jh4PPOr7tjo,annual plants,14.0,flora and fauna
+JiPwL-4i6Uo_1,establishment,9.0,organisation
+JjDVZDpPjbc,store,4.0,action
+Jm23ZwhmPlQ,clumsy,12.0,behavior
+Jm2j6rZhGXo,delicious,5.0,attribute
+Jm8OXSwWnCY,audi,6.0,organisation
+JmBmx8jNivk,classification of vegetables,9.0,action
+JmPgvxIFzGE,oriental bank of commerce,6.0,organisation
+JmsjCb19HB4_1,coffee,6.0,foods and drinks
+JqBJjFOxuLk,dithering,12.0,sound
+JqPK7r2pB_8_2,south,7.0,spatial position
+JqZFdQuy3QU,false flooring,9.0,construction
+JqwXMlzSPoM,poultry feeds,13.0,flora and fauna
+JsdNgRcC4wU_1,bring,6.0,action
+JtWmt2W6g-4_1,immovable property,8.0,legal
+Jtk0QePDuds_1,sofa,7.0,utility item
+JtykP_hFReg,message,4.0,readable
+JumxHKPgPsw,shark,6.0,flora and fauna
+JvZwKXBG8sQ_1,predecessor,10.0,stage
+JwE82vJ5lF4,sweet lime,4.0,foods and drinks
+JxEGnvLxNu4_2,contraction,9.0,physics
+JxiY9s8T8eg,drainage,15.0,miscellaneous object
+JyAbrgrmXFQ,drip irrigation,14.0,process
+JybAScc2Ppo_1,speech therapist,7.0,profession
+JzyZDgP62tM_1,refrigerater,7.0,utility item
+K-cAmlbGqqE_1,direct appointment,8.0,authority
+K0EyqFbG2N0_1,charge sheet,11.0,banking
+K0VsSQMEtMU,west bengal,4.0,geography
+K1N6oh0nYvo_1,faith,6.0,abstract
+K5K6_yItMbc,hill garden,12.0,geography
+K5xvRicYsgQ,agricultural robot,15.0,electronic and electrical
+K6ef6wLNV6A_2,negative error,9.0,math
+K8Se1Eiyqq8_2,vaccum,11.0,physics
+KAkggm-5ApA_2,merchant,9.0,profession
+KAsaLUHY0y4,former,5.0,comparator
+KB2cTekqy38,flower for controlling soil erosion,11.0,flora and fauna
+KBfrB3Kx5Kw_1,always,6.0,time
+KCFYiQAly-Q_1,fare,9.0,banking
+KD_mAE7nypI,manager,6.0,profession
+KEhIkzsFVhk_2,eletronegative force,10.0,physics
+KF_6TkQc5Ag_2,beaker,8.0,chemistry
+KGd-YJ5cDTM,paper,5.0,utility item
+KIoc3qEV7No_1,outstanding,10.0,quality
+KJl7MI-S9ag_1,verification,8.0,legal
+KKOqbdFgAgo,nutrition,13.0,medical
+KKPPaj3WuIM_1,sitar,7.0,instrument
+KKXbxgBsRoQ_1,mistake,6.0,abstract
+KKfE1JlLal8_1,basketball,6.0,sport
+KLWmJJC8WvA,millionaire,6.0,behavior
+KMAl51jbqD8_1,nose stud,5.0,wearable
+KN6wMRGjxGk,government,4.0,authority
+KNYxG5Owm6Y_1,unclaimed,9.0,banking
+KNZbdGWxDfw,outside,3.0,spatial position
+KNepaNAPVHM,apiculture bee keeping,15.0,profession
+KNshT57aEW8_1,spill,5.0,action
+KO4tS6VabH0_1,lazy,8.0,attribute
+KOn9NUTFkp8_1,glass,7.0,substance
+KRiQ8XKAhxY_1,bone,8.0,medical
+KRnfvBZ_V14,doubt,4.0,attribute
+KT6xge7oPak_2,distribution,11.0,action
+KTCV2tyighk_1,toast,5.0,action
+KTNP8wR6a_I,sharpening stone,11.0,instrument
+KU3jXLCl5ng,snow,6.0,weather
+KVhmMplAyTE_1,ghost,6.0,religious
+KVnMqcijBkQ_1,pretend,7.0,action
+KXNl6DtK84A,jamun,5.0,foods and drinks
+KYWyFwglnCE,mouthwash,5.0,substance
+KYknqu3Sq8o,bump cutter,10.0,construction
+KYqKLRfxPQs_1,sunrise,8.0,event
+KZkI_RcaNjI_1,rajasthan,7.0,geography
+K_lfla-AAV4,compass surveying,13.0,process
+KbF95Py-dZI,crawler loader,6.0,machine
+KcJguZ4bFWU_1,what time,6.0,abstract
+KcNbuobK5GI,skating,5.0,sport
+KcxcXM11Lmo,mushroom,4.0,foods and drinks
+KeXpYtzYCGo_2,random,8.0,abstract
+KfY5FcxSBFk_2,globe,9.0,geography
+KfqRU_5sing,guinea,4.0,geography
+Kh30NOSJmBc,fornication,15.0,action
+KhHs-1AePDw,bless,5.0,action
+KicAz88jtLU_1,tariff,7.0,legal
+KicV8fyFj2U_2,voit,8.0,metric
+KkLXMOjfW1M_1,bihar,6.0,geography
+KlLTWfYX95g,milling cutter convex,6.0,instrument
+Km1_9ZLW-w0,query,4.0,abstract
+Km4I-9zMWD4,soil survey,12.0,geography
+KmAO72itjok_1,crow,8.0,flora and fauna
+KnE_y9wziOc,cherry,4.0,foods and drinks
+Ko2hEXvMWB4_1,jaundice,8.0,biology
+KoMeOserJ2M,burn,5.0,sensation
+KoixXkIyiUM_2,bulb,8.0,utility item
+KotGJithHPs,asphyxia,13.0,medical
+Ks0qQY_4_zo_1,vigilance,7.0,behavior
+KsNrhfiqWHc,weave,4.0,process
+KsbMoTA5Rvk,comfortable,5.0,sensation
+Ksqo7pUZGnM_1,trust,6.0,emotion
+Kt4-ijSTM58,chart,5.0,readable
+Ku52vuQCoak_2,echo,11.0,action
+KuG1qosmz1w,on cloud nine,15.0,emotion
+KuwgdEpM9Bw_1,electrician,7.0,profession
+Kx46yWsDfrU,build,7.0,action
+Ky8LfzgWGDU,very hot,4.0,weather
+KzcNcvmdfUc_1,classification,11.0,action
+L0C9pyt3Iv0_1,chickoo,7.0,foods and drinks
+L0J8OikrRXQ_1,competition,8.0,event
+L0dm0QB0XNc_1,receive,6.0,action
+L1n0OnAH5YU,samsung mobile,5.0,electronic and electrical
+L2Kvwf8SEvE,transparent,4.0,attribute
+L2skBcrtvU4_1,sikh,6.0,religious
+L37McuHckSI,good morning,4.0,greeting
+L3YJkEmPbaY_1,sparrow,8.0,flora and fauna
+L4iyGvSJbBU,arm hole,12.0,wearable
+L4q4_7OOznw,goa,4.0,geography
+L5LPezmVNTY,honey,5.0,foods and drinks
+L6opOP8-MB4_1,account,10.0,banking
+L77Jvnk92gI,reception,14.0,behavior
+L8RxN_IwuxU,marigold,5.0,flora and fauna
+L8btjcJoJMQ_1,time limit,12.0,time
+L9tJKkCTWfs_1,another,6.0,group
+L9zst1EDfWQ,report,3.0,metric
+LAMyZKIAF9c,millilitre,6.0,metric
+LAT-u9Ww5ZU,yes,4.0,comparator
+LAxFz0h8jVA,asia,5.0,geography
+LBDJe5RV0Is_2,society marketing,10.0,commerce
+LBHkQz5_AX8_1,top management,11.0,comparator
+LCM-nxFhJA8,actuary,4.0,profession
+LCT8D8alG48_1,credit voucher,12.0,banking
+LEU5wPrJOEE_2,virtual image,9.0,physics
+LEkQofDsLww_1,lend,6.0,banking
+LEqwMyWAVG0_1,computerisation,8.0,computer
+LFAMKxEzB_g,hot air balloon,5.0,transport
+LFzg2ex5OPs_2,perfect,9.0,attribute
+LG9lvVHK-xA,target,4.0,abstract
+LGWGD0eoxFg,chickenpox,4.0,medical
+LH_-eRo-vYw,points,4.0,math
+LIZdSKzcc7c_2,electromagnet,8.0,physics
+LJDiOMjjmgQ_1,inefficient,8.0,quality
+LLZBIVJyAW8_1,open dated,9.0,time
+LMiCwHGzWWY,multi storey building,7.0,construction
+LNGTLVpK9pY,family court,15.0,legal
+LNVUK4DX5GA,wave,7.0,physics
+LNeQmfpFxKw,lauki,5.0,foods and drinks
+LOHFGeu_YVo_1,quote,6.0,abstract
+LOJcAGPKq50,thirty,5.0,math
+LPASkvwrEhg_1,emoluments,9.0,banking
+LRgu4y1wgyM_1,sculpture,6.0,miscellaneous object
+LUZ-fo_p2eM,kiss,5.0,action
+LUwTvq8IlG8_1,wrong,6.0,comparator
+LVelMSPoeIk_2,stepup transformer,12.0,physics
+LVoWdSuY_DA,broom,5.0,utility item
+LVqnqzIAFGg,jammu & kashmir,5.0,geography
+LVx3EA_f0yo_1,shave,7.0,action
+LWiXmjFqjIU_1,bread,6.0,foods and drinks
+LY35ZmX5ZKA_1,nest,7.0,flora and fauna
+LY6maLw5JZg,bajaj bike,5.0,transport
+LYaC4yU2_AE,online shopping,4.0,internet
+LYrq1Zc046M_2,tuning fork,9.0,physics
+LZXA3I9E1gM,tool,5.0,instrument
+LZheGIIbAGs_2,final,7.0,stage
+LZreqlssnWQ_1,love,7.0,emotion
+LbxSV8unB9M_1,afternoon,6.0,time
+Ld9qDys95es,jellyfish,5.0,flora and fauna
+LdEwOck6U_w_2,thermal,8.0,wearable
+LdYbstdYCR8,bmw,5.0,organisation
+LdhMy2tqQB4_2,in lieu of,8.0,comparator
+LeIkWWTH__A_1,quotation,8.0,abstract
+LeRzzzBBsmU,graft,5.0,biology
+LfNnApnUb0k,yamaha bike,4.0,transport
+LfYldiPt7Uw_1,holy,8.0,religious
+Lh8YfU2MNWc_1,experience,5.0,abstract
+LiMHHFhjutc,son,3.0,relation
+LipF082b75I,pinking shears,9.0,instrument
+Lj9L7fUElLE,match,4.0,event
+LjxomDXWlSU_1,hindu undivided family,11.0,group
+LkAdSi8XMnA_1,map,8.0,geography
+Ll1sRFunlD8,anti corruption law,5.0,legal
+LlpSiou4X7w,elephant,4.0,flora and fauna
+LoDs7v25rTw,civil engineering,4.0,education
+LpK4vi7gyoU,dubai,5.0,geography
+Lq13Nl5Ps58,abacus,7.0,instrument
+Lr1RBzRU5IY,prevent,12.0,action
+LtKLGzkfK7k,semi aniline skin,10.0,miscellaneous object
+Lu_R01JQky8_1,apple,7.0,flora and fauna
+LyZNz7OHiBc,clear,4.0,attribute
+LzD3My7FOzI,professional,5.0,attribute
+M-0j7OCBolw_1,brass,9.0,metal and minerals
+M-aaJfrtvaA,weapon,8.0,utility item
+M-sKe4o73uE,i don't know,4.0,action
+M0bcUWG8vrg,hyderabad,6.0,geography
+M1qOXnG0A6s,lower court,15.0,legal
+M4-wk97gffk_1,debt,9.0,banking
+M7-RJmu46Fs_1,fumiture,11.0,utility item
+M7fd9b-5J64_1,blind,6.0,medical
+M9dzu-DC9Yg,judaism,5.0,religious
+MB7HhOsEvxk,expiry,6.0,banking
+MBJe-opDrVg,banker,7.0,banking
+MBQiG5ZQFQM_1,angle,10.0,math
+MDshuUzuAQQ_1,drown,6.0,action
+MFNsb1cUbDc,automatic,4.0,abstract
+MGPdiPWgglk_1,lgnore,5.0,action
+MGrjrGgjADY,rich,4.0,attribute
+MH1cXARmtE0,sequential,6.0,attribute
+MH7f6cug0zU_1,re pledge,6.0,banking
+MHcb7CiK_IA_1,accessories,11.0,instrument
+MI2Jae1agR4,news,4.0,entertainment
+MIal50cVwM0_1,x-ray,6.0,medical
+MJelSVaA5KY_1,roar,5.0,sound
+MKSKluySI3E,timid,5.0,behavior
+MKbBSGnFUPY,fluted  pleats,14.0,wearable
+MN2qjSNQdMg,steering wheel,6.0,utility item
+MOW2rm7IXxg_1,solid,7.0,substance
+MOu0z-QaJww_1,lay out,11.0,banking
+MOy1x8EroPs,bandit munger,4.0,profession
+MPCAeXe2E0c,three days after,4.0,time
+MRcVRxcFrVE,glue gun,15.0,machine
+MRf9vcls4eQ,restaurant,4.0,construction
+MT8KL4XePl8_1,year calender,8.0,readable
+MUALhjDPcdE,bank account number,4.0,banking
+MUWVSQ7vqGE_1,supersession,9.0,action
+MXNChZEW6yI,denmark,3.0,geography
+MY-9YI3Slvg_1,posting,7.0,readable
+MYVwYIX47wQ,never,5.0,abstract
+MYjYOTXhiZs,residential building,6.0,construction
+MZBRGZovo8A_1,punishment,5.0,action
+MZZ52lsCfSw,seven,4.0,math
+MZsQzU7tOfs,ban,4.0,action
+MbKRtuwkHPM,wild swine,13.0,medical
+MbUT3Kfq4Dc_1,beat,6.0,action
+Mbu8042cTuA_1,back,8.0,spatial position
+McHijMoln7U,knowledgeable,4.0,attribute
+MeKJPAuFOgk_1,bhopal,6.0,geography
+MeoJV0K0uTg_1,pass book,8.0,banking
+MflJey4lrQk,hair dryer,6.0,utility item
+MhHOduyqKv4,two,3.0,quantity
+MhZrm3H1aBE,join,4.0,group
+Mhwfin8V4sQ_1,round,9.0,math
+MiGluii6UII,maruti car,5.0,transport
+Miw0xZr0diU,roti,5.0,foods and drinks
+MjRPq3GCSZk,weird,4.0,abstract
+MlfKy5CzqVg_1,withhold,7.0,banking
+MmeNMGTN-aY_1,hippo,7.0,flora and fauna
+MmrdlTXfNco,uttar pradesh,4.0,geography
+MnSaW7AFr1w_1,weigh,6.0,abstract
+Moi8EgQo6rE_2,atom,9.0,chemistry
+Mq8cmp7QjOY,mason square,11.0,instrument
+Mqa0sDOMArQ,exercise,4.0,medical
+Mr30rM7vf4Q,dizzy,5.0,sensation
+MrP80GmJveQ_2,spectrum,9.0,physics
+MsWnmwlUBik_2,angular velocity,8.0,physics
+MsxYYS8q9Hw_1,result,6.0,abstract
+Mtm4Xg52b9c_1,subscription,9.0,entertainment
+MtnBSpuX1IA,value scale,10.0,metric
+MtnXC9CWB6I_1,horse,6.0,flora and fauna
+MwHD6LxnfXo,website,4.0,internet
+Mx_mNhBhWx0,toy,7.0,entertainment
+My4hzshl_RY_1,us,5.0,group
+MyFCxLg44HY_2,capillary tube,8.0,medical
+MzwOHZTi4OU,shaving brush,4.0,utility item
+N0-cIcGCH3A,kazakhstan,3.0,geography
+N05i2V0_8kI,malaysia,4.0,geography
+N0HOc0gJyRs_1,laugh,6.0,gesture
+N0QNiLrVGl4,casio,5.0,sound
+N0lQZi87koY,meeting,4.0,group
+N13nVxyNA2Q,setting of cement,8.0,construction
+N1J4iPzvFDY_2,apparatus,10.0,instrument
+N1sRspbhlk8_2,geothermal energy,12.0,physics
+N2GsWA1smG8,amazed,4.0,emotion
+N4a_K3p9KG8,tractive work,14.0,quality
+N4rsVFJsb1Y_1,accumulated,13.0,quantity
+N53qGezr7MU,woodpecker,6.0,flora and fauna
+N62iv94HI18,thailand,3.0,geography
+N6DxyKcaZVs,lighthouse,7.0,construction
+N6zCu36_1xI_2,blue,8.0,quality
+N7q37KQfzhk_1,sufficient,10.0,quantity
+NA5iMrff4Cs,elastic,12.0,attribute
+NAkU6Uj85R8,zipper foot,8.0,utility item
+ND1WM_XYP4Q,numerical control,10.0,math
+ND4_C6fI-BU,society,5.0,group
+NFHHa94P-k8,concrete mixture,11.0,construction
+NFnBaFx_SWI,annual for foliage beauty,14.0,flora and fauna
+NGJkhj4AWbA_1,sick,6.0,medical
+NGRn28khiEY,rainy season vegetables,11.0,flora and fauna
+NJWphYVdS5I_1,justice,6.0,legal
+NJuhUVHvXi4_2,created,8.0,action
+NLEkfw25jWU_2,focal length,10.0,physics
+NLlTJ8yeeYM_1,honorarium,8.0,banking
+NMnARovUYLw_1,vomit,7.0,medical
+NMwrtYskaeU,leaf spring,14.0,transport
+NNiFl_dTBk0_1,throw,6.0,action
+NQ7Gnl9nRuY,window,6.0,construction
+NQTfv_uhpfg,winter,4.0,time
+NS7WrHCEPVk_1,penality,6.0,legal
+NSM4xH0MhHY,benign,13.0,medical
+NT-LpmJHMcw,mediocre,4.0,quality
+NTNbTr_PLqU_1,participation,8.0,action
+NUn7Lyw4H9U,wheeled robots,11.0,electronic and electrical
+NVNirvNgU9g,pledge,4.0,legal
+NW-BP9pf4JI_1,girl,9.0,human
+NXjRJs0Wxkg,wedge,12.0,machine
+NY2fpEI5uDY_1,world,6.0,geography
+NY7NZeZ-ufw,research farm,12.0,education
+NYWcVvZIlwY_2,external,9.0,attribute
+NYbiMxMfp3A,brown sport of rice,13.0,medical
+NZ3PZzNJ2hs_1,magic,6.0,abstract
+NZXhDTubUiI,videographer,7.0,profession
+NZZkWB8jtls_2,adjustable screw,9.0,instrument
+NZn29gNlDio,stress,5.0,physics
+NZoSVSZeP7s_1,prohibit,8.0,action
+NZwNyVXvpTo_1,money,6.0,banking
+NaiHTSSvCuE_2,telescope,10.0,instrument
+Nb7os_UNC0o_1,hen,6.0,flora and fauna
+NbG_5zEsSoE,express,4.0,action
+NbO2R-jwElw_1,moneylender,8.0,profession
+Ncpxyoe9VTE_1,crime,5.0,legal
+NcqHqk2ybW4_2,parallel,9.0,math
+NeEUjskiXkY,layered skirt,11.0,wearable
+Ned2R4FgR7Y_1,calculation,9.0,math
+NfOadhavWHs_1,demand,7.0,action
+Ng4xJEF8wEg,mucosal disease,13.0,biology
+Ngrila2aXJg_1,conveyance allowance,9.0,legal
+NhCDD4ktBjY_2,loud speaker,9.0,electronic and electrical
+NhFLlpEnqK8,punjab,4.0,geography
+NiE43suq2F4_1,patience,7.0,behavior
+NiXOVcIQU7g_2,static electricity,13.0,physics
+NjT3zasZLP0,harmonium,5.0,sound
+NjjNU4VrO00_1,stage,7.0,stage
+NjzsZG20E7U,strength,4.0,attribute
+NkFzajnrYkA_1,method of accounting,10.0,banking
+NkQLCSHvZcY_1,field,8.0,geography
+NmTBx9PgX-I_1,quality,6.0,quality
+Nn3ooGh1n7w,rude,15.0,attribute
+NnETy9fmveQ_1,small enterprise,10.0,commerce
+NnGjm_iFM1s,vent,11.0,wearable
+NnUnWcgPFC4,digging bar,6.0,instrument
+No2J7utvqrg,ballon pump,6.0,machine
+NoKq5zdDsQk,smile,4.0,action
+Non0cu5dbSs,party,4.0,event
+NpQQCK0Yk_g_1,taluk,7.0,legal
+NpTKGzsDGoQ_1,par - at,8.0,comparator
+Nqh6_B0gfec,adopt,4.0,relation
+NqnV9iNS62M,reproduction,14.0,biology
+NqtEH9nZexY,water logged hedges,12.0,flora and fauna
+Nr80alTAMrw,baseball jacket,12.0,sport
+NrQ-7PGyl70_1,output,8.0,miscellaneous object
+Ns3lBPP73Jk_1,taxi,6.0,transport
+NsQZ8by-g_k,sibling,4.0,relation
+Nt5QgTWqBcU,olericulture,12.0,biology
+NtnfUEDzoPo,telangana,5.0,geography
+Nus1qk-Khiw,north-east,5.0,spatial position
+O-o5XXFpqEY_2,heavier,8.0,comparator
+O1DOtxdULkQ_1,misbehaviour,9.0,emotion
+O1HMV7OKCZs_1,cheque gift,10.0,banking
+O2_ZeoKvo5I_1,queen,7.0,authority
+O4CkLiyI2a4,shearling,8.0,action
+O6YJgD20e2g,goodbye,5.0,greeting
+O8jMsqDMiRE,who,4.0,abstract
+OBHeVltjXT0_1,young,6.0,attribute
+OBPTV3YthOw_1,out,6.0,spatial position
+OC3FU_0GKBE,astigmatism,15.0,medical
+OC4C5-lLWxc,float,6.0,action
+OC7HHIF25ik,box,5.0,utility item
+OCDSqlCaWlA_2,refrigerator,10.0,utility item
+ODNZ6nd7uls,actress,14.0,profession
+ODRI_ATiWnM,jagannath ratha yatra,6.0,transport
+OE5sct8DJxM,cock,9.0,flora and fauna
+OEZKlgaRH4o,alarm,4.0,utility item
+OEm1Uov-v9o_1,training,11.0,action
+OGO8HQ6ZYUg_1,overtime allowance,9.0,banking
+OJqZgTGpghQ,deal,5.0,commerce
+OL-CqbpYr8w,quiet,4.0,sound
+OM_yE9ewbcM,digital electronics,13.0,electronic and electrical
+ONhI6iem9kg,hat,3.0,wearable
+OP_7FlLGoAY_1,premium,8.0,attribute
+OQ1e6lpNybo,maha shivaratri,4.0,event
+ORU-AfSTIwI,rip out,10.0,action
+ORwg4bg9aeU,rock gardening,14.0,entertainment
+OSRpGh3d0cI,long term,4.0,legal
+OTUecrbGM7E,roof griders,11.0,construction
+OTfPJGdUm50,nature,5.0,biology
+OTtrGki5gQg_1,angel,6.0,religious
+OU-XIIEFnw4,garage,6.0,construction
+OUVv-5cwFaE_1,dosa,6.0,foods and drinks
+OUr2XSyxfsY,seminar,5.0,event
+OX23xzI_GhY,land,4.0,geography
+OXmN5c7MCUk,kumbh mela,4.0,event
+OYENl3VfTb4,south indian bank,5.0,organisation
+OZ2IdcRTgrs_1,insurance,8.0,banking
+OZp4PyHgUC8,public gardens,9.0,construction
+OaQqutxOEAE_1,eagle,8.0,flora and fauna
+Oamv71HbOMA,apex court,10.0,legal
+ObJnMFN4KQg_1,company joint stock,12.0,commerce
+ObVcGiVYofE_1,forged,9.0,quality
+ObwZnI075E8,melt,7.0,process
+Oc7vrILPpCQ_1,first charge,8.0,banking
+OcBBb1cbZqc_2,natural,9.0,biology
+OchKEyyyoF0_1,money order,9.0,legal
+OelZVA_CCzo,superficial,6.0,quality
+OfGkvEa9C-A_2,object,8.0,miscellaneous object
+OhE6VRcxlKA,disc brake master cylinder,14.0,machine
+OhHLtn0U6K0_1,initials,8.0,banking
+Oiewyo7WQ4w,netflix,4.0,organisation
+Oittiy14URk,left indent,8.0,attribute
+Ok6fbvE1cu0_1,alarm system,11.0,electronic and electrical
+OkHQG79PRCk,classification based on the transplanting capacity,14.0,action
+OnqiVVsNE8I_1,locker,10.0,machine
+Op97JG5142c,kinds of honey bee found in india,10.0,flora and fauna
+Oql_D1R8kVE,building structure,6.0,construction
+OqzxnQ6fGIw_1,out of print,8.0,event
+OrOlKiBzVAY_2,molecule,11.0,physics
+OrlYpvp8gnI_2,condition,7.0,quality
+OrrlfNA40zg_2,perpendicular,8.0,math
+OsRTZjf3msw_1,disbursement,9.0,banking
+Ot-XctUkMY8,buddhist,4.0,religious
+Ov-hdZ4oacg,marry,5.0,action
+OvDIlDiFmnU,school,3.0,organisation
+Owp1cwVnCok,question,4.0,abstract
+Oz4iaojP1LQ,retention of moisture,15.0,biology
+P-0wocPMVyQ,tagetus,11.0,flora and fauna
+P-k3HOBisv8_1,i,6.0,language
+P18HvmCotMU_1,information,7.0,legal
+P1WDAwasyoI,safety goggle,9.0,wearable
+P29jupnZniw,close up,8.0,action
+P2If73nwzYs,tabernaemontana coronaria,11.0,medical
+P2abspkSU_s,able,7.0,abstract
+P3LobzeDo9E_1,sad,7.0,emotion
+P3LqZYt2U30_1,economic,11.0,education
+P3MpvLubTKw,sms notification,10.0,internet
+P3pALl9igN8,flatfoot,11.0,human
+P4bcxgldVSQ_1,benefit,7.0,banking
+P5CapJo7Oe8_1,overseas,7.0,spatial position
+P5Dty8Ecdek,nuncupative will,10.0,legal
+P6e7z3qKweg_2,fossll fueis,10.0,substance
+P7aSfqQTkTk_1,yourself,7.0,abstract
+P8c9TRiU7HI,invite,5.0,action
+P8nCFvhToww_1,remind,8.0,action
+P91b_WSLDa8_1,system,9.0,instrument
+PAkQhoRDVMQ,debug,11.0,computer
+PB7rn__dcKg_1,fan,6.0,electronic and electrical
+PBPb-_V8A_U,mouse,5.0,flora and fauna
+PFALmbyUi5A,microphone,5.0,electronic and electrical
+PGYE6puPzKU_1,chappels,6.0,wearable
+PGbVUlqDu1A,hawker,14.0,profession
+PGdVl8-IzJA,mother tongue,7.0,language
+PGrGJBQGm3E_1,sales retum,8.0,banking
+PGzUbRs5KcE_1,stone,7.0,metal and minerals
+PI1wVAKM9t0_1,true copy,8.0,quality
+PI8mabNvaE0,netaji subhas chandra bose,6.0,human
+PJtAsebnGrM,convertible  collar,7.0,wearable
+PK4bvgOLUWs,try,4.0,action
+PKLiUylI7jY,beetroot,6.0,foods and drinks
+PKi9kC2RNzo_1,fluctuation,10.0,action
+PLF4Zs0Q80Q,ball room,11.0,construction
+PLtRFkjPkxo_1,genius,4.0,behavior
+PMUPf08r0Jo,tecoma stans,11.0,flora and fauna
+PMYXK-B1Few,hypoxia,10.0,biology
+PMv7R76mAZA,rowdy,6.0,behavior
+POwFUYdLjX8_1,sailor,8.0,profession
+PP3bE6cjRdQ,mouth spray,4.0,substance
+PQoocuBF2f8_1,go,6.0,process
+PRDX6PAOvF0_1,rhinocerous,6.0,flora and fauna
+PSB4z3DAScs_1,volley ball,5.0,sport
+PTv4C3vii08_1,surcharge,9.0,banking
+PUDnvoajVUk,office branch,7.0,organisation
+PVdmrokA81k,record video,4.0,action
+PVhCsYKStLI_2,put up,7.0,action
+PWHh7NmzzV4,special,3.0,attribute
+PWLWkd68QIA,notch collar,10.0,wearable
+PWWRIQ49qHs_2,tally,9.0,gesture
+PWi1hx2Omgo,jewelery,6.0,utility item
+PWuJv2FHsvA_1,bed,8.0,utility item
+PX-5cHBSak0_2,uranus,10.0,astronomical
+PXEWAfcfs_A_2,appreciation,8.0,emotion
+PY11Ny4fz3A_1,paid up capital,9.0,banking
+PZONaOEO8AQ_1,small,7.0,quality
+P_o20L8zhHU,themselves,5.0,relation
+PaOVb_cMohw_1,hindu,5.0,religious
+PaXZzVi_OsY_1,region,6.0,spatial position
+Pbf2EXs2e4k,catch  stitch,11.0,wearable
+PbfCur5zsw8,poison,9.0,medical
+PerHf9tanw0_2,anticlockwise,8.0,metric
+Pf8tWovZQ2U,baluster,7.0,construction
+PffO6Uac1uY,permission,4.0,abstract
+PiSY8MIVoMs_1,ice cream,6.0,foods and drinks
+PijCNItuc1E_1,site,9.0,construction
+Pj0MkbEahC8,toothpaste,5.0,utility item
+Pl5J3391Pao_1,cash remmitance,10.0,banking
+Pl5cCJ2SVN8_1,junior,10.0,attribute
+PlEUE-SExy8,canara bank,5.0,banking
+PlYZEnLNpdQ_1,shipping freight,10.0,transport
+PnAOEoaN0tU_1,rotate,7.0,action
+PnwR2TZB_9w,pickpocket,13.0,action
+Ppbq_RDljyA_1,france,7.0,geography
+PqftjzLnMEM_1,stock,6.0,banking
+Pro1Tbg-LE8,swap,3.0,action
+Ps4VoPyMAb8,baseball,5.0,sport
+Psd08qZsYnQ,word pad,9.0,utility item
+Psk7z4TM-yM,wiring,13.0,action
+PxXzMm43V0U_1,accuse,6.0,action
+Py0R_2XywOQ,capsicum,5.0,foods and drinks
+PyQVgJzE2-Y,electric car,10.0,transport
+PzT1paHu8C4_2,photographic camera,8.0,instrument
+Q-S63Q62ZiU,venezuela,4.0,geography
+Q-Sg1afVMsE,flowers for pot,8.0,flora and fauna
+Q-jSZX4uAjY_1,coal,9.0,metal and minerals
+Q0HKbrbAj0A_1,chief,5.0,authority
+Q1zbpcSoTws,cataract,7.0,medical
+Q2gjYvb7fcE,birth defect,10.0,medical
+Q3oaDDt1Yc8_1,record,7.0,action
+Q4WiRFOlOu0_1,easy,6.0,comparator
+Q5uGiH8-uQk_1,paint,7.0,action
+Q65na_iR_HQ,messages videos,6.0,internet
+Q7Ggc0qz3Jo,ridge board,15.0,construction
+Q7rYOmLAa2o,nigeria,4.0,geography
+Q7wCb9WlhA0,counsel,3.0,organisation
+QBbAwvlhH0o_1,below,6.0,spatial position
+QBg2Y55juuY_1,football,7.0,sport
+QBjMKvsK1sk_1,black board,6.0,education
+QE4UkDB3MyE,you,3.0,relation
+QF-_qNWaBaU_1,voucher,7.0,utility item
+QHpNcX0Ugsc,mongolia,3.0,geography
+QIL8ey6N_vs,red rot of sugarcane,10.0,flora and fauna
+QIXGt2ddetI_1,bedroom,10.0,construction
+QIaK1zBDLkE,cambodia,3.0,geography
+QJDAMIo3A6Y,diwali,4.0,event
+QJDOHjM9eb8,beautiful,3.0,attribute
+QKEuQ32GLNc_2,electrical tester,9.0,instrument
+QLWJMrs77Kc,electrical burns,9.0,medical
+QLx1uWXhB1g,abstention,11.0,action
+QMFllz8bqbI,zipper,6.0,utility item
+QNqJ9kQ5xT4,norfolk jacket,9.0,wearable
+QOXSBvW5Pds_2,zero error,8.0,quality
+QRTBO6eAlFY,adult,4.0,stage
+QRtqJ1CnS0U_1,cave,9.0,geography
+QSdgD2M4Xdw,word,4.0,language
+QSg-1wqJezg_1,ask,7.0,action
+QT4Su3HeNoE_1,under valuation,13.0,quality
+QU-ZlgFpBVw_2,compression,8.0,physics
+QVZZq9BDyhA_2,interference,9.0,process
+QVrRwXgj7GU_1,worth,7.0,abstract
+QWN6Q7XTChg_2,rhythmic,11.0,sound
+QWrJAZS_jNk_2,quota,7.0,banking
+QX2YCbSelwo,rjd,6.0,politics
+QXQ8ILhehkI,thirteen,4.0,math
+QXRCiVRaHsI_1,these,5.0,relation
+QYnm3ITnMb4_1,product,7.0,miscellaneous object
+Q_wBjlTT4GY_1,dim,8.0,attribute
+QaB25cChRXc_1,courier,10.0,transport
+Qb3nTAfOz2Q,country,7.0,geography
+Qc72veU0a6g_1,ball,5.0,sport
+QcQGHMntX5c_1,signature,7.0,readable
+QdOmsCK3gHg_1,jam,6.0,foods and drinks
+QeNE9BjginQ_1,specimen,10.0,biology
+QfGq9Md-D2o_1,cash receipt,9.0,banking
+QhgyOz4p-iM_2,stepdown transformer,15.0,physics
+QhhIAUupAeo_1,nut,6.0,instrument
+QiHtCEo3nEk,paper clip,5.0,utility item
+QiX_rb7Lm3I,close friend,6.0,relation
+Qiit5KIeWFw_2,music,9.0,sound
+QkHS0W8x2M4,bellboy jacket,5.0,wearable
+QkIAlWUDxPo_1,account head,12.0,banking
+QlvGeWOzc-0_1,south america,8.0,geography
+QmCEr-G9Nug,bus conductor,5.0,human
+QmWhfW8wyMs,start,5.0,stage
+QmxDpQ8YY9k_2,refusal,6.0,abstract
+Qn3Yf2GDWn8,states,5.0,geography
+Qom3R9ndKoc,regulator,5.0,electronic and electrical
+QowRgF354O8,quarter,12.0,math
+QqBeIG-uvM8,camouflage,9.0,attribute
+Qs2XJTA7LWU_2,potential energy,11.0,physics
+Qt7PxYKRi7c_1,write,6.0,action
+QtR5-M2w3RQ,consent,6.0,process
+Qu5KH6X5dd8_1,he,7.0,language
+QvOMfMtfb7k_1,rate concessional,6.0,banking
+QvuS8pyY2a0_2,decimal,9.0,math
+Qwa5c4aDFaY_1,heart,8.0,biology
+QxTqhAxngF0_1,sub head,9.0,authority
+Qy07r-5SdkA_1,little,6.0,quantity
+QyL43-YjgK8,nice,4.0,quality
+QyxD5H8-cHE,slow passenger train,5.0,transport
+QzFmQvfUaa0_1,self balancing,9.0,attribute
+R-IpftpYr2g,bored,5.0,attribute
+R-fKz1aaXRI_2,random motion,11.0,physics
+R22GF3-wqUY,traditional,5.0,abstract
+R3jDoLjKAa0,bias cowl dress,9.0,wearable
+R3s7Vetdseg_2,wind energy,9.0,physics
+R4uJr2ys09Y_1,affidavit,11.0,banking
+R5k5q5laIfk_2,calorie,10.0,foods and drinks
+R5lzZf3MVaY_1,sanction,5.0,legal
+R6ILTJGPlUo,goldfish,6.0,flora and fauna
+R7P29MkehIM_1,plastic,7.0,miscellaneous object
+R7lhpy6_niU_2,angle of refraction,10.0,physics
+RCd8Aat8xa4_1,hockey,5.0,sport
+RCdDeF6erqo,chamber,15.0,construction
+REPEztEF060_1,envelope,6.0,utility item
+RGDTXsCvZBQ,thousand,5.0,math
+RHetQGTr7nU_1,continue,6.0,process
+RJ2_mx6DsmA_1,brush,5.0,utility item
+RJVa8OUU9pA_1,close,5.0,action
+RKMKhsFem98,jd u,4.0,politics
+RN3kLXQdNcc,paramedic,7.0,medical
+RPzCiRXVcr8,meager,4.0,quantity
+RQ02eJz61lk_1,mosque,6.0,religious
+RQEHiQQ25bY_1,ambulance,7.0,medical
+RRX3vZmNyw4_1,sound,7.0,sound
+RTvZD8AZs64,large,4.0,quantity
+RVKZfvYZHks_1,cheat,6.0,action
+RZymw-Gk26s_1,denomination,12.0,banking
+R_6XeLEZzu0_1,proforma,8.0,legal
+R_GaklgD4bY=-,,,
+Ra22ZVhrcxw,revise,13.0,action
+RaTUMGgYYTY,pdp,5.0,politics
+Rah844Dfxf8,water lifting equipments,13.0,electronic and electrical
+RbTU0PE3ebM,notification,5.0,legal
+Rc4vFhGRgIs,cat,4.0,flora and fauna
+RcWDXAwySlM,power sockets,6.0,electronic and electrical
+RcZ64U1ydeg,clown,7.0,entertainment
+Rd6B7wNJ2wQ,pair,6.0,group
+RdhTo_18rQg,sightseeing,6.0,entertainment
+ReA3MBOOJZU_1,secondary,8.0,attribute
+ReGozpDkRcc,dream,4.0,behavior
+RfhBkV1VBNo_1,tribunal,6.0,legal
+RhS6nAUP3C4,united kingdom,3.0,geography
+RiAJCOudSjM_1,interim,7.0,profession
+RiyB_IpLUoA,chamfering,7.0,process
+Rj6pX9wzxqA_1,sister,13.0,relation
+RjI4uWN3FXg_1,potentiality,7.0,attribute
+RjlLl95EtCQ_1,half,9.0,math
+Rjv2fm62JAY_1,claim,8.0,action
+RlIkYzzsHpg_1,at,6.0,spatial position
+Rloiqc9KybA,brick,4.0,construction
+Rmwh_Cfw9GE,draughtsman,7.0,profession
+RmxC2ESB77I,milk adultration,9.0,biology
+RnbKUzEYGq8_1,reconsider,7.0,abstract
+RnqeyToK1I8,drizzle,7.0,weather
+Ro2y0_fypc4_1,signal,5.0,gesture
+Roe3st2xwgQ,disability,4.0,biology
+RorIn-P_3DI,have,4.0,action
+RpZGZHEgtYI,bake,4.0,foods and drinks
+RpoDGwIp43s,hotel,5.0,construction
+RrtHIJ1gjL0,dicoty ledoneae,11.0,flora and fauna
+RryRyaLEaeM,arc welding,15.0,process
+Rs0EKMMQqPI,kenya,3.0,geography
+RsVR6VKYIbw,section  admin,11.0,authority
+RtOOeGlFdh4_1,head office,8.0,profession
+Rty4lN6R8LY_1,car,5.0,transport
+Rv7YAemJwp8,revolving chair,5.0,utility item
+RwIFUiFGMGw,luck,4.0,abstract
+Rwtcr4Lp9TQ_2,irreversible,8.0,attribute
+Rxj7JFcWujk_1,van,6.0,transport
+RxqkJA2EG0s,identity card,5.0,utility item
+S-BjndLCySU,plum,4.0,foods and drinks
+S-v0z93Qc6I_1,roll,8.0,action
+S06jHWa7Brk_1,whistle,5.0,sound
+S1eFafNFNOE,switzerland,3.0,geography
+S21lcUrY_pM,approximate,4.0,metric
+S23VB6dVnw8_1,introduction,9.0,process
+S3pN7MBKPU0,smell,5.0,sensation
+S4GZ0J3GZvQ,sweden,3.0,geography
+S4Ygl6RqD98,idfc bank,5.0,organisation
+S5iQxTVeKNE_2,dry cell,8.0,chemistry
+S9wg2vb8-Aw,bandage,4.0,medical
+SBeMy0KGdEw_1,refresher course,7.0,education
+SCNfdbheXqo_1,succession,11.0,relation
+SCd7SRCOr9o_1,first floor,8.0,construction
+SEYjG-0Mi3U,death row,10.0,event
+SEmdCAG7t24_1,regulation,7.0,authority
+SEuUIH_SeVc_1,balance sheet,11.0,banking
+SF7r2SG-fck,desktop cleanup wizard,8.0,computer
+SG-B3o7bMAc,since,4.0,time
+SGsTDG4Awfk_1,fast,6.0,attribute
+SHPaqAaE29Q_1,re issue,8.0,banking
+SHsq8VSKV_M,korea,3.0,geography
+SINe8jrjQfA_1,needle,7.0,utility item
+SIR3vIJJECY,disease,10.0,biology
+SInKhy-06qA,sign language,4.0,language
+SIqQlHOR0JM,industrial building,8.0,construction
+SJJSpU8MFDs_2,unit,7.0,metric
+SJrFnoOcTcI,spherical structure,14.0,utility item
+SKlTYkUBVvQ_1,boy,9.0,human
+SKzJwTW4NQ8,dairy science,9.0,profession
+SMEVutE0yBw,excuse me,4.0,action
+SOkA4zA7ahE_1,jeep,6.0,transport
+SPVkNI9K4wA_1,calm,8.0,emotion
+SPqwUnfpXvg_2,octal,8.0,math
+SQ6O9z7AJpM,hydropneumatic sprayer,14.0,machine
+SQXRw3c2dYw,utility of mushroom,7.0,flora and fauna
+SQZyez6oDKg,plenty,6.0,attribute
+SQsT1oeLr4g,cotter ring,15.0,metal and minerals
+SQymUlHks-I,pram,5.0,instrument
+SREF6XRNv0w,plumb bob and line,10.0,instrument
+STJ38FSDE8w,part,4.0,math
+STNM0hUpfhQ,long day plant,15.0,flora and fauna
+STXgnu97Y6Y_1,kurta,6.0,wearable
+STdeLMDk8Sc,jacket,4.0,wearable
+STn1cOJ8Pms,boring machine,6.0,machine
+SVIuCiTrn_8_2,observation,8.0,action
+SWWKwdMT9qQ,close relation,5.0,relation
+SYNNpD0n0U0_2,binary,10.0,math
+SYlMAasD3Aw,extra,5.0,quantity
+SZeSrHZy0dM_1,parsi,5.0,religious
+Sb7r4EnLG-A_2,transformer,12.0,electronic and electrical
+SbYK9K-klAw,double click,7.0,computer
+ScstGTIjdOY_2,security convertible,10.0,legal
+Sd07nnmlTAE_2,wavemotion,11.0,physics
+Sd7e5qVlMB8,photograph,6.0,miscellaneous object
+SdBirBu-dak,cause of action,12.0,action
+Sh3P9rHIKOM,three,4.0,math
+ShXISzBU1Ug_2,gas equation,11.0,physics
+SiP1g7kh1nE,ms windows,10.0,computer
+SiRYkIO7AmQ_2,video camera,11.0,electronic and electrical
+SifysRkEATg_1,sly,6.0,attribute
+SknrxI_nq64_1,postman,5.0,profession
+SmgLg_SSvZg_1,supply,6.0,commerce
+SoxMQgRbBsA,brothel,7.0,construction
+SqIhCix7O9I,gas pipe,7.0,instrument
+SqN3GrAvif8,construction contract,15.0,construction
+SqjG2lMm-NU_1,god,6.0,religious
+SqoYBOJfc9w_1,job consciousness,11.0,profession
+Srl_Gk0vjLE,tattoo,5.0,attribute
+SsDjl4tijyg_1,paying slip,9.0,banking
+Sv-nLK45XFA_1,dasara,7.0,religious
+SwLX5yOifFI,saina nehwal,4.0,human
+SwLs3Kowas8_1,charge,10.0,banking
+Swad8O2a5Qc_1,equator,8.0,geography
+Swny54RpOVw_1,interfere,6.0,process
+SwtT_BdLe3A_1,bitter,5.0,sensation
+SxLd_Jwhy80,micromax mobile,6.0,electronic and electrical
+SyRmYT523cU,sob,4.0,emotion
+Sz-NQ2ENlqA_1,cauliflower,7.0,foods and drinks
+T--ANw8Oxkk,uttarakhand,4.0,geography
+T1M8kXkQJAY,pullet,11.0,flora and fauna
+T3wOnHCetE0_1,daily list,11.0,banking
+T45Hsn9ABV4,jordan,3.0,geography
+T4BQsAvPno8_1,leave preparatory to retirement,11.0,profession
+T4VLu2P-X9s_1,staff,12.0,group
+T6vd9Criu48,six,4.0,quantity
+T7afcYzRNU0_2,wattmeter,10.0,instrument
+T7b0UnZEOvM_1,minutes,6.0,time
+T8I_n42FuBc,plant physiology,15.0,biology
+T8g7H3Ie5YU,boyfriend,5.0,relation
+T976ElYJ-qY,enjoy,4.0,action
+TBZtRv2owM8,bacterial diseases animals,15.0,biology
+TCHTGgRtZeI_1,tender,12.0,legal
+TDbdRtOwX10,ballast device,9.0,miscellaneous object
+TDdKRcFO4k8,fingerspell,4.0,gesture
+TDlj5kHwiTk,behind,3.0,spatial position
+TGckzkVJiio_1,seniority,9.0,authority
+THp4JJ3PWvo_1,dam,7.0,construction
+TING64HUZ2k_2,ernission,8.0,action
+TIlcuqK-fr8_1,delivery,9.0,action
+TIr35oN6iSE,wallet,5.0,banking
+TIzjrc3-71E,apiculturist,13.0,profession
+TJJHfurpn-I,runs,4.0,sport
+TJQdtS0Dkyw,section,7.0,group
+TK3H8rmoV1Q,burger,6.0,foods and drinks
+TKsGy30vLtI,environmental pollution,7.0,biology
+TL4iZGEw9CY,neat,4.0,quality
+TLN5DkTzcX8,quarrel,4.0,action
+TLXAEKQwcBY,spain,3.0,geography
+TLf8Uvxntpg_2,x ray,10.0,medical
+TN5HogAE-fs,water pump,5.0,electronic and electrical
+TNNoq5pS-WQ_1,volume,5.0,sound
+TNODnmQ9R1M_1,spot and forward,10.0,action
+TOK4IBhtuYI,giga byte,13.0,metric
+TPCuCv8TjE8_1,cheque stale,9.0,banking
+TPwPNPP1rpI,social,5.0,behavior
+TQeI5Uixibg,pomegranate,5.0,foods and drinks
+TR30xmE3v0s,battered child syndrome,10.0,medical
+TRIMTrqzSOc_1,zone,8.0,geography
+TSBR8lkAmaQ,bike silencer pipe,8.0,instrument
+TSoaGw5OEb0_1,injection,6.0,medical
+TW2KbOGRx2I,sex,5.0,biology
+TXe-rPMd1q4_1,cheap,6.0,attribute
+TXtLoo3D-xQ,wikipedia,5.0,internet
+TYiNnkTwP0w,agenda,6.0,process
+TZEYZ0PggwY_1,vide,5.0,action
+TZkleWcH-wU_2,gravity,12.0,physics
+TZqRg598wGQ,shower,5.0,utility item
+TdwAJ3968lM,xbox,10.0,entertainment
+Te9AcG7ugOc,present,5.0,time
+TelHvRCbKco_1,account currency,13.0,banking
+TftELGOtnLM_2,millimetre,9.0,metric
+ThLhLlan5Yo_1,bird,7.0,flora and fauna
+Ti-7CP2GtaI_1,leafy vegetables,8.0,foods and drinks
+TihAh8jvRTs_2,exhaust pump,9.0,machine
+TirzXnBaSt0,italy,3.0,geography
+Tj5FRh9ASMU,sanitary pad,5.0,miscellaneous object
+TkREyqdJoCI,discipline,4.0,behavior
+TkWzFh1m6KU_1,run,8.0,action
+TlGf_1YuYyE_1,pass to,8.0,action
+TnGCg69kb1s_1,sports,6.0,sport
+Tp0lrE7068E,matrimonial home,10.0,geography
+Tpyp71m96Nk_1,clouds,7.0,weather
+TqSyQEAlkU8_2,centigram,7.0,metric
+TrCMG8Jm2_c,bamboo,6.0,flora and fauna
+TrGBcTGTlhI,plunger,7.0,instrument
+TspS8Y62sXs,pick stitch,11.0,action
+Tuq_-EuFAhI,bonafide,11.0,legal
+Tw2qPxlzf6Q,power duster,13.0,instrument
+Tw8BsgjnKIg,mitsubishi motors,5.0,organisation
+TwD2W_F22dE_2,calorimeter,10.0,instrument
+Ty8eDa-6gQ0,water pipe,5.0,utility item
+Tyn9hWjEn5A_1,how many,6.0,quantity
+TziAcjoELVE_1,subject matter,10.0,education
+U-3Gvctw8Do_1,access,9.0,action
+U-MdJz1XGpg_1,paw,6.0,flora and fauna
+U1TZROWBuoo,confused,6.0,emotion
+U1jYplNZtN0_1,draw,6.0,action
+U2W9kUCDsgU_1,university,7.0,education
+U3w2AbN_8Og_1,safe guard,7.0,wearable
+U4dnLRpeTN8,twelve,4.0,quantity
+U4zeXOlfF2c,gift,4.0,utility item
+U5lSxZnyve4_1,diabetes,8.0,medical
+U8-__KRMRSM,photosynthesis,14.0,biology
+U8TyoD2LxLU,dictionary,4.0,readable
+U9WAeaZQgtE_2,soldering iron,7.0,process
+UAHpTtftpWE_1,any,6.0,abstract
+UB4Z8Wzkj5g,fixed deposit,4.0,banking
+UD02Bmbm1kk,pro circle,15.0,utility item
+UDCvZbi5eMw_2,humidity,14.0,weather
+UDcg2skGRXM_1,brother,12.0,relation
+UE2dRDkXVOw_1,stabilisation,10.0,process
+UGFkd_LTNW0_2,thermostat,10.0,electronic and electrical
+UGMQBqwFQzg_1,empty,6.0,quantity
+UGX6actjbuM,dairy farm record,10.0,readable
+UJHjwQ7yclM,welcome,3.0,greeting
+UJe2UCSOExA,bone cancer osteosarcoma and malignant fibrous histiocytoma,5.0,medical
+UK3lCFwSt7A,chilli,5.0,foods and drinks
+ULLLdCsmxDU_1,lumpsum,8.0,banking
+UMGZsGFUVcA_1,see,9.0,action
+UMMYGhp1SD4,carrot,4.0,foods and drinks
+UNNkbxYzexA,taiwan,3.0,geography
+UOF_LN4gRRw_1,hindi,7.0,language
+UOFozu6HCwg_1,cross,5.0,action
+UOktZawGna4,band-aid,5.0,medical
+UPBonZ_8HIM,life,5.0,abstract
+UPh2mJTMLIQ,lollipop,5.0,foods and drinks
+UQh8UwdcnBI_1,reminder,8.0,time
+URJUqJrqo_8,wire stripper,10.0,instrument
+URTZQEPHVxk,wholesale merchants,10.0,profession
+US1v85XAz0c,ram navami,6.0,religious
+USyI1R3TCr4,runner,9.0,instrument
+UTkhiWX3IBk,wheat rust,15.0,foods and drinks
+UWWGrijcLSs,criminal court,7.0,legal
+UXoVPWIYL4k_2,uniform motion,9.0,physics
+UY6S37YeDTE_1,cash,9.0,banking
+UYS5jKTw0Ik_1,clerk,6.0,profession
+UYYmJtinmNg,toffee,6.0,foods and drinks
+Ua00PZ_-QKE_1,center,6.0,spatial position
+Ua8OAMfzWAQ_1,pre paid,7.0,banking
+UbEMzE9pxXU,absorption of water,12.0,chemistry
+UbQHwZHQSRM,alternative,5.0,abstract
+UbZzQI8wKY8_2,regular vibration,9.0,sound
+Ubg4ASlf83o_1,cream,6.0,utility item
+Ubkc3VIH4QY,side,4.0,spatial position
+UceHJJVBBzU,grudge,6.0,emotion
+Uctb3c7u__M_1,mobilisation deposit,10.0,banking
+UdD80Owt1n8_1,kite,5.0,sport
+Uf6P20S4HbI_1,register,7.0,miscellaneous object
+UfA1NhqdyRQ_1,weight,6.0,abstract
+UfJyWbJ_RpQ_2,error of omission,7.0,banking
+UfYeaYNJV8E_1,from,5.0,language
+UfZyeijqQeY_1,allowance,10.0,banking
+UhtjXl2_OcA_1,bangladesh,9.0,geography
+UivWWBHOnAc,child prostitution,13.0,legal
+UjkcbDkHvxY,touchscreen,4.0,electronic and electrical
+Ujw6xa-mmZM,temporary,3.0,abstract
+Uk2g1CB1O2s_1,buyer,6.0,human
+UksWdbYQW2k_2,natural gas,10.0,substance
+UmIy-iRAW48,shaft,11.0,instrument
+UoBpthYc-HE,u neck,9.0,wearable
+UpDvz4TFXuY,garlic,5.0,foods and drinks
+UrDzxGca4Vg,jal mahal,6.0,geography
+Us3qUIzVN30_1,outstanding cheque,8.0,banking
+UsfdUqWfoko_1,tum over,8.0,banking
+UtDbK5h2P5s,advocate general,7.0,profession
+UtIn2Jira9w,builder,6.0,profession
+UuYeKt00J9s_2,battery,8.0,physics
+UwWaRajzxt0,regular,4.0,attribute
+UwjyKkkLN7o_1,remittance,8.0,banking
+UxC_mC9iK-I,eraser,7.0,utility item
+UyOvMtr_ZOE_1,lc,8.0,banking
+UyuuFpV2QCg,extend,5.0,action
+Uyx_b73fxUc,hearsay,15.0,legal
+Uz_wWiAtIUY,thread,8.0,utility item
+V-YrxoE9qBE,publish,4.0,action
+V0VRDcoop14_1,duplicate,9.0,comparator
+V1-w01T8L84_1,folio,9.0,readable
+V1dlIBcgvjo,inner shell membrane,14.0,biology
+V2MPSLmneX0,colour palette,10.0,colour
+V2xejNSSroM,upper division clerk,4.0,profession
+V3YYjAXQwmI_2,rectifier,10.0,instrument
+V3bwmMHBHzE,engineering compass,14.0,instrument
+V3nAp-Rq1W0_1,mtl,10.0,banking
+V3vmgiymarA,route,10.0,transport
+V41e4s7n5jY_1,cure,7.0,medical
+V4nZC24tRJ4_2,solar system,9.0,astronomical
+V5ZoFg0ZI08_1,noc,9.0,legal
+V5ays4bEcFE,brandishing of a weapon,11.0,legal
+V5pMbP6wR8k,corel draw,7.0,internet
+V6STX-F9V8o_1,overdue,9.0,time
+V762TGrdsYI,establish,6.0,action
+V94cJaXyYpY,obey,3.0,action
+VA6jHsfpa4g,acacia modesta,14.0,flora and fauna
+VAGtePDt80E_1,bark,6.0,action
+VBM4ss11k-k,anxious,4.0,emotion
+VBX7WykbnZM,python,6.0,flora and fauna
+VBdO8sQJM1s_1,vessel,7.0,utility item
+VBnTbBdLA1M_2,direct,9.0,language
+VBvgxVhTCU4,cultivators,7.0,profession
+VCAyZMacKXM,inverter,6.0,electronic and electrical
+VCOeuYSrcMI_1,puppet show,5.0,event
+VCjWwq5ww18_1,granddaughter,13.0,relation
+VDET3icqk6A,wrench,15.0,instrument
+VDbvWI5QT70,neighbour,4.0,human
+VGY3MIoFFoU_2,procedure,7.0,action
+VGa4oRGUQ-w,exchange positions,4.0,action
+VH9BKxQgE4I,veterinarian,8.0,profession
+VHEz_cYLDe8,puducherry,4.0,geography
+VHdpLk4GK08_2,convex mirror,9.0,physics
+VKeDxmyvczg_1,account govemment,13.0,banking
+VL83qtgsLCk,printer,5.0,instrument
+VMI2RvR_tNA,demarcation west bengal,10.0,authority
+VO1Wuqwc4wg,memory unit,15.0,metric
+VOEpCw8MRuo,factorisation,14.0,math
+VPB0XOlm-qE,counter sinking,6.0,process
+VRTBNXGQAVY,applique,10.0,wearable
+VRhdtFEOlXs,man,4.0,human
+VWNsruK2Yk0_1,programme,7.0,event
+VX-0YdOVhIE,hashtag,3.0,language
+VYVrUCzDt_w_1,uncovered,7.0,banking
+V_NJjyZpYY4,indicator,15.0,time
+VaWad6GHjNM_1,lips,7.0,biology
+Va_b6_X-wOs,fishing for games,5.0,sport
+VbRmhM7sUGo,wet,3.0,attribute
+VbiFEC7SKhg_2,instrument,9.0,instrument
+Vc0YkcqRNAM,kohima,5.0,geography
+Vc81XotPSFs,madagascar,3.0,geography
+VcOM49u8maQ,share market,3.0,banking
+VdG0pGDoCzM,ethics,4.0,behavior
+VdaOSlNkCEY,print,4.0,action
+VfKd7mog6AA,tug of war haryana,7.0,sport
+VfQpOfUkVg8,my name is,4.0,language
+Vft0oixnLPs,mushroom pleating,9.0,process
+VgrQMDa1vlI,hand sanitizer,9.0,substance
+VhB51KKUi10,air pollution,5.0,chemistry
+VhpYWt3XsNk,caftan,8.0,wearable
+VhsF-apA_D8_1,barber,6.0,profession
+VigebdpoRlI,chief justice,13.0,legal
+Vl5pPd0iGy8_2,integrated chip,10.0,electronic and electrical
+VoGbGa9k9K8_1,requisite,6.0,abstract
+VqF3Q_7eQDc_1,china,7.0,geography
+VqIMqvX3c20,advance,3.0,banking
+VqeazWZzEp4,disobey,5.0,behavior
+VsCf7FnMXn0_1,cholera,6.0,medical
+VsZTOd6ZyJ4_1,how big,6.0,quantity
+VvCX63OKLoA_1,responsibility,7.0,abstract
+VvT_rRyfhYs,google chat,6.0,internet
+VvrNTIzW2g8_1,testament,12.0,attribute
+VvsXemECtHM_1,high,7.0,spatial position
+VyjKJB6Koyk,laying,15.0,action
+VylWxxPSBOo,croatia,3.0,geography
+Vym9FKyQnLQ_1,landlord,10.0,banking
+W1JjuXkqfyA,canteen,4.0,organisation
+W2MiLfsDFyU,wind erosion,14.0,geography
+W2nI_GK8rY4_1,district,8.0,geography
+W3mz1IrwitA,hypotension,6.0,biology
+W45SsK9W5qc_1,trophy,6.0,miscellaneous object
+W4DGPU0uPEw_1,manure,8.0,flora and fauna
+W4I02aYytbg,pencil box,5.0,utility item
+W5EDhJ6YeyE,drug addiction,14.0,stage
+W5RDOklZQxc,empowerment,4.0,abstract
+W5yf-VHdSsg_2,change in state,8.0,chemistry
+W6k4SdELuOA,bib,5.0,wearable
+W8978OLdbx0,left demrocatic front,3.0,politics
+W8DhdsaqA1A,hdfc  bank,6.0,organisation
+W96HGg5hT2Y_1,previous,7.0,time
+W98Zz8BTu7A_1,through,5.0,stage
+W9OUQR3I6nU_2,magnetism,8.0,physics
+WA9_DgdTz7M_1,department,11.0,abstract
+WAJPb-9uOMI,electrical engineering,6.0,education
+WBM9qyakPIo_1,trunk,6.0,biology
+WBcTr4MBhHY_1,progress,6.0,action
+WDHSvLNLkdM,body piercing,7.0,biology
+WERWKq12o8g,sunny,4.0,weather
+WGdXSExEco8,classification of shrubs,9.0,action
+WGp_XsdMsp8,5g,3.0,internet
+WGvrtl9p1eY,shiv sena,3.0,politics
+WHmrq95mmOw,bolero jacket,7.0,wearable
+WISR3HEeKgU,hard of hearing,5.0,sound
+WKgIi8YdHtI,local train,4.0,transport
+WMZ6Yh1FSP4_1,skilled labour,9.0,attribute
+WNcSoq9M-FU,maximum,4.0,quantity
+WNeSwJJ4J7o,deceased,7.0,medical
+WPckRR8epk8_1,purchase retum,9.0,banking
+WQpetmGGa2Y,classification of poultry feeds,15.0,action
+WQtuFPPXrts_1,occupation,6.0,profession
+WUH-YL4puUI_1,confidential report,10.0,legal
+WUTYbHOHrnM,hand rail,4.0,construction
+WVaqG1MJyr4_1,face value,7.0,banking
+WXDDCUpUoUo,guru nanak,5.0,human
+WYEvZx_EaEo,akshay kumar,4.0,human
+WYav7_mmBHc_1,intensive,8.0,quantity
+WYgbIDwh3pQ_1,attendant,14.0,profession
+WYoKVNCSH30_1,witness,7.0,human
+WaTcrOr3-gk,international,5.0,geography
+WaYyPwTPsY4,hug,4.0,gesture
+Wasx0HPXASQ,move,5.0,process
+WcmCeaR7Kk4,monsoon,7.0,geography
+WegWM9MfmYo,official,6.0,profession
+Wi0iDXiVO3Q,allahabad bank,5.0,banking
+WiOoeG7LL6I,clean,5.0,action
+WihSOQ3tQkw_1,gazette,10.0,readable
+WjM69tcGYT4,next,5.0,time
+WjikjzSwWqo_1,mail,6.0,readable
+Wli68zezuKs_1,sight bill,7.0,legal
+WnMFiznX8XY_1,registered,7.0,legal
+WoCa7_MyCog_2,melting point,9.0,physics
+WqC9XaIJz8w_1,tabala,6.0,sound
+WqPLcJouptA_2,longitudinal wave,11.0,geography
+WqWsOMVE56M_1,relative,11.0,relation
+Wro4Idj6K5s,crow bar,5.0,machine
+WuGMN12WHWc_1,negogiable instrumemts,10.0,instrument
+WuoR5g21H1Q,kannada,8.0,language
+Wv59G4v5X2Y,colour,3.0,colour
+WviZ3J-pPPI_1,working capital,8.0,banking
+WwD4gB4M3XA_2,real image,8.0,physics
+WwlvxaeHNGI,video call,5.0,internet
+WzQaqtHXGOc,waveform,4.0,physics
+X1g2HV45ghU,fish as a human food,9.0,foods and drinks
+X2LpR5Hc7YE,air matress,8.0,utility item
+X3YXNM8tpD8,fryers,15.0,foods and drinks
+X4AM6n6lNhw_1,password,9.0,computer
+X4Vs1TVkNss,yahoo,3.0,internet
+X6SdTvnlu94_1,soiled note,9.0,banking
+X6V6ixAK0bI,inflammatory bowel disease,12.0,biology
+X7cTwzYjoko,vertical scroll bar,13.0,computer
+X7vnmMCdV48,hurdle race,4.0,sport
+X8RjdHHXbCY_2,soldering flux,9.0,physics
+X9wanmhpROw_1,maturity,10.0,behavior
+XAvOgSgdGDA,motorcycle,5.0,transport
+XCPgFzW3yUE_1,withdrawal slip,7.0,banking
+XCYJTR2fzss_1,assembly,7.0,group
+XDO5mNV8P8o,abusive language,11.0,language
+XDSaCZLa0o0,express train,6.0,transport
+XE2bfzfoTro,golf,5.0,sport
+XECPEZiJD4E_2,eliminate,7.0,action
+XEQsvpY65LY_1,ratification,7.0,legal
+XFDOnLG4P7Y,shatabdi express,4.0,transport
+XHJhdPI69bU_1,bend,5.0,action
+XI4MKE3j4no,communicate,4.0,process
+XIKz5RlhRZU,button placket,5.0,wearable
+XJlP6BgrAow,san serif,12.0,abstract
+XJmhK6SxaMQ,mugshot,12.0,legal
+XMtMf2GRxxk,translator,4.0,electronic and electrical
+XNwWFLtgL8I,singer,5.0,profession
+XNzRI_vkkxM_1,banian,7.0,wearable
+XOHJjemMcW8_2,rapidly,8.0,time
+XOqFl-yg95M_2,white,9.0,abstract
+XP1X2toQb3s,common,5.0,abstract
+XQgxYpjO6jU_2,muitimeter,10.0,instrument
+XR2EElHLeWE_2,heat,8.0,physics
+XR_LQZfd3F8,bishop sleeve,7.0,wearable
+XSz3T7I9Fbg_1,leave study,8.0,profession
+XT42tl2wl_4,general,4.0,abstract
+XT4QvSmPJRQ_1,unearned,8.0,banking
+XTZcfTHZlW0,haryana,5.0,geography
+XV9orqztWis,bank branch code,7.0,banking
+XVlUiV0aFOM_1,inspection,8.0,authority
+XVyV9wkauSw_1,outstanding report,9.0,readable
+XWvuOZR3KRY_1,unavoidable,8.0,abstract
+XWwz6oS8uz8,diarrhea,5.0,medical
+XaifQVBtgpw_1,axe,7.0,instrument
+XalS8Nhpxy8,sim card,4.0,utility item
+XbKXIrsb2Sw,boolean,12.0,math
+XbKePH5Af7I_1,court,6.0,legal
+Xbglx4_9h88,iceland,4.0,geography
+Xbumrid_U8k_1,routine,8.0,action
+XclyR8ijJbo_1,running account,10.0,banking
+XdGYd0-mOy8,unlimited,5.0,quantity
+Xds_c4kK0UQ_2,pollution,7.0,geography
+Xf0NPEArdgY,equal,4.0,metric
+XgbPX-5ddNM,surprised,4.0,behavior
+XgnLpUYDvoE,geodetic surveying,14.0,education
+XhewfEcC070,innovate,8.0,action
+XhiIueAytF4,stomach,4.0,biology
+XhxvdfUYX1E_1,last pay certificate,10.0,banking
+Xj4aXWm1Ivk,hack saw frame,8.0,instrument
+Xjnz65u4rsc_1,cash credit key,10.0,banking
+XlHIH3wgbr4_1,thorn,6.0,miscellaneous object
+Xlo5HX0NVO0,tool box,9.0,instrument
+Xlq9pRiAwLA_1,towards,6.0,relation
+XnTZYBLuwos,classification according to parts used for crop,15.0,action
+XnkB49W7JEI,humble,4.0,sensation
+XpYDSeC0hTA_1,poision,5.0,medical
+XqH46D16YDI_1,tea,5.0,foods and drinks
+XqcaXXg2ncs,flatulence,10.0,human
+XqqYCaMA1oM,damp proofing material,13.0,substance
+Xqqb4UhRPMI_1,underwriter,9.0,banking
+Xt6ujzVtikU_2,change in temperature,9.0,chemistry
+Xvw_2UBBL30_2,known loss,8.0,banking
+Xw90mtR4Z7c_2,capacitor,8.0,electronic and electrical
+XwQxJ5FXoQ8,may,5.0,time
+XyDptoi7dw4,flower for exhibition,13.0,flora and fauna
+XzFGTYxVrW0_2,extermal combustion engine,11.0,machine
+XzRvTWXXufk,vivekananda rock memorial,7.0,construction
+Y0G5Sqs-lYw,librarian,4.0,profession
+Y0JhQ12-JVE,negligent,4.0,quality
+Y1KyjzkkP4E_1,of,6.0,language
+Y1_xQfLPThU_1,provision,8.0,action
+Y1qTt6mL5ck,world federation of the deaf,4.0,organisation
+Y1sJK9C1Y14,change of venue,11.0,action
+Y2uzoxP4eZc,central processing unit,11.0,computer
+Y66DFt19PyE,student,3.0,profession
+Y7Smdq0HgqY,choking,14.0,medical
+Y7eYIdnqRSU,pumpkin,4.0,foods and drinks
+Y9MkvKtXngo,decade,5.0,time
+YAn2NmtqmkU_1,climb up,6.0,action
+YCnpEJTrtb4,older sister,3.0,relation
+YCunYHD0SVY,lawyer,4.0,legal
+YCuxJLH5fK0_2,refinance,7.0,banking
+YDCikAndHLU_1,wife,10.0,relation
+YELxiOno-Q4_1,income,8.0,banking
+YFrtVUeFoe4,peril,4.0,abstract
+YGISt7qQBCw,catalogue,9.0,utility item
+YHRvUilX5yc_1,incharge,10.0,authority
+YHl7zDSdzVE,javelin throw,3.0,sport
+YIns3vxfhnk,masculine,4.0,behavior
+YJTInZmt8eE,brick masonry,7.0,construction
+YKeS_ZBqjUs,lantana camera,14.0,flora and fauna
+YMao9qfTNDs,herniated intervertebral,14.0,biology
+YMuk_8H4EWM,madhya pradesh,4.0,geography
+YMzAv4AKiZI_1,responsible,7.0,behavior
+YOouxgzRLPY_1,ant,6.0,flora and fauna
+YPnTIhCizr0,rainbow,5.0,weather
+YQflbkaOx2g,table,4.0,utility item
+YRc3fxOAnOg,hungary,3.0,geography
+YRlUUOC7_-0_1,partnership,10.0,relation
+YSKXGgR-m4Y_1,visit,6.0,action
+YSgIm4RE1E4_1,soap,7.0,utility item
+YT1x1wgyjLQ_1,tiffin box,6.0,foods and drinks
+YT3NbB5D_AU_1,sue,10.0,action
+YW5naaaX4ag_1,tight,6.0,quality
+YYJ96CO6dt0,slippers,4.0,wearable
+YZNxu9uehxA_1,land revenue,10.0,banking
+Y_T9AimBaqk_1,wastage,6.0,abstract
+YcSno6m_WPQ_1,inauguaration,7.0,event
+YcTowX_Es6E,banana tree,6.0,flora and fauna
+YewyTxkCShU,lawn,8.0,construction
+YfPizjRLLBk_1,nail polish,7.0,utility item
+YfbeV360wAA,kajal,4.0,utility item
+YgZcsvejUF0,sixteen,4.0,quantity
+YhHAI3h-Pno,phone,6.0,electronic and electrical
+Yipdqci-cG4,speak,3.0,action
+YjFFLGIxdsw,indian national congress,3.0,politics
+YkjhmBTDRSE,surface erosion,10.0,geography
+Ykv_2L4-7RY,accident,5.0,event
+YlpdAUskBYI,protect,5.0,action
+YnKRMSyKkJk_1,chapathi,6.0,foods and drinks
+YoqthDSpmXU,show,4.0,action
+Yp-T6g3cBAU_1,rectangle,11.0,math
+Yrzxd9xMdf4_1,manual of instruction,9.0,readable
+YscdSP4txHA,gang box,9.0,utility item
+Ystk7l_FXfM,specialist,5.0,profession
+YtxxtvSqLN0,button loop,10.0,wearable
+Yu6K4sXguXs_1,fruits,7.0,foods and drinks
+YufUJ48avIM,all india federation of the deaf,4.0,organisation
+YwFKOE6S4C0_1,bogie,9.0,transport
+Ywv9sPO2h8U_1,shipping order,9.0,process
+Yx69VxUEjg4_1,expansion,8.0,quantity
+YzE81xCkrbs_1,premature,10.0,attribute
+YzFnEXBbgqk,railway station,6.0,transport
+YzMaVzYqmoI,cutlery,7.0,foods and drinks
+Z-WSsu6coz0_1,specimen signature,11.0,attribute
+Z-eYQ41xjss_1,auditorium,7.0,construction
+Z1du80pIIo0,brochure,5.0,readable
+Z1rwaj311WE_1,need,6.0,abstract
+Z3CJVJpzaio_1,keeper,10.0,human
+Z3vKfnZktzo,parking,6.0,transport
+Z40K5gHMTUI_1,transfer,6.0,action
+Z45tFt5f02s_1,more,6.0,quantity
+Z57OPDQI-AM_2,transverse wave,10.0,physics
+Z6tnoY_mWJI,ahmedabad,5.0,geography
+Z7SDxmGugRY_2,stretch,9.0,action
+Z7rp2PsMEnM_1,flat,6.0,attribute
+Z90_kV0h1d8_1,re sale,6.0,banking
+ZD4iPTVebqg,flowering hedges,10.0,flora and fauna
+ZE26UZXyMDs_1,laddu,5.0,foods and drinks
+ZES6f5bu19M,jantar mantar,5.0,geography
+ZGH9wRwlXSA_1,leg,9.0,biology
+ZGZMh2l-Kro_1,upper age limit,9.0,time
+ZH6w06bHVJs,center  back,10.0,spatial position
+ZHn-DlqMC3c_1,deposit short,12.0,banking
+ZKrESO7NJkw,electrical leakage,10.0,physics
+ZLMSgBfkRgc,lebanon,4.0,geography
+ZLj7E6Q5ZUg_1,year to year,9.0,comparator
+ZM0n1zjza48,trader,7.0,commerce
+ZM95iphl6eM,chile,3.0,geography
+ZQXv3lFCkp8_2,equation,8.0,math
+ZQzqGalXdEU_1,raddish,7.0,foods and drinks
+ZRb_4bhHAus_1,lunacy,9.0,attribute
+ZT-CEOMhqAI_1,planet,8.0,astronomical
+ZTdHkUXOcHU_2,visible ray,8.0,physics
+ZTyOfVeFBgA_2,sotar,8.0,astronomical
+ZU74gADGVD4,practice,5.0,action
+ZUL1-j2VL6w,technician,4.0,profession
+ZWdAqWE-J3k,polite,5.0,attribute
+ZYzl-LchceU_1,lucknow,5.0,geography
+ZZtr21utYZU,cartidge,15.0,utility item
+Z_LPvE-ICAw_1,near,6.0,spatial position
+Za7gQoC8eaA_1,hospital,6.0,construction
+ZaBfhzfL_II,long jump,4.0,sport
+ZaNS5RUpBAM_1,jain,5.0,religious
+Zb_TG66NcQM,libya,4.0,geography
+Zc9o_U0ilpU,discount,6.0,banking
+ZcKsHron__8,graders,10.0,education
+ZcxtRrRVHFE,request,4.0,action
+ZfvUujCbJR0,motorola,5.0,organisation
+Zgt1aed1imY,buddhism,4.0,religious
+Zj_vIX40c4U,internet,8.0,internet
+ZkswCQRgxvQ_1,tongue,6.0,biology
+ZlEsSpNpRWc_1,tiger,5.0,flora and fauna
+ZlHosNYMQwE,christianity,4.0,religious
+ZmwQgw19ceU,lime paste,7.0,substance
+Zn0fVlU7o9Y_1,note,6.0,banking
+Zr3LQ0FwcUM,victory,4.0,event
+Zrcq4sIJPH0_1,transaction,9.0,commerce
+ZrzSxs277R8,bronchial tumors,10.0,medical
+ZsQM3Ip3WP4,oneplus mobile,4.0,electronic and electrical
+ZtAKgVo5KFQ_2,property tax,6.0,banking
+ZuMVWIDZEQI_1,incentive,9.0,legal
+ZuVsJQ_IKxc_1,balance outstanding,11.0,banking
+_-U30DSj-t0_2,plane,9.0,math
+_16L9IQXOm8_1,around,6.0,spatial position
+_1vtXVjFtg0_1,brittle,7.0,attribute
+_2TlWc7fctg,donald duck,5.0,entertainment
+_4oE2cTO6V4,blind stitch,14.0,wearable
+_5-p1Ci-LQI,norway,4.0,geography
+_7E0eolOh4c,elevator,4.0,construction
+_7G2Uzs6TTE_1,prescription,7.0,medical
+_8BciHWrpOA,genuine,4.0,attribute
+_8bxz4NREvk,prime location,12.0,spatial position
+_9JUz_eRGKk_1,arrears,10.0,commerce
+_9fyR8lD1Uo_2,zero correction,9.0,quantity
+_CKSfuSN8qY,test,5.0,education
+_Dzn4G-zY6Y,opuntia,12.0,biology
+_FpLmutBgNQ_2,curvature,10.0,physics
+_GG3jvZWj_4,chikoo,4.0,foods and drinks
+_HPV8-2Xdx8,distance learning,6.0,education
+_J3ub2IKdWM,clauses,14.0,language
+_JhAFFdTuQk,time table,5.0,time
+_K6fZSaEvfY,idbi bank,6.0,organisation
+_KD_lxiKv6o_1,overleaf,9.0,abstract
+_KNZJg6KmXo_1,sharpener,5.0,utility item
+_MQLjVv71vA_2,convex,12.0,physics
+_NQG94L6Ook,some,4.0,quantity
+_P4bfLS4TnU,influenza flu,10.0,biology
+_QKUHg7BOt0_1,model,7.0,behavior
+_QuzEYjeK5o_1,task force,9.0,legal
+_RUSSzoAwkI_1,grind,6.0,process
+_SL5nKedSfM,defraud,5.0,banking
+_UPbbNrJVTI,outer shell,13.0,substance
+_VoVLROfTak_1,cash certificates,10.0,banking
+_WJFCAKQNOk_2,particular,12.0,attribute
+_Zk6T8osdEc,xylophone,5.0,sound
+__Rz2PaTB1c,malayalam,5.0,language
+__cUle3-80c_2,copper wire,10.0,metal and minerals
+_eYKufKYrnM,lumberjack,11.0,profession
+_erfAmrdyIM,take a photo,6.0,action
+_g40sO4Upvg,iraq,4.0,geography
+_g4EWTEciww,milling cutter concave,8.0,instrument
+_gSbFjpWY5c_1,serve,6.0,action
+_gdCYZeEcTY,in the middle,5.0,spatial position
+_guaVXmbJsE,bell sleeve,8.0,wearable
+_hrzFsvu4iI_2,plane convex lens,10.0,physics
+_jbbOFSVFyY,basil,6.0,flora and fauna
+_l5aWVYPWik_1,stock book,10.0,banking
+_lF0BZafFlw,belgium,3.0,geography
+_mAt07ZKGeg,kolkata calcutta,5.0,geography
+_mmkfKN0-dg,chipping,4.0,process
+_n7v_yu-uiY_1,rotten,7.0,attribute
+_otCOj9YmMs,drunk driving law,10.0,legal
+_pDr9N-HtgQ_1,monthly return,10.0,banking
+_qABLoRjm18_1,survey,10.0,process
+_sBMoMv15aQ_1,mortgage,10.0,banking
+_uvEsXwbAKw_2,biomass,8.0,biology
+_v0ZCfpOs8c,crops,15.0,flora and fauna
+_vlN9I_YSG8,united nations convention on the rights of persons with disabilities uncrpd,4.0,organisation
+_vpJKqAQ_u8_2,geyser,11.0,machine
+_wR2epuH6m8_1,reconciliation,6.0,relation
+_yuawBKn9O0_1,february,6.0,time
+_zIhoXYpQfQ,folder,11.0,utility item
+a1Nj8ScIhho,rani of jhansi,4.0,human
+a3ZwnyHdlGI,cage,6.0,construction
+a3qDF39okh0,citrus vulgaris,13.0,foods and drinks
+a4PC3Klb_OA_1,jalpur,6.0,geography
+a5kEZgbaT7w,i understand,5.0,action
+a6CyJGTNsG8,duronto express,5.0,transport
+a7LNu3_mPAo,sarong skirt,8.0,wearable
+a7hNqWODhnU,fingerprints,12.0,human
+a7kvbMiKkuQ_1,strike,7.0,process
+a9xB9EN33FY,mineral matter,11.0,geography
+aAOnQ9s6SlM_1,financial year,11.0,banking
+aBFl_E3z3m0,flounce  hem,15.0,wearable
+aBWOTIxuGus,mysuru,6.0,geography
+aCSZ-jr5Y_o,shallow,5.0,attribute
+aF30g7ajjas_1,turn,6.0,action
+aFOyoIR4gqw,split pulley,14.0,machine
+aHhWeircCv4,thiruvananthapuram,4.0,geography
+aHmj7r_Ts70_1,crocodile,6.0,flora and fauna
+aIJKbhWx3So,under the weather,12.0,medical
+aJeKWqpMr7Y_2,glass stab,10.0,substance
+aJkcfI5vUd4_1,parent branch,9.0,organisation
+aKKqKv1FFrU_1,expert,9.0,attribute
+aK_immPV5TM,statistics,5.0,math
+aLFLtt_Hy5Q_2,parallel circuit,14.0,physics
+aL_AGq7MxBk_1,visual aid,6.0,banking
+aMs5U3qDEJ4_1,towel,6.0,utility item
+aNthcGq-FqI_1,vacancy,8.0,abstract
+aO1B2sAfigI,again,4.0,time
+aOR-2KDf9pA_2,concave,12.0,physics
+aQ6GM2E-3-k,internet disconnection,5.0,internet
+aRMlrpN0MzU_1,up,5.0,spatial position
+aS2e07FE2uw,jew,6.0,religious
+aSHLJIU6ZeE_1,sandwitch,6.0,foods and drinks
+aTHCIoGVi0k,judgement,10.0,action
+aTp3Y4ABxB4,sling bag,5.0,wearable
+aVXHUzd1cW4,while,4.0,abstract
+aVxK8yw7z7I,paste,5.0,action
+aW1uRjayEEQ_1,amendments,9.0,legal
+aW8jBRmN24M_1,tour,9.0,event
+aXHoCMyVez8,juliet sleeve,7.0,wearable
+aXvpcfjK7Sg,officer in charge of jail,13.0,profession
+aYQ97trsr6k_1,celebrate,6.0,event
+aYbsN9GG3kY_1,actor,8.0,profession
+aYjNOmE73zE,flat gardens,11.0,geography
+a_yFlzuJ7oY_1,sundry,7.0,quality
+aawUzeSXJpU,handle,10.0,utility item
+abz1iHHIktI_1,ledger balance,11.0,banking
+acdKVU7bbhw,appointment,4.0,action
+ae55QOIEGEk_1,operate an account,10.0,banking
+ae7r5dnrG34,austria,3.0,geography
+aeJSYb8CmS8_2,troughs,14.0,physics
+aePcBtCpcPA,road separator,7.0,transport
+aeaHJYnML2E_1,corresponding branch,10.0,banking
+afB8ioKoVh8_1,shortage,9.0,banking
+afZNvfwjxEA_1,vendee,7.0,human
+ag8J-3yc7PE,engineering scale,13.0,instrument
+ahUSb4o3pKw,culottes,9.0,wearable
+ajczOXxcx_s,mouth parts,12.0,biology
+ak5WS3_FBv8_1,fisher man,7.0,profession
+alyadcV43G8_1,item,11.0,utility item
+amB7PkF8fWQ,serial tv,5.0,entertainment
+amb6frWEiDU,ministry of social justice and empowerment,4.0,authority
+aodgodCQNX8,palazo pants,10.0,wearable
+aoicBWQGk0Y,claw hammer,6.0,instrument
+ap3r07toNRc_1,count,7.0,metric
+apPABUUQDLA_1,leave earned,10.0,profession
+aqym4tojhqQ_1,dividend,8.0,math
+araXKMU7R4g,cif number,8.0,legal
+atIObXII22k,opposition,2.0,action
+atyCov9u9no,jail,5.0,construction
+ava3Ux-MDDE_1,encashment,10.0,banking
+axEFBCXFyt8_1,paise,5.0,banking
+ay7OzoG5fk8,tax,5.0,legal
+ay96dkDBYMs,ms excel,10.0,computer
+azP0G1dB1KY_1,roof,7.0,construction
+b00DR5Ly-Y0_1,head of income,9.0,banking
+b00epXFNL5U,atm,4.0,banking
+b03dkzGkDV4_1,whose,6.0,abstract
+b0zVJUx-H0Y_1,curds,5.0,foods and drinks
+b1Cbwx9LrQM_1,short,6.0,quality
+b1kVeCRjm1M,patna,6.0,geography
+b23vl51AH4U,tamarix gallica,13.0,flora and fauna
+b4ki5taIk0s_1,wipe,7.0,action
+b4ywpRBTw4o,log off,7.0,group
+b5pF8YU_ILs,policeman,5.0,profession
+b67oA7lAXi0_2,soldering lead,9.0,process
+b6mge7fT8p4_1,worry,6.0,emotion
+b7EQniqN7rs_1,now,6.0,time
+b7U7TWlmbOs_1,trustee,8.0,human
+b8BlqEQCtiY_2,notice,10.0,legal
+b8ZOlo8oXbQ_2,joule,9.0,metric
+b8z6CTJw-TI,contest,5.0,event
+b9Ad8smAqhs,zigzag,8.0,attribute
+b9_2HxUsi0s,super computer,11.0,computer
+bA7mLrTdy60,district court,13.0,legal
+bBzWwcYyMK8_2,filter pump,11.0,instrument
+bC7wNuiLgHI_1,machine,6.0,machine
+bDOUOr8c5EM_1,account suspence,13.0,banking
+bEgGF4YuHm0,theatre,4.0,construction
+bEmiFY64B3c_2,ohm,11.0,metric
+bFEz8r3xfMI,chalk,7.0,utility item
+bF_5-TAoxTo,wind borne disease,15.0,medical
+bGzdNLa1O9o,plan,5.0,action
+bH3KEeVn-rU_1,bandh,7.0,event
+bIha_uKKc-U,water filter,5.0,electronic and electrical
+bJ1Nsi71fnE_2,rf osciilator,11.0,instrument
+bKliVu0i0SI,chimney,14.0,utility item
+bMY7k6ug38E,emphasize,7.0,action
+bNPBUXiWYYI,plain cement concrete,7.0,construction
+bOqgzRbAuqg_1,fishing net,7.0,instrument
+bR89wUFYe8I_1,wear,6.0,action
+bRG0I-FNuII_1,account discount,12.0,banking
+bS8Bh2t9PSA,hip hugger,6.0,wearable
+bUybAkPWQH0_2,screw guage,10.0,instrument
+bYZKoGWvfyM_1,police station,5.0,legal
+bYyLAeq4yNY_2,hydrology,9.0,geography
+bZLyr43R2t4_1,will,7.0,abstract
+bZnTQsP8FCY_1,trade,6.0,commerce
+b_TvDsf97GY,two thousand,5.0,quantity
+b_cuB9Hjx34,peanut,6.0,foods and drinks
+bacheB1uzFE,alphabet,4.0,language
+baqITtRxH5U_1,appear,6.0,action
+bbWGXTXiw4k,cute,4.0,attribute
+bdn3KzMo_rM_2,diode,12.0,electronic and electrical
+benrZFXwf4g_1,river,8.0,geography
+bfc3A5WT7O0,athlete's foot,10.0,medical
+bhMRCTyJyNI_1,without prejudice,8.0,legal
+bhPu5UgetR8,zinc sheet,6.0,metal and minerals
+bhY9tXL3Z0w_1,mail transfer,9.0,banking
+bi4xQMdEcVo_1,requirement,6.0,abstract
+biAm9EJuH8w_2,oil,9.0,foods and drinks
+biSlYwhDtc4,flute,7.0,sound
+bjJtF35pjhI,throat plate,13.0,instrument
+bkJI2VTpAwA,keyboard,10.0,electronic and electrical
+bmnbIMDM4MY_1,compound interest,9.0,banking
+boWOpxe2CRY,national association of the deaf,3.0,group
+bp32ckPVj6s_1,company partnership,12.0,commerce
+bpK_n3OqDDw,hairdresser,9.0,utility item
+bq0BIQJzsbY_2,physical balance,11.0,instrument
+bq2QpJpjWUs,embarrass,3.0,action
+bqTLB7fccW8_1,nri,10.0,human
+bsDAoxpr8Sc_1,halting allowance,9.0,banking
+buBZGkwchow,release,4.0,action
+bubXTcY0A2E_2,dispersion,7.0,physics
+bwrBPuatbGQ_1,bank nationalised,13.0,banking
+bxQU88YWOhg,seychelles,3.0,geography
+by5LPvJU5OY_1,all,7.0,quantity
+bz6nldNgnjU,blackberry,5.0,organisation
+bz7Stt4IzGc,bully calf,11.0,flora and fauna
+c-iylYqUcUw,bench mark,14.0,metric
+c02rBJWw1fo,cargo  pocket,11.0,wearable
+c05vX2BcjUs_2,absorption,6.0,attribute
+c26UiFPMTcw,annual,5.0,time
+c5txohM_Pv8,body parts,8.0,biology
+c6lgZeRgbuM_1,continent,7.0,geography
+c8cBnLAFa40,blight,14.0,medical
+c8vOZMKsBC8_2,north,8.0,spatial position
+c9Kcl0vkQh4,arrogate,15.0,action
+c9hrMSMJFgw,congratulations,4.0,greeting
+cBtN1DlLXAs,different,5.0,comparator
+cEclg4wFkQY,bank branch address,5.0,banking
+cFdYCBpZGEw_1,only,6.0,quantity
+cHTrAwUZtNY,ginger,4.0,foods and drinks
+cIPxnJAUd74,newly weds,6.0,relation
+cIyDQeSqcnk,reinforced cement concrete,14.0,construction
+cKkCZ_GYpkk,scream,5.0,action
+cMIJrgJVkzc_1,order standing,10.0,banking
+cMeg0EWN2mY_1,season,7.0,time
+cMm2cWGKt6Q,murraya exotica,13.0,flora and fauna
+cN4cdQ7Uvhw_1,storage,8.0,quantity
+cNL6z2IayOU,bandra to worli sea link,5.0,geography
+cPSQyj-JTpM,compositing,15.0,construction
+cSyNdG5W6i0_2,parachute,12.0,miscellaneous object
+cTLsY2Pa848_1,land holding,9.0,legal
+cW1M5CUdCmk,mother in law,5.0,relation
+cWsTOcbwNJg_1,nect tie,6.0,utility item
+cXKAkxMNEYI,grenade,12.0,machine
+cXX9Fqj1fuE,well,5.0,construction
+cZ4RwsITk3c_2,diffraction,10.0,physics
+c_CVbagPDA8_1,physical training,8.0,action
+c_N193NzE94_1,credit purchase,8.0,banking
+c_i7AAEhy3E_1,super,10.0,quality
+caIqDNu--II,compaction,10.0,construction
+cclXS3qW2bI,black market,9.0,legal
+cdg2loc35vs,agree,6.0,action
+cfAXWBaT88Y_1,jealous,7.0,emotion
+cfPvMQAbTy8,engagement,4.0,event
+cfiEadKO-jY,machine water pump,9.0,machine
+cg4E83GKGJk_1,tail,6.0,attribute
+cg9Qwgaezdg,download,8.0,computer
+cjlXzFSoIco_1,squrriel,7.0,flora and fauna
+clwF6d-MIBw_2,bad conductor,11.0,physics
+clxS63kY4zs_1,accured,12.0,banking
+cmFVOsYv2Nk,argentina,3.0,geography
+cpbTXmt7XwA_1,quick,6.0,time
+crOKuw1QwVk,pulley,9.0,instrument
+cuv95axJkJg,motorcycle air filter,15.0,machine
+cwDDoB4ZOZY,connect,6.0,process
+cwEfR3ySdZg,disease control of plant,13.0,biology
+cxqz0EbY4yE,eczema,7.0,medical
+cycfuVbrlOQ_1,owner cultivated,9.0,relation
+czE3uNUVUKA,spoken,5.0,sound
+czmizKva6TQ_1,drum,5.0,sound
+d3tDqVfbgCg_1,pull,6.0,action
+d4zWp5T3P-w,cloudy,7.0,weather
+d5SWvjzXUbs_1,absorb,6.0,action
+d5gBuuQWncc_1,begin,5.0,time
+d73jrF3Tevc_1,primary,8.0,attribute
+d9MAodEjHsc,send,4.0,action
+d9qLL38zaZ0,parade,5.0,event
+d9s1JfE1Rv0,crime scene,10.0,legal
+dCvX2SjAybM,adjudge,10.0,legal
+dDJCclqr7jo,sesbenia aegyptiaca,12.0,biology
+dFNIhuujLGo,capital punishment,6.0,legal
+dFstSkKTdJs_2,agreement,10.0,commerce
+dGP1h8tXPGY,republic day,5.0,event
+dGg9jffJ8us,habit,5.0,behavior
+dNSKKwUJdGI_1,desert,8.0,geography
+dNrwv9tT8qY_2,solar energy,10.0,physics
+dOdFMkRCpWI,pacing,15.0,action
+dQs0quEuTls,traffic lights,6.0,electronic and electrical
+dRZkuKTLcis,chief minister,5.0,authority
+dT9dCqGuDCE,kick,5.0,action
+dTjzMwNtA1o_1,union,7.0,group
+dWGCRKIqUb0,drop cap,14.0,language
+dXn51-btduM_1,major,8.0,quality
+dY77Eo9bfNg_2,southern hemisphere,15.0,geography
+d_-8DagcQRQ,allen key,12.0,instrument
+d_GdVQe7Jrk_1,project,8.0,abstract
+ddUcwkYlh5E,abrogate,11.0,legal
+ddanfdSlKGA_1,chest,7.0,biology
+ddpIUqF0dEg,murder,3.0,action
+dduOBzdGYug,generator,5.0,electronic and electrical
+df3ewqju9L8,vocabulary,3.0,language
+dfF51UQf_AM,garage door opener,6.0,utility item
+dguva7pmiNk_1,hungry,7.0,sensation
+dhPr_hzP8oM,mushroom storage,13.0,process
+dhYooos0RiE,germination,13.0,process
+dhy4BOXYtEs_2,newton,8.0,human
+diGBpMN_-WM,electric tester,7.0,instrument
+diWGuc9GzL8,fruit disease,15.0,biology
+ditvJHcM784_1,knee,7.0,biology
+dk9QGWXU2kY_2,flouresence,8.0,attribute
+dllJRt0_AGQ,buckle,5.0,wearable
+dm6hv7A_XGI,wicketkeeper,4.0,human
+dmDV7FGfc0E_2,hydro electricity,11.0,physics
+dmspcOTLMP8_1,file,5.0,readable
+dnl45S16tjs,advocate,4.0,legal
+dq2YpgXqCn8,program,3.0,action
+dqZy_QkKqNM,subhas chandra bose,4.0,human
+drY08LJIVLw_1,growth,8.0,time
+du_72ySABJM,heifer calf,12.0,flora and fauna
+dwuDZ2R6yV0_1,cheque endorsement,9.0,banking
+dxPUI_h_LAk,basics,7.0,quality
+dxoUqsSHx4E,thin,4.0,quality
+dxvGVA3-j9k,karnataka bank,5.0,banking
+e0SfMAxA-jo,freezing,12.0,process
+e0VLtZBWLHY_1,off season,8.0,time
+e0WS9OgJpFs_1,account joint,14.0,banking
+e3GI7PCF70Y_1,hammer,6.0,instrument
+e4C5ez28e1w_1,probing,7.0,action
+e4lux9dnPcw_1,sleep,7.0,action
+e4rgP9qVQlo_1,turkey,7.0,geography
+e6oOrAWzRak_1,frog,6.0,flora and fauna
+e7FqJXEP2h0_1,revised,7.0,abstract
+e7GHpJSlm1U_2,pluto,10.0,astronomical
+e8r0Tt42W7Q,limitless,5.0,metric
+e9pXePHQJnM_2,hydro energy,10.0,physics
+eAFoZUaOwac,chickpea,5.0,foods and drinks
+eB-n9xBA7Uk_1,reject,5.0,action
+eB9zCNo5R88_1,partly paid,10.0,banking
+eBiQCRMwX1A,illegal,5.0,legal
+eBn_I264LVs,measurement,3.0,math
+eD1Hy4MJuRw_1,purpose,6.0,abstract
+eELQUxt6rUE_1,thirsty,7.0,sensation
+eFb4OLllu9I_1,compromise,7.0,process
+eGXitOKnND8,macau,4.0,geography
+eH7rPf10P-w,strict,3.0,behavior
+eH_v5Kwbkx8_2,petrol,9.0,transport
+eJ8Brka8TKw,bad language,5.0,language
+eJ8fFy6Litw,myanmar,3.0,geography
+eKESeb6rZGw,a line skirt,7.0,wearable
+eKHR8uZXbHE,tyre,5.0,transport
+eKQhdwlBO_U_1,bail,7.0,banking
+eKfjQx-16GU,cam,15.0,instrument
+eNA2jaQ3PgU,leg mutton sleeve,10.0,wearable
+eNAP3Ae71MY,attorney general,9.0,profession
+eNbHxuaMpAw_1,spend,6.0,action
+eNwMbD5wsow_1,surrender,8.0,action
+ePBmpfIy7-c_1,publication,6.0,education
+eQ5_2D_y2CM_1,refer to drawer,7.0,banking
+eRpqfK08yI4_2,venus,10.0,astronomical
+eRr2PaNsu9U,sever,5.0,action
+eSFyfkFVTIU,ten,4.0,math
+eTKkv1WCs0Y_1,authorisation,11.0,authority
+eU8dCYk_41Y_1,publicity material,8.0,politics
+eUB3bcNRzU8,brain tumor  inside,6.0,medical
+eU_A9agtfeo_1,seal,9.0,flora and fauna
+eWbekocb_go,shawl,4.0,wearable
+eYDkqbfQD7E_1,chew,7.0,action
+eYe_qYNO81o,daisychaining,5.0,electronic and electrical
+eZ3vcetOBEE_2,longitude,13.0,geography
+e_2UcnQtmng_1,lipstick,7.0,utility item
+e_i6YwNoSUY,quadrupedal robot,13.0,electronic and electrical
+ea8VG_U1OM4,live,5.0,process
+edkUTr95raw,kangaroo pocket,7.0,biology
+eeMbTJ1Jyl4,hardware,7.0,electronic and electrical
+eeVBDqHOrEQ_1,its,5.0,language
+eh4PJUNc3GQ_2,pigments,9.0,biology
+eheMtSsA-ww,omission,4.0,action
+ei3OdPKC1-4,saraswati,5.0,religious
+eihGwOuNl1E,swing,6.0,action
+ejX8KhT7JRY,tanzania,4.0,geography
+en2QnH6V6t0,barleria cristata,15.0,flora and fauna
+en7qAq3Vc1c,sentence,4.0,language
+enZ-JZqbhk8_2,displacement,8.0,physics
+eo4vVNZ8vk4_2,radio wave,12.0,physics
+epwPALMP-X8,plant water relation,15.0,biology
+eq2GVYo6G_g,water erosion,12.0,process
+es0vjVM5AFY_1,writ,7.0,legal
+eseyrC-e-s8,call money,10.0,banking
+esjHmLoXTKQ_1,factory,6.0,construction
+etCT8acNlAk_1,sundry creditors,9.0,group
+eu6jtNK_qfI_1,end use,8.0,banking
+evEAhw7lHBI,swear,14.0,action
+evjthp31SBc_1,sub division,9.0,authority
+ewHq-NjArVY,right indent,13.0,attribute
+exZSpHQ5Zhg_1,index,9.0,abstract
+eyzf4IkhbxE,monster truck,10.0,transport
+f--3Qilcxvs,maternal aunt,4.0,relation
+f0lX1hYxleg,vijaya bank,6.0,organisation
+f2KRTlDrsI0_1,tight money  market,12.0,commerce
+f2RCrBoqFVw,five hundred,4.0,math
+f64zpSopa3E,ladyfinger,4.0,foods and drinks
+f8BAnw57PFY,assistant,3.0,profession
+f8TsAfMDsVU_1,currency chest,10.0,banking
+f9rCwRfIxKw,better,4.0,metric
+fAbE9RGaHr0,rama,5.0,religious
+fB1PbgyU880,nehru collar,7.0,wearable
+fB6rpU-9SSU,edit,4.0,action
+fBS58EQ-ryw_2,spring,11.0,utility item
+fBzuEo6DNDc,panasonic mobile,6.0,electronic and electrical
+fCC3_lRJ2es_1,new,6.0,quality
+fCd20l7-3Mo,extinct,4.0,biology
+fCfnAjFQ8k4,new delhi,5.0,geography
+fCt-Gci84f8_1,spot,6.0,geography
+fEfVaSRjWY4,under mentioned,7.0,spatial position
+fKwQPZnzJCg,lenovo,6.0,organisation
+fLNCrNgXMuU,epaulet,9.0,wearable
+fQBJzNtf6rU_1,fixed asset,13.0,banking
+fQcXVe8_ZLw,after,4.0,spatial position
+fS8tS7dCIhA_1,call deposit,9.0,banking
+fVM3O_zqrWc,laptop,5.0,electronic and electrical
+fZsaGLA9Z3s_1,clap,6.0,action
+fauftUvYPls,modern,7.0,time
+fb4zZYQWRUI,note book,6.0,utility item
+fccxaqUbuXU_1,natural gaurdian,7.0,legal
+fe3uPTqXfxQ,excited,4.0,emotion
+fhURcNQNqgo,frustrate,5.0,behavior
+fjiQoursQB8,mouse pad,11.0,computer
+fkbNA8acuv4,rubber boots,13.0,wearable
+fmWmAAtfkBU,ultraviolet ray glass,14.0,miscellaneous object
+fnOThtPRhVM,penguin,4.0,flora and fauna
+fsA2L4hL5Cc_1,arms and amunitions,12.0,miscellaneous object
+fvn1QE0yfPE,welder,5.0,profession
+fvpPTKgvPJY,doli in capax,14.0,legal
+fx9psR2uzxs,automation,9.0,electronic and electrical
+fxaFxNiUcSA,handcuffs,8.0,machine
+fySF9xDtT40,still,4.0,time
+g-ErxwuqzTk_1,emergency,9.0,event
+g-sQif-_tqo,submersible pump,14.0,electronic and electrical
+g1vbPEqLqFo_2,space,14.0,astronomical
+g1yiti_ayE8_2,frequency,8.0,time
+g358Yz5xFt0_1,shipment,7.0,process
+g3QqEJhvyYE_1,supplementary,9.0,quantity
+g3Zp-9UhexE,day before,7.0,time
+g6N1jD8-u2U,opinion,4.0,abstract
+g6hYRF6ahSE,page layout,10.0,attribute
+g8--b-O60kM,old,4.0,time
+g8H6NFJ8o7w,dice,3.0,sport
+g8JIlO5P5Vw,bar,12.0,construction
+g8ZrP9KZGlk,washbasin,9.0,utility item
+g9SpsCvyEfc_1,shake,6.0,action
+gBXLHNjB5Co_1,qualified,7.0,abstract
+gEGlTYbGvLI_1,airmail,7.0,transport
+gG-xmfo-y3A,swift,4.0,quality
+gHKbG1LDbDU,spring washer,15.0,utility item
+gIOJ8eh7GRQ_1,mutual agreement,8.0,legal
+gIbD-xkQiJg_1,riots,7.0,event
+gKJXWarD5LM_1,rate differential,7.0,banking
+gKyJmtZ6JZY_2,bar megnet,9.0,physics
+gLH8E10Xex8,blocks,6.0,miscellaneous object
+gMJuEhuQYAg,swaziland,3.0,geography
+gNuAOCWJkZc,speech,4.0,sound
+gO0DCs4VUEI_1,marathi,7.0,language
+gPKQvW2CXhg,syria,3.0,geography
+gQMKC4C-H80_2,intensity,8.0,quantity
+gQ_fr_Rv8sE_1,net profit,9.0,banking
+gR1Kd5i82-0,something,4.0,abstract
+gRI_3iZrN5U_2,period,8.0,time
+gRvbXIwDvh4_2,inductor,11.0,electronic and electrical
+gSoXECyR_-s_1,how,5.0,quantity
+gT_hnPLlO7k,res,13.0,biology
+gTnUL6YyXRA,coccidiosis,11.0,biology
+gYAOz-CJruo_1,cheque travellers,9.0,banking
+gYbNVGvRcms,demolishing,8.0,action
+gYbT8Fh2WXA_1,peep,5.0,action
+g_WGhzxUi4E_1,tenancy,8.0,legal
+ga-B-UhiVNo,negative,4.0,math
+gbD4G_rYL6E,hacksaw,7.0,instrument
+geLlRLZnNhQ,ox,4.0,flora and fauna
+geZegwhqVSE_1,documents,10.0,readable
+gfDGWjaDaTk,darts munger,6.0,sport
+gfg0aOxyM_Q_1,implementation,9.0,action
+gfgQWafpuLo_1,expenditure,9.0,banking
+gfmk3_98I9E_1,off shore banking,9.0,banking
+ggeNzh5at2g_1,above,7.0,spatial position
+ghyJZVAibyA,sperm,4.0,biology
+ghyz0Xiumg0_1,trivendrum,6.0,geography
+gjPP4lI0HM0,cement mortar,9.0,construction
+gjpsKc4rYEM,volleyball,5.0,sport
+gjqfGxN2SxE,screw driver,6.0,instrument
+gmtBcUWzdwE,spoon,6.0,utility item
+gnQLgdWLk0c,liberia,4.0,geography
+gp87To3L1DY_1,tablet,6.0,electronic and electrical
+gsI77j_jlvg_1,king,7.0,profession
+guOIIr835FE,zoom,5.0,action
+guhzTYs8TN8_2,fuse,9.0,electronic and electrical
+gvEzY4sw5Z0_1,stir,7.0,action
+gvFkCJni120,indira gandhi,4.0,human
+gwK7IZYEgK8_1,re acceptable,7.0,banking
+gxFroPz8ydI_1,his,6.0,language
+gy8DIBO3KPo_1,over valuation,9.0,banking
+gzp_nV5PK1o_1,crown,7.0,authority
+h1mgzeLHaMY,rwanda,3.0,geography
+h3ZdKfu7Vws,sarvepalli radhakrishnan,5.0,human
+h3c9_id8RWg,pay in installment,5.0,banking
+h4y0h7GDHA8,surprise,3.0,gesture
+h6GYmPOMrDc_1,messenger,10.0,internet
+h6LSVGsUiRA,briefcase,4.0,utility item
+h70xLaGjPIM,j k bank,5.0,banking
+h7wUxp1gTSo_2,pyramid,11.0,math
+h8yZIUn2J7o_2,plane mirror,8.0,physics
+h8zjYuaiBK8_1,documents of title,15.0,readable
+hAPJsvuQdkI,bestiality,9.0,sensation
+hBs7tvBHjzQ_1,hoarding,12.0,banking
+hD6EdyqWw0c,tamil nadu,4.0,geography
+hGE-45zVP8w_1,flower,6.0,flora and fauna
+hHLoe4rXNNk_1,room,8.0,construction
+hJ2fPuzgv_s_2,plane concave lens,11.0,physics
+hKT6dEhxTAE,energetic,6.0,attribute
+hMLtjJ2H09Y_1,fail,6.0,action
+hN6_eLx9tkU_1,shopkeeper,8.0,profession
+hO9pTrkhSlA,lathe,6.0,machine
+hR9Q-3L5tGY,laos,3.0,geography
+hTe8e7lfC-M_1,mark,9.0,action
+hTjWdQrM-LY_2,non,11.0,abstract
+hTxZxP5ypNk,photo,5.0,miscellaneous object
+hWrC71CmNus_1,counter,13.0,process
+hXHLEKBaaNM,unemployed,4.0,comparator
+hXp201_ejX8,police car,10.0,transport
+hYAtE5G_a9c_1,notary public,10.0,legal
+hZ7K25SvzRM,milk powder,7.0,substance
+hZGHZ9sLtlg,railway track,5.0,transport
+hc5PzdRYMUk,screen,12.0,action
+hd1_aU5WhjA_1,moral,6.0,abstract
+hdJr3U_BZ38_1,time bound,10.0,time
+hdMpGpG4LJ4,obligate saprophyte,14.0,biology
+he8ICzchdmA,ncp,4.0,politics
+hga2Zs6wmWw,tension,4.0,behavior
+hhE3F517e40,wire man,8.0,profession
+hhIHJjxkrt4,centre  front,8.0,spatial position
+hhnc9qkIwVw,on the basis of life cycle,13.0,medical
+hi_YVOlxY8Y_1,ldli,6.0,foods and drinks
+hjLBNqNbuQQ_1,tax property,11.0,legal
+hl1aZKaSZ7I_1,goods retumed,8.0,utility item
+hlRsj56XQh4,stupid,5.0,abstract
+hlWNjgLwXUM,days after tomorrow,9.0,time
+hpVSyk3uJQg_1,jailor,7.0,profession
+i-CTcAiWx8Q_1,revolve,7.0,action
+i-SvPceDJYw,google map,9.0,internet
+i07VeT58iLA_1,custody,9.0,legal
+i1HQutvRGa4_1,cochin,6.0,geography
+i4SoQNXcpik_2,astronomy,14.0,physics
+i4i1dYe1hDE_1,masquito,6.0,flora and fauna
+i4rgDyw5mc8,applicant,5.0,human
+i5D0tObXY54_2,density,6.0,attribute
+i5dtwGBooaI_1,instruction,7.0,authority
+i6snKEGzUUo,funnel  neck,10.0,instrument
+i81W1xO6sBc_1,legal advisor,9.0,legal
+iAKpmP9dGuw,hook and eye,9.0,utility item
+iASooj0B1tY,classification based on season,14.0,action
+iBQVdGzJnoY_1,kill,5.0,action
+iCGVvvNuvLM,home gardens,11.0,geography
+iCZL3lk119A,book,4.0,readable
+iCxWZbtfqH4_1,recognised,7.0,action
+iEwyPUtL9s0,scooter,4.0,transport
+iGDJKo1-w5k,please,4.0,action
+iLJr7ZAPfLE,dropped  armhole sleeve,13.0,wearable
+iLLV5LaC4e4_2,hydrautic press,9.0,machine
+iLnDUh6SJSo,tonight,4.0,time
+iRN0N_yzgE0_1,stick,6.0,action
+iRZbZObhJ9g_2,adhesive,7.0,substance
+iT0YsG0QkbU,future,5.0,time
+iTgS0k5G4HM,confession,12.0,process
+iTkwAlp7t9k_1,scales of pay,8.0,banking
+iUx2uTIIwjw_1,no due certificate,10.0,legal
+iWPV3pCRN64_1,soul,6.0,abstract
+iWpgiYUT23c,every time,4.0,time
+iZmhl0855b8_1,vital,6.0,attribute
+ibTYqJp5cJ4,hands,5.0,biology
+icD4b5yxifw_1,rejoinder,8.0,action
+if-ioOMit8I,descendant,4.0,authority
+ihytBUA_38Q_1,industry,9.0,profession
+iiWPq-IKhXQ,ridicule,3.0,behavior
+iiYu_W7B91w_2,communication,8.0,process
+ijMeKPPK14c,standardization,5.0,process
+ijZEAkDX9Tw_1,wage,8.0,banking
+ikrmT6T1GbE_2,satellites,13.0,astronomical
+ilYT_sRF0UI,soil borne disease,15.0,medical
+inPHcp6Pz8U,tall ornamental hedges,13.0,flora and fauna
+in_tDYVG__E_1,plant,5.0,flora and fauna
+ioEb1Aqyq10,cycling,4.0,transport
+iqlb1r9YIAc,born,5.0,stage
+ir2j5tb_Dtc,crease,10.0,metal and minerals
+isrocVWrxaM,death in service,13.0,event
+itp7CE5KiEQ,scorpion,4.0,flora and fauna
+iu7j255lYQU,telugu,3.0,language
+iuWCFhzXAw4_1,break,5.0,action
+iwb4_ty2_fY_1,selection grade,9.0,banking
+iyvaYVAqszM,rocket,5.0,astronomical
+izOLXRN3PMs,under stitch,13.0,quality
+izdqbJ_kMkE,tiffin,4.0,foods and drinks
+izjMpJOgofI,reach,5.0,action
+izuX0loa1Oc,size of seed,14.0,attribute
+j-qHEAz6J6A,umaid bhawan palace,7.0,geography
+j0FRtPBWKaM_1,rabbit,7.0,flora and fauna
+j0KYjVbQn2k,diseases of animals,8.0,biology
+j0m4en9JPMo,pin,9.0,utility item
+j0xVU_Y5o2s,breast cancer,6.0,medical
+j22q83rv6hg,movement,3.0,process
+j2TJMBMK4tw_1,farmer,6.0,profession
+j3M1eyb-Kjo_1,buddah,6.0,religious
+j6JhN79aivA_1,account book,13.0,banking
+j7WkWV09J6k_1,balance opening,10.0,banking
+j8DclxLUXs4_1,sweetlime,6.0,foods and drinks
+jB1wqkujn00,jackfruit,6.0,foods and drinks
+jBmmS3Hm6ik,froage crops,15.0,foods and drinks
+jFdwRqDDa_Q,green bean,6.0,foods and drinks
+jFy2xrByJhE_1,kamataka,6.0,flora and fauna
+jI62F9LgRlI,assam tea gardens,6.0,geography
+jJe3JfQi_Js,jabot,5.0,wearable
+jKOcleZ9e5Y,plumbing,4.0,action
+jKUC0tUYcIM,browse,10.0,action
+jKw2bzJc-NY_2,light year,9.0,metric
+jMT-IXiUqYU,unofficial,3.0,legal
+jNqoK6dGDe4_1,accept,6.0,action
+jO4x18b1bfA,homicide,14.0,action
+jOZclErOnvc_1,offence,9.0,legal
+jTC_PIGT7yU_1,lecturer,7.0,education
+jTQgtnpAMII_1,officiating,7.0,legal
+jVWOCjBjwfo_2,nuclear energy,14.0,physics
+jYxKWo87YZg_1,unfit,9.0,quality
+jZrzxlOJBSQ,mouse click,9.0,computer
+japf1wZMgiQ,new zealand,3.0,geography
+jax7fVU9f8E,shape,3.0,math
+jb7aGNEBsvE_1,tiller,9.0,banking
+jbWFtVsidmE_1,nominal value,8.0,banking
+jbybGuk6DA8,mainsworn,15.0,legal
+jc2G1aW5DQU,solo,4.0,abstract
+jd2L93yHNIg_2,wavegraph,14.0,physics
+ji3I5Iw0e3Q_1,unemployment,8.0,stage
+jiOH72jjdnE_1,powder,6.0,utility item
+jk-q6T9ioJw,lower division clerk,4.0,profession
+jml-E067HJc_2,quit,6.0,abstract
+jnDhq0g0meA,deadly weapon,15.0,miscellaneous object
+joYn4YE3jFg_2,conservation,8.0,biology
+jp3iGdpZyO4_1,statement,9.0,legal
+jp_IEErEgzQ,dolly,12.0,action
+jrqzCgrsKbo,kidnapping & abducting,11.0,action
+jrxgxM0Pj7g,superman,4.0,entertainment
+jtZUN6jTcUc_1,bangles,6.0,wearable
+jthDJHPun0I_1,health,8.0,medical
+juL9VaVeWPs,types of vegetable gardening,11.0,flora and fauna
+jvJvFTBSXuw,economics,6.0,education
+jvTF5BY3UI4,pineapple,5.0,foods and drinks
+jwGZ64BB2pg,switch box,11.0,electronic and electrical
+jwjeDemhdv4,possess,6.0,action
+jwxh6Lo8GrI_2,periscope,13.0,instrument
+jyg5sxHBh88_1,selective,11.0,behavior
+jzoSaQe5fdU,scent,4.0,utility item
+k-7zsj7-VLg,private gardens,14.0,construction
+k-8lCTgAjGU,jodhpur pants,10.0,wearable
+k-WaxvAgxrU,pharmacist,9.0,medical
+k-cDnMe7pp8_1,account blocked,13.0,banking
+k0jZGXF0xNY_2,energymeter,11.0,physics
+k0oU46NwtCQ_1,bold,6.0,attribute
+k1DohVb9Ck0,geodetic survey,14.0,education
+k4TV4QwuYNc,chicken mesh,6.0,biology
+k4UEchc9VnM_2,installation,9.0,banking
+k8Gk1M_pWlk,flat belt,14.0,instrument
+k8gt1UnMkR4_1,temple,7.0,religious
+k96ZQYGYriA,hosticide,14.0,action
+kA7ozrVfQjM_2,intermediate,10.0,stage
+kBaDVYUWeoc,whiteboard,5.0,utility item
+kBahUhpt6H0_1,new moon day,10.0,event
+kCUX4h_p3J0_1,beak,7.0,biology
+kGa7Bq3pYqQ,racism,4.0,human
+kGacw2buj-A,deafness,3.0,medical
+kKlexawuuCQ_1,social society,9.0,group
+kKwahC0ZvJM,rockery plants,14.0,flora and fauna
+kLSAkQXXOVs_1,legally protected,10.0,legal
+kMebuYjYjHA_1,premises,7.0,construction
+kN26O2zO-cQ_1,recommendation,6.0,action
+kO5NaIjjtn0,restrained,3.0,action
+kOGEagUa-XA_1,mud,10.0,substance
+kPF8HIor4D0_1,account margin,14.0,banking
+kSNvIZi2cpg_1,basket of currencies,13.0,banking
+kSPgPYgFMfc,coat  dress,12.0,wearable
+kSbesZjIkmo,electrical service,6.0,organisation
+kV7Oo7D26Gw,gandhinagar,3.0,geography
+kVWLNRW6HTw_1,unconditional,8.0,quality
+kWHNVZbueII_1,polish,6.0,action
+kX2zG8GYM_k_1,credit sale,9.0,banking
+kXSOWHHAteo,next month,4.0,time
+kYO_FhDcRXE_1,attorney,11.0,profession
+kYSK3akxd7s,balmacaan,9.0,wearable
+k_yOFdGbgeg,mushroom harvesting,8.0,process
+kdMxj-h-rRs,airtel,5.0,internet
+ke1DcSSwifs,days before,10.0,time
+kfSr1QvbHZA_1,e-mail,7.0,internet
+kfTE4DFPuN4_1,price,6.0,banking
+kfb__18uzpw,eighteen,5.0,math
+kglFBS70qFM_2,motion,8.0,physics
+ki-uVp9OioM_1,packing credit,9.0,banking
+kncWaeUb5Ps,commercial vegetable gardening,9.0,biology
+kol8vlW0KxE_1,salwar kameez,7.0,wearable
+kpVwMOWsclA_1,deposit safe custody,9.0,banking
+kqBV5yAFq-A_1,bond,8.0,banking
+kqm4fF_sp4M,option,5.0,construction
+krcq0GUvMNQ_1,preventive measures,9.0,action
+krnKXV-ct3Q,wealthy,3.0,attribute
+ktkkqkosNMY_1,roam,7.0,action
+kusWSSN4xjI,boss,4.0,profession
+kvm9DLxYlGo_1,birds,6.0,flora and fauna
+kwphB-3eDMU,patriotic,7.0,attribute
+kyMdUjCgk_k,octopus,5.0,flora and fauna
+l0DbNgp0b38_1,resolution,9.0,action
+l1xyWyTDKy4_1,essay,7.0,readable
+l2aqBT_Vbyw,rubber stamp,5.0,utility item
+l3EHKw-sUDY_1,invalid,8.0,legal
+l3rjbQ5M6xg_2,concurrent,11.0,abstract
+l47uS7f0ZSI_1,recognise,7.0,action
+l7HZNntVoGw,anti virus,7.0,computer
+l7tvPoyzWRI,art,4.0,entertainment
+l87H6gm74b8_2,sick unit,13.0,banking
+l8Aq3ttf3lk,bjp,3.0,politics
+lBaVjlCTfNo,duranta spinosa,7.0,flora and fauna
+lCeMDi4ZRrk,thevetia neriefolia,13.0,flora and fauna
+lDS2BP2Sias,commercial building,14.0,construction
+lD_M0hAktqU_1,recover,6.0,action
+lF3h9t_N8fA,concept,4.0,education
+lH6pT7nQb9A,one,4.0,math
+lJeijKlq1Qo,ostrich,6.0,flora and fauna
+lJsUQT5Ztv8,toaster,5.0,electronic and electrical
+lL9bFfJ9t9E,taj mahal,4.0,construction
+lNHaEWqFnZk,horizontal surface,9.0,spatial position
+lQpBuFX4L1I,jamaica,3.0,geography
+lRYgVqrUDl0,sanjay dutt,4.0,human
+lSwvLtI69Ls_1,hariyana,7.0,geography
+lTbpj1XKVWg,dropbox,6.0,internet
+lTzvesFWOYI,divorcee,7.0,legal
+lYadClPZWkY,asphalt concrete,7.0,construction
+lZlKIjW-0HU,assault,12.0,behavior
+l_FTpIhhBg8,clutch lever,10.0,machine
+l_QL6DBEeFk,eight,4.0,math
+l_q1yjr1iz8_1,tax exemption,11.0,legal
+lc1lDSduLXk_2,property public,12.0,banking
+lcw-m4_hZUY_2,celsius,9.0,metric
+lg8a0VGcHKQ,panel door,9.0,utility item
+lggh2K7490s,symptoms of nematode diseases of plants,15.0,biology
+lhRSYduQK60,bike oil filter,15.0,instrument
+lkXLuq4RHCc,three days before,3.0,time
+llB8wpBo7O0_1,take home pay,11.0,action
+lmHzZtmO_30_1,society co,11.0,group
+lmJjVrDDXiQ,cummerband,6.0,wearable
+lnZbgS3LNog_1,hypothecated,13.0,commerce
+lnjKJelSCnI_1,over writing,10.0,action
+loVv4NlyfvQ,systemic disease,14.0,medical
+lpwbRVY9-vY,bonus,6.0,abstract
+lqPqubp-3IE,inspire,9.0,action
+lquuC45v24M,golden temple,5.0,religious
+lrvP6pB8--A_2,refund,6.0,banking
+lsaavtEzqKs_1,dirty,6.0,quality
+lsp2o-yBY10,brazil,3.0,geography
+lts3gE45zV4,independence day,5.0,event
+lxP9Dga73Rw_1,transcription,7.0,banking
+lypZOubhfds,link,4.0,relation
+lyx-vjcl6KA_1,leather,8.0,substance
+lz2BCCFiYmQ,comb,5.0,utility item
+lzCeQ6VI2zU,pear,4.0,foods and drinks
+lzTXlugHZCg_1,between,7.0,spatial position
+lzUMKuDPzls,child abuse,13.0,legal
+m-B9NoejhTg_2,bill of exchange,11.0,banking
+m-YncUJ0SpA,often,4.0,time
+m0gLC72xKDs,rail section,15.0,transport
+m3AFwuIwkiQ_2,solar eclipse,9.0,astronomical
+m4ogvwOrsZc_1,retain,8.0,action
+m4qwdzErX5g_2,control,7.0,action
+m5OgF_1NIBU,vibrant image,14.0,quality
+m6s5zgf0gpI_2,compound microscope,9.0,biology
+m745tmPqMgI,hoe,3.0,instrument
+m7F7GzaBG7s,underhand,10.0,action
+m8MBKbGzY6s_1,diseases,9.0,biology
+m8c-LCkr39Y,resolve,4.0,behavior
+m95rHmULP1k_1,guard,7.0,profession
+mDQmu9H4-e8,extrahepatic,10.0,medical
+mDef1KqeBTw,gate,5.0,construction
+mE9xzpyh5GM_1,scribe,9.0,human
+mGWaaXCKdx4_1,resources,10.0,abstract
+mIun6SVIyEA,anonymous complaint,11.0,readable
+mKT_yIIVqbA_1,on demand,9.0,banking
+mLANykny44w,ukraine,3.0,geography
+mLirLDw62Dk_1,restricted,7.0,action
+mNf1uFIbIfI_1,bhangada,6.0,entertainment
+mOkpsL3dtYU_1,decline,12.0,comparator
+mPEgUoTSEoY_1,ourselves,7.0,relation
+mPZ37Qlg4B8,when,3.0,abstract
+mQPmk_qj6wM_1,risk,6.0,abstract
+mRodiqQBduE,bitter gourd,4.0,foods and drinks
+mTuXlaWeVf8,optical character recognition,12.0,electronic and electrical
+mUeSvl1T5Sk,ghana,3.0,geography
+mUhcz7RyFqI_1,peak,9.0,spatial position
+mWBceiU6iR4_1,quran,6.0,religious
+mWHH9UopPFs,mi xiaomi,6.0,electronic and electrical
+mY5LdfQ0sjQ,second,4.0,math
+mZ8Tmp9I2Is,cock erels,11.0,flora and fauna
+md3sDbLwP_I,czech republic,4.0,geography
+mh7hK_GB1yQ,paneer,4.0,foods and drinks
+mhO9nuyQ28I,merge,6.0,action
+mikGymYxces_1,sewing machine,7.0,instrument
+mkgTT7rVBAQ_1,thumb impression,11.0,language
+mkl9CmVJ2tM_1,subsidy,8.0,legal
+mn1rYKlKYt4_2,milligram,9.0,metric
+mq9WIJ0BxY8,forest,5.0,geography
+msAFTkGIkKY,dehradun,4.0,geography
+msFZgjGHhCw_1,facsimile signature,8.0,legal
+mySSsdvhhZI_1,despatch,10.0,action
+mztpaGS8lno_1,sugarcane,7.0,foods and drinks
+n162JtquPPo,chicks,12.0,flora and fauna
+n2XiOTb_y0E,shell top,10.0,attribute
+n4ITD16-c9Q,kochi,6.0,geography
+n5UUf4qS9vo,tall protective hedges,13.0,flora and fauna
+n7sdyYH_Vss,people,7.0,group
+nBp-9HnOvow_1,anklets,7.0,wearable
+nGBnt1hkNA4,chain drive,14.0,instrument
+nGiuyZ9jIds,fourteen,4.0,math
+nH5V7jQYZfU_1,feed,6.0,action
+nHEWuB2F5O4_2,loan terminable,9.0,banking
+nHoSIUvNUhA,embryonic development,15.0,biology
+nIw0e8QMIko,rock,5.0,miscellaneous object
+nN5836JqV6o,twin,4.0,biology
+nPFOofWkMZc,tall shrubs,6.0,flora and fauna
+nQhm9tWvaog,german measles rubella,5.0,biology
+nRHDYOP78eE,spectacles,4.0,wearable
+nSEzV5TYaZk,milling cutter angle,9.0,instrument
+nU2c599HQUM_1,cake,6.0,foods and drinks
+nWsRyI0iqEQ,lift,4.0,transport
+nZC6NXo3SAc,truck,5.0,transport
+nZp9HgnRg2Q_1,compate,6.0,process
+n_8B2_ChR7I,lamp,5.0,electronic and electrical
+nbGetUh9P74_1,about,6.0,spatial position
+ncAPREMR3JA,dvd,6.0,computer
+ndCTFD1P_qo,balloon,4.0,utility item
+ndTLR5u4IKc,autocracy,15.0,authority
+ndh4le8xfHY_1,practise,7.0,action
+nejz8c9gkFE_2,south poie,11.0,geography
+ngk26A8JXKk,besom pocket,7.0,wearable
+nhi8hvvKDe0_1,survivorship,10.0,stage
+nhlsBwo95ms_1,sri lanka,6.0,geography
+nmC9PhWItts,recharge,6.0,banking
+nnnPWu4bf60_2,galaxy,12.0,astronomical
+nnpCEu2kzrs_1,mosquito,5.0,flora and fauna
+npDGGJ0M-wc_1,ledger,11.0,banking
+nqBsZsXrUk0_1,holder,10.0,instrument
+nqN1KzFQ-nk,scalpel,15.0,instrument
+nru9lQCilqs_1,questionnaire,7.0,utility item
+nsmhWfsLTLc_1,unpaid,7.0,banking
+nt0_JZPdo-Y,fish as a food of cattle,7.0,foods and drinks
+nt6YlBv1Qv0,scotland,3.0,geography
+nuTB6o4EeUU_1,symbol,10.0,language
+nur8ELm8QV4,rocking chair,5.0,utility item
+nv_OhAg7zNE_1,office bearer,9.0,profession
+nweVa6JYyYw,very,4.0,quantity
+ny7-NbuyCuY,toggle button,11.0,computer
+nyjlcCkgQVI_1,leprosy,6.0,biology
+o-H6UeceSts,circuit breaker,9.0,physics
+o-Y-aBPo_xw,armenia,4.0,geography
+o1HHyNHRKaw_1,repay,7.0,banking
+o2drDly41iw_2,centripetal,14.0,physics
+o3UvzZTcMqY,medium shrubs,8.0,flora and fauna
+o4GtA7kt0xc_1,floppy,7.0,computer
+o4zm0Ga1olU_1,self explanatory,9.0,attribute
+o610N3lN8Zo,konark sun temple,7.0,geography
+o68UYF2jW_o,handpump water,5.0,substance
+o7TVosWSogI,abstract,13.0,abstract
+o7f9Ny0BfQU,artesian well,9.0,geography
+o90151UDeTo_1,prescribe,8.0,action
+o95thycjZd0,transfer fee,8.0,commerce
+o9vIJZ9h9dQ,bullet train,6.0,transport
+oAbVUktjGi0_1,thick,7.0,quality
+oAhY6BKcbG0,study,4.0,action
+oBlFP8OmGmI_1,harvest,6.0,flora and fauna
+oClte_ZOU3o,html tag,13.0,internet
+oDkQtwBcNJE,tom and jerry,7.0,entertainment
+oEb4cNh9cng,israel,5.0,geography
+oH5IJ53C4Nk,dengue,5.0,medical
+oK0JcoPqnuY,namaste,4.0,greeting
+oKJinRbyd5c,safety helmet,8.0,wearable
+oKZLgXGojzE_1,stock opening,9.0,banking
+oL5-8eYbp3I,rally,6.0,event
+oLG6MTeNo2k_1,become,6.0,action
+oLKRnSnr58c,rarely,7.0,attribute
+oLYzn3tvSWQ_1,promisory note,8.0,banking
+oNRtJ5PQ4NU,emergency medical technician,7.0,profession
+oPypd7lSD84_1,per pro,8.0,legal
+oQNOHd5JtqA,funeral cremation,11.0,event
+oQZt_Mg6WFQ,sp,4.0,politics
+oQhxACPhL1k,buffet,7.0,foods and drinks
+oRJn3LprR4U,bowler,4.0,sport
+oRWZCnGJmjY_1,beans,6.0,foods and drinks
+oRcnRJ4g8GY,icici bank,6.0,organisation
+oSG1xo9mKto,ad infinitum,7.0,quantity
+oSjumbZ6yhI,alkali soil,12.0,metal and minerals
+oUcoHPxXsbA,ice hockey,3.0,sport
+oWCU9EhTFuY_2,irregular vibration,10.0,physics
+oY37vXA7tXk,problem,4.0,abstract
+oYPDwA6rGqc_1,conversion,9.0,action
+oZ2YUZsC7hA_2,high resistance,13.0,electronic and electrical
+oZGsu4mt2e4_2,automobiles,8.0,transport
+oZjgBn_Aml4_1,par - below,10.0,comparator
+o_Dvm4U4sLo,make,5.0,action
+o_ThmWoMwYM_2,improvement,9.0,time
+oaBVfRn6GPA_1,chapter,6.0,education
+ofZ6Jo2XUn8,kathakali,6.0,event
+ogn8OCqqQ7k,confess,6.0,process
+ohjswsB3XdQ,batman,5.0,entertainment
+oizhgT9YG74,motherboard,14.0,electronic and electrical
+ojCn0dDr1m0,rock climbing gujarat,9.0,sport
+ojf8g4q0xvU_1,actual,9.0,abstract
+oksjclh3Z3M,out of work,4.0,event
+omEpmBorZUg_1,non legal,8.0,legal
+omcdxRmGHMM,lapel,11.0,wearable
+onsdyXAWNqY,violin,5.0,instrument
+opvfqSmc3TM_1,fund,7.0,banking
+osKMM2nRMaI,passion,6.0,emotion
+ouQmvo795rE,four,5.0,math
+ouqUEVpF0v4,guide,6.0,utility item
+ov-SGBORI6Y,disrespect,5.0,behavior
+p1cUjAAJGtc_1,treasury,8.0,miscellaneous object
+p2fONcgegyM_1,account minor,13.0,banking
+p2tLsgPiaWw,iran,4.0,geography
+p2tdvIBIU0c_1,dhobi,6.0,profession
+p5Fbfjwa6lo_2,watt,11.0,metric
+p7oldq2vCto_1,enclosure,9.0,banking
+p8RRLvEnKIY_2,relief,6.0,action
+pAo8Zc96Tu8,shield,5.0,miscellaneous object
+pAtADV-ujaQ,forever,4.0,time
+pCOcHCIK5rc_1,renewal,7.0,action
+pEM47kqgTEc,asbestos,7.0,substance
+pEdQoefPlaI_1,exchange foreign,11.0,banking
+pFvqiGdzRH4_1,encourage,6.0,action
+pG0n_OYfyQ4_1,figure,8.0,instrument
+pHKwOx-oGic,nagpur,5.0,geography
+pHgHQOTWz-U,numerous,4.0,math
+pJZsB91xhWE_1,receiver,6.0,human
+pJi25JN7TwU_1,clean bill,10.0,banking
+pKb4DHICBuo,happen,4.0,time
+pNiWeRZM59o,document,5.0,readable
+pQ0xpEJDynQ_1,protest,6.0,event
+pQlSVEXVTg0_1,judicial,7.0,legal
+pUUQ1UG90rU,tight tracking,13.0,action
+pUfkesVaSYc,woven,6.0,attribute
+pVFFflkBVio,guitar,5.0,sound
+pWeJhQGITxI_1,children,8.0,stage
+pXODwFAlZUg_1,to,6.0,process
+pZ3sCNXcd_8,web camera,8.0,internet
+p___W5DGZYM,pronoun,5.0,language
+pcIRZ8YeSwY,google pay,4.0,internet
+pcszWYZUdr4,audience,6.0,group
+ped2hI_0Lu4_1,cooperate,7.0,action
+pgB67M7B9RY,gprs,9.0,internet
+pgg0OdGUi9Q_2,kaleidoscope,11.0,instrument
+ph86UNnfHM4_1,general ladger,8.0,banking
+pi2WpXIFSN8_1,spot price,8.0,commerce
+pl4fBwS1VKA,raipur,4.0,geography
+pp-VaOe9Aek_1,day book,10.0,banking
+pqdymDbWmpM_1,stingy,7.0,attribute
+pr_5nYeLFKc_2,bio energy,8.0,biology
+prb13TWFfLY,rationale,4.0,abstract
+ptxxnMh-dvg,ms powerpoint,5.0,computer
+puQHunAHML8,advantage,3.0,metric
+pvCPTa5YUSQ,united states of america,4.0,geography
+pwGHjBM_o0A,zero,4.0,quantity
+pxQQZrTl_S0_1,turnout,8.0,banking
+pxlwsuM4GeY_1,them,5.0,relation
+pyrA60I4x5k,washroom,5.0,construction
+pyuu4e4fioE_1,on probation,9.0,legal
+pz-WdE_67TE,assailant,12.0,abstract
+q0NQtFrQljs,take hours at something,5.0,action
+q2wNudHNr3Q,open belt drive,10.0,machine
+q5h35OmM1Zc_1,share preference,9.0,banking
+q6RWNvLf2kA,thunder,7.0,weather
+q79Rs300DoY_1,doll,6.0,miscellaneous object
+q8YYLFkGEwI_1,trade discount,9.0,commerce
+q8nqvTW4ZBE,deep rooted,13.0,emotion
+qB4HOTYT1VA,exotic sheep,15.0,flora and fauna
+qBNL8tfKk_8_1,her,6.0,language
+qBsdlxgyHU4_1,cunning,6.0,behavior
+qCoHkpGP5CA,uruguay,4.0,geography
+qFOJk1w7PIs_1,visitor,5.0,human
+qGXvLJud7iE_2,hexadecimal,10.0,metric
+qIYgR-Dvb6I_1,bullock cart,6.0,transport
+qI_HL9U9_UE,adoptive child,7.0,relation
+qJ25qL-gfX8,ways,3.0,process
+qLAU7iI1Cfs,developmental delay,10.0,legal
+qMDStZsjwX0,velcro,8.0,wearable
+qNUrBAQsL5s_1,working hours,7.0,time
+qN_4AbN4yS8_1,plug,6.0,electronic and electrical
+qP3z3jT3ENc,blurring,14.0,action
+qR9b5ntUm50,non infectious disease,14.0,biology
+qRqxwR1617A,attendance record,12.0,readable
+qSD4IBK27Zg,toenail,6.0,biology
+qSuPoYq-8lc,smallpox,5.0,medical
+qTKpCqiDQZI,tata car,5.0,transport
+qUIXw4OObjQ_1,curry,6.0,foods and drinks
+qW80XrM1yWQ,mall,4.0,geography
+qWzBMXkJ-DM,nomographer,13.0,legal
+qXPZr651bTY_1,talk,11.0,action
+qXV1KRvMA-Y,approve,3.0,action
+qYk4iw7qgmc,affirm,4.0,action
+qa59arBbolM_1,retum outward,10.0,action
+qbqRDmqdD3o_1,sell,6.0,action
+qfxkW7YYQTU,abrasive,14.0,substance
+qgH8zxbIQr4_1,banaras,6.0,geography
+qh52MLe84Fw_1,acceptance,10.0,abstract
+qhy4d9BzMIw_1,stamp,6.0,utility item
+qiTht8WDOvI_1,lick,7.0,action
+qjRRaPtsqf4,know your customer kyc form,8.0,action
+qjlkVQxsQJg_1,disabled,10.0,biology
+qksJ3uwtD1o_1,employment,10.0,banking
+qkzrIpdfelI_2,uitrasonic,10.0,physics
+qnlNXXR-M7c_2,kinetic energy,11.0,physics
+qp4Sw-QAMD4,permit,4.0,action
+qpynNeUIkM4,waiting room,9.0,construction
+qrAKx_t3qYk,low lying area,10.0,geography
+qrQAkUxy0KE_2,rotational,8.0,physics
+qrkzRim1Qc0,past,3.0,time
+qsLUWtIB5eM_1,burglar,9.0,human
+qtblK4nxVok_1,their,6.0,relation
+qtmO-0Fsjz8_1,mute,7.0,sound
+qvpipwu40zk_1,moon,9.0,astronomical
+qweRHfBQxEg,pista,8.0,foods and drinks
+r-FVBdwV9VI,indent,13.0,attribute
+r-HB7BtP1JM_2,neptune,10.0,astronomical
+r-Og6CaFJUA,metro,4.0,transport
+r15J1z-vQIM,rabindranath tagore,6.0,human
+r2UtCMULRmI_2,import,7.0,transport
+r2tTgaCMDWo_1,handicapped,7.0,biology
+r3H0vo7q6qY,myself,4.0,language
+r3HsR87-sN8,blame,4.0,action
+r3MqV1WicvY_1,regularisation,7.0,math
+r3XLYw0EMlg_1,third party,9.0,comparator
+r4sVEIO1jZE_1,pour,5.0,action
+r777eDg0fX0_1,ram,5.0,religious
+r7Po-epk8iY,head pan,4.0,utility item
+r7T0UqigDqg,fish food,10.0,foods and drinks
+r83lka7D8KM_2,filament,11.0,substance
+r9JwYFol1EM_1,story,7.0,readable
+r9Lc4qHj-cg_1,overdraft,8.0,banking
+r9XwyFRQsqY,saprophyte of plants,13.0,flora and fauna
+rBPJARGhPNg,poultry mash,7.0,flora and fauna
+rBi-dpJFZuA,prize,4.0,miscellaneous object
+rC5QdAVnv0I,paratha,5.0,foods and drinks
+rD5-gbf9Gzg,steam tractor,15.0,transport
+rD5QxDhHIxw_1,saw,6.0,instrument
+rEBOoE50Ghw_1,under consideration,7.0,legal
+rEtGA49vlaU,brain stem glioma,12.0,medical
+rFFoZPPKsC8,streaming,15.0,action
+rFkWotSdjdk,ms word,10.0,computer
+rJjNfXvVaaY_2,accurate,6.0,metric
+rKzMbfGElSE_1,straight forward,8.0,attribute
+rN9rKeJZmqI,ranchi,4.0,geography
+rNyD10XoXcU_2,centimetre,10.0,metric
+rOZhirQPdr4,tool belt,13.0,wearable
+rOjimhh-dqE_1,amalgamation,8.0,commerce
+rOonVQYaM-A_1,passive debt,10.0,banking
+rP-VqYz6Lyk_1,account holder,13.0,banking
+rQkxqEgXEYQ,include,5.0,action
+rSeg8yH3Lgg_1,task wage,11.0,legal
+rUXhFDo3Bv0,smart,5.0,attribute
+rUZD2TQcbvI,knurling,7.0,process
+rVBNDX51--w,stock chart,14.0,banking
+rVEOXcTj1NU,evil,4.0,quality
+rW8bfuuzfgI,next week,4.0,time
+rWCFmpbmMPw_1,schematic,11.0,attribute
+rZnNOW47uNk_1,trustworthiness,7.0,attribute
+r_tsg9162uc_1,dishonoured bill,9.0,banking
+raF-yOcZpkk,shaving blade,4.0,utility item
+rbXizQI1XOM,shrubs,14.0,flora and fauna
+rbdcr9AQtrE_1,discretionary limit,10.0,banking
+rc7GRaEyQHQ,washing machine,5.0,electronic and electrical
+rdW1Snzd9cs,deceive,6.0,action
+rfTcUTbx4ZU,housing,10.0,banking
+rhbOs1NZYRM,stags,13.0,flora and fauna
+rj0GN2scIsU,under,4.0,spatial position
+rjAoqYLMHrI_1,verdict,7.0,legal
+rjZmgbqdoRQ,assassination,15.0,event
+rmgyo8yyqfo,ticket,5.0,miscellaneous object
+rnK5ck1th4Q_2,lens,8.0,physics
+rrgx0TM2nfc_1,enquiry,8.0,banking
+rrjpij1UdL0,condom,4.0,substance
+rrqJccrO4vo_1,admissible,10.0,quality
+rs7TTTwmbBo_1,grain,6.0,foods and drinks
+rskg3zep4Gs,mahavir,4.0,behavior
+rt9BRaQYqkg,sleepwalker,14.0,human
+ru9ZDRu566k,frisbee,6.0,sport
+runWN1EzmEE,wall,5.0,construction
+rvAlXnalbqU_1,advise,5.0,action
+rvOBl50SewA_1,estimate,7.0,banking
+rvZ_e5KC2Mw_1,meter,7.0,metal and minerals
+rwocxlQmNvM_1,brokerage,11.0,banking
+rxLiUBQv4s4,schedule,7.0,time
+rxS-0_0rVV4_1,wholesale,9.0,group
+rzVyqTff8MY_1,carry,6.0,action
+rzY50tnGKNg,opportunity,4.0,abstract
+s09swjiVGok,brain injury,4.0,medical
+s13W7g7VnJ8_1,examine,6.0,action
+s1tq1t4LDuM,confidence,5.0,emotion
+s3tJWRZegCw,sudden,3.0,behavior
+s4ez79CSE58,sudan,3.0,geography
+s5kbd2DCqpk,bsp,4.0,politics
+s5mQsATayMM,approach,5.0,spatial position
+s6C3AecUXiY_1,fry,5.0,action
+s7LkPeqby9A,viral diseases animals,13.0,medical
+s8wH4rgfn20_1,cassette,7.0,sound
+s91r7_fA4O4_1,bills purchased,9.0,banking
+sAQO6QDpXPM_1,gurunanak jayanthi,8.0,event
+sDKms4XnnWM,luster,9.0,quality
+sErgS9d1UdM,vice president,4.0,authority
+sFjn3cTFUT4,chhattisgarh,4.0,geography
+sFyFmt6-rc0,graphics,8.0,computer
+sGzaDUwWF18,accordion pleats,9.0,wearable
+sHXOURRWbpg_1,rebate,6.0,banking
+sMdon0OffjU,harass,4.0,emotion
+sNQ2sQ75wJ8,snip,5.0,utility item
+sOOzZZY-gQI,mexico,3.0,geography
+sORWtcK5Cl4,associate professor,5.0,profession
+sOXdM996SmA_1,less,6.0,quantity
+sOfglCTtdsY_1,creeper,7.0,flora and fauna
+sPqivRKBiNc,visual,4.0,abstract
+sQwcW3szYW8_2,account payee only,9.0,banking
+sT540WDiY_U,elevated plot,11.0,geography
+sXWMPF_Enus,surface runoff,13.0,geography
+sZ1qra1mVEU_1,st,10.0,group
+sZKjZfzGTVg,drunk driving,5.0,legal
+sZYTPis34fI_1,part time,11.0,profession
+sZ_d3pRaDzY,storey skyscraper,5.0,construction
+sZpGP0kZeqo_1,pappad,6.0,foods and drinks
+seuq2MSa2X0_1,lizard,6.0,flora and fauna
+sfB6sqRdrFY,excavation,8.0,process
+siXvRrMuC0s,supervise,4.0,action
+sj9wd5B3KfQ_1,opaque,7.0,attribute
+sjzz-U6f2E0_1,review,11.0,quality
+sklN8_APb_s,acacia fernesiana,15.0,flora and fauna
+sm67xCmbfNs_1,beverages,5.0,foods and drinks
+smJOWK8guVY_1,helicopter,8.0,transport
+sp7GuSz7GRE,bauhinia accuminata,11.0,flora and fauna
+su2McEzbxzg_2,magnification,8.0,physics
+svQLNa2vzFI,cooling sheet,6.0,metal and minerals
+sw0z81Ri4ps,one lakh,5.0,math
+syVYgoc2dUI_2,neutron,10.0,physics
+syXsQXIoZEI,excuse,6.0,action
+syeNmftfElg,bluetooth,4.0,internet
+syi9ijwHDR0_1,waist,7.0,biology
+t3QUjMIwyxE_1,airport,5.0,transport
+t5uTmmYDQdI_1,opening balance,9.0,banking
+t6HMWWJR398_1,passing official,9.0,banking
+t6P93AbQbjQ_1,sow,7.0,action
+t6mh1uRdQQw_1,terminate,8.0,action
+t729MGitv94,over and over again,4.0,abstract
+t7nY3ygqVlQ,rough cut,9.0,action
+tAVnVRAbkz8_2,electric appliances,9.0,electronic and electrical
+tB9EhSaD8MY_1,cl,7.0,legal
+tB_xkoYZGBY_1,memorize,7.0,action
+tD71RsErB30,weeds near to pond margin,14.0,flora and fauna
+tD_WEFLyuDY,toyota,5.0,organisation
+tDtIQ2M-GRo,water motor,5.0,electronic and electrical
+tDtdGkG9-OE,jainism,3.0,religious
+tDvbCVB02yA,scientist,7.0,profession
+tF3WaFt4kdY,uco bank,6.0,organisation
+tFftFv6aIjE_1,clearing house,11.0,banking
+tHNhqhFdMgQ,whatsapp,4.0,internet
+tHSogBpBi5A,raise,4.0,action
+tI8qa4gE3uQ_2,variety,7.0,quantity
+tKKM601QlDM_2,glass bod,8.0,utility item
+tKNmTJAEhBI_1,uncalled,8.0,banking
+tKdTQmBRJks_2,infrared ray,11.0,physics
+tKmXdtC6FLA,workshop,5.0,event
+tMKMjQtqO2U_2,important,9.0,attribute
+tNNf1uxRiDU,pastry,5.0,foods and drinks
+tNObn5kXF7Y_1,custard apple,8.0,foods and drinks
+tPNg2Waa57k,believe,4.0,action
+tPpANCTOBgs_1,hers,6.0,relation
+tPy0Fs9D3CA,district jail,5.0,legal
+tRo9FnfeFj8,dussehra,4.0,religious
+tS9ulw9g7uA_1,himself,6.0,language
+tSSAkPEkMn8_1,modification,11.0,process
+tS_WbbhJD2I,coarse aggregate,13.0,metal and minerals
+tSc2wja2FZU,intestate,13.0,legal
+tSgEtTP4jkM_1,chemistry,6.0,chemistry
+tTM_n97xYp4,photographer,5.0,profession
+tUegsOrBY1U_1,telegram,7.0,electronic and electrical
+tY45mTvKGKc,double,4.0,quantity
+tY7LqqsBV5Y,archaeologist,11.0,profession
+tZRz_YRiaYw,forgive,8.0,behavior
+ta3rguAgy9M_1,isreal,6.0,geography
+tahzIp5we8o,jams,10.0,wearable
+tbKfPkTlfQk_1,written down value,12.0,math
+tbjIgLxJxic_2,dish antenna,11.0,electronic and electrical
+tcHUMXaIuw0,indian sign language teachers  association,3.0,organisation
+tcLqrt9QnPA_1,nationalisation,12.0,sensation
+tcPXoZXEs2g,south africa,4.0,geography
+tcvRMX6s_b8_1,overall,8.0,abstract
+tgq3cpoyWB4,classification of poultry diseases,10.0,action
+tkqalXOIXJA,rasgulla,6.0,foods and drinks
+tm_qJX6hHFg,voice,4.0,sound
+tnQmQCzJKfI,carry on,5.0,stage
+todyjVC_JTs,jointing,14.0,process
+tq85NQ0vOkA,tape,4.0,utility item
+tr9YJUmvus8_1,assets,10.0,banking
+tt4b-WhpGQo,saudi arabia,4.0,geography
+tuWWc-SdvF0_1,ornaments,8.0,instrument
+twc2FUfpUYs,slope,5.0,abstract
+txywF-r9y2Q_1,signatory,8.0,banking
+ty_tchoaG4Y_2,specific,8.0,quality
+tzW3OXlSkNw_1,nail,6.0,biology
+u0ztdPXq6mY_1,re endorsed,7.0,banking
+u1PuKrTDzdI,lecture,4.0,education
+u2IcV4xxNSA,youth,5.0,group
+u2O5QPKSzGo,temperate fruits,12.0,foods and drinks
+u2VLr8CRVGc_1,rhino,6.0,flora and fauna
+u2_aJhGSIpY_1,keep,7.0,action
+u3CQB1epJcM_1,here,5.0,spatial position
+u4LSjLeQ1Xw,drilling machine pedestal,8.0,machine
+u6eoD3GXOZE,superstition,6.0,abstract
+u7dV3wCpaqM,lonely,4.0,emotion
+u7twaE6fj9s,floriculture,11.0,flora and fauna
+uBRoAycaSBM,thatched roof,9.0,construction
+uBtYh10h6RU_1,among,6.0,group
+uDwYK-AccH0,polygon tool,11.0,instrument
+uE8YfF7bTGM,identity,4.0,behavior
+uEWef2ILEC8,common cold,3.0,biology
+uEtH33ZDk_s_1,borrower,8.0,banking
+uHMNUWk8UAM,chronic illness,9.0,medical
+uHTklDGcEfw_1,liquidation,8.0,process
+uIJEGc6U5iU,vehicle,5.0,transport
+uK6EyYdjXtE_1,north america,8.0,geography
+uK8G7-89HCI_1,summons,9.0,legal
+uKWcQt8U4lA,research,3.0,education
+uOHx8MflCBQ_1,registered letter,9.0,miscellaneous object
+uOxGDdDq-Os_2,centre of curvature,9.0,physics
+uPfJ7YCwEGQ_1,non payment,8.0,banking
+uQRHhIcXvEM,marketing of vegetables,12.0,profession
+uRwmFRKMF58,army,4.0,organisation
+uU562ik7UXU_2,vertical,9.0,spatial position
+uVE9xX6fcp8_1,abbreviation,11.0,language
+uZB4kRSkd_g,droplet,6.0,quantity
+uZuvBINbAqo_1,holiday,5.0,event
+ubBmCChM6Ag,airjet,6.0,transport
+ueNkV6ktC4g_2,identical,8.0,comparator
+ueiJkNzXxzw,influence,7.0,action
+uek2JAfcUhk,aeroplane sprayer,11.0,machine
+ufTWb8-_rGA,multiple,4.0,math
+ui_ACRhp1jY,stir up,5.0,action
+ulX1EaESaM4,tilts,12.0,attribute
+umCgstR_pg8,rare,5.0,attribute
+uohsAyKLTbI_1,land cess,10.0,legal
+upAZkdtoF_Q,app,4.0,internet
+upRlxxQUZp8_1,short term,9.0,banking
+uqZJa7q4N5U,set,3.0,math
+uqaIszhdKfc,rain,5.0,weather
+uqfvjaFYDQg,poland,3.0,geography
+usqVbUoBfnE,sailor collar,8.0,wearable
+ut1NzAKHBXQ,deploy,8.0,action
+uu93d2sk9F0_2,plug point,7.0,physics
+uvBjcE-mwC0,polygraph,13.0,instrument
+uvKTMTQqfu0,soon,4.0,time
+uw-zItX8w9g_1,monthly statement,9.0,banking
+uwDxpyWDKEI,shift,4.0,spatial position
+uyRfqa6Am-M_1,fake,5.0,attribute
+v0Ic3Von93I,band collar,6.0,wearable
+v0Rb3W378JA,samsung,5.0,organisation
+v1TI57zaJKw,sauce,4.0,foods and drinks
+v2ak0hp1ZTw,inactive,4.0,behavior
+v2gPD7nTa0U_2,rigid,6.0,attribute
+v2jaNOh-Rcc,none,4.0,abstract
+v4dtaEki4f8,third,5.0,comparator
+v5F3fOpfrBI,gangtok,4.0,geography
+v8gTUo-ln6Q_1,self employed,8.0,profession
+vAuu3hDoGhU_1,produce,6.0,action
+vBRmLg-XJZc_1,hold,6.0,action
+vBd0XrgKlCA,secondary tillage,14.0,biology
+vDrReANaXZY_2,l.e.d,9.0,electronic and electrical
+vEHf2s9hu20_2,share equity,14.0,banking
+vFJOA9dR7Bw,sony mobile,5.0,organisation
+vFSdw3lE-5M,cerebral palsy,8.0,medical
+vFYN8jgOhb8,south korea,4.0,geography
+vFZMA4_VtAY,iphone,5.0,electronic and electrical
+vFbghqf1jZg,roasters,13.0,flora and fauna
+vLbvf0zEj5M,child,9.0,stage
+vM9tngFYH1c,enough,4.0,quantity
+vOW-yOcVU80_2,transistor,9.0,electronic and electrical
+vPmpk0u_sls,dash,14.0,language
+vS5fnczMHcA,last,6.0,attribute
+vSEUaTn35j4,copy and paste,4.0,action
+vSK-jsgpaXQ,chesterfield  coat,11.0,wearable
+vTgiUguTQW0_2,mercury,9.0,astronomical
+vV1FizHByPw,prejudice,5.0,abstract
+vVGXtFbW5RI_2,galvanometer,10.0,instrument
+vVylNakRi6s,strain,4.0,physics
+vYWosOoYH1U_1,instument,11.0,instrument
+vZMGPJSJaFg,dysuria,12.0,medical
+v_7Bg4-cPjg,tunisia,4.0,geography
+v_BzLSp7PLM,bride,15.0,human
+vasldMsoKDg_2,vernier caliper,10.0,instrument
+vawgyWPeIiM,foot body part,5.0,biology
+vbsNiOkm0BU,tie,7.0,wearable
+vdntxBdRdZg,electric bike,10.0,transport
+ve8zSDsdFzs,starfish,7.0,flora and fauna
+vesSu5AjSN4,mallet,11.0,instrument
+vgtE5_6_VD4,nearby,4.0,spatial position
+vhPLDKNYuEg_1,cheque crossed,11.0,banking
+vhqQBxbUVy0_1,develop,6.0,action
+vj85ZSkQDVo,girlfriend,5.0,relation
+vmAkJRlUSzI_1,maintenance allowance,10.0,banking
+vqWFY4rbASg,ship,5.0,transport
+vvCzSnLu_4Q,samosa,5.0,foods and drinks
+vvsfyFEY7lo,hatchet,11.0,instrument
+vwTIplMTPZA_2,reaction,8.0,chemistry
+vwpHHohq8II,cng stone carving machine,10.0,machine
+vycU4cMW3_U_1,show cause,8.0,banking
+vyvFWSdT7V4_1,disguise,6.0,gesture
+w0C2Lq7hMsQ,minimize,13.0,math
+w2bUy2rPYPI,menu,5.0,readable
+w49chg-Y92g,cashier,7.0,profession
+w5hHBBDrypI_1,internal,8.0,spatial position
+w87_PYaYQz4,wicket,4.0,sport
+w9Jz12VoOYQ_1,drumstick,7.0,foods and drinks
+wC9iVMmSTeE_2,current,8.0,physics
+wEfxi8YvQLI,cyprus,4.0,geography
+wHl7V93XdWA,terrorist,14.0,profession
+wJS3We_1ets_1,sharbat,5.0,foods and drinks
+wK7Y3bBPwtI,curd,5.0,foods and drinks
+wKBVwR3BraE,photosynthesis process,12.0,biology
+wKDAEDyBAY0,life jacket,12.0,wearable
+wKzWwmm8bgE,asthma,5.0,medical
+wOwsXFMF1aA,parcel,4.0,miscellaneous object
+wPkxTCa_Dj4_1,dismissal,9.0,action
+wQ5nwBznVk8_1,crossing,7.0,transport
+wRjTHPy0jes,last week,5.0,time
+wX-5GS2Om7k,last year,4.0,time
+wZBe3IUlYLo,detective,12.0,profession
+wZYbp0lRGhU,pressure foot,12.0,instrument
+wZeZ2Hr8VEg_1,customer service,11.0,organisation
+wa6VGunvMoo,road,4.0,transport
+wcG4jvqJVDc_1,satisfied,6.0,attribute
+wcvifjsKYo0_2,proton,11.0,physics
+wf5rLp6YTCQ_1,re employment,7.0,banking
+wgb8ncghBN4_2,intermal combustion engine,9.0,chemistry
+whLOS_LCl9U,younger brother,3.0,relation
+whkRlb-0s94_1,saloon,7.0,construction
+wi-dI81iYSY_1,single entry,9.0,quantity
+wku-gtLtQyI_1,lapse,10.0,banking
+wlPKT6teWGk_1,letter of authority,9.0,authority
+wnhTdzfceXA_1,misappropriation,10.0,emotion
+woQgNTk9IIE,eggplant,6.0,foods and drinks
+wpmDoeOl2qY,steady current,8.0,physics
+wq4yQ4OdJ5U_2,freexing,7.0,behavior
+wru3RdDTafg,waxing,6.0,action
+wsRNKesle6I_1,mathematics,6.0,math
+wsWElJBdZcA,zambia,4.0,geography
+wsXbxNK7ROM_2,oscillator,8.0,instrument
+wsy4LqAJq8E_1,monitoring,9.0,action
+wtXCZaGIQsk,backyard system of poultry,15.0,process
+wu_tcc63EjM_2,concave mirror,10.0,physics
+wwTa3v_SLew,fray  edges,11.0,time
+wwVkDiHS9FM_1,pongal,6.0,event
+wwf3PXeSfsg_1,thriff,8.0,banking
+wxH6fMp_1PY_1,waiting list,10.0,utility item
+wyDi2hGYZmg,forehead,5.0,biology
+wyq5UGADJrw_1,leave duty,8.0,profession
+wyu_qsxDouM_1,buy,7.0,action
+x-Bc7ssevU8,zimbabwe,5.0,geography
+x-anjlR2rMc,economic importance of fish in india,12.0,banking
+x-lubm0ha08,mahatma gandhi,5.0,human
+x2fCZCCqh3E_1,movable property,10.0,legal
+x3H9ltkR_vM,el salvador,4.0,geography
+x3JBmtirJQ0_1,revalidation,12.0,action
+x3WXPajc1UQ,bleeding disorders,6.0,medical
+x3nuREvEwis,kick out,4.0,group
+x4I6cO9p77Y_1,submission,6.0,education
+x77fC4-wJ8c,suggest,3.0,action
+xBLGhif1BWI,place,4.0,spatial position
+xBvqQ50Vlcg_1,settle,7.0,action
+xBwnNDnOPGM,north korea,4.0,geography
+xD3S5OUhSRs,boat,5.0,transport
+xDFgS6-OSkY,seam allowance,11.0,quantity
+xEKHtFeWzSM_2,lubrication oil,8.0,substance
+xEUbXwWImbc_1,compulsory,7.0,education
+xFB6kz5WkvA_1,housing loan,8.0,banking
+xGmkipo2jsM_1,hut,6.0,construction
+xH84YCP65HE,fitted,10.0,attribute
+xHgqrgu0NB0,corporation bank,4.0,banking
+xL-DC_wV5_E_1,standard,6.0,comparator
+xLWzYC5VgPA_2,rural development,10.0,organisation
+xMvpodrz6dM,idea,5.0,abstract
+xND6JDuQ05A_1,mary,6.0,human
+xOxrAcyAcII,renovation,13.0,action
+xPkil4VFr0A,open circuit,15.0,physics
+xQ24Y6Y7wvE_1,acceptance clean,12.0,banking
+xQIXN-eQZ7I,fever,7.0,medical
+xQgu-lCEmO4_2,pendulum,12.0,miscellaneous object
+xS2EEES-n8I_1,margin,8.0,banking
+xSAoWBeLvfo,injury,3.0,medical
+xTQHYVNuH2I,bindi,4.0,wearable
+xTu2lteTqAY,parapet,7.0,construction
+xVCIBUlDlkE_1,cheque mutilated,9.0,banking
+xVgr78Og8o8_1,cash credit,9.0,banking
+xVuM_WPsOB8_1,dangerous,6.0,attribute
+xWlgNHh5ino,bow tie,5.0,wearable
+xYWHiCUuoi4_1,chess,6.0,sport
+xZUbYeF9fkI_1,mime,6.0,gesture
+xbBwbQ6AZv4,nominee,7.0,human
+xbw9Df1DFa8_1,low,7.0,geography
+xcL50crTgMs,tipped tool,15.0,instrument
+xcd8lsPxlP4_1,dry,6.0,attribute
+xeYJvtWDsnA,ornithology,9.0,biology
+xfKR5ftbHKg_1,single owner,7.0,attribute
+xgKs0R0K6M4,impure,5.0,substance
+xgtcWuX0mdU_2,funding,6.0,banking
+xiUZYUTW660_1,account inoperative,15.0,banking
+xj41dOgAdK8_1,skip,6.0,action
+xjCStYhMoBE,threading,5.0,process
+xm1ZPkvHnL8_1,tailer,7.0,profession
+xoSQfP-1A-c,ajmer sharif dargah,6.0,religious
+xoqqrOjlpD8_1,mahavir jayanthi,7.0,event
+xpy5egrPAZ0,sai baba,5.0,religious
+xtolpEBm2ro,predict,7.0,action
+xuh2imuKrI0,huawei mobile,6.0,organisation
+xwhBXEev13o_1,extension counter,7.0,banking
+xwn7XQRbQnc_2,biconvex lens,11.0,physics
+xx6t3kFyJuo,drill bit,8.0,machine
+xzu_Y3NfigY,jeweller,7.0,profession
+y-bSGi85wc0,hail,7.0,weather
+y-rA7UuFbVM,available,4.0,attribute
+y0Qqh0iQ4HU_2,jupiter,10.0,astronomical
+y1hvKgvxm5Q,what happened,4.0,abstract
+y4CEIJJVt64,jalebi,8.0,foods and drinks
+y6Y7pN0nzX8_1,sub lease,8.0,banking
+y78hQDvKB_M,milad un nabi,4.0,human
+y89shn98vQo_2,total energy,8.0,physics
+y8OT5FWMEl8_2,convex lens,11.0,physics
+y938xCsUbpo,stink,4.0,attribute
+y9c93mGmbHc_1,in multiples of,8.0,math
+yBcTyoUaFYU_1,puri,6.0,foods and drinks
+yBu6pCi5gag,iball mobile,6.0,electronic and electrical
+yD9wwZmkJlw,shoes,3.0,wearable
+yEId-2X8Fpw_1,manufacture,7.0,process
+yG1xsd6JyfA,memory card,9.0,electronic and electrical
+yHBEcGgShh4,alloy wheel,12.0,miscellaneous object
+yHWecq-Xzdc_1,missing,7.0,emotion
+yHfQFast5r0_1,re examine,7.0,banking
+yHgMtQOPid4_1,church,6.0,religious
+yHnry-jqo3E_1,qualification essential,7.0,abstract
+yI2JracrYZs_1,instalment,8.0,banking
+yK14YhUwajU,flooring,8.0,construction
+yK2We-yP8MA,poultry production,9.0,flora and fauna
+yLSyQAouIYw,sleeve board,8.0,utility item
+yLnePZ71izk,joke,5.0,sensation
+yLpc_-hWZAA,bsnl,5.0,organisation
+yLphnfhAV_o,login,6.0,group
+yMNGS-VZZj4,horizontal line,7.0,math
+yN_t_vc97fI_1,merit and demerits,8.0,quality
+yOTZBisOdZs_1,labour,10.0,profession
+yOkZgJliKfo_1,concession,8.0,banking
+yQ1BONWNLrE,state bank of india,6.0,organisation
+yRoamy-gOgY,spice jet,6.0,organisation
+yS4sjP4C-ko,marking table,15.0,utility item
+ySSixQMf7is,grill,8.0,construction
+yTmK54y80bs,malawi,3.0,geography
+yUHZhwPUfRk_1,account rupee,14.0,banking
+yVGctxtkXqA,dermatits,12.0,medical
+yVNuNrwFZ1c_2,concave lens,11.0,physics
+yVj4srfLfSc,gurudwara,5.0,religious
+yW6uqjLFKgU_2,triode,11.0,electronic and electrical
+yXrES1RSoV8,humped,15.0,biology
+yYJBee_uP-A_1,stubborn,6.0,quality
+yYXL6MOhLUo,all india trinamool congress,4.0,politics
+yYf_JyfDvLU,ireland,4.0,geography
+yYgwZxLlykw_1,exemption,8.0,banking
+yYn7-CCwLkM_1,identification,8.0,action
+yZ6LzjeoTsY,jewel neckline`,5.0,wearable
+y_q_egfFoq0,mass,5.0,physics
+yeArkcTSTdw_1,retum inward,10.0,action
+yffUIRSERd0_2,biconcave lens,11.0,physics
+yftcPJvbkhg,rinderpest,13.0,medical
+yi14hGwVzKM,window garden,10.0,construction
+yiVSKw0srMA,coffee rust,15.0,flora and fauna
+yjFM1hV0hy8_1,history,6.0,education
+ylCAApFrP88,two days before,3.0,time
+ym0KmkKQBW0_2,security deposit,9.0,legal
+ym9Nx-zkmEM,faucet aerator,8.0,instrument
+ynTx1KLLvng_1,supervision,9.0,action
+ynZd-HeXGnc,outdated,5.0,time
+yo9-6O8jNXQ_1,share capital,10.0,banking
+yoG_mrM8Hg8,it's raining cats and dogs,7.0,weather
+ypWkhczB2tY,bladder cancer,13.0,medical
+yr0Mkvkfmi8_2,violet,10.0,abstract
+ytA5JcAmS48,diseases and enemies of fish,15.0,biology
+yuJ6ZBt0MBw,yoga,4.0,sport
+yv3O0xFD6O8,women jail,15.0,construction
+ywSGE7YCdCM_1,dinner,6.0,foods and drinks
+yylUDwKKvxY,kaposi sarcoma,7.0,biology
+yymmblO1-8U_1,borrow,6.0,action
+z-ke4RyMx_w,accordion,6.0,sound
+z-uZFPcqtcQ,oppo mobile,6.0,electronic and electrical
+z1X_LnA8wRE_1,small savings scheme,9.0,banking
+z2uEKj1aWd4,modern roof,8.0,construction
+z3iLB12a_O4,tri square,15.0,instrument
+z5qHAG8YSrE,non vegetarian,6.0,foods and drinks
+z6Y6UJn7Mr8_1,unanimous,8.0,legal
+z8Yx1NXXgYM_1,vapour,7.0,substance
+z8d961aDuUA_1,centimeter,7.0,metric
+z9fE3-r78UE,ogle from head to toe,5.0,action
+zCAa4hAv2AY,puzzle,5.0,process
+zCRxd9PBDXY_1,prompt action,7.0,action
+zEhEGpPHGLE,elder brother,3.0,relation
+zEpIbqDKEh8,bipedal robot,9.0,machine
+zEv81qWK7yQ_1,cold drink,6.0,foods and drinks
+zFykwvdCws8_1,thigh,8.0,biology
+zG_P--gEuOU_2,negligible,7.0,quantity
+zHuGuas_2f8,body pain,8.0,medical
+zJRmEhzjtco,electrolyte,11.0,chemistry
+zLxJPYBRIEM,garib rath express,5.0,transport
+zMSTQmwzW_s_1,subordinate,8.0,authority
+zMVhZxmiK-s,salesman,12.0,profession
+zRAHq3wDY8A_1,proprietory,7.0,authority
+zSXKZb2Frqc_1,market,6.0,geography
+zTxivCXMjdU_2,inter branch transaction,12.0,banking
+zU-UAPxXzjU,abstract of account,11.0,banking
+zUFDbkEtC_E_2,property landed,12.0,banking
+zUzBN5DY_3A,mazdoor,4.0,profession
+zWdWqozClE4,chef,8.0,profession
+zYuR7aEr3SI_2,atmosphere,9.0,chemistry
+zZdJ4ZLnw2U,constitutional rights,15.0,legal
+z_736hEJX_M,diabetic,12.0,medical
+zajXjC-yusI_2,surrounding,8.0,miscellaneous object
+zaxDTYvEeZw_2,notice board,9.0,utility item
+zc7cBfgwiyI_1,spastic,7.0,medical
+zdGKXf_2HFA,jama masjid,5.0,religious
+zdZNbKoJejY_1,approval,9.0,action
+zgJBDuqbPHM,hydathodes,11.0,biology
+zgQAKKtXOZY,background,4.0,spatial position
+zgq2AwN0qxs_1,heir,9.0,relation
+zhxo7cEkSF8_1,reserve fund,8.0,banking
+zk-I0DPD4gk_1,water bottle,6.0,utility item
+zkLkrnOdDA0,floating plants,13.0,flora and fauna
+znGl0a0R3io_2,edge,9.0,spatial position
+zoM2D2UeE18_2,kelvin,8.0,metric
+zrNSPG0BAPo,thumb lunula,8.0,medical
+zsaHFTWOIms_1,take over,9.0,action
+zskDexexPRo_2_Trim,hydrautic brake,11.0,machine
+zultm2vBHws_2,wax,10.0,utility item
+zuwgMn6oS-Q_1,boring,7.0,attribute
+zvDd4Lvma58_1,statement of liquidation,11.0,banking
+zvhxuidq68g,aircel,5.0,internet
+zwQFJqvvgqQ,keyhole,8.0,utility item
+zwl-CJnhrYI_1,postpone,6.0,action
+zxXFqg4uC_I_1,festivals,6.0,event
+zxwuZPkYjrQ,good night,4.0,greeting

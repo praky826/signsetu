@@ -225,7 +225,7 @@ signsetu/
 **\[AI\]**
 
 * Attempt to fetch all 6 reused files directly from the repo. If successful, copy verbatim into frontend/vendor/ — do not modify a line.  
-* Read each fetched file in full before anything later references it. Confirm: hamnosysMap.js's exported parse function name/signature; autoBoneMapper.js's exported function and trigger point; SignEngine.js's public "play sign" function and its exact completion-signaling mechanism (event/callback/promise — do not assume); avatar.js's load/pose function.  
+* Read each fetched file in full before anything later references it. CONFIRMED (Phase 2): hamnosysMap.js exports HAMNOSYS\_ACTIONS, a token-to-function map, not a string parser; autoBoneMapper.js exports autoMapBones(model) but is not called by SignEngine.js, which maps its own bones internally; SignEngine.js has no "play sign" function and no completion-signaling mechanism of any kind (event/callback/promise), does not auto-return to rest pose, and only animates right-side bones; avatar.js exports initAvatarScene(container), which builds and owns its own Three.js scene/camera/renderer and hardcodes its GLB path as "/models/human.glb".  
 * Record a short findings note (comment block or scratch doc) with each file's confirmed API, for later phases to use.  
 * Copy isl\_nlp.py and app.py into backend/legacy\_reference/ for read-only reference — never import or call them.  
 * Write a throwaway script to parse dataset.csv, confirm the expected gloss/video-path columns, and download/cache the demo-vocabulary video clips into assets/cislr/clips/.  
@@ -249,7 +249,7 @@ signsetu/
 * vad.py: load the silero-vad ONNX model once; expose the loaded instance for reuse by both Step 8 and Fallback D (Phase 4\) — never instantiate twice.  
 * ollama\_client.py: implement warm\_up() — a trivial throwaway POST to /api/generate, response discarded.  
 * dictionary\_loader.py: load isl\_dictionary.json into an in-memory dict at startup; run every entry's HamNoSys string through a parser check mirroring hamnosysMap.js's recognized token set (per Phase 2's findings note); exclude and log entries that fail (Fallback F).  
-* cislr\_index.py: build the gloss→video-path dict once from assets/cislr/dataset.csv, matched against assets/cislr/clips/.  
+* cislr\_index.py: build the gloss→video-path dict once from assets/cislr/prototype.csv (not dataset.csv — prototype.csv is a Hugging Face-provided subset with exactly one clip per unique gloss, avoiding the need to pick among dataset.csv's up-to-13 duplicate clips per word; decision recorded in docs/implementation.md), matched against assets/cislr/clips/.  
 * main.py: run all four loaders/warm-ups concurrently at startup; /health reports ready only once all four succeed.
 
 **Approach:** Everything here runs once, at process start, never per-request — this is what every later runtime step depends on being already resident in memory.
@@ -355,7 +355,7 @@ signsetu/
 
 **\[AI\]**
 
-* main.py: mount frontend/ as static files served by the FastAPI app; register connection.py's WebSocket endpoint; keep Phase 3's warm-up/health logic intact.  
+* main.py: mount frontend/ as static files served by the FastAPI app; ALSO mount frontend/vendor/models/ at the /models route specifically, since avatar.js (Phase 2 findings, confirmed) hardcodes its GLB fetch as "/models/human.glb" and that file cannot be modified; register connection.py's WebSocket endpoint; keep Phase 3's warm-up/health logic intact.  
 * connection.py: complete the send half — after render\_resolver.py (Phase 7\) produces a render instruction, check it against session\_state.is\_current() (Phase 8\) and, if valid, push it to the frontend over the open WebSocket; if not, drop silently (Step 15's session-filtered push, enforced backend-side before it's even sent).
 
 **Approach:** First phase where the backend is a runnable, connectable server end-to-end — treat as an integration checkpoint.
@@ -372,13 +372,13 @@ signsetu/
 
 **\[AI\]**
 
-* index.html: static page — "Start Capture" button, mode toggle (Video/Avatar), fixed-position output-window \<div\> (empty, idle), Three.js via pinned CDN \<script\> tag.  
+* index.html: static page — "Start Capture" button, mode toggle (Video/Avatar), fixed-position output-window \<div\> (empty, idle), a \<script type="importmap"\> resolving "three" and "three/examples/jsm/" to a pinned CDN ESM build (required because avatar.js and SignEngine.js use bare module specifiers, per Phase 2 findings — this is still zero-bundler, native browser behavior), main.js loaded as \<script type="module"\>.  
 * style.css: fixed-position styling for the \~300x200px output window, top z-index.  
-* main.js: initialize the Three.js scene/camera/renderer on load; call avatar.js's confirmed load function (Phase 2's findings note) to load human.glb and pose it neutral; call autoBoneMapper.js's confirmed function once, immediately after GLB load, to build the bone-name table used in Phase 13; no animation loop yet.
+* main.js: call avatar.js's confirmed initAvatarScene(container) function (Phase 2's findings note) once — it builds and owns the Three.js scene/camera/renderer itself and resolves with {model, scene, camera, renderer}; do not construct a separate scene/camera/renderer. Immediately after it resolves, construct one SignEngine instance (new SignEngine({model})) and keep it for the whole session — Phase 13 calls methods on this same instance per word, since SignEngine.js has no per-word "play sign" call and no way to accept an external bone table. autoBoneMapper.js is not called here — SignEngine.js maps its own bones internally and ignores autoBoneMapper.js's output (Phase 2 finding). Note SignEngine's constructor automatically runs a brief self-test animation \~1.5s after creation, resetting \~3s later — expected reused-file behavior, not a bug to fix.
 
 **Approach:** Front-load the GLB parse cost to page-load time so it never delays the first real sign later.
 
-**Refer to:** SignSetu.docx — Step 2 in full; sin\_setu\_Code\_Reuse.docx — avatar.js and autoBoneMapper.js entries (use confirmed API from Phase 2, not the description alone).
+**Refer to:** SignSetu.docx — Step 2 in full; sin\_setu\_Code\_Reuse.docx — avatar.js and SignEngine.js entries (use confirmed API from Phase 2, not the original hypotheses).
 
 ---
 
@@ -428,10 +428,10 @@ signsetu/
 
 * renderQueue.js: receive render instructions from wsClient.js; before enqueueing, compare instruction.sessionId against the frontend's own tracked current session (owned by Phase 15\) — drop if mismatched.  
 * videoRenderer.js: set a \<video\> element's src to the resolved local clip path, call .play(), advance the queue on .onended; preload the next queued clip on a hidden second element.  
-* avatarRenderer.js: call SignEngine.js's confirmed public play-sign function (Phase 2's findings note) with HamNoSys-derived pose targets (via hamnosysMap.js and the bone table from autoBoneMapper.js, both loaded in Phase 10); listen for SignEngine.js's actual confirmed completion signal to advance the queue; return to neutral rest pose between words if SignEngine.js doesn't already do so (confirm, don't assume).  
+* avatarRenderer.js: split the render instruction's HamNoSys string on whitespace; for each token, call hamnosysMap.js's HAMNOSYS\_ACTIONS\[token\](signEngineInstance) against the single SignEngine instance created in Phase 10 (Phase 2 finding: HAMNOSYS\_ACTIONS maps tokens directly to engine method calls, not to pose data; SignEngine.js has no play-sign function and no completion event of any kind to listen for). Since there is no completion signal, advance the queue after a fixed timeout (AVATAR\_SIGN\_HOLD\_MS, a frontend-only constant defined at the top of avatarRenderer.js — see docs/implementation.md section 3 exception — sized to SignEngine's rotate() interpolation speed) rather than waiting for an event; explicitly call signEngine.resetAll() before signaling completion, since SignEngine.js does not return to neutral automatically (confirmed, not assumed).  
 * outputWindow.js: both avatar canvas and video element exist in the DOM at all times; toggle display:none/block based on active mode — never re-initialize on a mode switch.
 
-**Approach:** Both renderers advance the same shared queue on their own completion event, so words play strictly sequentially, never overlapping, even across mixed avatar/video sequences.
+**Approach:** videoRenderer.js advances on its element's real onended event; avatarRenderer.js advances on its fixed timeout in place of a real completion event (none exists in SignEngine.js) — both feed the same shared queue, so words still play strictly sequentially, never overlapping, even across mixed avatar/video sequences.
 
 **Refer to:** SignSetu.docx — Steps 15–17 in full; sin\_setu\_Code\_Reuse.docx — SignEngine.js, hamnosysMap.js, autoBoneMapper.js entries (confirmed APIs only).
 

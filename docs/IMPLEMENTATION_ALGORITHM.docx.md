@@ -58,7 +58,7 @@ Algorithm
 **FILE: assets/isl\_dictionary.json**
 
 Purpose  
-Flat database of 250+ ISL signs, each mapping an English gloss word to its HamNoSys notation string — the avatar-mode vocabulary source.
+Database of 260 ISL signs, keyed by lowercase English word with {gloss, hamnosys} values (CONFIRMED shape, Phase 2 — not a flat gloss-to-hamnosys map as originally assumed) — the avatar-mode vocabulary source.
 
 Dependencies  
 None (static data file, source: speech-to-isl repo, backend/isl\_dictionary.json path).
@@ -95,11 +95,11 @@ Algorithm (verification procedure — no new logic is written for these files)
 1. Attempt to fetch each file directly from its path in the source repo.  
 2. If any fetch fails, stop and request the developer manually download and paste that file's contents at the matching frontend/vendor/ path.  
 3. Open and read each file in full before any later phase references it.  
-4. For hamnosysMap.js: identify and record its exported HamNoSys-string-to-pose-target parsing function's exact name and signature.  
-5. For autoBoneMapper.js: identify and record its exported bone-mapping function's name, and confirm it is meant to be called once, after GLB load.  
-6. For SignEngine.js: identify and record (a) its public "play this sign" function name/signature, (b) its exact completion-signaling mechanism (event, callback, or promise — verify, do not assume), (c) whether it already returns to a neutral rest pose between signs.  
-7. For avatar.js: identify and record its exported load/pose function name and signature.  
-8. Record all confirmed names/signatures in a shared findings note for Phase 10 and Phase 13 to consume directly — no phase after this one may assume an unverified API.  
+4. For hamnosysMap.js: CONFIRMED (Phase 2) — exports HAMNOSYS\_ACTIONS, a token-to-function map, not a string parser; no separate identification step remains.  
+5. For autoBoneMapper.js: CONFIRMED (Phase 2) — exports autoMapBones(model); also confirmed it is NOT called by SignEngine.js, which maps its own bones internally, so this file's output is not wired into anything in our integration.  
+6. For SignEngine.js: CONFIRMED (Phase 2) — there is no "play this sign" function and no completion-signaling mechanism of any kind (no event, callback, or promise); it does not return to a neutral rest pose between signs (resetAll() must be called explicitly); its pose methods only animate right-side bones.  
+7. For avatar.js: CONFIRMED (Phase 2) — exports initAvatarScene(container), returning a Promise<{model, scene, camera, renderer}>; it builds its own scene/camera/renderer rather than loading into an existing one, and hardcodes its GLB path as "/models/human.glb".  
+8. All confirmed names/signatures are recorded in docs/implementation.md section 5 for Phase 10 and Phase 13 to consume directly — no phase after this one may assume an unverified API or reintroduce a superseded hypothesis.  
 9. Copy every file into frontend/vendor/ unmodified — no edits, no renaming of internal logic.
 
 **FILES: backend/legacy\_reference/isl\_nlp.py, backend/legacy\_reference/app.py**
@@ -240,43 +240,45 @@ Purpose
 Load isl\_dictionary.json into memory and validate every HamNoSys entry, excluding any that fail to parse (Fallback F).
 
 Dependencies  
-assets/isl\_dictionary.json, hamnosysMap.js's confirmed token-parsing logic (Phase 2 findings — mirrored in Python, or invoked via a subprocess/port if parsing must match exactly), config.py (ISL\_DICTIONARY\_PATH).
+assets/isl\_dictionary.json, the confirmed HAMNOSYS\_ACTIONS token set from hamnosysMap.js (Phase 2 findings — mirrored as a hardcoded Python set of the same 21 token names, since the real file is a small static token-to-function map, not a parser, so a subprocess/port call is unnecessary), config.py (ISL\_DICTIONARY\_PATH).
 
 Input  
-assets/isl\_dictionary.json.
+assets/isl\_dictionary.json — CONFIRMED shape (Phase 2): keyed by lowercase English word, each value {gloss: "UPPERCASE\_GLOSS", hamnosys: "hamtoken hamtoken ..."}; NOT a flat {gloss\_word: hamnosys\_string} map as originally assumed.
 
 Output  
-A validated in-memory Python dict {gloss\_word: hamnosys\_string}, plus a console-logged list of excluded words.
+A validated in-memory Python dict {gloss\_word: hamnosys\_string}, built from each entry's gloss/hamnosys fields (not from the JSON's own top-level keys), plus a console-logged list of excluded words.
 
 Algorithm
 
-1. Read and parse assets/isl\_dictionary.json into a raw dict, uppercasing every gloss key on load (e.g. {k.upper(): v for k, v in raw.items()}) so keys match the uppercase gloss tokens Ollama is instructed to output.  
-2. For every entry, run its HamNoSys string through a parser that mirrors hamnosysMap.js's known token set (per Phase 2's confirmed API).  
-3. If an entry's string parses successfully, keep it in the validated dict.  
-4. If an entry's string fails to parse, exclude it from the validated dict and log the excluded word and reason to console.  
+1. Read and parse assets/isl\_dictionary.json into a raw dict; iterate its .values() (not its top-level keys), and for each value build {entry\["gloss"\].upper(): entry\["hamnosys"\]} so keys match the uppercase gloss tokens Ollama is instructed to output.  
+2. For every entry, split its hamnosys string on whitespace and check each token for membership in the hardcoded 21-token set mirrored from hamnosysMap.js's HAMNOSYS\_ACTIONS keys (confirmed Phase 2: 7 hand shapes, 5 palm orientations, 4 body locations, 4 movement aliases, 1 reset).  
+3. If every token in an entry's string is a known token, keep it in the validated dict.  
+4. If any token is unrecognized, exclude the entry from the validated dict and log the excluded word and the bad token to console.  
 5. Store the final validated dict at module level, built exactly once at startup.  
 6. Expose a get(word) lookup function that uppercases word before lookup, and a keys() accessor (used to build allowed\_vocab in Phase 6\) — both operating on the same normalized-case dict.
 
 **FILE: backend/lookup/cislr\_index.py**
 
 Purpose  
-Build a gloss-word → local video-file-path index from dataset.csv, once, at startup.
+Build a gloss-word → local video-file-path index, once, at startup, sourced from assets/cislr/prototype.csv rather than dataset.csv (decision below).
 
 Dependencies  
-assets/cislr/dataset.csv, assets/cislr/clips/, config.py (CISLR\_DATASET\_PATH, CISLR\_CLIPS\_DIR).
+assets/cislr/prototype.csv, assets/cislr/clips/, config.py (CISLR\_DATASET\_PATH, CISLR\_CLIPS\_DIR).
 
 Input  
-assets/cislr/dataset.csv.
+assets/cislr/prototype.csv.
 
 Output  
 An in-memory Python dict {gloss\_word: local\_clip\_path}.
 
+Decision (confirmed against the real files after the CISLR dataset.csv was supplied): the Hugging Face CISLR repo (Exploration-Lab/CISLR) actually ships three CSVs sharing the schema uid,gloss,duration,category — dataset.csv (7050 rows, 4765 unique glosses, 1363 of which have up to 13 duplicate clips), prototype.csv (4765 rows, exactly one clip per unique gloss, zero duplicates — a subset of dataset.csv), and test.csv (2285 rows covering the 1363 glosses that had duplicates, a held-out query set for the original paper's sign-recognition benchmark, not used by this project since we only ever play back a clip, never classify one). Since prototype.csv already gives one deterministic, curated clip per gloss, cislr\_index.py is built from prototype.csv instead of deduplicating dataset.csv ourselves. dataset.csv remains in assets/cislr/ as the full reference set (e.g. if a prototype clip proves unusable and a substitute is needed later) but is not read by this file. prototype.csv contains one known malformed row (gloss "\#N/A" for an otherwise-valid uid) which must be excluded like any other bad entry, per step 4 below.
+
 Algorithm
 
-1. Read assets/cislr/dataset.csv row by row.  
-2. 2\. For each row, extract the gloss word (uppercased on read, e.g. gloss.strip().upper(), so keys match the uppercase gloss tokens Ollama outputs) and its corresponding clip identifier/filename.  
-3. Build the local file path for that clip under assets/cislr/clips/.  
-4. Confirm the file actually exists on disk at that path; if missing, exclude that entry and log it.  
+1. Read assets/cislr/prototype.csv row by row.  
+2. For each row, extract the gloss word (uppercased on read, e.g. gloss.strip().upper(), so keys match the uppercase gloss tokens Ollama outputs) and its corresponding uid.  
+3. Build the local file path for that clip under assets/cislr/clips/ from the uid.  
+4. Confirm the gloss is non-empty/valid and the file actually exists on disk at that path; if either check fails, exclude that entry and log it.  
 5. Store the final dict at module level, built exactly once at startup.  
 6. Expose a get(word) lookup function that uppercases word before lookup, and a keys() accessor (used to build allowed\_vocab in Phase 6\) — both operating on the same normalized-case dict.
 
@@ -622,9 +624,10 @@ Algorithm
 
 1. Retain Phase 3's startup-event model warm-up and /health logic unchanged.  
 2. Mount the frontend/ directory as static files at the app's root route.  
-3. Register backend/ws/connection.py's WebSocket endpoint (e.g. at /ws) on the app.  
-4. Start the app via Uvicorn on backend launch.  
-5. Confirm on manual test that opening the root URL in Chrome loads index.html and that a WebSocket connection to /ws succeeds.
+3. Additionally mount frontend/vendor/models/ as static files at the /models route specifically — avatar.js (Phase 2 findings, confirmed by reading the file) hardcodes its GLB fetch as the root-relative path "/models/human.glb", and that file cannot be modified, so this second mount is required for the reused file to resolve its asset.  
+4. Register backend/ws/connection.py's WebSocket endpoint (e.g. at /ws) on the app.  
+5. Start the app via Uvicorn on backend launch.  
+6. Confirm on manual test that opening the root URL in Chrome loads index.html and that a WebSocket connection to /ws succeeds, and that /models/human.glb resolves.
 
 **FILE: backend/ws/connection.py (complete — send half added)**
 
@@ -658,7 +661,7 @@ Purpose
 Static page shell presenting the control surface: start button, mode toggle, and the empty output window.
 
 Dependencies  
-Three.js (pinned version, CDN \<script\> tag), style.css, main.js.
+Three.js (pinned version, via native \<script type="importmap"\>, not a bare CDN \<script\> tag — required because avatar.js and SignEngine.js use bare ES module specifiers, Phase 2 finding), style.css, main.js.
 
 Input  
 None.
@@ -668,12 +671,12 @@ A rendered idle-state page.
 
 Algorithm
 
-1. Include a pinned-version Three.js \<script\> tag from CDN.  
+1. Include a \<script type="importmap"\> mapping "three" and "three/examples/jsm/" to a pinned CDN ESM build, since the reused avatar.js and SignEngine.js import against these bare specifiers and cannot load from a plain \<script src\> tag. This remains zero-bundler, native browser behavior.  
 2. Add a "Start Capture" button element.  
 3. Add a mode toggle control (Video / Avatar), defaulting to one mode explicitly (e.g. Video).  
 4. Add a fixed-position output-window \<div\> (\~300x200px, top z-index) containing two sibling children: a Three.js canvas element and a \<video\> element, both present but not yet visible.  
 5. Add a status-indicator element placeholder (populated in Phase 14).  
-6. Link style.css and load main.js as the entry script.
+6. Link style.css and load main.js as \<script type="module"\> (required for the importmap-resolved imports to work).
 
 **FILE: frontend/style.css**
 
@@ -701,22 +704,21 @@ Purpose
 Application entry point and orchestrator; initializes the Three.js scene and loads the avatar into a neutral idle pose before any capture starts.
 
 Dependencies  
-Three.js, frontend/vendor/avatar.js, frontend/vendor/autoBoneMapper.js (both per Phase 2's confirmed APIs).
+Three.js (via import map, not a bare CDN script — see index.html), frontend/vendor/avatar.js, frontend/vendor/SignEngine.js (both per Phase 2's confirmed APIs; autoBoneMapper.js is not a dependency of this file since SignEngine.js maps its own bones internally and ignores autoBoneMapper.js's output).
 
 Input  
 Page load event.
 
 Output  
-An initialized Three.js scene with the avatar posed neutrally, ready for later phases to extend.
+An initialized Three.js scene with the avatar posed neutrally and one SignEngine instance ready, for later phases to extend.
 
 Algorithm
 
-1. On page load, initialize the Three.js scene, camera, and renderer targeting the output window's canvas element.  
-2. Call avatar.js's confirmed load function to load human.glb into the scene.  
-3. Pose the loaded avatar in a neutral rest position.  
-4. Immediately after load completes, call autoBoneMapper.js's confirmed function once to build the bone-name translation table, storing its result for Phase 13's animation calls.  
-5. Do not start any animation loop yet — this happens only once real render instructions begin arriving (Phase 13).  
-6. Leave placeholders/hooks for later phases (capture button handler, WebSocket client, renderers, status indicator, session manager) to attach to, without implementing them yet.
+1. On page load, call avatar.js's confirmed initAvatarScene(container) function, targeting the output window's container element. Do not separately construct a Three.js scene/camera/renderer first — this function builds and owns them itself and resolves with {model, scene, camera, renderer}.  
+2. Once the returned promise resolves, construct exactly one SignEngine instance via new SignEngine({model}), and store it at module level for Phase 13 to call methods on per word — SignEngine.js has no per-word construction step and no external bone-table input, so this happens once, here, not per render instruction.  
+3. Expect SignEngine's constructor to automatically run a brief self-test animation ~1.5s after construction, resetting ~3s later — this is confirmed, expected behavior of the reused file, not an error to catch or suppress.  
+4. Do not start any additional animation loop — avatar.js's own render loop and SignEngine's own internal tick loop are already running; this file does not add a third one.  
+5. Leave placeholders/hooks for later phases (capture button handler, WebSocket client, renderers, status indicator, session manager) to attach to, without implementing them yet.
 
 ---
 
@@ -889,10 +891,10 @@ Algorithm
 **FILE: frontend/render/avatarRenderer.js**
 
 Purpose  
-Animate the 3D avatar to perform the sign for a word using HamNoSys-derived pose targets.
+Animate the 3D avatar to perform the sign for a word by dispatching its HamNoSys tokens to hamnosysMap.js's HAMNOSYS\_ACTIONS engine-method calls (confirmed API, Phase 2 — not by resolving pose-target data).
 
 Dependencies  
-frontend/vendor/hamnosysMap.js, autoBoneMapper.js's bone table (from main.js, Phase 10), SignEngine.js (confirmed API from Phase 2), renderQueue.js.
+frontend/vendor/hamnosysMap.js (exports HAMNOSYS\_ACTIONS, a token-to-function map — confirmed API, Phase 2), the single SignEngine instance constructed once in Phase 10's main.js (confirmed API from Phase 2: no playSign function, no completion event exists), renderQueue.js. autoBoneMapper.js is not a dependency — SignEngine.js ignores it.
 
 Input  
 A render instruction with assetRef containing a HamNoSys string.
@@ -902,12 +904,12 @@ Avatar animation in the Three.js canvas; a completion signal back to renderQueue
 
 Algorithm
 
-1. Pass the instruction's HamNoSys string to hamnosysMap.js's confirmed parsing function to obtain target bone-rotation poses.  
-2. Resolve those abstract pose targets into this rig's actual bone names using the bone table built once in Phase 10 via autoBoneMapper.js.  
-3. Call SignEngine.js's confirmed public "play this sign" function with the resolved pose targets.  
-4. Listen for SignEngine.js's confirmed completion-signaling mechanism (event/callback/promise, per Phase 2's findings).  
-5. If SignEngine.js does not already return to a neutral rest pose between signs, add that transition explicitly before signaling completion.  
-6. On completion, signal back to renderQueue.js to advance.
+1. Split the instruction's HamNoSys string on whitespace into individual tokens.  
+2. For each token, look it up in hamnosysMap.js's HAMNOSYS\_ACTIONS; if present, call it as HAMNOSYS\_ACTIONS\[token\](signEngineInstance) against the shared SignEngine instance from Phase 10 — each call directly invokes one of SignEngine's own hand()/palm()/armTo() methods, there is no separate pose-resolution step.  
+3. If a token has no entry in HAMNOSYS\_ACTIONS, skip it and log it (mirrors Fallback A's spirit for a malformed dictionary entry slipping through Fallback F) — never throw.  
+4. Since SignEngine.js has no completion event, callback, or promise (confirmed, Phase 2), wait a fixed timeout instead — AVATAR\_SIGN\_HOLD\_MS, a frontend-only constant defined at the top of this file (see docs/implementation.md section 3 exception), sized to SignEngine's rotate() interpolation speed.  
+5. Once the timeout elapses, explicitly call signEngineInstance.resetAll() to return to neutral rest pose, since SignEngine.js does not do this automatically between signs (confirmed, Phase 2).  
+6. After resetAll(), signal back to renderQueue.js to advance.
 
 **FILE: frontend/render/outputWindow.js**
 
