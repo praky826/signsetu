@@ -16,6 +16,8 @@ import { startCapture } from "./capture/tabCapture.js";
 import { validateStream } from "./capture/streamValidation.js";
 import { startAudioGraph } from "./audio/audioGraph.js";
 import { connect as connectWebSocket, setOnRenderInstruction } from "./network/wsClient.js";
+import { enqueue } from "./render/renderQueue.js";
+import { setSignEngine } from "./render/avatarRenderer.js";
 
 let signEngine = null;
 
@@ -41,6 +43,7 @@ async function init() {
   const { model } = await initAvatarScene(container);
   stripBoneNameSuffixes(model);
   signEngine = new SignEngine({ model });
+  setSignEngine(signEngine);
 }
 
 init().catch((err) => {
@@ -73,14 +76,10 @@ async function handleValidStream(stream) {
   await startAudioGraph(stream);
 }
 
-setOnRenderInstruction((instruction) => {
-  // Phase 13 attaches renderQueue.js here.
-  console.log("main.js: received render instruction, ready for render queue (Phase 13)", instruction);
-});
+setOnRenderInstruction(enqueue);
 
 document.getElementById("start-capture-btn").addEventListener("click", beginCaptureFlow);
 
 // Hooks for later phases to attach to, left unimplemented on purpose:
-// - render queue / renderers (Phase 13)
 // - status indicator (Phase 14)
 // - session manager (Phase 15)
