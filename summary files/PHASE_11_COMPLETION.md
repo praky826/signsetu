@@ -1,0 +1,13 @@
+# Phase 11 Completion Summary — Frontend Capture Flow (Steps 3-6)
+
+Files created: frontend/capture/tabCapture.js (startCapture(onSuccess), calling getDisplayMedia inside try/catch, showing a retry message with a button that re-invokes itself on rejection); frontend/capture/streamValidation.js (validateStream(stream, onValid, onRetryCapture), checking getAudioTracks() first, then sampling an AnalyserNode continuously and calling onValid exactly once on first detected signal; getAnalyser() exposed for Phase 15's later use). Files extended: frontend/main.js (wires the Start Capture button to the capture flow, chaining tabCapture into streamValidation); frontend/index.html and style.css (added a capture-reminder line and a capture-message banner with a retry button, since Fallback B's real status state machine does not exist until Phase 14 - status-indicator text is written to directly as a placeholder in the meantime).
+
+Cross-boundary signatures: none - this phase is entirely frontend-internal, no backend interaction yet (that begins in Phase 12).
+
+Key data structures: none new. The stream/callback chain (tabCapture -> streamValidation -> Phase 12's future hook) uses plain callback parameters, not a shared data shape.
+
+No ambiguities encountered beyond needing to add UI elements not explicitly listed in this phase's file list (index.html, style.css) - necessary since the phase's own retry-prompt and no-audio-message requirements need somewhere to render into, and no dedicated messaging module exists yet.
+
+Human step required, cannot be simulated: getDisplayMedia() requires a genuine user gesture and a real OS-level tab-share picker with an actual other tab playing audio - this cannot be automated or faked in any browser tool, sandboxed or real. Verified everything that can be verified without it: page loads with no console errors; clicking Start Capture correctly invokes getDisplayMedia and the resulting NotAllowedError (denied in this sandboxed environment) is caught cleanly with the retry message displayed and working; the no-audio-track branch was verified directly with a real (video-only) canvas-captured MediaStream; the signal-detection branch was verified directly with a real oscillator-fed audio stream, correctly calling onValid and updating the status text to LISTENING.
+
+To complete this phase, please: 1) open a YouTube or Spotify tab and start playing something with audio, 2) open http://127.0.0.1:8780/ in a second tab, 3) click Start Capture, 4) in the picker, select the tab from step 1 and confirm the "Share tab audio" checkbox is checked, 5) confirm the status indicator changes to LISTENING and no errors appear in the browser console. Report back what you see.
