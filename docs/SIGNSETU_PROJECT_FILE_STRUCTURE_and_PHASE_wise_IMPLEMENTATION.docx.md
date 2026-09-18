@@ -204,6 +204,7 @@ signsetu/
 **\[AI\]**
 
 * Write backend/config.py with every tunable constant named in the docs: VAD\_DISCARD\_THRESHOLD (0.3, tune 0.3–0.5), CHUNK\_TARGET\_SECONDS (1.5–2), CHUNK\_HARD\_CAP\_SECONDS (2), CHUNK\_CHECK\_INTERVAL\_MS (100–200), ROLLING\_BUFFER\_WORDS (5–6), PROVISIONAL\_WORDS (2–3), OLLAMA\_TEMPERATURE (0.1–0.2), OLLAMA\_MAX\_TOKENS (100–150), LATENCY\_TARGET\_SECONDS (5), LATENCY\_DEGRADE\_THRESHOLD\_SECONDS (6–7), SEEK\_DEBOUNCE\_MS (150–200), WHISPER\_BEAM\_SIZE (1–2), WHISPER\_LANGUAGE ("en").  
+* Added in Phase 4, once Step 8's VAD-frame mechanics were actually implemented and tested — not knowable at Phase 1 time: SAMPLE\_RATE (16000, the fixed rate shared by Whisper and silero-vad per Step 7), VAD\_FRAME\_SAMPLES (512 — CONFIRMED by direct test against the installed silero-vad build to be the only accepted frame size at 16kHz; this resolves AI\_Model\_Specification\_Document.docx's own flagged open question, not a new incompatibility), SILENCE\_SEARCH\_WINDOW\_MS (300, within Step 8's own "last few hundred milliseconds" wording), SILENCE\_CUT\_THRESHOLD (0.15, deliberately stricter than VAD\_DISCARD\_THRESHOLD since snapping a cut point to true silence is a different judgment than deciding a whole chunk is worth transcribing).  
 * Create empty backend package directories with \_\_init\_\_.py files.
 
 **Approach:** One flat config module — every other file imports constants from here; never hardcode a number elsewhere.

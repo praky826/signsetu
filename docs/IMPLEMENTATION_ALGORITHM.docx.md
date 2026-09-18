@@ -31,7 +31,8 @@ Algorithm
 7. Define SEEK\_DEBOUNCE\_MS (150–200).  
 8. Define WHISPER\_MODEL\_SIZE ("small"), WHISPER\_BEAM\_SIZE (1–2), WHISPER\_LANGUAGE ("en"), WHISPER\_COMPUTE\_TYPE ("float16"), WHISPER\_DEVICE ("cuda").  
 9. Define file paths: ISL\_DICTIONARY\_PATH, CISLR\_DATASET\_PATH, CISLR\_CLIPS\_DIR, PLACEHOLDER\_ASSET\_PATH.  
-10. Expose every constant at module level for direct import by name elsewhere; never redefine a value locally in another file.
+10. Define SAMPLE\_RATE (16000, shared by Whisper and silero-vad per Step 7), VAD\_FRAME\_SAMPLES (512 — CONFIRMED, Phase 4, by direct test against the installed silero-vad build: the only accepted frame size at 16kHz, resolving AI\_Model\_Specification\_Document.docx's own flagged open question, not a new incompatibility), SILENCE\_SEARCH\_WINDOW\_MS (300, within Step 8's "last few hundred milliseconds" wording), and SILENCE\_CUT\_THRESHOLD (0.15, stricter than VAD\_DISCARD\_THRESHOLD by design — added once Phase 4 actually implemented Step 8's cut logic, not knowable at Phase 1 time).  
+11. Expose every constant at module level for direct import by name elsewhere; never redefine a value locally in another file.
 
 **FILE: backend/init.py and all subpackage \_\_init\_\_.py files (ws/, audio/, transcription/, buffer/, gloss/, lookup/, session/, monitoring/, logs/, legacy\_reference/)**
 

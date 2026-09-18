@@ -46,7 +46,7 @@
 **Input — exact format required:**
 
 * Raw audio, 16-bit PCM or float32, mono, 16kHz (same resampling requirement as Whisper — worth resampling once and reusing the same 16kHz buffer for both models rather than resampling twice)  
-* Passed as short fixed-size frames (Silero VAD typically expects frames of a specific sample count, e.g. 512 samples at 16kHz — confirm the exact required frame size against the installed package version's documentation, since this can vary by release)
+* Passed as short fixed-size frames — CONFIRMED by direct test against the installed silero-vad build (Phase 4): exactly 512 samples at 16kHz is the only accepted frame size (256, 1024, and 1536 samples were all tried and rejected by the model itself). This applies only to the internal VAD-scoring step inside backend/audio/vad.py; nothing upstream (the frontend's 128-sample AudioWorklet blocks, the accumulated streaming buffer, or chunker.py's per-session buffer) needs to arrive already aligned to 512 samples — vad.py slices whatever buffer it is given into consecutive 512-sample sub-frames itself, discarding any leftover remainder shorter than one frame.
 
 **Output — exact format:**
 

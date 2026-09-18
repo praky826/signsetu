@@ -84,10 +84,14 @@ Model config: temperature 0.1-0.2, `format="json"` if supported, max_tokens ~100
 
 | Constant | Meaning | Range/default |
 |---|---|---|
+| `SAMPLE_RATE` | Step 7: fixed audio sample rate shared by Whisper and silero-vad | 16000 |
 | `VAD_DISCARD_THRESHOLD` | Fallback D: below this aggregated speech-probability, a chunk is dropped before Whisper | 0.3 (tune 0.3-0.5) |
+| `VAD_FRAME_SAMPLES` | Step 8: per-call frame size for the silero-vad model — CONFIRMED, Phase 4, by direct test: this is the only size the installed build accepts at 16kHz, not a free tunable | 512 (fixed by library) |
 | `CHUNK_TARGET_SECONDS` | Step 8: target chunk size before attempting a silence-snap cut | 1.5-2 |
 | `CHUNK_HARD_CAP_SECONDS` | Step 8: hard cut point if no silence found | 2 |
 | `CHUNK_CHECK_INTERVAL_MS` | Step 8: how often the chunker timer loop checks the buffer | 100-200 |
+| `SILENCE_SEARCH_WINDOW_MS` | Step 8: how far back from the buffer's tail to search for a silence frame once CHUNK_TARGET_SECONDS is reached — added Phase 4, not named in Phase 1 | 300 |
+| `SILENCE_CUT_THRESHOLD` | Step 8: frame speech-probability below this counts as silent enough to cut at — deliberately stricter than VAD_DISCARD_THRESHOLD; added Phase 4 | 0.15 |
 | `ROLLING_BUFFER_WORDS` | Step 11: total words held in the rolling buffer | 5-6 |
 | `PROVISIONAL_WORDS` | Step 11: newest N words held back as provisional (not yet stable) | 2-3 |
 | `OLLAMA_HOST_URL` | Model 3 endpoint | `http://localhost:11434` |
@@ -104,7 +108,7 @@ Model config: temperature 0.1-0.2, `format="json"` if supported, max_tokens ~100
 | `WHISPER_COMPUTE_TYPE` | Model 1 CTranslate2 compute type | `"float16"` |
 | `WHISPER_DEVICE` | Model 1 device | `"cuda"` |
 | `ISL_DICTIONARY_PATH` | Path to `assets/isl_dictionary.json` | — |
-| `CISLR_DATASET_PATH` | Path to `assets/cislr/dataset.csv` | — |
+| `CISLR_DATASET_PATH` | Path to `assets/cislr/prototype.csv` (not dataset.csv — decision recorded in section 2's CISLR note above) | — |
 | `CISLR_CLIPS_DIR` | Path to `assets/cislr/clips/` | — |
 | `PLACEHOLDER_ASSET_PATH` | Path to `assets/placeholder/unknown_word.png` | — |
 
