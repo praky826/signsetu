@@ -14,3 +14,4 @@ soundfile
 httpx
 pydantic
 python-dotenv
+pytest
