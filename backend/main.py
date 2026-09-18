@@ -1,8 +1,8 @@
 """Step 1: app entry, model/lookup warm-up orchestration, /health.
-
-Static file mounting and the WebSocket route are added in Phase 9 - this
-phase only brings the four startup components up concurrently and exposes
-/health reflecting their true readiness.
+Phase 9 (complete): mounts the frontend as static files, mounts
+frontend/vendor/models/ at /models (avatar.js hardcodes this path,
+confirmed Phase 2), registers the WebSocket endpoint at /ws, and starts
+the three background pipeline loops.
 """
 
 import asyncio
@@ -10,11 +10,14 @@ import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 
-from backend.audio import vad
+from backend.audio import chunker, vad
+from backend.config import BASE_DIR
 from backend.gloss import ollama_client
 from backend.lookup import cislr_index, dictionary_loader
 from backend.transcription import whisper_service
+from backend.ws import connection
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -26,6 +29,8 @@ _startup_status: dict[str, bool] = {
     "dictionary": False,
     "cislr": False,
 }
+
+_background_tasks: list[asyncio.Task] = []
 
 
 def _load_lookups() -> None:
@@ -53,10 +58,27 @@ async def lifespan(app: FastAPI):
     if all(_startup_status.values()):
         logger.info("startup: all components ready")
 
+    _background_tasks.extend([
+        asyncio.create_task(chunker.run_loop()),
+        asyncio.create_task(whisper_service.run_loop()),
+        asyncio.create_task(connection.run_render_loop()),
+    ])
+
     yield
+
+    for task in _background_tasks:
+        task.cancel()
+    await asyncio.gather(*_background_tasks, return_exceptions=True)
 
 
 app = FastAPI(lifespan=lifespan)
+
+# avatar.js (frontend/vendor/avatar.js, confirmed Phase 2) hardcodes its GLB
+# fetch as the root-relative path "/models/human.glb" and cannot be modified -
+# this second mount makes that path resolve without touching the reused file.
+app.mount("/models", StaticFiles(directory=BASE_DIR / "frontend" / "vendor" / "models"), name="models")
+
+app.websocket("/ws")(connection.websocket_endpoint)
 
 
 @app.get("/health")
@@ -66,3 +88,8 @@ def health():
         "status": "ready" if ready else "loading",
         "components": dict(_startup_status),
     }
+
+
+# Mounted last: StaticFiles(html=True) serves index.html for "/" and is a
+# catch-all for the mount path, so routes above it would otherwise be shadowed.
+app.mount("/", StaticFiles(directory=BASE_DIR / "frontend", html=True), name="frontend")

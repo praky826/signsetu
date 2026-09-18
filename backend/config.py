@@ -41,6 +41,12 @@ SILENCE_CUT_THRESHOLD = 0.15
 ROLLING_BUFFER_WORDS = 6
 PROVISIONAL_WORDS = 2
 
+# Step 12: how often connection.py's render loop attempts a gloss cycle for the
+# current session - not a named constant in the docs; matches the System Architecture
+# text's own "roughly every ~1.5-2s, matching the chunk rate" description. Added Phase 9,
+# once an actual loop calling ollama_client.run_cycle() was needed to complete the pipeline.
+GLOSS_CYCLE_INTERVAL_MS = 1500
+
 # Model 3 (Ollama).
 OLLAMA_HOST_URL = "http://localhost:11434"
 OLLAMA_MODEL_NAME = "llama3.2:3b"

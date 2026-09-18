@@ -93,6 +93,11 @@ def run_cycle(session_id: str) -> list[str] | None:
     success, or None if the cycle was skipped/discarded (Fallback E) - in
     which case rolling_text_buffer's commit boundary is left untouched so the
     same stable words retry next cycle with whatever new context has arrived."""
+    from backend.session import session_state
+
+    if not session_state.is_current(session_id):
+        return None
+
     batch = rolling_text_buffer.get_commit_batch(session_id)
     stable_words = batch["stable_words"]
     provisional_context = batch["provisional_context"]

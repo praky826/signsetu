@@ -81,9 +81,16 @@ def _process_session(session_id: str) -> None:
 
 async def run_loop() -> None:
     """Background task: checks every session's buffer every
-    CHUNK_CHECK_INTERVAL_MS and cuts chunks as they become ready."""
+    CHUNK_CHECK_INTERVAL_MS and cuts chunks as they become ready. Buffers
+    for a session that session_state.py no longer considers current are
+    dropped outright rather than processed further."""
+    from backend.session import session_state
+
     interval = CHUNK_CHECK_INTERVAL_MS / 1000
     while True:
         for session_id in list(_buffers.keys()):
+            if not session_state.is_current(session_id):
+                clear_session(session_id)
+                continue
             _process_session(session_id)
         await asyncio.sleep(interval)

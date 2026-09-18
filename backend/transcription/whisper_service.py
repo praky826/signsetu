@@ -59,10 +59,23 @@ def transcribe(chunk_audio: np.ndarray) -> str:
 
 async def run_loop() -> None:
     """Background task: pulls one chunk at a time from chunker.chunk_queue,
-    transcribes it, and appends the result to rolling_text_buffer.py."""
+    transcribes it, and appends the result to rolling_text_buffer.py. Chunks
+    whose sessionId is no longer current are discarded without transcribing.
+    transcribe() runs in a worker thread (Phase 9 fix) so a several-hundred-ms
+    GPU call never blocks this event loop - and therefore never blocks audio
+    ingestion or chunking, which share the loop - matching the architecture's
+    "chunk N+1 recording continues while chunk N is being transcribed" intent."""
+    import asyncio
+
+    from backend.session import session_state
+
     while True:
         chunk = await chunker.chunk_queue.get()
-        text = transcribe(chunk["audioData"])
+        if not session_state.is_current(chunk["sessionId"]):
+            logger.debug("whisper_service: discarded stale-session chunk (session %s)", chunk["sessionId"])
+            continue
+
+        text = await asyncio.to_thread(transcribe, chunk["audioData"])
         if text:
             rolling_text_buffer.append_text(chunk["sessionId"], text)
         else:
