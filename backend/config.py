@@ -55,7 +55,12 @@ OLLAMA_MAX_TOKENS = 128
 
 # Fallback G: latency monitoring / degrade.
 LATENCY_TARGET_SECONDS = 5
-LATENCY_DEGRADE_THRESHOLD_SECONDS = 6.5
+# Raised from 6.5 (Phase 17 default) after a real capture session showed the
+# 6.5s threshold degrading avatar->video 100% of the time on this hardware
+# (Whisper small + a 3B Ollama model + Three.js sharing one RTX 3050) -
+# tuned against that observed behavior, per your own choice to accept more
+# visible lag in exchange for avatar mode actually running.
+LATENCY_DEGRADE_THRESHOLD_SECONDS = 11.0
 LATENCY_WINDOW_SIZE = 8
 
 # Fallback H: seek debounce.

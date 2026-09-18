@@ -20,6 +20,7 @@ import { connect as connectWebSocket, setOnRenderInstruction, sendControlMessage
 import { enqueue } from "./render/renderQueue.js";
 import { setSignEngine } from "./render/avatarRenderer.js";
 import { initSession, attachStreamEndListener, startSeekMonitoring } from "./session/sessionManager.js";
+import { openPipWindow, isPipSupported } from "./render/pipWindow.js";
 
 let signEngine = null;
 
@@ -116,3 +117,13 @@ document.getElementById("mode-toggle").addEventListener("change", (event) => {
     sendControlMessage({ type: "set_mode", mode: event.target.value });
   }
 });
+
+// Step 17's documented optional path: lets the output window float as a
+// real always-on-top OS window over the tab actually playing the source
+// audio, instead of only being visible inside this app's own tab.
+const floatOutputBtn = document.getElementById("float-output-btn");
+if (!isPipSupported()) {
+  floatOutputBtn.disabled = true;
+  floatOutputBtn.title = "Requires a Chrome version with Document Picture-in-Picture support";
+}
+floatOutputBtn.addEventListener("click", openPipWindow);

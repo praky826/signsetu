@@ -63,6 +63,15 @@ body {
   display: none;
 }
 
+#float-output-btn {
+  position: fixed;
+  bottom: 272px;
+  right: 12px;
+  z-index: 1000;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
 #status-indicator {
   position: fixed;
   bottom: 216px;
