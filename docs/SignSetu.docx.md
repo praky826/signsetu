@@ -727,7 +727,7 @@ python-dotenv             \# optional, for managing any local config/paths clean
 
 **Frontend Libraries (via CDN, no install step)**
 
-Three.js (pinned version, e.g. r128 or your chosen stable release)
+Three.js, pinned to r0.160.0 (CONFIRMED, Phase 10 — not r128 as originally suggested here: r0.128.0 was tried first but has a real GPU skinning bug reproducible with this project's actual human.glb rig, confirmed by direct browser testing and isolated to the skinning=true material path specifically; r0.160.0 renders the identical rig and materials correctly with no other regressions found)
 
 That's the only external frontend library — everything else (audio capture, WebSocket, DOM/canvas handling) is native browser APIs.
 

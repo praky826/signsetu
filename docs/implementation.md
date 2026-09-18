@@ -94,6 +94,7 @@ Model config: temperature 0.1-0.2, `format="json"` if supported, max_tokens ~100
 | `SILENCE_CUT_THRESHOLD` | Step 8: frame speech-probability below this counts as silent enough to cut at — deliberately stricter than VAD_DISCARD_THRESHOLD; added Phase 4 | 0.15 |
 | `ROLLING_BUFFER_WORDS` | Step 11: total words held in the rolling buffer | 5-6 |
 | `PROVISIONAL_WORDS` | Step 11: newest N words held back as provisional (not yet stable) | 2-3 |
+| `GLOSS_CYCLE_INTERVAL_MS` | Step 12: how often connection.py's render loop attempts a gloss cycle for the current session — added Phase 9, matches the System Architecture text's own "~1.5-2s" cadence description | 1500 |
 | `OLLAMA_HOST_URL` | Model 3 endpoint | `http://localhost:11434` |
 | `OLLAMA_MODEL_NAME` | Model 3 model tag | `llama3.2:3b` |
 | `OLLAMA_TEMPERATURE` | Model 3 sampling temperature | 0.1-0.2 |
@@ -125,6 +126,8 @@ Every tunable constant lives only here — never hardcoded inline elsewhere.
 - `increment_session()` — called only on a confirmed genuine seek (post-debounce, Fallback H) or a genuinely new stream after a freeze (`resume_session()`); this is the only path that invalidates in-flight work.
 - `freeze_session()` — called on stream loss (Fallback C); halts processing but does NOT increment sessionId or clear buffers, since reconnecting to the same content is expected and context should be preserved.
 - Rapid seek events are debounced (150-200ms, `SEEK_DEBOUNCE_MS`) before triggering a single increment — never one increment per intermediate scrub event.
+- Design decision (Phase 8): the docs describe session_state.py as tracking sessionId "per connection," implying a connection-keyed dict. Since every other backend module (chunker.py, rolling_text_buffer.py) already keys its state by a flat sessionId string with no connection concept, and this application has exactly one active capture connection at a time, `session_state.py` tracks a single global current session rather than a per-connection dict. "Per connection" collapses to this single session in practice; nothing in the docs requires concurrent-connection support.
+- Wire format decision (Phase 9, not specified anywhere in the source docs): the frontend-to-backend WebSocket carries two kinds of messages over the same connection. Binary messages are continuous raw audio (8-byte little-endian header — uint32 sessionId, uint32 sequence number — followed by float32 PCM samples, per Step 7). Text messages are JSON control envelopes: `{"type": "set_mode", "mode": "video"|"avatar"}` (Step 14's mode toggle) and `{"type": "seek", "sessionId": "<new id>"}` (Step 18/Fallback H's confirmed-seek relay, calls `increment_session()`). Backend-to-frontend messages are one render instruction per text message, the frozen `{word, renderType, assetRef, sessionId}` shape, sent only once `session_state.is_current()` confirms validity. Phases 12 and 15's frontend code must produce/consume exactly this framing.
 
 ## 5. Reused-file API signatures (speech-to-isl repo) — confirmed in Phase 2
 
@@ -140,7 +143,7 @@ All 6 files were fetched from https://github.com/jayakarthik07/speech-to-isl (ma
 
 **isl_dictionary.json** — NOT a flat `{gloss_word: hamnosys_string}` map as assumed. Actual shape: keyed by lowercase English word, e.g. `{"hello": {"gloss": "HELLO", "hamnosys": "hamflathand hampalmd hamchest"}, "hi": {"gloss": "HI", "hamnosys": "..."}}`. 260 entries, 260 unique `gloss` values (multiple English-word keys can map to the same gloss). `dictionary_loader.py` (Phase 3) must iterate `.values()` and index by each entry's `gloss` field (uppercased), not by the JSON's own top-level keys.
 
-**human.glb** — valid glTF binary (magic bytes confirmed), 6.6MB.
+**human.glb** — valid glTF binary (magic bytes confirmed), 6.6MB. CONFIRMED (Phase 10, by direct browser testing): every one of its 66 bones is named with a trailing numeric suffix (e.g. "mixamorigRightArm_033", not the bare "mixamorigRightArm" SignEngine.js's internal bone matcher expects). Since that matcher only checks whether a normalized name *ends with* an expected pattern, the suffix broke 65 of 66 mappings, leaving every avatar animation a silent no-op. Fixed entirely in frontend/main.js (no reused file edited): bone names are stripped of any trailing "_<digits>" suffix immediately after the model loads and before SignEngine is constructed. Also confirmed (Phase 10): this same rig triggers a real GPU skinning bug in Three.js r0.128.0 (any material with skinning=true renders fully invisible, reproduced independent of the loaded materials' own properties) — resolved by pinning Three.js to r0.160.0 instead (see the Finalized Tech Stack section of SignSetu.docx).
 
 **backend/legacy_reference/isl_nlp.py, app.py** — fetched and skimmed per the reference-only instruction; confirms isl_nlp.py loads the same isl_dictionary.json shape above plus a separate hardcoded finger-spelling alphabet map. Neither file is imported or called anywhere in this project.
 

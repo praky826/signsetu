@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SignSetu</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/examples/jsm/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<button id="start-capture-btn">Start Capture</button>
+
+<div id="mode-toggle">
+  <label><input type="radio" name="mode" value="video" checked> Video</label>
+  <label><input type="radio" name="mode" value="avatar"> Avatar</label>
+</div>
+
+<div id="status-indicator" class="status-idle">IDLE</div>
+
+<div id="output-window">
+  <div id="avatar-container" class="render-visible"></div>
+  <video id="video-renderer" class="render-hidden" playsinline></video>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
