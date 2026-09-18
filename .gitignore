@@ -4,3 +4,4 @@ __pycache__/
 data/
 .env
 *.log
+backend/logs/*.jsonl
