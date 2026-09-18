@@ -3,11 +3,11 @@
 // advance strictly sequentially, never overlapping.
 //
 // Session comparison uses String() on both sides: the backend sends
-// sessionId as a string (Python str()), while wsClient.js's getSessionId()
-// returns a number (crypto.getRandomValues) - comparing them directly with
-// !== would always mismatch due to the type difference alone.
+// sessionId as a string (Python str()), while sessionManager.js's
+// getSessionId() returns a number - comparing them directly with !== would
+// always mismatch due to the type difference alone.
 
-import { getSessionId } from "../network/wsClient.js";
+import { getSessionId } from "../session/sessionManager.js";
 import { playVideo, preloadNext } from "./videoRenderer.js";
 import { playAvatarSign } from "./avatarRenderer.js";
 import { showRenderType } from "./outputWindow.js";

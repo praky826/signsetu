@@ -2,7 +2,11 @@
 Phase 9 (complete): mounts the frontend as static files, mounts
 frontend/vendor/models/ at /models (avatar.js hardcodes this path,
 confirmed Phase 2), registers the WebSocket endpoint at /ws, and starts
-the three background pipeline loops.
+the three background pipeline loops. Also mounts assets/ at /assets (bug
+found via a real capture session, Phase 15: render_resolver.py and
+cislr_index.py send asset paths as URLs, which need an actual route to
+resolve against - the placeholder image and CISLR clips are both under
+assets/, so one mount serves both).
 """
 
 import asyncio
@@ -77,6 +81,11 @@ app = FastAPI(lifespan=lifespan)
 # fetch as the root-relative path "/models/human.glb" and cannot be modified -
 # this second mount makes that path resolve without touching the reused file.
 app.mount("/models", StaticFiles(directory=BASE_DIR / "frontend" / "vendor" / "models"), name="models")
+
+# Serves the Fallback A placeholder image and, once cached, real CISLR clips -
+# render_resolver.py and cislr_index.py both produce assetRef values relative
+# to this mount (e.g. "/assets/placeholder/unknown_word.png").
+app.mount("/assets", StaticFiles(directory=BASE_DIR / "assets"), name="assets")
 
 app.websocket("/ws")(connection.websocket_endpoint)
 

@@ -50,6 +50,19 @@ body {
   margin-left: 8px;
 }
 
+#reconnect-btn {
+  position: fixed;
+  bottom: 244px;
+  right: 12px;
+  z-index: 1000;
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+#reconnect-btn.hidden {
+  display: none;
+}
+
 #status-indicator {
   position: fixed;
   bottom: 216px;

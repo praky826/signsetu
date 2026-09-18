@@ -6,15 +6,23 @@ isolation (Phase 17). Fallback G's latency-degrade override is wired in
 (Phase 8): when latency_tracker.should_degrade() is true, mode is forced to
 "video" for this call only - the caller's own stored mode setting is never
 touched here.
+
+assetRef for the placeholder is a URL path (/assets/placeholder/...), not
+PLACEHOLDER_ASSET_PATH's raw filesystem path - confirmed by real testing
+(a live capture session) that the frontend cannot load a raw Windows path at
+all (Chrome refuses file:// resources from an http://-served page, which
+silently broke the entire output window since every unresolved word hit
+this same broken path).
 """
 
 import logging
 
-from backend.config import PLACEHOLDER_ASSET_PATH
 from backend.lookup import cislr_index, dictionary_loader
 from backend.monitoring import latency_tracker
 
 logger = logging.getLogger(__name__)
+
+PLACEHOLDER_URL = "/assets/placeholder/unknown_word.png"
 
 
 def resolve_render(word: str, mode: str, session_id: str) -> dict:
@@ -30,14 +38,14 @@ def resolve_render(word: str, mode: str, session_id: str) -> dict:
         if video_path is not None:
             render_type, asset_ref = "video", video_path
         else:
-            render_type, asset_ref = "unknown", str(PLACEHOLDER_ASSET_PATH)
+            render_type, asset_ref = "unknown", PLACEHOLDER_URL
     elif mode == "avatar":
         if hamnosys is not None:
             render_type, asset_ref = "avatar", hamnosys
         elif video_path is not None:
             render_type, asset_ref = "video", video_path
         else:
-            render_type, asset_ref = "unknown", str(PLACEHOLDER_ASSET_PATH)
+            render_type, asset_ref = "unknown", PLACEHOLDER_URL
     else:
         raise ValueError(f"unknown render mode: {mode!r}")
 

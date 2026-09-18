@@ -108,6 +108,7 @@ def _handle_control_message(raw_text: str) -> None:
 
     if msg.get("type") == "set_mode" and msg.get("mode") in ("video", "avatar"):
         _current_mode = msg["mode"]
+        logger.info("connection: mode set to %s", _current_mode)
     elif msg.get("type") == "seek" and isinstance(msg.get("sessionId"), str):
         session_state.increment_session(msg["sessionId"])
     else:

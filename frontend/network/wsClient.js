@@ -2,9 +2,8 @@
 // audio out (binary), render instructions in (JSON text). Wire format decided
 // in Phase 9, recorded in docs/implementation.md section 4.
 //
-// sessionId is generated here as a placeholder owner until Phase 15's
-// sessionManager.js exists and takes over per the frozen sessionId
-// convention ("owned on the frontend by sessionManager.js").
+// sessionId is owned by sessionManager.js (Phase 15), per the frozen
+// sessionId convention - read fresh on every send rather than cached here.
 //
 // Incoming messages are discriminated by the presence of a "type" field
 // (Phase 14, not specified in the docs): render instructions have the frozen
@@ -14,28 +13,17 @@
 // render-instruction shape while still allowing new message kinds.
 
 import { Status, setStatus, setProcessingDelay } from "../status/statusIndicator.js";
+import { getSessionId } from "../session/sessionManager.js";
 
 let socket = null;
-let sessionId = null;
 let sequenceNumber = 0;
 let onRenderInstruction = null;
-
-function generateSessionId() {
-  const array = new Uint32Array(1);
-  crypto.getRandomValues(array);
-  return array[0];
-}
-
-export function getSessionId() {
-  return sessionId;
-}
 
 export function setOnRenderInstruction(callback) {
   onRenderInstruction = callback;
 }
 
 export function connect() {
-  sessionId = generateSessionId();
   sequenceNumber = 0;
   socket = new WebSocket(`ws://${window.location.host}/ws`);
 
@@ -72,7 +60,7 @@ export function connect() {
 // incrementing sequence number, per the Phase 9 binary framing.
 export function sendAudio(pcmFloat32Array) {
   if (!socket || socket.readyState !== WebSocket.OPEN) return;
-  const header = new Uint32Array([sessionId, sequenceNumber++]);
+  const header = new Uint32Array([getSessionId(), sequenceNumber++]);
   const message = new Uint8Array(header.byteLength + pcmFloat32Array.byteLength);
   message.set(new Uint8Array(header.buffer), 0);
   message.set(new Uint8Array(pcmFloat32Array.buffer), header.byteLength);

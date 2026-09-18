@@ -5,6 +5,11 @@ docs/implementation.md): prototype.csv is the Hugging Face-provided subset
 with exactly one clip per unique gloss, avoiding dataset.csv's up-to-13
 duplicate clips per word. prototype.csv has one known malformed row (empty
 gloss) which is excluded like any other bad entry.
+
+The index stores a URL path (served via main.py's /assets static mount),
+not a filesystem path - confirmed by real testing that the frontend cannot
+load a raw Windows path (Chrome refuses file:// resources from an http://
+page) - only the on-disk existence check below uses the real filesystem path.
 """
 
 import csv
@@ -44,7 +49,7 @@ def build() -> bool:
                     logger.debug("cislr_index: excluded %s (clip not cached: %s)", gloss, clip_path)
                     continue
 
-                built[gloss] = str(clip_path)
+                built[gloss] = f"/assets/cislr/clips/{uid}.mp4"
 
         _index = built
         _built = True

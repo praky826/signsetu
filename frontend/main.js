@@ -1,5 +1,6 @@
 // Application entry point and orchestrator (Step 2 skeleton, Phase 10).
-// Owns sessionId (later phases) and wires all frontend modules together.
+// Wires all frontend modules together; sessionId is owned by
+// sessionManager.js (Phase 15), not this file.
 //
 // avatar.js's initAvatarScene() builds and owns the entire Three.js scene,
 // camera, and renderer itself - main.js does not construct a separate one
@@ -18,6 +19,7 @@ import { startAudioGraph } from "./audio/audioGraph.js";
 import { connect as connectWebSocket, setOnRenderInstruction, sendControlMessage } from "./network/wsClient.js";
 import { enqueue } from "./render/renderQueue.js";
 import { setSignEngine } from "./render/avatarRenderer.js";
+import { initSession, attachStreamEndListener, startSeekMonitoring } from "./session/sessionManager.js";
 
 let signEngine = null;
 
@@ -55,18 +57,35 @@ init().catch((err) => {
 // pressing play on an external, uncontrollable source tab) - it is only
 // inferred indirectly via streamValidation.js's AnalyserNode detecting
 // sustained signal, already handled inside validateStream().
+let sessionStarted = false;
+
 function beginCaptureFlow() {
   startCapture(handleStreamReady);
 }
 
+// Step 18/Fallback C (Phase 15): sessionId is created exactly once, on the
+// very first successful capture, never again on a later reconnect (a
+// reconnect deliberately keeps the same sessionId - see sessionManager.js).
+// The track.onended listener is (re)attached every time so Fallback C keeps
+// working across repeated reconnects, re-running this same validation path
+// for whatever new stream reconnect() obtains.
 function handleStreamReady(stream) {
+  if (!sessionStarted) {
+    sessionStarted = true;
+    initSession();
+  }
+  attachStreamEndListener(stream, (newStream) => {
+    validateStream(newStream, handleValidStream, beginCaptureFlow);
+  });
   validateStream(stream, handleValidStream, beginCaptureFlow);
 }
 
-// Step 7/9 frontend halves (Phase 12): once the stream is validated, open the
-// WebSocket first, then start the audio graph so sendAudio() always has a
-// live socket to write to.
+// Step 7/9 frontend halves (Phase 12): once the stream is validated, start
+// seek monitoring (Phase 15, needs streamValidation.js's analyser to already
+// exist), then open the WebSocket, then start the audio graph so sendAudio()
+// always has a live socket to write to.
 async function handleValidStream(stream) {
+  startSeekMonitoring();
   try {
     await connectWebSocket();
   } catch (err) {
@@ -97,6 +116,3 @@ document.getElementById("mode-toggle").addEventListener("change", (event) => {
     sendControlMessage({ type: "set_mode", mode: event.target.value });
   }
 });
-
-// Hook for the one remaining later phase, left unimplemented on purpose:
-// - session manager (Phase 15)
