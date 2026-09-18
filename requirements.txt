@@ -1,0 +1,16 @@
+# NOTE: torch must be the CUDA-enabled build matching this machine's driver, not the default
+# CPU-only PyPI wheel (plain `pip install -r requirements.txt` alone will pull the CPU build).
+# On this machine (driver CUDA 13.1, RTX 3050), install with:
+#   pip install --index-url https://download.pytorch.org/whl/cu128 torch==2.9.1+cu128 torchaudio==2.9.1+cu128
+# then install the rest of this file normally.
+fastapi
+uvicorn[standard]
+faster-whisper
+ctranslate2
+torch
+silero-vad
+numpy
+soundfile
+httpx
+pydantic
+python-dotenv
