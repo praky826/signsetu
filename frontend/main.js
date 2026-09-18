@@ -5,7 +5,7 @@
 // camera, and renderer itself - main.js does not construct a separate one
 // (confirmed API, Phase 2). SignEngine is constructed exactly once, here,
 // immediately after the avatar model resolves, since it has no per-word
-// construction step and Phase 13 will call methods on this same instance.
+// construction step and Phase 13's avatarRenderer.js calls methods on it.
 // Constructing it automatically triggers SignEngine's own built-in self-test
 // animation (~1.5s after construction, resetting ~3s later) - expected
 // reused-file behavior, not an error to catch.
@@ -15,7 +15,7 @@ import { SignEngine } from "./vendor/SignEngine.js";
 import { startCapture } from "./capture/tabCapture.js";
 import { validateStream } from "./capture/streamValidation.js";
 import { startAudioGraph } from "./audio/audioGraph.js";
-import { connect as connectWebSocket, setOnRenderInstruction } from "./network/wsClient.js";
+import { connect as connectWebSocket, setOnRenderInstruction, sendControlMessage } from "./network/wsClient.js";
 import { enqueue } from "./render/renderQueue.js";
 import { setSignEngine } from "./render/avatarRenderer.js";
 
@@ -73,6 +73,9 @@ async function handleValidStream(stream) {
     console.error("main.js: WebSocket connection failed", err);
     return;
   }
+  // Sync the currently selected mode in case the user changed it before the
+  // WebSocket existed to send it to (see the mode-toggle wiring below).
+  sendControlMessage({ type: "set_mode", mode: getSelectedMode() });
   await startAudioGraph(stream);
 }
 
@@ -80,6 +83,20 @@ setOnRenderInstruction(enqueue);
 
 document.getElementById("start-capture-btn").addEventListener("click", beginCaptureFlow);
 
-// Hooks for later phases to attach to, left unimplemented on purpose:
-// - status indicator (Phase 14)
+// Step 14's mode toggle (Fallback-free, just Step 14's own render-mode
+// input): no phase's file list explicitly assigned wiring this UI element's
+// change event to the set_mode control message, even though render_resolver.py's
+// mode resolution depends entirely on the backend knowing it - found and
+// fixed directly rather than left dangling.
+function getSelectedMode() {
+  return document.querySelector('input[name="mode"]:checked').value;
+}
+
+document.getElementById("mode-toggle").addEventListener("change", (event) => {
+  if (event.target.name === "mode") {
+    sendControlMessage({ type: "set_mode", mode: event.target.value });
+  }
+});
+
+// Hook for the one remaining later phase, left unimplemented on purpose:
 // - session manager (Phase 15)

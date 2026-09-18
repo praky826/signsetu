@@ -33,6 +33,7 @@ latency_tracker.should_degrade() actually changes value, never every cycle.
 import asyncio
 import logging
 import struct
+import time
 
 import numpy as np
 from fastapi import WebSocket, WebSocketDisconnect
@@ -135,13 +136,15 @@ async def run_render_loop() -> None:
 
         session_id = session_state.get_current_session_id()
         if session_id is not None and _current_websocket is not None:
-            words = await asyncio.to_thread(ollama_client.run_cycle, session_id)
-            if words:
+            cycle_result = await asyncio.to_thread(ollama_client.run_cycle, session_id)
+            if cycle_result:
+                words, chunk_timestamp = cycle_result
                 for word in words:
                     instruction = render_resolver.resolve_render(word, _current_mode, session_id)
                     if session_state.is_current(instruction["sessionId"]) and _current_websocket is not None:
                         try:
                             await _current_websocket.send_json(instruction)
+                            latency_tracker.record_latency(chunk_timestamp, time.time())
                         except Exception:
                             logger.exception("connection: failed to send render instruction")
                     else:

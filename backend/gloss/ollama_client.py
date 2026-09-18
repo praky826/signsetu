@@ -8,10 +8,20 @@ discards the cycle on any parse/shape failure (Fallback E), and otherwise
 runs vocab_filter.py before advancing the rolling text buffer's commit
 boundary. render_resolver.py (Phase 7) is not called yet - validated words
 are returned to the caller for now.
+
+run_cycle() also returns the oldest chunk-creation timestamp among the
+words just committed (Fallback G): Fallback G needs a chunk-creation
+timestamp per word to measure end-to-end latency, but this cycle can commit
+words spanning several chunks at once, and there is no per-word chunk
+identity once text has been merged into rolling_text_buffer - the oldest
+timestamp in the batch is used as a single reference point for the whole
+cycle's words, a coarser-than-ideal but honest approximation given the
+architecture's actual data flow.
 """
 
 import json
 import logging
+import time
 
 import httpx
 
@@ -88,11 +98,12 @@ def _call_ollama(stable_words: list[str], provisional_context: list[str], allowe
     return raw_text
 
 
-def run_cycle(session_id: str) -> list[str] | None:
-    """One Step 12 cycle for a session. Returns the validated gloss words on
-    success, or None if the cycle was skipped/discarded (Fallback E) - in
-    which case rolling_text_buffer's commit boundary is left untouched so the
-    same stable words retry next cycle with whatever new context has arrived."""
+def run_cycle(session_id: str) -> tuple[list[str], float] | None:
+    """One Step 12 cycle for a session. Returns (validated gloss words, the
+    oldest contributing chunk's creation timestamp) on success, or None if
+    the cycle was skipped/discarded (Fallback E) - in which case rolling_text_
+    buffer's commit boundary is left untouched so the same stable words retry
+    next cycle with whatever new context has arrived."""
     from backend.session import session_state
 
     if not session_state.is_current(session_id):
@@ -101,9 +112,12 @@ def run_cycle(session_id: str) -> list[str] | None:
     batch = rolling_text_buffer.get_commit_batch(session_id)
     stable_words = batch["stable_words"]
     provisional_context = batch["provisional_context"]
+    stable_timestamps = batch["stable_timestamps"]
 
     if not stable_words:
         return None
+
+    oldest_chunk_timestamp = min(stable_timestamps) if stable_timestamps else time.time()
 
     allowed_vocab = _get_allowed_vocab()
 
@@ -124,4 +138,4 @@ def run_cycle(session_id: str) -> list[str] | None:
 
     validated = vocab_filter.filter_gloss(gloss_words, allowed_vocab, stable_words)
     rolling_text_buffer.advance_commit_boundary(session_id, len(stable_words))
-    return validated
+    return validated, oldest_chunk_timestamp

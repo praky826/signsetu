@@ -77,6 +77,6 @@ async def run_loop() -> None:
 
         text = await asyncio.to_thread(transcribe, chunk["audioData"])
         if text:
-            rolling_text_buffer.append_text(chunk["sessionId"], text)
+            rolling_text_buffer.append_text(chunk["sessionId"], text, chunk["timestamp"])
         else:
             logger.debug("whisper_service: empty transcription for session %s", chunk["sessionId"])

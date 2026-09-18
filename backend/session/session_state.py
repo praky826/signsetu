@@ -19,15 +19,6 @@ _current_session_id: str | None = None
 _frozen = False
 
 
-def start_session(session_id: str) -> None:
-    """Called on a new WebSocket connection's first message, establishing the
-    initial sessionId for that connection."""
-    global _current_session_id, _frozen
-    _current_session_id = session_id
-    _frozen = False
-    logger.info("session_state: started session %s", session_id)
-
-
 def increment_session(new_session_id: str) -> None:
     """Called on a confirmed seek relayed from the frontend. Clears the old
     session's buffers in chunker.py and rolling_text_buffer.py and adopts the
