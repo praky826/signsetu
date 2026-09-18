@@ -3,6 +3,8 @@
 // (a click), never programmatically on page load - this is why capture is a
 // manual step rather than automated.
 
+import { Status, setStatus } from "../status/statusIndicator.js";
+
 const messageEl = document.getElementById("capture-message");
 const messageTextEl = document.getElementById("capture-message-text");
 const retryBtn = document.getElementById("capture-retry-btn");
@@ -25,6 +27,7 @@ export async function startCapture(onSuccess) {
   try {
     const stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: true });
     hideMessage();
+    setStatus(Status.LISTENING);
     onSuccess(stream);
   } catch (err) {
     console.error("tabCapture: getDisplayMedia failed or was cancelled", err);

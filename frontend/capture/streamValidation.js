@@ -1,16 +1,11 @@
 // Step 5: confirm the captured stream actually contains usable, non-silent
 // audio before the pipeline proceeds.
 
+import { Status, setStatus } from "../status/statusIndicator.js";
+
 const messageEl = document.getElementById("capture-message");
 const messageTextEl = document.getElementById("capture-message-text");
 const retryBtn = document.getElementById("capture-retry-btn");
-const statusIndicatorEl = document.getElementById("status-indicator");
-
-// Direct status-text writes here are a placeholder for Fallback B's real
-// setStatus() state machine, which does not exist until Phase 14.
-function setStatusPlaceholder(text) {
-  statusIndicatorEl.textContent = text;
-}
 
 function showMessage(text, onRetry) {
   messageTextEl.textContent = text;
@@ -52,13 +47,15 @@ function sampleSignal(stream, onValid) {
   const buffer = new Uint8Array(analyser.frequencyBinCount);
   let validated = false;
 
-  setStatusPlaceholder("WAITING FOR PLAYBACK");
+  // No separate "waiting for playback" state exists in Fallback B's enum -
+  // LISTENING already covers "capture active, waiting for/processing audio"
+  // per its own definition, so no status change is needed here; tabCapture.js
+  // already set LISTENING when capture started.
 
   setInterval(() => {
     const signalPresent = hasSignal(analyser, buffer);
     if (signalPresent && !validated) {
       validated = true;
-      setStatusPlaceholder("LISTENING");
       onValid(stream);
     }
   }, 200);
@@ -69,7 +66,7 @@ function sampleSignal(stream, onValid) {
 export function validateStream(stream, onValid, onRetryCapture) {
   const audioTracks = stream.getAudioTracks();
   if (audioTracks.length === 0) {
-    setStatusPlaceholder("NO AUDIO");
+    setStatus(Status.NO_AUDIO);
     showMessage("No audio detected — please re-share and check 'Share tab audio'.", onRetryCapture);
     return;
   }

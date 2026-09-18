@@ -19,10 +19,15 @@ in the docs:
     {"type": "set_mode", "mode": "video" | "avatar"}
     {"type": "seek", "sessionId": "<new id>"}
 
-Text messages (backend -> frontend): one render instruction per message,
+Text messages (backend -> frontend): either a render instruction,
 {"word", "renderType", "assetRef", "sessionId"} (Step 14's frozen shape),
 sent only once session_state.is_current() confirms it is still valid
-(Step 15's session-filtered push, enforced backend-side before sending).
+(Step 15's session-filtered push, enforced backend-side before sending); or,
+since Fallback G's frontend half explicitly requires a backend-sent latency
+signal rather than frontend-side re-measurement, and no wire shape for it is
+specified anywhere in the docs (Phase 14 decision): a control message
+{"type": "latency_status", "degraded": true|false}, sent only when
+latency_tracker.should_degrade() actually changes value, never every cycle.
 """
 
 import asyncio
@@ -36,6 +41,7 @@ from backend.audio import chunker
 from backend.config import GLOSS_CYCLE_INTERVAL_MS
 from backend.gloss import ollama_client
 from backend.lookup import render_resolver
+from backend.monitoring import latency_tracker
 from backend.session import session_state
 
 logger = logging.getLogger(__name__)
@@ -113,9 +119,20 @@ async def run_render_loop() -> None:
     (Step 13-14), and pushes valid instructions out over the open WebSocket.
     ollama_client.run_cycle() runs in a worker thread so its HTTP round-trip
     to Ollama never blocks this event loop (same reasoning as Phase 9's
-    whisper_service.run_loop() fix)."""
+    whisper_service.run_loop() fix). Also relays Fallback G's latency-degrade
+    signal (Phase 14) whenever it changes, never every cycle."""
     interval = GLOSS_CYCLE_INTERVAL_MS / 1000
+    last_degraded = False
     while True:
+        if _current_websocket is not None:
+            degraded = latency_tracker.should_degrade()
+            if degraded != last_degraded:
+                last_degraded = degraded
+                try:
+                    await _current_websocket.send_json({"type": "latency_status", "degraded": degraded})
+                except Exception:
+                    logger.exception("connection: failed to send latency_status")
+
         session_id = session_state.get_current_session_id()
         if session_id is not None and _current_websocket is not None:
             words = await asyncio.to_thread(ollama_client.run_cycle, session_id)

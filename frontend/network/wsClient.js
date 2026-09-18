@@ -5,6 +5,15 @@
 // sessionId is generated here as a placeholder owner until Phase 15's
 // sessionManager.js exists and takes over per the frozen sessionId
 // convention ("owned on the frontend by sessionManager.js").
+//
+// Incoming messages are discriminated by the presence of a "type" field
+// (Phase 14, not specified in the docs): render instructions have the frozen
+// {word, renderType, assetRef, sessionId} shape with no "type" key, while
+// backend-originated control messages (currently only latency_status, for
+// Fallback G) always carry one. This avoids adding a field to the frozen
+// render-instruction shape while still allowing new message kinds.
+
+import { Status, setStatus, setProcessingDelay } from "../status/statusIndicator.js";
 
 let socket = null;
 let sessionId = null;
@@ -32,10 +41,14 @@ export function connect() {
 
   socket.onmessage = (event) => {
     try {
-      const instruction = JSON.parse(event.data);
-      if (onRenderInstruction) onRenderInstruction(instruction);
+      const parsed = JSON.parse(event.data);
+      if (parsed.type === "latency_status") {
+        setProcessingDelay(parsed.degraded);
+        return;
+      }
+      if (onRenderInstruction) onRenderInstruction(parsed);
     } catch (err) {
-      console.error("wsClient: failed to parse render instruction", err);
+      console.error("wsClient: failed to parse incoming message", err);
     }
   };
 
@@ -44,10 +57,8 @@ export function connect() {
   };
 
   socket.onclose = () => {
-    // Fallback C / Phase 14: statusIndicator.js will set RECONNECTING here.
-    // Direct text write is a placeholder until that module exists.
-    const statusEl = document.getElementById("status-indicator");
-    if (statusEl) statusEl.textContent = "RECONNECTING";
+    // Fallback C.
+    setStatus(Status.RECONNECTING);
     console.warn("wsClient: socket closed");
   };
 
