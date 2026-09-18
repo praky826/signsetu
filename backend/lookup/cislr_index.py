@@ -49,7 +49,7 @@ def build() -> bool:
                     logger.debug("cislr_index: excluded %s (clip not cached: %s)", gloss, clip_path)
                     continue
 
-                built[gloss] = f"/assets/cislr/clips/{uid}.mp4"
+                built[gloss] = f"/assets/cislr/{CISLR_CLIPS_DIR.name}/{uid}.mp4"
 
         _index = built
         _built = True

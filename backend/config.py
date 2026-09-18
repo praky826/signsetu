@@ -40,6 +40,16 @@ SILENCE_CUT_THRESHOLD = 0.15
 # Step 11: rolling text buffer.
 ROLLING_BUFFER_WORDS = 6
 PROVISIONAL_WORDS = 2
+# Fallback E's own documented retry behavior (leave stable_words uncommitted
+# and resend on the next cycle) has no ceiling on its own - found via a real
+# capture session that once Ollama starts failing every cycle (e.g. the
+# allowed_vocab bloat above), stable_words grows without bound forever,
+# guaranteeing every future prompt is at least as large as the last and
+# permanently deadlocking the pipeline. This caps how many of the oldest
+# stable words are kept once a backlog builds up; anything older is dropped
+# (logged) rather than resent indefinitely. Not in the original docs - added
+# and confirmed with you after diagnosing this exact deadlock.
+MAX_STABLE_WORDS = 30
 
 # Step 12: how often connection.py's render loop attempts a gloss cycle for the
 # current session - not a named constant in the docs; matches the System Architecture
@@ -79,5 +89,10 @@ ISL_DICTIONARY_PATH = BASE_DIR / "assets" / "isl_dictionary.json"
 # subset with exactly one clip per unique gloss (see docs/implementation.md). dataset.csv
 # remains on disk as the full reference set but is not read by cislr_index.py.
 CISLR_DATASET_PATH = BASE_DIR / "assets" / "cislr" / "prototype.csv"
-CISLR_CLIPS_DIR = BASE_DIR / "assets" / "cislr" / "clips"
+# The raw downloaded clips (assets/cislr/clips/) are mpeg4-coded and cannot
+# be decoded by Chrome's <video> element (confirmed via ffprobe and a real
+# browser test showing a black output box) - cislr_index.py reads from this
+# H.264/AAC re-encoded copy instead (scripts/transcode_cislr_clips.py),
+# leaving the raw originals untouched.
+CISLR_CLIPS_DIR = BASE_DIR / "assets" / "cislr" / "clips_h264"
 PLACEHOLDER_ASSET_PATH = BASE_DIR / "assets" / "placeholder" / "unknown_word.png"

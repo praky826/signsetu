@@ -44,6 +44,10 @@ Output: {"gloss": ["I"]}
 
 Model config: temperature 0.1-0.2, `format="json"` if supported, max_tokens ~100-150. Endpoint: `http://localhost:11434/api/generate` (or `/api/chat`).
 
+**SUPERSEDED after real-world testing (post-Phase 17):** the prompt above requires every output word to match an `allowed_vocab` list sent in the request. Once real CISLR clips were cached (Phase 17's CISLR download human step), that list grew to ~5000 words. Confirmed directly against the live model (`llama3.2:3b`) with the exact real backlog from a live capture session: at ~5000 words the model collapsed to an empty `{}` response regardless of stable_words size (`eval_count: 2` - it generated only `{` and `}`); a controlled size sweep (500/1000/2000/5000 words) showed reliability breaking down well before 1000 words, with 1000 producing outright hallucinated, unrelated output. A bigger local model was considered and rejected: this GPU (RTX 3050, 6GB) is already using ~1.9GB for Whisper, and a 7-8B model capable of reliably handling a 5000-word list would likely not fit, or would fall back to CPU and make Fallback G's latency problem worse.
+
+Per your explicit direction, the vocabulary constraint was removed from the prompt entirely rather than chasing a bigger model. The model now only normalizes/reorders words (rules 5-6 changed: output every converted word, never omit for vocabulary reasons); `allowed_vocab` is no longer sent to Ollama at all. `vocab_filter.py`'s own post-hoc check (`backend/gloss/ollama_client.py`) is now the sole gate on renderability, checked against the full dictionary + CISLR vocabulary (~5000 words) - a plain in-memory set lookup, not a prompt, so it has no size-driven collapse risk. The current live prompt text is in `backend/gloss/prompts.py`; the text above is kept as the historical original for reference, not the current behavior.
+
 ## 2. Data structure shapes — frozen
 
 **Ollama request payload** (built by `ollama_client.py`, consumed by Model 3):
@@ -54,6 +58,7 @@ Model config: temperature 0.1-0.2, `format="json"` if supported, max_tokens ~100
   "allowed_vocab": ["I", "GO", "SCHOOL", "EAT", "WE", "..."]
 }
 ```
+**SUPERSEDED** (see section 1's note): `allowed_vocab` is no longer sent to Ollama - the live request payload is just `{"stable_words": [...], "provisional_context": [...]}`. The full dictionary+CISLR vocabulary is still used, but only inside `ollama_client.py` for `vocab_filter.py`'s post-hoc check, never placed in the request.
 
 **Ollama response** (strict JSON, nothing else):
 ```json

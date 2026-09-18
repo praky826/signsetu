@@ -17,7 +17,7 @@ granularity actually available once text has been split into words.
 
 import logging
 
-from backend.config import PROVISIONAL_WORDS, ROLLING_BUFFER_WORDS
+from backend.config import MAX_STABLE_WORDS, PROVISIONAL_WORDS, ROLLING_BUFFER_WORDS
 
 logger = logging.getLogger(__name__)
 
@@ -38,16 +38,33 @@ def append_text(session_id: str, text: str, chunk_timestamp: float) -> None:
 
 def get_commit_batch(session_id: str) -> dict:
     """Return {stable_words, provisional_context, stable_timestamps} for the
-    session's current buffer, without removing anything yet. stable_timestamps
-    is aligned index-for-index with stable_words and is not part of the
-    frozen Ollama request shape - callers building that request must only use
-    stable_words/provisional_context, per docs/implementation.md section 2."""
+    session's current buffer. stable_timestamps is aligned index-for-index
+    with stable_words and is not part of the frozen Ollama request shape -
+    callers building that request must only use stable_words/
+    provisional_context, per docs/implementation.md section 2.
+
+    If a backlog of failed cycles has pushed the stable portion past
+    MAX_STABLE_WORDS, the oldest overflow is dropped here and now (removed
+    from the buffer outright, not just excluded from this batch) - otherwise
+    a stretch of Ollama failures would let stable_words grow forever with no
+    way to recover (found via a real capture session)."""
     words = _buffers.get(session_id, [])
     timestamps = _timestamps.get(session_id, [])
     if len(words) > ROLLING_BUFFER_WORDS:
         split = len(words) - PROVISIONAL_WORDS
         stable, provisional = words[:split], words[split:]
         stable_timestamps = timestamps[:split]
+
+        if len(stable) > MAX_STABLE_WORDS:
+            overflow = len(stable) - MAX_STABLE_WORDS
+            logger.warning(
+                "rolling_text_buffer: dropping %d oldest stable word(s) for session %s (backlog cap): %r",
+                overflow, session_id, stable[:overflow],
+            )
+            _buffers[session_id] = words[overflow:]
+            _timestamps[session_id] = timestamps[overflow:]
+            stable = stable[overflow:]
+            stable_timestamps = stable_timestamps[overflow:]
     else:
         stable, provisional = [], list(words)
         stable_timestamps = []

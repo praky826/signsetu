@@ -1,13 +1,14 @@
 """Model 3 (Ollama): Step 12, Fallback E - complete (Phase 6).
 
-Warm-up (Phase 3) plus the full per-cycle request/response cycle: builds
-allowed_vocab once (union of dictionary_loader and cislr_index keys),
-POSTs {stable_words, provisional_context, allowed_vocab} against the exact
-system prompt and few-shot examples, logs the raw response unconditionally,
-discards the cycle on any parse/shape failure (Fallback E), and otherwise
-runs vocab_filter.py before advancing the rolling text buffer's commit
-boundary. render_resolver.py (Phase 7) is not called yet - validated words
-are returned to the caller for now.
+Warm-up (Phase 3) plus the full per-cycle request/response cycle: POSTs
+{stable_words, provisional_context} (no vocabulary list - see prompts.py's
+own docstring for why) against the system prompt and few-shot examples,
+logs the raw response unconditionally, discards the cycle on any
+parse/shape failure (Fallback E), and otherwise runs vocab_filter.py -
+using the full dictionary_loader + cislr_index vocabulary, built once by
+_get_filter_vocab() below - before advancing the rolling text buffer's
+commit boundary. render_resolver.py (Phase 7) is not called yet - validated
+words are returned to the caller for now.
 
 run_cycle() also returns the oldest chunk-creation timestamp among the
 words just committed (Fallback G): Fallback G needs a chunk-creation
@@ -34,7 +35,7 @@ from backend.lookup import cislr_index, dictionary_loader
 logger = logging.getLogger(__name__)
 
 _warm = False
-_allowed_vocab: set[str] | None = None
+_filter_vocab: set[str] | None = None
 
 
 def warm_up() -> bool:
@@ -61,22 +62,27 @@ def is_ready() -> bool:
     return _warm
 
 
-def _get_allowed_vocab() -> set[str]:
-    """Built once, at first use, after both dictionary_loader.py's and
-    cislr_index.py's startup validation passes have already run (they run
-    during Phase 3's startup, well before the first gloss cycle can occur)."""
-    global _allowed_vocab
-    if _allowed_vocab is None:
-        _allowed_vocab = set(dictionary_loader.keys()) | set(cislr_index.keys())
-        logger.info("ollama_client: allowed_vocab built (%d words)", len(_allowed_vocab))
-    return _allowed_vocab
+def _get_filter_vocab() -> set[str]:
+    """Built once, at first use, after dictionary_loader.py's and
+    cislr_index.py's startup validation passes have already run (Phase 3's
+    startup, well before the first gloss cycle can occur).
+
+    Not sent to Ollama at all (see prompts.py's docstring) - used only for
+    vocab_filter.py's post-hoc check, which is a plain in-memory set lookup
+    with no prompt-size cost, so unlike the old prompt-embedded vocab it
+    can safely be the full dictionary + CISLR union (~5000 words) without
+    ever risking a model collapse."""
+    global _filter_vocab
+    if _filter_vocab is None:
+        _filter_vocab = set(dictionary_loader.keys()) | set(cislr_index.keys())
+        logger.info("ollama_client: filter vocab built (%d words)", len(_filter_vocab))
+    return _filter_vocab
 
 
-def _call_ollama(stable_words: list[str], provisional_context: list[str], allowed_vocab: set[str]) -> str:
+def _call_ollama(stable_words: list[str], provisional_context: list[str]) -> str:
     request_payload = {
         "stable_words": stable_words,
         "provisional_context": provisional_context,
-        "allowed_vocab": sorted(allowed_vocab),
     }
     prompt = f"{prompts.FEW_SHOT_EXAMPLES}\n\nInput: {json.dumps(request_payload)}\nOutput:"
 
@@ -119,10 +125,8 @@ def run_cycle(session_id: str) -> tuple[list[str], float] | None:
 
     oldest_chunk_timestamp = min(stable_timestamps) if stable_timestamps else time.time()
 
-    allowed_vocab = _get_allowed_vocab()
-
     try:
-        raw_text = _call_ollama(stable_words, provisional_context, allowed_vocab)
+        raw_text = _call_ollama(stable_words, provisional_context)
     except Exception:
         logger.exception("ollama_client: request failed for session %s", session_id)
         return None
@@ -136,6 +140,6 @@ def run_cycle(session_id: str) -> tuple[list[str], float] | None:
         logger.warning("ollama_client: malformed response for session %s: %r", session_id, raw_text)
         return None
 
-    validated = vocab_filter.filter_gloss(gloss_words, allowed_vocab, stable_words)
+    validated = vocab_filter.filter_gloss(gloss_words, _get_filter_vocab(), stable_words)
     rolling_text_buffer.advance_commit_boundary(session_id, len(stable_words))
     return validated, oldest_chunk_timestamp
