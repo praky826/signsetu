@@ -7,6 +7,7 @@
 import { getAnalyser } from "../capture/streamValidation.js";
 import { startCapture } from "../capture/tabCapture.js";
 import { sendControlMessage } from "../network/wsClient.js";
+import { clearQueue } from "../render/renderQueue.js";
 import { Status, setStatus } from "../status/statusIndicator.js";
 
 // Frontend-only tunables (no frontend config module exists, per the
@@ -69,6 +70,7 @@ function hasSignal(analyser, buffer) {
 
 function confirmSeek() {
   const newId = incrementSessionId();
+  clearQueue();
   sendControlMessage({ type: "seek", sessionId: String(newId) });
 }
 

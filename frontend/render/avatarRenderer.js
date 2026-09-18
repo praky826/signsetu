@@ -15,6 +15,7 @@ import { HAMNOSYS_ACTIONS } from "../vendor/hamnosysMap.js";
 const AVATAR_SIGN_HOLD_MS = 700;
 
 let signEngineRef = null;
+let pendingResetTimeout = null;
 
 export function setSignEngine(engine) {
   signEngineRef = engine;
@@ -37,8 +38,21 @@ export function playAvatarSign(instruction, onComplete) {
     }
   }
 
-  setTimeout(() => {
+  pendingResetTimeout = setTimeout(() => {
+    pendingResetTimeout = null;
     signEngineRef.resetAll();
     onComplete();
   }, AVATAR_SIGN_HOLD_MS);
+}
+
+// Immediately halts whatever sign is currently playing, without waiting for
+// its own hold timeout to fire (which would otherwise still call the old
+// onComplete against an already-cleared queue) - used when a confirmed seek
+// invalidates the whole render queue (renderQueue.js's clearQueue()).
+export function stopAvatarSign() {
+  if (pendingResetTimeout) {
+    clearTimeout(pendingResetTimeout);
+    pendingResetTimeout = null;
+  }
+  if (signEngineRef) signEngineRef.resetAll();
 }

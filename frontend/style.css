@@ -101,6 +101,10 @@ body {
   overflow: hidden;
 }
 
+#output-window.hidden {
+  display: none;
+}
+
 #avatar-container,
 #video-renderer {
   width: 100%;

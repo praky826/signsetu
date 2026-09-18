@@ -1,20 +1,33 @@
 // Step 17's own documented optional path (SignSetu.docx: "optionally
 // documentPictureInPicture if output must float above other tabs/apps"):
-// moves the existing, always-live #output-window node into a real
-// always-on-top OS window, so the sign output can sit over the tab that is
-// actually playing the source audio instead of only being visible inside
-// this app's own tab.
+// floats the sign output in a real always-on-top OS window, so it can sit
+// over the tab that is actually playing the source audio instead of only
+// being visible inside this app's own tab.
 //
-// The avatar canvas and video element are re-parented (moved, not cloned)
-// into the popup's document - moving a live canvas/video node between
-// documents in the same page preserves its WebGL context/playback state,
-// so nothing needs to be re-initialized on open or close.
+// The avatar canvas (#avatar-container) is moved (not cloned) into the
+// popup's document - a WebGL canvas has no decode pipeline, so reparenting
+// it is instant and lossless. The video element is handled differently: a
+// real capture session found that moving the actively-playing <video> into
+// a different document interrupted its decode pipeline for far longer than
+// the couple of seconds first assumed, and the backend kept validating and
+// queuing new words the entire time, so the backlog kept growing throughout
+// the stall. Instead, a brand-new <video> is created directly inside the
+// popup's own document (born there, never reparented while playing) and
+// videoRenderer.js/outputWindow.js are retargeted to it via their own
+// setVideoElement()/setElements() - the original video element is simply
+// left idle in the main document until the popup closes.
+
+import { setVideoElement } from "./videoRenderer.js";
+import { setElements } from "./outputWindow.js";
 
 const outputWindowEl = document.getElementById("output-window");
-const originalParent = outputWindowEl.parentElement;
-const originalNextSibling = outputWindowEl.nextSibling;
+const avatarContainer = document.getElementById("avatar-container");
+const mainVideoElement = document.getElementById("video-renderer");
+const avatarOriginalParent = avatarContainer.parentElement;
+const avatarOriginalNextSibling = avatarContainer.nextSibling;
 
 let pipWindow = null;
+let pipVideoElement = null;
 
 export function isPipSupported() {
   return "documentPictureInPicture" in window;
@@ -29,23 +42,26 @@ function copyStylesInto(pipDocument) {
       pipDocument.head.appendChild(link);
     }
   }
-  // Inside the popup, the output element IS the whole window rather than a
-  // fixed-position box floating over other page content - undo style.css's
-  // main-page positioning/sizing so it fills the popup instead.
+  // Inside the popup, these elements fill the whole window rather than
+  // sitting in a fixed-position box floating over other page content -
+  // undo style.css's main-page positioning/sizing so they fill it instead.
   const override = document.createElement("style");
   override.textContent = `
-    body { margin: 0; background: #000; }
-    #output-window { position: static; width: 100%; height: 100%; }
+    html, body { width: 100%; height: 100%; margin: 0; background: #000; }
   `;
   pipDocument.head.appendChild(override);
 }
 
 function returnToMainDocument() {
-  if (originalNextSibling) {
-    originalParent.insertBefore(outputWindowEl, originalNextSibling);
+  if (avatarOriginalNextSibling) {
+    avatarOriginalParent.insertBefore(avatarContainer, avatarOriginalNextSibling);
   } else {
-    originalParent.appendChild(outputWindowEl);
+    avatarOriginalParent.appendChild(avatarContainer);
   }
+  setVideoElement(mainVideoElement);
+  setElements(avatarContainer, mainVideoElement);
+  outputWindowEl.classList.remove("hidden");
+  pipVideoElement = null;
   pipWindow = null;
 }
 
@@ -64,7 +80,30 @@ export async function openPipWindow() {
   }
 
   copyStylesInto(pipWindow.document);
-  pipWindow.document.body.append(outputWindowEl);
+
+  // Carry over whichever output is currently showing so the popup doesn't
+  // open blank until the next word is dispatched.
+  const showAvatar = avatarContainer.classList.contains("render-visible");
+
+  pipVideoElement = pipWindow.document.createElement("video");
+  pipVideoElement.id = "video-renderer";
+  pipVideoElement.playsInline = true;
+  // The popup is a separate top-level browsing context with no direct user
+  // gesture of its own, so Chrome's autoplay policy silently blocks
+  // programmatic play() here otherwise - each clip's play() call was
+  // rejected and immediately falling through to the next word, which
+  // looked like a slideshow of static first frames (found via a real
+  // capture session). Muted playback is always allowed regardless of
+  // gesture, and these clips' audio isn't meaningful to the sign anyway.
+  pipVideoElement.muted = true;
+  pipVideoElement.className = showAvatar ? "render-hidden" : "render-visible";
+  pipWindow.document.body.append(pipVideoElement);
+
+  pipWindow.document.body.append(avatarContainer);
+  outputWindowEl.classList.add("hidden");
+
+  setVideoElement(pipVideoElement);
+  setElements(avatarContainer, pipVideoElement);
 
   // avatar.js's own resize handler (a reused, unmodified file) listens on
   // the main window, not this new one - re-dispatch its event here so the
