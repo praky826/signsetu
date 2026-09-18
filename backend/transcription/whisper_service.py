@@ -1,11 +1,19 @@
-"""Model 1 (faster-whisper): loads once at startup, transcribes chunks (Step 10)."""
+"""Model 1 (faster-whisper): loads once at startup, transcribes chunks (Step 10).
+
+run_loop() is the dedicated worker pulling speech-confirmed chunks from
+chunker.chunk_queue in strict arrival order and pushing transcribed text into
+rolling_text_buffer.py. Discarding stale-session chunks (session_state.py,
+Phase 8) is not wired in yet - every chunk on the queue is transcribed.
+"""
 
 import logging
 
 import numpy as np
 from faster_whisper import WhisperModel
 
-from backend.config import WHISPER_COMPUTE_TYPE, WHISPER_DEVICE, WHISPER_MODEL_SIZE
+from backend.audio import chunker
+from backend.buffer import rolling_text_buffer
+from backend.config import WHISPER_BEAM_SIZE, WHISPER_COMPUTE_TYPE, WHISPER_DEVICE, WHISPER_LANGUAGE, WHISPER_MODEL_SIZE
 
 logger = logging.getLogger(__name__)
 
@@ -34,3 +42,28 @@ def init() -> bool:
 
 def is_ready() -> bool:
     return _model is not None
+
+
+def transcribe(chunk_audio: np.ndarray) -> str:
+    """Transcribe exactly the audio given, nothing more - no batching, no
+    waiting to accumulate more audio. Only .text is consumed; timestamps and
+    confidence are available on the segment objects for debugging only."""
+    segments, _ = _model.transcribe(
+        chunk_audio,
+        language=WHISPER_LANGUAGE,
+        task="transcribe",
+        beam_size=WHISPER_BEAM_SIZE,
+    )
+    return "".join(segment.text for segment in segments).strip()
+
+
+async def run_loop() -> None:
+    """Background task: pulls one chunk at a time from chunker.chunk_queue,
+    transcribes it, and appends the result to rolling_text_buffer.py."""
+    while True:
+        chunk = await chunker.chunk_queue.get()
+        text = transcribe(chunk["audioData"])
+        if text:
+            rolling_text_buffer.append_text(chunk["sessionId"], text)
+        else:
+            logger.debug("whisper_service: empty transcription for session %s", chunk["sessionId"])
