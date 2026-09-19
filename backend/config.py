@@ -76,8 +76,13 @@ LATENCY_WINDOW_SIZE = 8
 # Fallback H: seek debounce.
 SEEK_DEBOUNCE_MS = 175
 
-# Model 1 (faster-whisper).
-WHISPER_MODEL_SIZE = "small"
+# Model 1 (faster-whisper). SignSetu.docx explicitly sanctions this fallback
+# ("small (or base if small is too slow on your hardware)") - switched after
+# a real capture session showed Whisper consistently falling behind
+# real-time audio (a growing backlog of queued "Processing audio" chunks in
+# the log), which was the dominant contributor to Fallback G's latency
+# degrade firing continuously even after raising its threshold once already.
+WHISPER_MODEL_SIZE = "base"
 WHISPER_BEAM_SIZE = 1
 WHISPER_LANGUAGE = "en"
 WHISPER_COMPUTE_TYPE = "float16"
