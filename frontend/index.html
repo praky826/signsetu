@@ -15,53 +15,99 @@
 </head>
 <body>
 
-<div id="control-panel">
-  <button id="start-capture-btn" title="Start Capture">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path><path d="M7 9l3 2-3 2z" fill="currentColor" stroke="none"></path></svg>
-    <span>Start Capture</span>
-  </button>
+<div id="app-background"></div>
 
-  <div id="mode-toggle" role="group" aria-label="Render mode">
-    <input type="radio" id="mode-video" name="mode" value="video" checked>
-    <label for="mode-video" class="mode-option" title="Video mode">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"></rect><path d="M16 10l6-3v10l-6-3z"></path></svg>
-    </label>
-    <input type="radio" id="mode-avatar" name="mode" value="avatar">
-    <label for="mode-avatar" class="mode-option" title="Avatar mode">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg>
-    </label>
-    <span class="mode-toggle-thumb" aria-hidden="true"></span>
+<header id="site-header">
+  <div id="brand">
+    <span id="brand-name">SignSetu</span>
+    <span id="brand-tagline">// VOICES WITHOUT BARRIERS</span>
   </div>
-</div>
+</header>
 
-<div id="capture-reminder">
-  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4M12 16h.01"></path></svg>
-  <span>Make sure the source is playing before sharing.</span>
-</div>
+<main id="hero">
+  <div id="hero-copy">
+    <h1>Same Content.<br>More People.</h1>
+    <p>SignSetu brings spoken content to life in Indian Sign Language — in real time, on any video, for a more inclusive internet.</p>
 
-<div id="capture-message" class="hidden">
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>
-  <span id="capture-message-text"></span>
-  <button id="capture-retry-btn">Retry</button>
-</div>
+    <div id="capture-reminder">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4M12 16h.01"></path></svg>
+      <span>Make sure the source is playing before sharing.</span>
+    </div>
 
-<div id="status-indicator" class="status-idle">
-  <span class="status-dot" aria-hidden="true"></span>
-  <svg class="status-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
-  <span class="status-label">IDLE</span>
-</div>
+    <div id="capture-message" class="hidden">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"></path><path d="M12 9v4M12 17h.01"></path></svg>
+      <span id="capture-message-text"></span>
+      <button id="capture-retry-btn">Retry</button>
+    </div>
 
-<button id="reconnect-btn" class="icon-btn hidden" title="Reconnect">
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 3v6h-6"></path></svg>
-</button>
+    <div id="hero-actions">
+      <button id="start-capture-btn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 17v4"></path><path d="M7 9l3 2-3 2z" fill="currentColor" stroke="none"></path></svg>
+        <span>Start Capture</span>
+      </button>
 
-<button id="float-output-btn" class="icon-btn" title="Float Output">
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><rect x="12" y="12" width="8" height="6" rx="1" fill="currentColor" stroke="none"></rect></svg>
-</button>
+      <button id="float-output-btn" title="Float Output">
+        <span>Launch Floating Window</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+      </button>
+    </div>
 
-<div id="output-window">
-  <div id="avatar-container" class="render-visible"></div>
-  <video id="video-renderer" class="render-hidden" playsinline></video>
+    <div id="feature-row">
+      <div class="feature">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h6l-1 8 9-12h-6z"></path></svg>
+        <span>Real-time Translation</span>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M9 9l5 3-5 3z" fill="currentColor" stroke="none"></path></svg>
+        <span>Works on Any Content</span>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"></path></svg>
+        <span>Privacy Friendly</span>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"></path></svg>
+        <span>More Inclusivity</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="hero-side-caption">TECHNOLOGY FOR A MORE<br>INCLUSIVE TOMORROW.</div>
+</main>
+
+<footer id="site-footer">BUILT WITH <span class="heart">&#9829;</span> FOR A MORE ACCESSIBLE INDIA.</footer>
+
+<div id="app-widget">
+  <div id="status-indicator" class="status-idle">
+    <span class="status-dot" aria-hidden="true"></span>
+    <svg class="status-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg>
+    <span class="status-label">IDLE</span>
+  </div>
+
+  <div id="widget-card">
+    <div id="widget-header">
+      <div id="mode-toggle" role="group" aria-label="Render mode">
+        <input type="radio" id="mode-video" name="mode" value="video" checked>
+        <label for="mode-video" class="mode-option" title="Video mode">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="14" height="12" rx="2"></rect><path d="M16 10l6-3v10l-6-3z"></path></svg>
+        </label>
+        <input type="radio" id="mode-avatar" name="mode" value="avatar">
+        <label for="mode-avatar" class="mode-option" title="Avatar mode">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"></path></svg>
+        </label>
+        <span class="mode-toggle-thumb" aria-hidden="true"></span>
+      </div>
+
+      <button id="reconnect-btn" class="icon-btn hidden" title="Reconnect">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 3v6h-6"></path></svg>
+      </button>
+    </div>
+
+    <div id="output-window">
+      <div id="avatar-container" class="render-visible"></div>
+      <video id="video-renderer" class="render-hidden" playsinline></video>
+    </div>
+  </div>
 </div>
 
 <script type="module" src="main.js"></script>

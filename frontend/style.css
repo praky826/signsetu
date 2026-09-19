@@ -1,22 +1,28 @@
 :root {
-  --bg: #0a0c11;
-  --surface: #151922;
-  --surface-2: #1e2430;
-  --border: #2a3140;
-  --text: #e8ebf2;
-  --text-muted: #8b93a7;
-  --accent: #5b7cfa;
-  --accent-strong: #7c9bff;
+  --bg: #070a10;
+  --surface: rgba(21, 25, 34, 0.72);
+  --surface-2: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.14);
+  --text: #eef1f8;
+  --text-muted: #9aa4bb;
+  --accent: #6fa8ff;
+  --accent-strong: #8fbcff;
   --success: #22c55e;
   --warning: #f0a020;
   --danger: #ef4444;
-  --radius: 12px;
-  --radius-sm: 8px;
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  --mono: "Consolas", "SFMono-Regular", "Courier New", monospace;
+  --sans: "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
@@ -24,35 +30,145 @@ body {
   min-height: 100vh;
   background: var(--bg);
   color: var(--text);
-  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: var(--sans);
+  display: flex;
+  flex-direction: column;
 }
 
-/* ---------- Control panel (capture + mode lever) ---------- */
+/* ---------- Background ---------- */
 
-#control-panel {
+#app-background {
   position: fixed;
-  top: 16px;
-  left: 16px;
-  z-index: 1000;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(4, 8, 16, 0.55) 0%, rgba(4, 8, 16, 0.35) 40%, rgba(4, 8, 16, 0.75) 100%),
+    url("assets/ui/hero-background.webp") center center / cover no-repeat;
+}
+
+/* ---------- Header ---------- */
+
+#site-header {
+  padding: 28px 40px 0;
+}
+
+#brand {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+#brand-name {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+#brand-tagline {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* ---------- Hero ---------- */
+
+#hero {
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 8px;
-  box-shadow: var(--shadow);
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 48px;
+  position: relative;
+}
+
+#hero-copy {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#hero-copy h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+#hero-copy p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 420px;
+}
+
+#hero-side-caption {
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  text-align: right;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+#feature-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 28px;
+  margin-top: 12px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.feature svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ---------- Footer ---------- */
+
+#site-footer {
+  padding: 20px 48px 24px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.heart {
+  color: var(--danger);
+}
+
+/* ---------- Hero actions (capture + launch) ---------- */
+
+#hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
 }
 
 #start-capture-btn {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 16px;
-  border: none;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: var(--accent);
-  color: #fff;
+  background: var(--surface-2);
+  color: var(--text);
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -60,13 +176,146 @@ body {
 }
 
 #start-capture-btn:hover {
-  background: var(--accent-strong);
+  background: rgba(255, 255, 255, 0.14);
 }
 
 #start-capture-btn:disabled {
-  background: var(--surface-2);
   color: var(--text-muted);
   cursor: not-allowed;
+}
+
+#float-output-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--accent-strong);
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+#float-output-btn:hover {
+  background: rgba(111, 168, 255, 0.12);
+}
+
+#float-output-btn:disabled {
+  color: var(--text-muted);
+  border-color: var(--border);
+  cursor: not-allowed;
+}
+
+/* ---------- Capture reminder / alert ---------- */
+
+#capture-reminder {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+#capture-message {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(239, 68, 68, 0.14);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+  max-width: 420px;
+}
+
+#capture-message.hidden {
+  display: none;
+}
+
+#capture-retry-btn {
+  margin-left: 4px;
+  padding: 4px 10px;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: #fca5a5;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#capture-retry-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+}
+
+/* ---------- App widget (bottom-right functional cluster) ---------- */
+
+#app-widget {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+#status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+#status-indicator.status-idle { color: var(--text-muted); }
+#status-indicator.status-listening { color: var(--success); }
+#status-indicator.status-no-audio { color: var(--warning); }
+#status-indicator.status-reconnecting { color: var(--warning); }
+#status-indicator.status-processing-delay { color: var(--danger); }
+
+.status-label {
+  color: var(--text);
+}
+
+#widget-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 /* Mode lever: two icon options with a sliding thumb behind whichever is
@@ -94,8 +343,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 32px;
+  width: 34px;
+  height: 30px;
   border-radius: 999px;
   color: var(--text-muted);
   cursor: pointer;
@@ -111,8 +360,8 @@ body {
   position: absolute;
   top: 4px;
   left: 4px;
-  width: 36px;
-  height: 32px;
+  width: 34px;
+  height: 30px;
   border-radius: 999px;
   background: var(--accent);
   transition: transform 0.2s ease;
@@ -120,121 +369,25 @@ body {
 }
 
 #mode-avatar:checked ~ .mode-toggle-thumb {
-  transform: translateX(38px);
+  transform: translateX(36px);
 }
-
-/* ---------- Capture reminder / alert ---------- */
-
-#capture-reminder {
-  position: fixed;
-  top: 68px;
-  left: 16px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  color: var(--text-muted);
-}
-
-#capture-message {
-  position: fixed;
-  top: 96px;
-  left: 16px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  padding: 10px 12px;
-  border-radius: var(--radius-sm);
-  background: rgba(239, 68, 68, 0.12);
-  border: 1px solid rgba(239, 68, 68, 0.4);
-  color: #fca5a5;
-  max-width: 360px;
-  box-shadow: var(--shadow);
-}
-
-#capture-message.hidden {
-  display: none;
-}
-
-#capture-retry-btn {
-  margin-left: 4px;
-  padding: 4px 10px;
-  border: 1px solid rgba(239, 68, 68, 0.5);
-  border-radius: var(--radius-sm);
-  background: transparent;
-  color: #fca5a5;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-#capture-retry-btn:hover {
-  background: rgba(239, 68, 68, 0.15);
-}
-
-/* ---------- Status pill ---------- */
-
-#status-indicator {
-  position: fixed;
-  bottom: 232px;
-  right: 16px;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #fff;
-  background: var(--surface-2);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
-
-.status-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: currentColor;
-}
-
-#status-indicator.status-idle { color: var(--text-muted); }
-#status-indicator.status-listening { color: var(--success); }
-#status-indicator.status-no-audio { color: var(--warning); }
-#status-indicator.status-reconnecting { color: var(--warning); }
-#status-indicator.status-processing-delay { color: var(--danger); }
-
-.status-label {
-  color: var(--text);
-}
-
-/* ---------- Icon buttons (reconnect / float output) ---------- */
 
 .icon-btn {
-  position: fixed;
-  right: 16px;
-  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--surface-2);
   color: var(--text);
   cursor: pointer;
-  box-shadow: var(--shadow);
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .icon-btn:hover {
-  background: var(--surface-2);
+  background: rgba(255, 255, 255, 0.16);
   color: var(--accent-strong);
 }
 
@@ -242,39 +395,14 @@ body {
   display: none;
 }
 
-.icon-btn:disabled {
-  color: var(--text-muted);
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.icon-btn:disabled:hover {
-  background: var(--surface);
-  color: var(--text-muted);
-}
-
-#reconnect-btn {
-  bottom: 276px;
-}
-
-#float-output-btn {
-  bottom: 320px;
-}
-
 /* ---------- Output window ---------- */
 
 #output-window {
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
   width: 300px;
   height: 200px;
-  z-index: 1000;
   background: #000;
   overflow: hidden;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  border-radius: var(--radius-sm);
 }
 
 #output-window.hidden {
