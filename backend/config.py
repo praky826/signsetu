@@ -49,7 +49,12 @@ PROVISIONAL_WORDS = 2
 # stable words are kept once a backlog builds up; anything older is dropped
 # (logged) rather than resent indefinitely. Not in the original docs - added
 # and confirmed with you after diagnosing this exact deadlock.
-MAX_STABLE_WORDS = 30
+# Lowered from 30 to 20 after a real capture session showed even 30-word
+# bursts overwhelming the frontend's 4-item render queue (renderQueue.js's
+# MAX_QUEUE_LENGTH), causing wholesale drops that swallowed avatar-tagged
+# words along with the video-tagged ones - a smaller cap means a smaller
+# burst per cycle, giving more of it an actual chance to reach the screen.
+MAX_STABLE_WORDS = 20
 
 # Step 12: how often connection.py's render loop attempts a gloss cycle for the
 # current session - not a named constant in the docs; matches the System Architecture

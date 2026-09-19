@@ -41,9 +41,32 @@ function stripBoneNameSuffixes(model) {
   });
 }
 
+// Frontend-only tunable (no frontend config module exists, per
+// docs/implementation.md section 3's documented exception): avatar.js (a
+// reused file) sizes the renderer using the raw devicePixelRatio, which
+// looks fine at the container's actual size but pixelated once style.css's
+// hip-to-head crop scales the canvas up ~2.4x via CSS - CSS scaling only
+// stretches whatever pixels already exist, so this compensates by
+// rendering at higher resolution instead. Capped rather than matching the
+// CSS zoom exactly (2.4x) to limit the added GPU cost, since Three.js
+// already shares this GPU with Whisper + Ollama (Fallback G's own concern).
+const AVATAR_RENDER_SCALE = 2;
+// avatar.js's own lights (a reused file, not edited here) render too dark
+// in the small, cropped output window. scene is returned from
+// initAvatarScene() just like renderer, so every light already in the
+// scene is boosted directly from here instead.
+const AVATAR_BRIGHTNESS_MULTIPLIER = 1.8;
+
 async function init() {
   const container = document.getElementById("avatar-container");
-  const { model } = await initAvatarScene(container);
+  const { model, renderer, scene } = await initAvatarScene(container);
+  renderer.setPixelRatio(window.devicePixelRatio * AVATAR_RENDER_SCALE);
+  renderer.setSize(container.clientWidth, container.clientHeight);
+  scene.traverse((obj) => {
+    if (obj.isLight) {
+      obj.intensity *= AVATAR_BRIGHTNESS_MULTIPLIER;
+    }
+  });
   stripBoneNameSuffixes(model);
   signEngine = new SignEngine({ model });
   setSignEngine(signEngine);

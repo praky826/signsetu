@@ -1,45 +1,158 @@
+:root {
+  --bg: #0a0c11;
+  --surface: #151922;
+  --surface-2: #1e2430;
+  --border: #2a3140;
+  --text: #e8ebf2;
+  --text-muted: #8b93a7;
+  --accent: #5b7cfa;
+  --accent-strong: #7c9bff;
+  --success: #22c55e;
+  --warning: #f0a020;
+  --danger: #ef4444;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+/* ---------- Control panel (capture + mode lever) ---------- */
+
+#control-panel {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px;
+  box-shadow: var(--shadow);
 }
 
 #start-capture-btn {
-  position: fixed;
-  top: 12px;
-  left: 12px;
-  z-index: 1000;
-  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: #fff;
   font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
 }
 
-#mode-toggle {
-  position: fixed;
-  top: 12px;
-  left: 140px;
-  z-index: 1000;
-  font-size: 14px;
+#start-capture-btn:hover {
+  background: var(--accent-strong);
 }
+
+#start-capture-btn:disabled {
+  background: var(--surface-2);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+/* Mode lever: two icon options with a sliding thumb behind whichever is
+   checked. Underlying radio inputs stay functionally untouched (same
+   name/value main.js reads) - only visually hidden. */
+#mode-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--surface-2);
+  border-radius: 999px;
+  padding: 4px;
+  gap: 2px;
+}
+
+#mode-toggle input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mode-option {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 32px;
+  border-radius: 999px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+#mode-video:checked ~ label[for="mode-video"],
+#mode-avatar:checked ~ label[for="mode-avatar"] {
+  color: #fff;
+}
+
+.mode-toggle-thumb {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 36px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--accent);
+  transition: transform 0.2s ease;
+  z-index: 0;
+}
+
+#mode-avatar:checked ~ .mode-toggle-thumb {
+  transform: translateX(38px);
+}
+
+/* ---------- Capture reminder / alert ---------- */
 
 #capture-reminder {
   position: fixed;
-  top: 44px;
-  left: 12px;
+  top: 68px;
+  left: 16px;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 12px;
-  color: #555;
+  color: var(--text-muted);
 }
 
 #capture-message {
   position: fixed;
-  top: 68px;
-  left: 12px;
+  top: 96px;
+  left: 16px;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: 13px;
-  padding: 8px 12px;
-  border-radius: 4px;
-  background: #fdecea;
-  color: #611a15;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
   max-width: 360px;
+  box-shadow: var(--shadow);
 }
 
 #capture-message.hidden {
@@ -47,58 +160,121 @@ body {
 }
 
 #capture-retry-btn {
-  margin-left: 8px;
-}
-
-#reconnect-btn {
-  position: fixed;
-  bottom: 244px;
-  right: 12px;
-  z-index: 1000;
+  margin-left: 4px;
   padding: 4px 10px;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: #fca5a5;
   font-size: 12px;
+  cursor: pointer;
 }
 
-#reconnect-btn.hidden {
-  display: none;
+#capture-retry-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
 }
 
-#float-output-btn {
-  position: fixed;
-  bottom: 272px;
-  right: 12px;
-  z-index: 1000;
-  padding: 4px 10px;
-  font-size: 12px;
-}
+/* ---------- Status pill ---------- */
 
 #status-indicator {
   position: fixed;
-  bottom: 216px;
-  right: 12px;
+  bottom: 232px;
+  right: 16px;
   z-index: 1000;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #fff;
-  background: #888;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
-#status-indicator.status-idle { background: #888; }
-#status-indicator.status-listening { background: #2a8a2a; }
-#status-indicator.status-no-audio { background: #b8860b; }
-#status-indicator.status-reconnecting { background: #cc7a00; }
-#status-indicator.status-processing-delay { background: #b03030; }
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+#status-indicator.status-idle { color: var(--text-muted); }
+#status-indicator.status-listening { color: var(--success); }
+#status-indicator.status-no-audio { color: var(--warning); }
+#status-indicator.status-reconnecting { color: var(--warning); }
+#status-indicator.status-processing-delay { color: var(--danger); }
+
+.status-label {
+  color: var(--text);
+}
+
+/* ---------- Icon buttons (reconnect / float output) ---------- */
+
+.icon-btn {
+  position: fixed;
+  right: 16px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.icon-btn:hover {
+  background: var(--surface-2);
+  color: var(--accent-strong);
+}
+
+.icon-btn.hidden {
+  display: none;
+}
+
+.icon-btn:disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.icon-btn:disabled:hover {
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+#reconnect-btn {
+  bottom: 276px;
+}
+
+#float-output-btn {
+  bottom: 320px;
+}
+
+/* ---------- Output window ---------- */
 
 #output-window {
   position: fixed;
-  bottom: 12px;
-  right: 12px;
+  bottom: 16px;
+  right: 16px;
   width: 300px;
   height: 200px;
   z-index: 1000;
   background: #000;
   overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 #output-window.hidden {

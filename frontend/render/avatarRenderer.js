@@ -59,22 +59,31 @@ const TOKEN_TO_LOCATION = {
   hammovedown: "stomach",
 };
 
-// Best-effort standard mirroring convention for a symmetric humanoid rig:
-// forward/back bend (x) keeps its sign for both arms, side-to-side spread
-// (z) flips sign for the opposite arm. Not visually verified against this
-// specific model without a live browser - may need tuning after testing.
+// Mirror convention verified against this actual model, not guessed: read
+// human.glb's real bind-pose (rest) quaternions for LeftArm/RightArm/
+// LeftForeArm/RightForeArm directly (via pygltflib) and confirmed
+// algebraically that reflecting a bone's local rotation across this rig's
+// mirror plane means negating the quaternion's Y and Z components (X and W
+// unchanged) - proven this is a valid operation for quaternion composition
+// (M(a*b) = M(a)*M(b) for M = negate-Y-Z), and that this in turn means an
+// Euler(x, y, z) rotation input mirrors to Euler(x, -y, -z), not Euler(x,
+// y, -z) as first implemented. Every `arm` value below happens to have
+// y=0, so that part looked right by coincidence; every `foreArm` value has
+// a nonzero y and z=0, so the un-negated y was a real bug - the left elbow
+// was bending the same rotational direction as the right elbow instead of
+// mirrored, which was the main visible cause of "weird" left-arm bending.
 function mirrorArmTo(engine, location) {
   const target = ARM_LOCATIONS[location];
   if (!target) return;
   const [x, y, z] = target.arm;
-  engine.rotate("LeftArm", x, y, -z, 0.2);
+  engine.rotate("LeftArm", x, -y, -z, 0.2);
   const [fx, fy, fz] = target.foreArm;
-  engine.rotate("LeftForeArm", fx, fy, fz, 0.2);
+  engine.rotate("LeftForeArm", fx, -fy, -fz, 0.2);
 }
 
-// Read directly from SignEngine.js's own palm() switch statement. Mirroring
-// mirrorArmTo()'s convention: up/down (x) is a global direction, same sign
-// for either hand; left/right (z) flips sign for the opposite wrist.
+// Same negate-Y-Z mirror convention as mirrorArmTo(), verified against the
+// real model above. PALM_ROTATIONS' y is always 0 so this is unchanged
+// behavior for now, kept general in case a future orientation needs it.
 const PALM_ROTATIONS = {
   down: [1.6, 0, 0],
   up: [-1.6, 0, 0],
@@ -98,7 +107,7 @@ function mirrorPalm(engine, orientation) {
   const rotation = PALM_ROTATIONS[orientation];
   if (!rotation) return;
   const [x, y, z] = rotation;
-  engine.rotate("LeftHand", x, y, -z, 0.2);
+  engine.rotate("LeftHand", x, -y, -z, 0.2);
 }
 
 const FINGERS = ["Thumb", "Index", "Middle", "Ring", "Pinky"];
