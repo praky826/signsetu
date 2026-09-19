@@ -47,6 +47,7 @@ def transcode_one(uid: str) -> str:
     result = subprocess.run(
         [
             "ffmpeg", "-y", "-loglevel", "error",
+            "-fflags", "+genpts+igndts", "-err_detect", "ignore_err",
             "-i", str(src),
             "-c:v", "libx264", "-pix_fmt", "yuv420p",
             "-c:a", "aac",

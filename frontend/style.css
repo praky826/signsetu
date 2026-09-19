@@ -111,6 +111,18 @@ body {
   height: 100%;
 }
 
+/* Crops the rendered avatar to roughly hip-to-head, without touching
+   avatar.js's camera setup (a reused, unmodified file) - a pure visual
+   zoom via CSS transform on the container, clipped by #output-window's own
+   overflow:hidden. Values are a first estimate from avatar.js's actual
+   camera (45deg FOV, positioned at y=1.4 looking at y=1.2, on a 1.7m-tall
+   model) - not visually verified without a live browser, likely needs a
+   tuning pass once you see it. */
+#avatar-container {
+  transform: scale(2.4) translateY(5%);
+  transform-origin: center center;
+}
+
 .render-visible {
   display: block;
 }

@@ -6,18 +6,26 @@
 // of a real event, followed by an explicit resetAll() since SignEngine does
 // not return to neutral between signs on its own.
 //
-// Two supplementary animations added here (found via a real capture
-// session showing the avatar barely moving - explained in full to you
-// before implementing): SignEngine.js's armTo()/palm()/hand() are hardcoded
-// to the right side only, and hand("flat")'s curl amount is exactly zero,
-// making it a mathematical no-op against the model's own rest pose - it
-// rotates every finger to precisely where it already is. Neither is edited
-// here (SignEngine.js/hamnosysMap.js stay reused-unmodified); instead this
-// file calls SignEngine's own public, low-level rotate() method directly,
-// alongside the existing mapped action, to mirror arm position onto the
-// left side and give the "flat" hand shape a real, visible target.
+// Two supplementary animations added to the generic (non-overridden) path
+// (found via a real capture session showing the avatar barely moving -
+// explained in full to you before implementing): SignEngine.js's
+// armTo()/palm()/hand() are hardcoded to the right side only, and
+// hand("flat")'s curl amount is exactly zero, making it a mathematical
+// no-op against the model's own rest pose. Neither is edited here
+// (SignEngine.js/hamnosysMap.js stay reused-unmodified); instead this file
+// calls SignEngine's own public, low-level rotate() method directly,
+// alongside the existing mapped action, to mirror arm/wrist onto the left
+// side and give "flat" a real, visible target.
+//
+// signOverrides.js additionally provides a curated per-word override table
+// (a 50-word pilot batch, chosen by watching each word's real CISLR
+// reference clip) - checked first, before falling back to the generic
+// hamnosys-token path above for every other word. Explicitly an
+// approximation, not claimed to be accurate ISL - isl_dictionary.json
+// itself is untouched.
 
 import { HAMNOSYS_ACTIONS } from "../vendor/hamnosysMap.js";
+import { SIGN_OVERRIDES } from "./signOverrides.js";
 
 // Frontend-only tunable (no frontend config module exists, per
 // docs/implementation.md section 3's documented exception): how long an
@@ -55,7 +63,7 @@ const TOKEN_TO_LOCATION = {
 // forward/back bend (x) keeps its sign for both arms, side-to-side spread
 // (z) flips sign for the opposite arm. Not visually verified against this
 // specific model without a live browser - may need tuning after testing.
-function mirrorLeftArm(engine, location) {
+function mirrorArmTo(engine, location) {
   const target = ARM_LOCATIONS[location];
   if (!target) return;
   const [x, y, z] = target.arm;
@@ -65,11 +73,8 @@ function mirrorLeftArm(engine, location) {
 }
 
 // Read directly from SignEngine.js's own palm() switch statement. Mirroring
-// mirrorLeftArm()'s convention: up/down (x) is a global direction, same
-// sign for either hand; left/right (z) flips sign for the opposite wrist.
-// This was missed in the first pass - mirrorLeftArm() only ever reaches
-// LeftArm/LeftForeArm (shoulder/elbow), never LeftHand (wrist), which is
-// why the left wrist itself still wasn't moving.
+// mirrorArmTo()'s convention: up/down (x) is a global direction, same sign
+// for either hand; left/right (z) flips sign for the opposite wrist.
 const PALM_ROTATIONS = {
   down: [1.6, 0, 0],
   up: [-1.6, 0, 0],
@@ -85,7 +90,7 @@ const TOKEN_TO_PALM = {
   hampalmf: "forward",
 };
 
-function mirrorLeftPalm(engine, orientation) {
+function mirrorPalm(engine, orientation) {
   if (orientation === "forward") {
     engine.reset("LeftHand");
     return;
@@ -103,13 +108,46 @@ const FINGERS = ["Thumb", "Index", "Middle", "Ring", "Pinky"];
 // actual, visible target instead.
 const FLAT_EXTEND_AMOUNT = -0.4;
 
-function openRightHandFlat(engine) {
-  for (const finger of FINGERS) {
-    const multiplier = finger === "Thumb" ? 1.0 : 1.8;
-    const curlAngle = FLAT_EXTEND_AMOUNT * multiplier;
-    for (const joint of [1, 2, 3]) {
-      engine.rotate(`RightHand${finger}${joint}`, -curlAngle, 0, 0, 0.2);
-    }
+// Reimplements SignEngine.js's own hand()/curl() logic (read from that file,
+// not modified there), parameterized by side so it can drive either hand -
+// hand() itself is hardcoded to "Right" only. Used for both the generic
+// "hamflathand" no-op fix and signOverrides.js's curated hand shapes.
+function curlHandSide(engine, side, shape) {
+  const curl = (finger, amount) => {
+    const curlAngle = amount * (finger === "Thumb" ? 1.0 : 1.8);
+    [1, 2, 3].forEach((joint) => {
+      engine.rotate(`${side}Hand${finger}${joint}`, -curlAngle, 0, 0, 0.2);
+    });
+  };
+  switch (shape) {
+    case "flat":
+      FINGERS.forEach((f) => curl(f, FLAT_EXTEND_AMOUNT));
+      break;
+    case "fist":
+      FINGERS.forEach((f) => curl(f, 1));
+      break;
+    case "index":
+      curl("Index", 0);
+      ["Middle", "Ring", "Pinky", "Thumb"].forEach((f) => curl(f, 1));
+      break;
+    case "vee":
+      curl("Index", 0);
+      curl("Middle", 0);
+      ["Ring", "Pinky", "Thumb"].forEach((f) => curl(f, 1));
+      break;
+    case "pinch":
+      curl("Index", 0.5);
+      curl("Thumb", 0.5);
+      ["Middle", "Ring", "Pinky"].forEach((f) => curl(f, 0.2));
+      break;
+    case "cee":
+      ["Index", "Middle", "Ring", "Pinky"].forEach((f) => curl(f, 0.6));
+      curl("Thumb", 0.4);
+      break;
+    case "thumbup":
+      curl("Thumb", 0);
+      ["Index", "Middle", "Ring", "Pinky"].forEach((f) => curl(f, 1));
+      break;
   }
 }
 
@@ -120,6 +158,43 @@ export function setSignEngine(engine) {
   signEngineRef = engine;
 }
 
+function playOverride(engine, override) {
+  engine.armTo(override.location);
+  curlHandSide(engine, "Right", override.hand);
+  if (override.palm) {
+    engine.palm(override.palm);
+  }
+  if (override.bimanual) {
+    mirrorArmTo(engine, override.location);
+    curlHandSide(engine, "Left", override.hand);
+    if (override.palm) {
+      mirrorPalm(engine, override.palm);
+    }
+  }
+}
+
+function playGeneric(engine, tokens) {
+  for (const token of tokens) {
+    const action = HAMNOSYS_ACTIONS[token];
+    if (!action) {
+      console.warn(`avatarRenderer: unrecognized HamNoSys token "${token}"`);
+      continue;
+    }
+    action(engine);
+    if (token === "hamflathand") {
+      curlHandSide(engine, "Right", "flat");
+    }
+    const location = TOKEN_TO_LOCATION[token];
+    if (location) {
+      mirrorArmTo(engine, location);
+    }
+    const palmOrientation = TOKEN_TO_PALM[token];
+    if (palmOrientation) {
+      mirrorPalm(engine, palmOrientation);
+    }
+  }
+}
+
 export function playAvatarSign(instruction, onComplete) {
   if (!signEngineRef) {
     console.error("avatarRenderer: SignEngine not set yet");
@@ -127,25 +202,12 @@ export function playAvatarSign(instruction, onComplete) {
     return;
   }
 
-  const tokens = instruction.assetRef.split(/\s+/).filter(Boolean);
-  for (const token of tokens) {
-    const action = HAMNOSYS_ACTIONS[token];
-    if (!action) {
-      console.warn(`avatarRenderer: unrecognized HamNoSys token "${token}"`);
-      continue;
-    }
-    action(signEngineRef);
-    if (token === "hamflathand") {
-      openRightHandFlat(signEngineRef);
-    }
-    const location = TOKEN_TO_LOCATION[token];
-    if (location) {
-      mirrorLeftArm(signEngineRef, location);
-    }
-    const palmOrientation = TOKEN_TO_PALM[token];
-    if (palmOrientation) {
-      mirrorLeftPalm(signEngineRef, palmOrientation);
-    }
+  const override = SIGN_OVERRIDES[instruction.word?.toUpperCase()];
+  if (override) {
+    playOverride(signEngineRef, override);
+  } else {
+    const tokens = instruction.assetRef.split(/\s+/).filter(Boolean);
+    playGeneric(signEngineRef, tokens);
   }
 
   pendingResetTimeout = setTimeout(() => {
