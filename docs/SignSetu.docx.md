@@ -14,7 +14,7 @@
 
 **Output:** Two models resident in GPU memory (faster-whisper small, Ollama 3B model), both confirmed responsive via a throwaway inference call.
 
-**Technical requirements:**
+**Technical requirements:-**
 
 * Python 3.10+ backend (Flask or FastAPI) running locally  
 * faster-whisper package (CTranslate2-based)  
