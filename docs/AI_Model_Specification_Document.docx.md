@@ -20,20 +20,20 @@
 * A Segment object (or list of segments) containing: text (string), start/end timestamps, and per-segment confidence/log-probability metadata  
 * Only the .text field from each segment is consumed downstream; other fields (timestamps, confidence) are optional to log for debugging but not required by the pipeline
 
-**Responsibilities:**
+**Responsibilities:-**
 
 * Transcribe exactly the audio it's given, nothing more  
 * Return promptly (this is a real-time pipeline stage — no batching multiple chunks together, no waiting to accumulate more audio before running)
 
-**Actions to avoid:**
+**Actions to avoid:-**
 
 * Do **not** run this model on chunks that VAD (Model 2\) has flagged as containing no speech — wasted compute and a known hallucination risk (per Fallback D in the main spec)  
 * Do **not** attempt to use Whisper's built-in translation mode (task="translate") — this pipeline only needs transcription (task="transcribe"), since gloss conversion is handled separately by Model 3  
 * Do **not** pass full, unchunked audio for transcription — always chunk first, per the streaming architecture
 
-**Exact behavior expected in detail:** For each incoming \~2s audio chunk (already VAD-confirmed to contain speech, and already resampled to 16kHz mono if needed), call the model's transcribe function with language="en" explicitly set (do not rely on language auto-detection — it adds latency and risks misdetection on short chunks) and beam\_size kept low (1-2) to favor speed over marginal accuracy gains, consistent with the project's stated responsiveness-over-accuracy priority. The returned text is appended to the rolling buffer as described in Step 11 of the main pipeline spec.
+**Exact behavior expected in detail:-** For each incoming \~2s audio chunk (already VAD-confirmed to contain speech, and already resampled to 16kHz mono if needed), call the model's transcribe function with language="en" explicitly set (do not rely on language auto-detection — it adds latency and risks misdetection on short chunks) and beam\_size kept low (1-2) to favor speed over marginal accuracy gains, consistent with the project's stated responsiveness-over-accuracy priority. The returned text is appended to the rolling buffer as described in Step 11 of the main pipeline spec.
 
-**Training/prompting instructions:** None required — this is a fixed pretrained model with no prompt interface. The only configuration choices are: model size (small, already decided), compute type (float16 on the RTX 3050 for speed), device (cuda), language (en, fixed), and beam size (low, per above).
+**Training/prompting instructions:-** None required — this is a fixed pretrained model with no prompt interface. The only configuration choices are: model size (small, already decided), compute type (float16 on the RTX 3050 for speed), device (cuda), language (en, fixed), and beam size (low, per above).
 
 **Other instructions for IDE agent/developer:** Confirm the faster-whisper model download happens once at first run (it downloads weights on first instantiation if not cached locally) — this should happen during initial project setup, *before* demo day, not left to happen live for the first time during rehearsal.
 
@@ -41,7 +41,7 @@
 
 **MODEL 2 — silero-vad**
 
-**Purpose:** Two jobs, both described in the main spec — (a) find a clean silence point near the \~2s chunk-boundary cap for cutting audio (Step 8), and (b) score whether a finished chunk actually contains speech at all, to gate it before it reaches Whisper (Fallback D).
+**Purpose:-** Two jobs, both described in the main spec — (a) find a clean silence point near the \~2s chunk-boundary cap for cutting audio (Step 8), and (b) score whether a finished chunk actually contains speech at all, to gate it before it reaches Whisper (Fallback D).
 
 **Input — exact format required:**
 
@@ -54,12 +54,12 @@
 * For the chunk-boundary-snapping use case: a sequence of these scores across the tail of the buffer, used to find a local minimum (silence) near the cap  
 * For the pre-Whisper gating use case: an aggregated speech-probability score for the whole chunk (e.g. max or mean across frames), compared against a threshold (\~0.3, per Fallback D)
 
-**Responsibilities:**
+**Responsibilities:-**
 
 * Only judge presence/absence of speech-like signal — not transcribe, not identify speaker, not judge language  
 * Run fast enough to not become a bottleneck itself (CPU execution is expected to be sufficient — do not allocate GPU resources to this model, reserve those for Whisper and Ollama)
 
-**Actions to avoid:**
+**Actions to avoid:-**
 
 * Do not use this model's output as a transcription confidence signal — it has no relationship to transcription accuracy, only to whether speech-like audio is present at all  
 * Do not run this on the GPU — unnecessary resource contention with the two models that actually need it
